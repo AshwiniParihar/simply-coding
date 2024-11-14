@@ -1,0 +1,16 @@
+.section-container {
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+.all-content {
+  min-width: 1200px;
+}
+#resizable-container {
+  height: calc(100vh - 100px); /* Adjust based on your layout */
+}
+
+.hidden {
+  display: none !important;
+}

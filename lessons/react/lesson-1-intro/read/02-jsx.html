@@ -1,0 +1,56 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <div class="infographic-section">
+      <h2>JSX and the Virtual DOM</h2>
+      <p>
+          The good news is JSX and the virtual DOM work under the hood. Once they are set up in your project, there is nothing more you need to do with them. 
+          But they are a powerful part of React, so it is important to have a basic understanding of how they work. So we will take a quick look at them.
+      </p>
+  </div>
+
+  <div class="infographic-section">
+      <h2>JSX</h2>
+      <p>
+          JSX (JavaScript XML) is a syntax extension for JavaScript that lets you write HTML-like code inside JavaScript. 
+          In React, JSX is used to describe what the UI should look like. It allows you to mix HTML elements directly within JavaScript code, 
+          making it easier to create and organize user interface components.
+      </p>
+      <p>
+          For example, instead of writing complex JavaScript code to create an element like this:
+      </p>
+      <pre><code>
+          const [variable-name] = document.createElement('[element]');
+          [variable-name].textContent = "Hello, Future Web Developer!";
+      </code></pre>
+      <p>With JSX, you can simply write:</p>
+      <pre><code>
+          const [variable-name] = &lt;h1&gt;Hello, Future Web Developer!&lt;/h1&gt;;
+      </code></pre>
+      <p>When put into action, it looks like this</p>
+      <pre><code>
+          const welcomeMessage = &lt;h1&gt;Hello, Welcome to React!&lt;/h1&gt;;
+      </code></pre>
+      <p>
+          JSX gets compiled into regular JavaScript, so browsers can understand it. It combines the readability of HTML with the power of JavaScript, making React code easier to write and understand.
+      </p>
+  </div>
+
+  <div class="infographic-section">
+      <h2>Virtual DOM</h2>
+      <p>
+          The Virtual DOM is a lightweight copy of the real DOM, created by React to manage updates to the user interface more efficiently. 
+          React uses the Virtual DOM to keep track of changes within your app's components and to minimize direct modifications to the real DOM.
+          A library called <code>react-dom</code> is responsible for syncing the Virtual DOM with the actual DOM by comparing the two 
+          and applying only the necessary updates. This approach makes React applications faster and 
+          more responsive, even with complex UIs.
+      </p>
+      <p>
+          Additionally, <code>react-dom</code> works seamlessly with React's built-in components and hooks, such as <code>useState</code> and 
+          <code>useEffect</code>. These hooks enable dynamic interactions within components and make it easy to manage state and lifecycle 
+          events, while <code>react-dom</code> ensures that changes triggered by these hooks are efficiently reflected in the actual DOM.
+      </p>
+      <p>
+          In summary, <code>react-dom</code> connects React’s Virtual DOM with the real DOM, leveraging components and hooks to deliver 
+          a smooth, optimized user experience in your applications.
+      </p>
+  </div>
+</section>

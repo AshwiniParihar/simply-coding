@@ -1,0 +1,1 @@
+Did you know that a group of flamingos is called a "flamboyance"? 🦩✨ They get their vibrant pink color from the food they eat, such as shrimp and algae, which are rich in carotenoids. The more they eat, the pinker they become!

@@ -1,0 +1,92 @@
+<!-- Section 1: html forms-->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h1>HTML Form Example and Explanation</h1>
+      <p>
+        The form below demonstrates the use of form tags and elements, including
+        the <code>submit</code> button:
+      </p>
+      <pre><code>
+      !! Notice the target="_blank" it will open the page /submit-form 
+      and post data to it in a new page !!
+
+      &lt;form action="/submit-form" method="post" target="_blank">
+        &lt;label for="name">Name:&lt;/label>
+        &lt;input type="text" id="name" name="name" placeholder="Enter your name" />
+        &lt;br />&lt;br />
+
+        &lt;label for="email">Email:&lt;/label>
+        &lt;input type="email" id="email" name="email" placeholder="Enter your email" />
+        &lt;br />&lt;br />
+
+        &lt;button type="submit">Submit&lt;/button>
+      &lt;/form>
+      </code>
+</pre>
+      <!-- Form Example -->
+      <form action="/submit-form" method="post" target="_blank">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <br /><br />
+
+        <button type="submit">Submit</button> &lt;!-- If you click there it will
+        open a new tab --&gt;
+      </form>
+
+      <h2>Explanation of Form Structure</h2>
+      <ul>
+        <li>
+          <code>&lt;form&gt;</code>: The container for form fields. It uses
+          attributes like:
+          <ul>
+            <li>
+              <strong>action</strong>: Specifies the URL where the form data
+              will be sent. For example, <code>action="/submit-form"</code>.
+            </li>
+            <li>
+              <strong>method</strong>: Defines the HTTP method for submitting
+              data, typically <code>post</code> for modifying data or
+              <code>get</code> for requests.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <code>&lt;input&gt;</code>: Defines various input fields, with types
+          like:
+          <ul>
+            <li><code>text</code>: Creates a text input field.</li>
+            <li><code>submit</code>: A button that submits the form.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- <h3>Further Resources</h3>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+            target="_blank"
+            >MDN Documentation on &lt;form&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+            target="_blank"
+            >MDN Documentation on &lt;input&gt;</a
+          >
+        </li>
+      </ul> -->
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Relationship between HTML, CSS, and JavaScript -->
+
+<!-- Section 3: The Role of HTML -->

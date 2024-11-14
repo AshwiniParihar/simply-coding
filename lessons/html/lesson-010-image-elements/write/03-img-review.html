@@ -1,0 +1,128 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Review: The Image Tag</h2>
+  <p class="section-text intro">
+    Let's review what you’ve learned about the <code>&lt;img&gt;</code> tag!
+    This tag helps us embed images into our HTML documents, making web pages
+    more visually appealing and informative.
+  </p>
+
+  <!-- Step 1: Purpose of the <img> Tag -->
+  <section class="write-step">
+    <h4 class="subsection-title">1. Purpose of the &lt;img&gt; Tag</h4>
+    <p class="section-text">
+      The <code>&lt;img&gt;</code> tag is a self-closing element used to add
+      images to a webpage. It doesn't need a closing tag. Images can enhance the
+      design and provide additional information to users.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;img src="https://example.com/image.jpg" alt="A descriptive image" /&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Essential Attributes -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. Essential Attributes</h4>
+    <p class="section-text">
+      The two key attributes of the <code>&lt;img&gt;</code> tag are
+      <strong>src</strong> and <strong>alt</strong>.
+    </p>
+    <ul>
+      <li>
+        <strong>src:</strong> Specifies the path to the image file, either as a
+        URL or a local file path.
+      </li>
+      <li>
+        <strong>alt:</strong> Provides alternative text for accessibility,
+        displayed when the image can’t load.
+      </li>
+    </ul>
+    <div class="demo">
+      <pre><code>
+&lt;img src="https://example.com/image.jpg" alt="Image description" /&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 3: Width and Height Attributes -->
+  <section class="write-step">
+    <h4 class="subsection-title">3. Width and Height Attributes</h4>
+    <p class="section-text">
+      Use the <code>width</code> and <code>height</code> attributes to control
+      the image size in pixels, maintaining layout consistency and preventing
+      layout shifts.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;img src="https://example.com/image.jpg" alt="Image description" width="200" height="150" /&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 4: Optional Title Attribute -->
+  <section class="write-step">
+    <h4 class="subsection-title">4. Optional Title Attribute</h4>
+    <p class="section-text">
+      The <code>title</code> attribute provides additional context. It appears
+      as a tooltip when a user hovers over the image.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;img src="https://example.com/image.jpg" alt="Image description" width="200" height="150" title="Tooltip text here" /&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 5: Common Mistakes -->
+  <section class="write-step">
+    <h4 class="subsection-title">5. Common Mistakes</h4>
+    <div class="alert alert-warning mt-3">
+      <strong>Common Mistakes:</strong>
+      <ul>
+        <li>
+          Forgetting the <code>alt</code> attribute, which is important for
+          accessibility.
+        </li>
+        <li>
+          Not optimizing images for the web, leading to slower load times.
+        </li>
+        <li>
+          Using vague <code>alt</code> text, which may confuse users relying on
+          screen readers.
+        </li>
+        <li>
+          Leaving out <code>width</code> and <code>height</code> attributes,
+          causing layout shifts on page load.
+        </li>
+        <li>
+          Mixing up relative and absolute paths, which can break links if file
+          locations change.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Step 6: Example Code -->
+  <section class="write-step">
+    <h4 class="subsection-title">6. Complete Example Code</h4>
+    <p class="section-text">
+      Here’s an example combining all the key attributes we’ve reviewed:
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+     alt="Retro tape image" 
+     width="200" 
+     height="150" 
+     title="Retro cassette tape from the 80s" 
+/&gt;
+      </code></pre>
+    </div>
+    <div class="tip-box">
+      <strong>Final Tip:</strong> Always preview your page to ensure the image
+      displays as expected and includes all necessary attributes.
+    </div>
+  </section>
+</section>

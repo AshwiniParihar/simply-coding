@@ -1,0 +1,113 @@
+{
+  "title": "Lesson 1: Introduction to HTML",
+  "lessonID": "lessonHTML001",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>SimplyCoding - Your First HTML Page</title>\n</head>\n<body>\n    <h1>Welcome to SimplyCoding!</h1>\n    <p>This is your first step into the world of web development.</p>\n    <p>For more resources, visit the <a href=\"https://www.simplycoding.org\" target=\"_blank\">SimplyCoding homepage</a>.</p>\n</body>\n</html>",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/read/01-overview.html"
+        },
+        {
+          "title": "Introduction to HTML",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/read/02-intro-to-html.html"
+        },
+        {
+          "title": "Relationship Between HTML, CSS and JavaScript",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/read/03-relationship-between.html"
+        },
+
+        {
+          "title": "HTML Tags",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/read/04-html-tags-and-structure.html"
+        },
+        {
+          "title": "HTML Structure",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/read/05-html-structure.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>SimplyCoding - Your First HTML Page</title>\n</head>\n<body>\n    <h1>Welcome to SimplyCoding!</h1>\n    <p>This is your first step into the world of web development.</p>\n    <p>For more resources, visit the <a href=\"https://www.simplycoding.org\" target=\"_blank\">SimplyCoding homepage</a>.</p>\n</body>\n</html>"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-001-intro/write/01-section-overview.html"
+        },
+        {
+          "title": "Step By Step",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/write/02-step-by-step.html"
+        },
+        {
+          "title": "Change the Title",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/write/03-step-one-run-code.html"
+        },
+        {
+          "title": "Change the <h1> Tag",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/write/03-step-3-update-h1.html"
+        },
+        {
+          "title": "Change the <p> Tag",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/write/04-step-four-change-ptag.html"
+        },
+        {
+          "title": "Add a New Line",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/write/05-step-5-create-another-line.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n  <head>\n    \n  </head>\n  <body>\n   \n  </body>\n</html>"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-001-intro/create/01-overview.html"
+        },
+        {
+          "title": "1. Hints",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/create/01-hints.html"
+        },
+        {
+          "title": "2. Solution",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/create/02-solution.html"
+        }
+      ]
+    }
+  }
+}

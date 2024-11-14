@@ -1,0 +1,469 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Main Title Section -->
+  <div class="infographic-section">
+    <h2>Grouping Input Elements with Forms</h2>
+    <p>
+      Grouping input elements helps organize forms for both users and screen
+      readers. HTML provides tools like <code>&lt;form&gt;</code>,
+      <code>&lt;fieldset&gt;</code>, and <code>&lt;legend&gt;</code> to
+      structure input fields effectively.
+    </p>
+  </div>
+
+  <!-- Form Structure Section -->
+  <div class="infographic-section">
+    <h2>Basic Form Structure</h2>
+    <pre>
+      <code>&lt;form action="submit.html" method="post"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;User Information&lt;/legend&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" required /&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" required /&gt;
+  &lt;/fieldset&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+      </code>
+    </pre>
+    <div class="m-4 border rounded p-1">
+      <form action="submit.html" method="post" style="max-width: 300px">
+        <fieldset>
+          <legend
+            data-bs-toggle="tooltip"
+            title="Provides a title for the grouped input fields"
+          >
+            User Information
+          </legend>
+
+          <div class="mb-3">
+            <label
+              for="name"
+              data-bs-toggle="tooltip"
+              title="Label for the Name input"
+              >Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              required
+              data-bs-toggle="tooltip"
+              title="Enter your name here"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label
+              for="email"
+              data-bs-toggle="tooltip"
+              title="Label for the Email input"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              required
+              data-bs-toggle="tooltip"
+              title="Enter your email here"
+            />
+          </div>
+        </fieldset>
+
+        <button
+          type="submit"
+          class="btn btn-primary mt-3"
+          data-bs-toggle="tooltip"
+          title="Click to submit the form"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <p>
+      The <code>&lt;form&gt;</code> element wraps the inputs, defining how to
+      submit the data. The <code>action</code> attribute specifies where the
+      form data goes, while <code>method</code> determines how it’s sent. The
+      <code>&lt;fieldset&gt;</code> element groups related inputs, and
+      <code>&lt;legend&gt;</code> provides a title for the group.
+    </p>
+    <div class="tip-box">
+      <strong>Pro Tip:</strong> Use <code>&lt;fieldset&gt;</code> and
+      <code>&lt;legend&gt;</code> to group related inputs logically, making
+      forms easier to navigate.
+    </div>
+  </div>
+
+  <!-- Attributes Explained -->
+  <div class="infographic-section">
+    <h2>Attributes Explained</h2>
+    <div class="infographic-cards-container">
+      <!-- action Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">action</h5>
+          <p class="info-card-description">
+            Defines the URL to send form data to upon submission.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAction"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick='loadTryItOut(&apos;&lt;form action="/submit" method="post"&gt;&lt;input type="text" name="username"&gt;&lt;/form&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- method Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">method</h5>
+          <p class="info-card-description">
+            Specifies the HTTP method (GET or POST) for submitting the form.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMethod"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;form method=&quot;post&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;/form&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Fieldset Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">fieldset</h5>
+          <p class="info-card-description">
+            Groups related inputs together, creating a box around them.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalFieldset"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;fieldset&gt;&lt;legend&gt;Personal Info&lt;/legend&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;/fieldset&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Legend Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">legend</h5>
+          <p class="info-card-description">
+            Provides a title for a <code>&lt;fieldset&gt;</code>, helping users
+            understand the purpose of grouped inputs.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalLegend"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;fieldset&gt;&lt;legend&gt;Contact Info&lt;/legend&gt;&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;/fieldset&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Try It Out Section -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <div>
+      <pre>
+        <code>
+&lt;form action="/submit-form" method="post"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Personal Information&lt;/legend&gt;
+    &lt;label for="firstName"&gt;First Name:&lt;/label&gt;
+    &lt;input type="text" id="firstName" required /&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" required /&gt;
+  &lt;/fieldset&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </code>
+      </pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut(&apos;&lt;form action="/submit-form" method="post"&gt;&lt;fieldset&gt;&lt;legend&gt;Personal Information&lt;/legend&gt;&lt;label for="firstName"&gt;First Name:&lt;/label&gt;&lt;input type="text" id="firstName" required /&gt;&lt;label for="email"&gt;Email:&lt;/label&gt;&lt;input type="email" id="email" required /&gt;&lt;/fieldset&gt;&lt;button type="submit"&gt;Submit&lt;/button&gt;&lt;/form&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Best Practices Section -->
+  <div class="infographic-section">
+    <div class="alert alert-success">
+      <strong>Best Practices</strong>
+      <ul>
+        <li>
+          Always validate required fields to prevent incomplete submissions.
+        </li>
+        <li>
+          Use descriptive legends for grouped inputs, helping users understand
+          each section of the form.
+        </li>
+        <li>
+          Set the <code>action</code> and <code>method</code> attributes
+          appropriately for secure data handling.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="infographic-section">
+    <div class="alert alert-warning">
+      <strong>Note</strong>
+      <ul>
+        <li>
+          This is just an introduction to HTML Forms. Later in the course we
+          will go in-depth on how to properly use some of the elements of a form
+          like <code>action</code> and <code>method</code>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Modals for Detailed Info -->
+  <!-- action Modal -->
+  <!-- action Modal -->
+  <div
+    class="modal fade"
+    id="modalAction"
+    tabindex="-1"
+    aria-labelledby="modalActionLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalActionLabel">action Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>action</code> attribute in a form specifies the URL where
+            the form's data will be sent upon submission. This can be a path to
+            a file on the same server or an external URL. If omitted, the form
+            submits to the same URL where it is currently located.
+          </p>
+          <ul>
+            <li>
+              <strong>Relative URL</strong>: Submits data to a relative path.
+            </li>
+            <li>
+              <strong>Absolute URL</strong>: Submits data to a complete URL.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;form action="/submit-form" method="post"&gt;...&lt;/form&gt;</code></pre>
+          <p>
+            <strong>Note:</strong> If the form submits to the same page, you can
+            leave <code>action</code> blank, which is helpful for forms
+            processed server-side (e.g., PHP).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- method Modal -->
+  <div
+    class="modal fade"
+    id="modalMethod"
+    tabindex="-1"
+    aria-labelledby="modalMethodLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMethodLabel">method Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>method</code> attribute defines how the form data is sent.
+            It supports two primary methods:
+          </p>
+          <ul>
+            <li>
+              <strong>GET</strong>: Appends data to the URL, making it visible.
+              Suitable for non-sensitive data or searches.
+            </li>
+            <li>
+              <strong>POST</strong>: Sends data as a request body, keeping it
+              hidden. Preferred for sensitive or large data submissions.
+            </li>
+          </ul>
+          <p>
+            <strong>When to Use:</strong> Use <code>GET</code> for fetching or
+            displaying data and <code>POST</code> for processing or modifying
+            data.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;form method="post"&gt;...&lt;/form&gt;</code></pre>
+          <p>
+            <strong>Note:</strong> When <code>GET</code> is used, data can be
+            bookmarked or shared, which may not be ideal for private
+            information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fieldset Modal -->
+  <div
+    class="modal fade"
+    id="modalFieldset"
+    tabindex="-1"
+    aria-labelledby="modalFieldsetLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFieldsetLabel">fieldset Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;fieldset&gt;</code> element groups related form inputs
+            and visually separates sections, improving form readability and
+            accessibility.
+          </p>
+          <ul>
+            <li>
+              <strong>Purpose</strong>: Often used to divide large forms into
+              sections like personal details, contact info, etc.
+            </li>
+            <li>
+              <strong>Accessibility</strong>: Helps screen readers understand
+              the logical grouping of inputs.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;User Information&lt;/legend&gt;
+  &lt;label&gt;...&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+          <p>
+            <strong>Best Practice:</strong> Use <code>&lt;legend&gt;</code> to
+            title each <code>&lt;fieldset&gt;</code> for clear section headings,
+            making it easier for all users to navigate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legend Modal -->
+  <div
+    class="modal fade"
+    id="modalLegend"
+    tabindex="-1"
+    aria-labelledby="modalLegendLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLegendLabel">legend Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;legend&gt;</code> element titles a
+            <code>&lt;fieldset&gt;</code> group, providing context for the
+            inputs inside. This title is read by screen readers and improves
+            accessibility.
+          </p>
+          <ul>
+            <li>
+              <strong>Placement</strong>: Always place
+              <code>&lt;legend&gt;</code> as the first element inside
+              <code>&lt;fieldset&gt;</code>.
+            </li>
+            <li>
+              <strong>Accessibility</strong>: Describes the fieldset’s purpose
+              to assistive technologies, offering context for grouped inputs.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Personal Information&lt;/legend&gt;
+  &lt;input&gt;...
+&lt;/fieldset&gt;</code></pre>
+          <p>
+            <strong>Tip:</strong> The <code>&lt;legend&gt;</code> should
+            succinctly summarize the inputs, such as "Account Details" or
+            "Contact Information."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

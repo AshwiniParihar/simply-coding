@@ -1,0 +1,153 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Setting Up Your Project Environment</h2>
+  <p class="section-text intro">
+    Let's get started with setting up your project structure! We'll create a new
+    project folder, set up your HTML file, and learn how to properly link images
+    using relative file paths.
+  </p>
+
+  <!-- Step 1: Create Project Folder -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create Project Folder</h4>
+    <p class="section-text">
+      Navigate to your HTML folder within the developer folder and create a new
+      folder named "Project 2 Invitation". This will be where all your project
+      files live.
+    </p>
+    <div class="demo">
+      <pre><code>
+📂 developer
+  📂 html
+    📂 Project 2 Invitation   <!-- Create this new folder -->
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Create HTML File -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Create HTML File</h4>
+    <p class="section-text">
+      Inside your new "Project 2 Invitation" folder, create a new file named
+      <code>index.html</code>. This will be your main HTML file for the project.
+    </p>
+    <div class="demo">
+      <pre><code>
+📂 developer
+  📂 html
+    📂 Project 2 Invitation
+        📄 index.html        <!-- Create this new file -->
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 3: Add HTML Skeleton -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: Add HTML Skeleton</h4>
+    <p class="section-text">
+      Open your <code>index.html</code> file and add the basic HTML structure.
+      This includes the DOCTYPE declaration, html, head, and body tags.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Project 2 - Event Invitation&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 4: Understanding File Structure -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 4: Understanding File Structure</h4>
+    <p class="section-text">
+      Let's understand how your files are organized. Your directory structure
+      should look like this:
+    </p>
+    <div class="demo">
+      <pre><code>
+📂 developer
+  📂 assets
+    📄 your-image.jpg    <!-- Your image is here -->
+  📂 html
+    📂 Project 2 Invitation
+        📄 index.html    <!-- Your new HTML file -->
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 5: Add Image Using Relative Path -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 5: Add Image Using Relative Path</h4>
+    <p class="section-text">
+      Inside your <code>&lt;body&gt;</code> tag, add an
+      <code>&lt;img&gt;</code> tag that references your image from the assets
+      folder. Since we're in the Project 2 Invitation folder, we'll need to
+      navigate up to reach the assets folder.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;img src="../../assets/your-image.jpg" alt="Description of your image"&gt;
+      </code></pre>
+    </div>
+    <div class="tip-box">
+      <strong>Understanding Relative Paths:</strong><br />
+      • <code>../</code> means "go up one directory level"<br />
+      • First <code>../</code> moves up from "Project 2 Invitation" to "html"<br />
+      • Second <code>../</code> moves up from "html" to "developer"<br />
+      • Then we can go into the assets folder to reach your image
+    </div>
+  </section>
+
+  <!-- Step 6: Verify Your Work -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 6: Verify Your Work</h4>
+    <p class="section-text">
+      Open your index.html file in a browser to make sure:
+    </p>
+    <ul class="section-text">
+      <li>The HTML skeleton is properly formatted</li>
+      <li>The image appears on the page</li>
+      <li>There are no broken image links</li>
+    </ul>
+    <div class="tip-box">
+      <strong>Troubleshooting:</strong> If your image doesn't appear,
+      double-check your file path. Remember that you need to go up two levels
+      (../../) to get from your project folder to the developer folder, then
+      into assets.
+    </div>
+  </section>
+
+  <!-- Full Code Reference -->
+  <section class="write-step">
+    <h4 class="subsection-title">Full Code Reference</h4>
+    <p class="section-text">Your code should look like this:</p>
+    <div class="demo">
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Project 2 - Event Invitation&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="../../assets/your-image.jpg" alt="Description of your image"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </div>
+  </section>
+  <h6>
+    Now you are ready to continue building your project! Remember you can pick
+    any event you want for this project!
+  </h6>
+</section>

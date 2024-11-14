@@ -1,0 +1,52 @@
+{
+  "title": "Lesson 13: WebPages",
+  "lessonID": "lessonHTML013",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-13-webpages/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-13-webpages/read/01-overview.html"
+        },
+        {
+          "title": "Project Structure",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-13-webpages/read/02-project-folder-structure.html"
+        },
+
+        {
+          "title": "Advanced Project Structure",
+          "fileType": "html",
+
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-13-webpages/read/03-advanced-folder-structure.html"
+        },
+        {
+          "title": "Creating Links",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-13-webpages/read/04-creating-links.html"
+        }
+      ]
+    }
+  }
+}

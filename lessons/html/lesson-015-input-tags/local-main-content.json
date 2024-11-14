@@ -1,0 +1,66 @@
+{
+  "title": "Lesson 15: Input Tags",
+  "lessonID": "lessonHTML015",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/01-overview.html"
+        },
+        {
+          "title": "Input Structure",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/02-input-structure.html"
+        },
+
+        {
+          "title": "Input Tag Types",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/03-types-of-input-tags.html"
+        },
+        {
+          "title": "Input Tag Attributes",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/04-input-attributes.html"
+        },
+        {
+          "title": "Label Element",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/05-label-element.html"
+        },
+        {
+          "title": "Forms and Grouping Input Elements",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/06-grouping-input-elements.html"
+        },
+        {
+          "title": "Basic Form Validation",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-015-input-tags/read/07-basic-validation.html"
+        }
+      ]
+    }
+  }
+}

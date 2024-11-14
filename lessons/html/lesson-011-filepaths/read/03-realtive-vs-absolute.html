@@ -1,0 +1,170 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section: Introduction to Paths -->
+  <div class="infographic-section">
+    <h2>Relative vs. Absolute Paths in Web Development</h2>
+    <p>
+      File paths are essential for linking to images, stylesheets, scripts, and
+      other resources in a project. Choosing between relative and absolute paths
+      depends on your project’s structure, location, and scalability needs.
+    </p>
+  </div>
+
+  <!-- Section: Relative Paths -->
+  <div class="infographic-section">
+    <h2>What is a Relative Path?</h2>
+    <p>
+      A relative path points to a file or directory relative to the current
+      document, making it adaptable to different environments.
+    </p>
+    <ul class="list-unstyled">
+      <li>
+        <strong>Portability:</strong> Relative paths ensure that links remain
+        functional even if the project is moved to another location or server.
+      </li>
+      <li>
+        <strong>Environment-Friendly:</strong> They work seamlessly across local
+        development, staging, and production environments.
+      </li>
+      <li>
+        <strong>Efficient for Project Files:</strong> Ideal for linking internal
+        files like images, stylesheets, and JavaScript files within a project.
+      </li>
+    </ul>
+    <h4>Example of Relative Path:</h4>
+    <pre><code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code></pre>
+    <p class="text-muted">
+      <em
+        >Links to a stylesheet located in the "css" folder within the project
+        directory.</em
+      >
+    </p>
+  </div>
+
+  <!-- Section: Absolute Paths -->
+  <div class="infographic-section">
+    <h2>What is an Absolute Path?</h2>
+    <p>
+      An absolute path provides the complete location of a file, which could be
+      a full URL for web files or a full directory path for files on a local
+      machine.
+    </p>
+    <ul class="list-unstyled">
+      <li>
+        <strong>Direct Linking:</strong> Absolute paths are useful for linking
+        to external resources like Google Fonts or CDN-hosted JavaScript
+        libraries.
+      </li>
+      <li>
+        <strong>Fixed URLs:</strong> They maintain a consistent path, regardless
+        of the file’s location, making them ideal for linking resources outside
+        of your project.
+      </li>
+      <li>
+        <strong>Limited Adaptability:</strong> Absolute paths are tied to a
+        specific URL or server location, so they can break if the site structure
+        or domain changes.
+      </li>
+    </ul>
+    <h4>Example of Absolute Path:</h4>
+    <pre><code>&lt;link rel="stylesheet" href="https://example.com/css/styles.css"&gt;</code></pre>
+    <p class="text-muted">
+      <em>Links to an external stylesheet hosted on a specified domain.</em>
+    </p>
+  </div>
+
+  <!-- Section: Example Comparison - Relative vs Absolute -->
+  <div class="infographic-section">
+    <h2>Relative vs. Absolute Path Comparison</h2>
+    <div class="row">
+      <!-- Relative Path Example -->
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <h5>Relative Path</h5>
+          <pre><code>&lt;img src="images/logo.png" alt="Logo"&gt;</code></pre>
+          <p class="text-muted">
+            <em
+              >Links to a logo image within the "images" folder, relative to the
+              current document.</em
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Absolute Path Example -->
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <h5>Absolute Path</h5>
+          <pre><code>&lt;img src="https://example.com/images/logo.png" alt="Logo"&gt;</code></pre>
+          <p class="text-muted">
+            <em
+              >Links to a logo image on an external website, using a full
+              URL.</em
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: When to Use Each -->
+  <div class="infographic-section">
+    <h2>When to Use Each Path Type</h2>
+    <div class="infographic-attributes">
+      <div class="attribute">
+        <h5>Use Relative Paths When...</h5>
+        <p>
+          You are linking files within your own project, such as images,
+          scripts, and stylesheets, to ensure portability and flexibility across
+          different environments.
+        </p>
+      </div>
+      <div class="attribute">
+        <h5>Use Absolute Paths When...</h5>
+        <p>
+          You need to link to external resources like Google Fonts, external
+          APIs, or CDN-hosted assets that exist outside of your project
+          directory.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Platform-Specific Absolute Paths -->
+  <div class="infographic-section">
+    <h2>Absolute Paths on Your Computer</h2>
+    <p>
+      Absolute paths on your computer are different from URLs and depend on your
+      operating system:
+    </p>
+    <ul class="list-unstyled">
+      <li>
+        <strong>Windows:</strong> Paths use a drive letter, e.g.,
+        <code>C:\Users\YourName\Documents\project\index.html</code>.
+      </li>
+      <li>
+        <strong>Mac/Linux:</strong> Paths start from the root with a forward
+        slash, e.g., <code>/Users/YourName/Documents/project/index.html</code>.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Section: Best Practices -->
+  <div class="alert alert-success mt-3">
+    <strong>Best Practices for Using File Paths</strong>
+    <ul>
+      <li>
+        <strong>Use Relative Paths for Internal Links:</strong> This ensures
+        portability and ease of file management within the project.
+      </li>
+      <li>
+        <strong>Organize Project Structure:</strong> Keep files organized in a
+        logical folder structure to simplify relative path usage.
+      </li>
+      <li>
+        <strong>Avoid Hardcoded Computer Paths:</strong> Paths tied to a
+        specific drive location (e.g., C:\ or /Users/) will not work across
+        different devices or when deployed online.
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,77 @@
+<!-- Create Section -->
+<section class="section-container create-section">
+    <!-- Create This! Title -->
+    <h2 class="section-title">Create This!</h2>
+    <p class="section-text intro">
+        In this section, you’ll put your knowledge of the
+        React fundamentals to the test by building the initial layout of our recipe app. Use the reference below to
+        guide your work.
+    </p>
+
+    <!-- Instructions -->
+    <h3 class="subsection-title">Instructions:</h3>
+    <ul class="instruction-list">
+        <li>You should break the project into 4 components. Not including your <code>main.js</code> and
+            <code>App.js</code></li>
+        <ul>
+            <li>Header</li>
+            <li>RecipeForm</li>
+            <li>SavedRecipes</li>
+            <li>SelectedRecipes</li>
+        </ul>
+        <li>Use the <code>App.js</code> file to render the components you create.</li>
+        <li>Build one portion of the app at a time and test each section as you go.</li>
+        <li>Don't forget the <code>script</code> tag for each component</li>
+        <li>Do not worry about adding any styling to the project other than the border-bottom. There will be a hint for it on the next page.</li>
+    </ul>
+
+    <h3 class="subsection-title">React scripts for yout HTML file:</h3>
+    <pre><code>
+    &lt;script src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/@babel/standalone@7/babel.min.js"&gt;&lt;/script&gt;
+    </code></pre>
+
+    <!-- Rendered Code Example -->
+    <h2>Preview:</h2>
+    <section class="rendered-code">
+        <header style="border-bottom: solid black 1px;">
+            <h1>Shopping List</h1>
+        </header>
+        <main>
+            <div>
+                <h2>Saved Recipes</h2>
+                <div>
+                    <p>Alfredo</p>
+                    <p>Pizza</p>
+                    <p>Tacos</p>
+                </div>
+            </div>
+            <div>
+                <h2>Selected Recipes</h2>
+                <ul>
+                    <li>Recipe 1</li>
+                    <li>Recipe 2</li>
+                    <li>Recipe 3</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Add a Recipe</h2>
+                <form>
+                    <label>
+                        Name:
+                        <input type="text" name="name" />
+                    </label>
+                    <label>
+                        Ingredients:
+                        <select>
+                            <option>Choose Ingredient</option>
+                        </select>
+                    </label>
+                    <button>Add Recipe</button>
+                </form>
+            </div>
+        </main>
+    </section>
+    <em>The font style in the preview will not match what you see in your local server, that is fine!</em>
+</section>

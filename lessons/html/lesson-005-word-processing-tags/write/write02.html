@@ -1,0 +1,52 @@
+<section class="info-blue">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h3>Step 2: Adjust to &lt;strong&gt; and &lt;em&gt; Tags</h3>
+      <p>
+        Now that you have added the <code>&lt;b&gt;</code> and
+        <code>&lt;i&gt;</code> tags, let's adjust them to use semantic tags that
+        convey more meaning. Replace the <code>&lt;b&gt;</code> tag with
+        <code>&lt;strong&gt;</code> and the <code>&lt;i&gt;</code> tag with
+        <code>&lt;em&gt;</code>. This change will ensure that your emphasis is
+        recognized not only visually but also by assistive technologies like
+        screen readers.
+      </p>
+      <ol>
+        <li>
+          In your code, find the line with the <code>&lt;b&gt;</code> tag and
+          replace it with
+          <code
+            >&lt;strong&gt;This is a strongly emphasized
+            text.&lt;/strong&gt;</code
+          >.
+        </li>
+        <li>
+          Next, find the line with the <code>&lt;i&gt;</code> tag and replace it
+          with
+          <code>&lt;em&gt;This text is semantically emphasized.&lt;/em&gt;</code
+          >.
+        </li>
+        <button class="editor-opt-btn" onclick="runCode()">Run Code</button>
+      </ol>
+
+      <!-- Updated Code Block -->
+      <pre><code>
+&lt;div"&gt;
+    &lt;p&gt;
+        &lt;strong&gt;This is a strongly emphasized text.&lt;/strong&gt;
+        &lt;em&gt;This text is semantically emphasized.&lt;/em&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+     </code> </pre>
+
+      <!-- Semantic vs. Non-Semantic Reminder -->
+      <div class="note">
+        <strong>Reminder:</strong>
+        Unlike <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>, which only
+        change the text's appearance, <code>&lt;strong&gt;</code> and
+        <code>&lt;em&gt;</code> provide additional meaning, making your HTML
+        more accessible and meaningful to users and search engines.
+      </div>
+    </div>
+  </div>
+</section>

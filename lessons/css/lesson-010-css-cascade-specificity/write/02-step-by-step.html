@@ -1,0 +1,133 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Try to do this:</h2>
+
+  <!-- Step 1: Add a Title -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Add div element</h4>
+    <p class="section-text">
+      Go to line <code>10</code> in your code where you see <strong>X</strong>.
+      Replace <strong>X</strong> 
+      <code>&lt;div&gt;</code> div element with the class container and apply external styles to it.
+
+    </p>
+    <div class="demo">
+      <pre><code>
+        &lt;div class="container"&gt;
+      </code></pre>
+    </div>
+  </section>
+
+ 
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Add another div under the first div with ID</h4>
+    <p class="section-text">
+      On line <code>12</code>, directly under the first div, add a div tag
+      <code>&lt;div&gt;</code> with an ID of main-container and apply some different styles.
+    </p>
+    <div class="demo">
+      <pre><code>
+        &lt;div id="main-container"&gt;
+      </code></pre>
+    </div>
+  </section>
+
+ 
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: Add a p paragraph tag</h4>
+    <p class="section-text">
+      On line <code>13</code>, Add a p paragraph tag with some inline css like color blue.
+    </p>
+    <div class="demo">
+      <pre><code>
+        &lt;p style="color: blue;"&gt;This is a paragraph.&lt;/p&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  
+  <section class="write-step">
+    <h4 class="subsection-title">Step 4:Now in the css file add css code</h4>
+    <div class="demo">
+      <pre><code>
+        .container {
+          width: 50%;
+          background-color: lightblue;
+      }
+
+      #main-container {
+          background-color: lightgreen;
+      }
+
+      p {
+          color: black;
+      }
+
+      p {
+          color: red !important; /* Will override the color black */
+      }
+
+      </code></pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 11: Full Code</h4>
+    <p class="section-text">Your full code should look like this:</p>
+    <div class="demo">
+      <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;CSS Cascade Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div id=&quot;main-container&quot;&gt;
+                    &lt;p style=&quot;color: blue;&quot;&gt;This is a paragraph.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </code></pre>
+    </div><br>
+    <p>CSS code</p>
+    <div class="demo">
+      <pre>
+        <code>
+        .container {
+            width: 50%;
+            background-color: lightblue;
+        }
+
+        #main-container {
+            background-color: lightgreen;
+        }
+
+        p {
+            color: black;
+        }
+
+        p {
+            color: red !important; /* Will override the color black */
+        }
+        </code>
+      </pre>
+    </div>
+
+    <p><strong>Explanation</strong>
+      <ol>
+        <li>The div with class .container will have a width of 50% and a light blue background.
+        </li>
+        <li>The div with ID #main-container will have a light green background.</li>
+        <li>The paragraph inside will be red due to the !important in the CSS.</li>
+      </ol>
+    </p>
+    <div class="tip-box">
+      <strong>Final Check:</strong> Paste this code into your editor to see the
+      full itinerary displayed on the page.
+    </div>
+  </section>
+</section>

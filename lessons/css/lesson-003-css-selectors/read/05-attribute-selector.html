@@ -1,0 +1,46 @@
+<!-- Attribute Selector -->
+<section class="container section-blue my-4 p-4 border rounded">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h2 class="mb-0">Attribute Selector </h2>
+  </div>
+
+  <div>
+    <p >
+    <strong>Definition</strong><br>
+    Targets elements based on the presence or value of an attribute. You can style elements that contain certain attributes or that match a specific attribute value. 
+ </p>
+ <div class="infographic-section">
+  <div class="alert alert-success">
+    <strong>Usage</strong>
+    <ul>
+      <li>
+        Use square brackets [] to specify the attribute.
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <p>Example:</p>
+  <pre><code>
+    input[type="text"] {
+    border: 1px solid black;
+  }
+  </code></pre>
+    <br>
+
+    <p>Explanation:</p>
+    In this example: 
+    <ul>
+      <li>This rule applies a black border to any &lt;input&gt; element with type="text". </li>
+       
+    </ul>
+
+    <p> HTML Example:</p>
+  <pre>
+    <code>
+      &lt;input type="text" placeholder="Text input with a border"&gt;
+      &lt;input type="password" placeholder="This won't be affected"&gt;   
+  </code>
+</pre>
+
+</section>

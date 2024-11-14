@@ -1,0 +1,65 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Review: CSS Selectors Overview</h2>
+  <p class="section-text intro">
+    Let's review what you’ve learned about CSS Selectors! CSS selectors are used to select and style HTML elements. There are different types of selectors, each with unique use cases:
+  </p>
+
+  <!-- Step 1: CSS Selectors -->
+  <section class="write-step">
+    <h4 class="subsection-title">1. Overview of CSS Selectors</h4>
+    <p class="section-text">
+      CSS selectors enable you to target specific HTML elements to apply styles. Below are some common selectors and their usage:
+    </p>
+    <ul>
+      <li><strong>Element Selector:</strong> Targets all instances of an element (e.g., <code>p</code>).</li>
+      <li><strong>Class Selector:</strong> Targets elements with a specific class (e.g., <code>.example</code>).</li>
+      <li><strong>ID Selector:</strong> Targets an element with a specific ID (e.g., <code>#header</code>).</li>
+      <li><strong>Attribute Selector:</strong> Targets elements based on attributes (e.g., <code>input[type="text"]</code>).</li>
+      <li><strong>Pseudo-classes:</strong> Targets elements based on state (e.g., <code>a:hover</code>).</li>
+      <li><strong>Pseudo-elements:</strong> Targets parts of elements (e.g., <code>p::first-line</code>).</li>
+    </ul>
+  </section>
+
+  <!-- Step 2: Dos of Using CSS Selectors -->
+  <section class="write-step infographic-section">
+    <div class="alert alert-info">
+      <strong>Do This</strong>
+      <ul>
+        <li>Use class selectors for reusable styles across multiple elements.</li>
+        <li>Apply ID selectors only for unique elements to prevent overriding issues.</li>
+        <li>Leverage pseudo-classes to enhance user interactions (e.g., <code>:hover</code> for buttons).</li>
+        <li>Use attribute selectors for form inputs or specific attributes when needed.</li>
+        <li>Combine selectors to reduce redundancy (e.g., <code>h1, h2, h3</code>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Step 3: Don'ts of Using CSS Selectors -->
+  <section class="write-step infographic-section">
+    <div class="alert alert-warning">
+      <strong>Don't Do This</strong>
+      <ul>
+        <li>Don't overuse ID selectors, as they can create high specificity issues.</li>
+        <li>Don't rely on overly specific selectors (e.g., <code>div > p > span</code>), making them hard to maintain.</li>
+        <li>Don't neglect adding <code>:focus</code> or other pseudo-classes for accessibility.</li>
+        <li>Don't apply global styles using the universal selector <code>*</code> unless necessary; it can impact performance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Step 4: Best Practices for CSS Selectors -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. Best Practices</h4>
+    <p class="section-text">
+      Follow these best practices when using CSS selectors:
+    </p>
+    <ul>
+      <li>Keep selectors simple and readable for better maintainability.</li>
+      <li>Use naming conventions like BEM (Block Element Modifier) to maintain consistent structure.</li>
+      <li>Write DRY (Don't Repeat Yourself) code by grouping similar selectors.</li>
+      <li>Utilize pseudo-elements for specific text and styling requirements (e.g., <code>::before</code>, <code>::after</code>).</li>
+      <li>Ensure responsive design by using media queries and avoiding hard-coded sizes.</li>
+    </ul>
+  </section>
+</section>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple webpage with error logging and external script integration."
+    />
+    <meta name="keywords" content="HTML, JavaScript, Console, Error Logging" />
+    <meta name="author" content="SimplyCoding" />
+
+    <!-- External Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/markdown.css"
+    />
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script
+      defer
+      src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/loadLesson.js"
+    ></script>
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/toggleColumn.js"></script>
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/editorFunction.js"></script>
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/debugConsole.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- Highlight.js auto-detection -->
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <title>Lesson Console Page</title>
+
+    <!-- Inline CSS for Console Textarea -->
+    <style>
+      #consoleOutput {
+        width: 100%;
+        height: 200px;
+        font-family: monospace;
+        background-color: #f5f5f5;
+        color: #333;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        resize: none;
+      }
+      #json-content {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container for the lesson content and console area -->
+    <div id="lesson-container" class="markdown-body">
+      <h1>Lesson Console</h1>
+      <p>
+        This is a simple page to show lesson content and errors in the console
+        below. If any errors occur in the external scripts, they will be
+        displayed in the console output area.
+      </p>
+      <div id="debug-content"></div>
+      <!-- Textarea for displaying errors and console output -->
+      <textarea
+        id="consoleOutput"
+        readonly
+        placeholder="Console output will appear here..."
+      ></textarea>
+    </div>
+    <button id="fetch-button">Fetch JSON Data</button>
+
+    <!-- Container to Display JSON Content -->
+    <div id="json-content">Click the button above to load JSON content.</div>
+
+    <!-- Enhanced Script to Capture Errors and Log them to the Console Textarea -->
+    <script>
+      // Reference to the textarea element for console output
+      const consoleOutput = document.getElementById("consoleOutput");
+
+      // Utility function to capture and display console messages
+      function captureConsoleOutput(method, args) {
+        const message = args
+          .map((arg) =>
+            typeof arg === "object" ? JSON.stringify(arg) : String(arg)
+          )
+          .join(" ");
+        consoleOutput.value += `[${method.toUpperCase()}] ${message}\n`;
+      }
+
+      // Override console methods to capture logs, errors, and warnings
+      ["log", "error", "warn"].forEach((method) => {
+        const original = console[method];
+        console[method] = function (...args) {
+          captureConsoleOutput(method, args);
+          original.apply(console, args);
+        };
+      });
+
+      // Capture unhandled errors
+      window.addEventListener("error", function (event) {
+        const message = `[ERROR] ${event.message} at ${event.filename}:${event.lineno}:${event.colno}`;
+        console.error(message);
+        return true; // Prevent the error from propagating further
+      });
+
+      // Capture unhandled promise rejections (e.g., async errors)
+      window.addEventListener("unhandledrejection", function (event) {
+        const message = `[PROMISE REJECTION] ${event.reason}`;
+        console.error(message);
+      });
+
+      // Test messages to confirm logging functionality works
+      console.log("Lesson page loaded successfully.");
+      console.warn("This is a test warning message.");
+      console.error("This is a test error message.");
+      const fetchButton = document.getElementById("fetch-button");
+      const jsonContentDiv = document.getElementById("json-content");
+
+      // Add event listener to the button
+      fetchButton.addEventListener("click", () => {
+        // Fetch the JSON file from the URL
+        fetch(
+          "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/main-content.json"
+        )
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(
+                `Network response was not ok: ${response.statusText}`
+              );
+              console.log(response.statusText);
+            }
+            console.log(response.json);
+            return response.json(); // Parse JSON data
+          })
+          .then((data) => {
+            // Display the JSON content in a readable format
+            jsonContentDiv.textContent = JSON.stringify(data, null, 4);
+          })
+          .catch((error) => {
+            // Display error if the fetch fails
+            jsonContentDiv.textContent = `Failed to load JSON content: ${error.message}`;
+            console.error("Fetch error:", error);
+          });
+      });
+    </script>
+  </body>
+</html>

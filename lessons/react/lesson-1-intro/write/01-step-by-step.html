@@ -1,0 +1,279 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Setting Up the HTML File</h2>
+  <p class="section-text intro">
+    The `index.html` file is the entry point of our React app. This file includes links to React, ReactDOM, and Babel,
+    allowing us to run React code directly in the browser.
+  </p>
+
+  <!-- Step 1: Create index.html -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create `index.html`</h4>
+    <p class="section-text">
+      In the root directory, create a new file named <code>index.html</code>. Add the following code for the initial
+      setup, including the root `div` element and links to React, ReactDOM, and Babel.
+    </p>
+    <div class="demo">
+      <pre><code>
+<!-- index.html -->
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;React App&lt;/title&gt;
+    &lt;script src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/@babel/standalone@7/babel.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="root"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section Title -->
+  <h2>Creating and Adding main.js for React Rendering</h2>
+  <p class="section-text intro">
+    The `main.js` file renders the `App` component into the root element. We’ll add this file to the HTML later once
+    `App.js` is created.
+  </p>
+
+  <!-- Step 1: Create main.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create `main.js`</h4>
+    <p class="section-text">
+      In the root directory, create a new file named <code>main.js</code>. Add the following code to render the `App`
+      component. Leave the HTML file open to add this script once the `App` component is ready.
+    </p>
+    <div class="demo">
+      <pre><code>
+// main.js
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(&lt;App /&gt;);
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section Title -->
+  <h2>Creating the App Component</h2>
+  <p class="section-text intro">
+    The `App.js` file will serve as the main container for our app. It will include the components we will make next.
+    Add the <code>h1</code> in the `App` component to display the title of the shopping list.
+    Add the `App.js` script to `index.html` after creating this file.
+  </p>
+
+  <!-- Step 1: Create App.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create `App.js`</h4>
+    <p class="section-text">
+      In the root directory, create a new file named <code>App.js</code>. Define the `App` component to render each
+      shopping list category.
+    </p>
+    <div class="demo">
+      <pre><code>
+// App.js
+function App() {
+  return (
+    &lt;div className="App"&gt;
+        &lt;h1&gt;Shopping List&lt;/h1&gt;
+    &lt;/div&gt;
+  );
+}
+      </code></pre>
+    </div>
+    <p class="section-text">
+      Now, add the `App.js` and `main.js` scripts to `index.html`.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;!-- index.html --&gt;
+...
+&lt;script type="text/babel" src="App.js" defer&gt;&lt;/script&gt;
+&lt;script type="text/babel" src="main.js" defer&gt;&lt;/script&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Section Title -->
+  <h2>Creating the FoodList Component</h2>
+  <p class="section-text intro">
+    The `FoodList.js` file defines the "Food" category. After creating this component, add it to `index.html`.
+  </p>
+
+  <!-- Step 1: Create FoodList.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create `FoodList.js`</h4>
+    <p class="section-text">
+      In the `components` folder, create a new file named <code>FoodList.js</code>. Define a function component named `FoodList` that returns 
+      a `div` element with an `h2` element with the value <code>Food</code> and an unordered list. Add 4 items to the list, 
+      feel free to use the values in the example below or use your own.
+    </p>
+    <div class="demo">
+      <pre><code>
+// FoodList.js
+function FoodList(){
+    return(
+        &lt;div&gt;
+            &lt;h2&gt;Food&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Flour&lt;/li&gt;
+                &lt;li&gt;Eggs&lt;/li&gt;
+                &lt;li&gt;Sugar&lt;/li&gt;
+                &lt;li&gt;Milk&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    );
+}
+      </code></pre>
+    </div>
+    <p class="section-text">
+      Add `FoodList.js` to `index.html`.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;!-- index.html --&gt;
+...
+&lt;script type="text/babel" src="/components/FoodList.js" defer&gt;&lt;/script&gt;
+      </code></pre>
+    </div>
+    <p>Now lets add our <code>FoodList</code> component to the App component.</p>
+    <div class="demo">
+      <pre><code>
+        // App.js
+        function App() {
+          return (
+            &lt;div className="App"&gt;
+                &lt;h1&gt;Shopping List&lt;/h1&gt;
+                &lt;FoodList /&gt;
+            &lt;/div&gt;
+          );
+        }
+              </code></pre>
+    </div>
+  </section>
+
+  <!-- Section Title -->
+  <h2>Creating the Essentials Component</h2>
+  <p class="section-text intro">
+    The `Essentials.js` file lists items that are considered essential. Add this component to `index.html` after
+    creating it.
+  </p>
+
+  <!-- Step 1: Create Essentials.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create `Essentials.js`</h4>
+    <p class="section-text">
+      In the `components` folder, create a new file named <code>Essentials.js</code>. Define a function component named `Essentials` that returns 
+      a `div` element with an `h2` element with the value <code>Essentials</code> and an unordered list. Add 4 items to the list, 
+      feel free to use the values in the example below or use your own.
+    </p>
+    <div class="demo">
+      <pre><code>
+// Essentials.js
+function Essentials(){
+    return(
+        &lt;div&gt;
+            &lt;h2&gt;Essentials&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Soap&lt;/li&gt;
+                &lt;li&gt;Toothpaste&lt;/li&gt;
+                &lt;li&gt;Shampoo&lt;/li&gt;
+                &lt;li&gt;Conditioner&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    );
+}
+      </code></pre>
+    </div>
+    <p class="section-text">
+      Add `Essentials.js` to `index.html`.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;!-- index.html --&gt;
+...
+&lt;script type="text/babel" src="/components/Essentials.js" defer&gt;&lt;/script&gt;
+      </code></pre>
+    </div>
+    <p>Now lets add our <code>Essentials</code> component to the App component.</p>
+    <div class="demo">
+      <pre><code>
+        // App.js
+        function App() {
+          return (
+            &lt;div className="App"&gt;
+                &lt;h1&gt;Shopping List&lt;/h1&gt;
+                &lt;FoodList /&gt;
+                &lt;Essentials /&gt;
+            &lt;/div&gt;
+          );
+        }
+              </code></pre>
+    </div>
+  </section>
+
+  <!-- Section Title -->
+  <h2>Creating the Clothes Component</h2>
+  <p class="section-text intro">
+    The `Clothes.js` file represents the "Clothes" category. Add this component to `index.html` after creating it.
+  </p>
+
+  <!-- Step 1: Create Clothes.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Create `Clothes.js`</h4>
+    <p class="section-text">
+      In the `components` folder, create a new file named <code>Clothes.js</code>. Define a function component named `Clothes` that returns 
+      a `div` element with an `h2` element with the value <code>Clothes</code> and an unordered list. Add 4 items to the list, 
+      feel free to use the values in the example below or use your own.
+    </p>
+    <div class="demo">
+      <pre><code>
+// Clothes.js
+function Clothes(){
+    return(
+        &lt;div&gt;
+            &lt;h2&gt;Clothes&lt;/h2&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Shirt&lt;/li&gt;
+                &lt;li&gt;Pants&lt;/li&gt;
+                &lt;li&gt;Shoes&lt;/li&gt;
+                &lt;li&gt;Socks&lt;/li&gt;
+            &lt;/ul&gt;
+       
+
+ &lt;/div&gt;
+    );
+}
+      </code></pre>
+    </div>
+    <p class="section-text">
+      Finally, add `Clothes.js` to `index.html`.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;!-- index.html --&gt;
+...
+&lt;script type="text/babel" src="/components/Clothes.js" defer&gt;&lt;/script&gt;
+      </code></pre>
+    </div>
+    <p>Now lets add our <code>Clothes</code> component to the App component.</p>
+    <div class="demo">
+      <pre><code>
+        // App.js
+        function App() {
+          return (
+            &lt;div className="App"&gt;
+                &lt;h1&gt;Shopping List&lt;/h1&gt;
+                &lt;FoodList /&gt;
+                &lt;Essentials /&gt;
+                &lt;Clothes /&gt;
+            &lt;/div&gt;
+          );
+        }
+              </code></pre>
+    </div>
+  </section>
+</section>

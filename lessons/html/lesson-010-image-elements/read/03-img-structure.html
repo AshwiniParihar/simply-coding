@@ -1,0 +1,175 @@
+<section class="infographic">
+  <div class="container">
+    <header class="header">
+      <h1 class="title">
+        <span class="highlight">Mastering</span> the Image Element
+        (<code>&lt;img&gt;</code>)
+      </h1>
+      <p class="subtitle">
+        The <code>&lt;img&gt;</code> element is your key to adding visual flair
+        to web pages. It employs
+        <span class="tooltip" data-tooltip="Specifies the image file URL"
+          ><code>src</code></span
+        >
+        for the source and
+        <span
+          class="tooltip"
+          data-tooltip="Provides text for screen readers or if the image fails to load"
+          ><code>alt</code></span
+        >
+        for accessibility.
+      </p>
+    </header>
+
+    <main class="grid">
+      <div class="card feature-card">
+        <div class="card-icon">&lt;img&gt;</div>
+        <h2 class="card-title">What is the &lt;img&gt; Tag?</h2>
+        <div class="card-content">
+          <p>
+            The <code>&lt;img&gt;</code> tag is your tool for embedding images
+            into HTML, making your sites vibrant and informative.
+          </p>
+          <ul class="feature-list">
+            <li>Self-closing tag - no end tag needed</li>
+            <li>Supports various image formats (JPG, PNG, GIF, WebP)</li>
+            <li>Part of HTML since the beginning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card syntax-card">
+        <div class="card-icon">{ }</div>
+        <h2 class="card-title">Basic Structure</h2>
+        <div class="example-container">
+          <pre
+            class="glow-box"
+          ><code>&lt;img src="path/to/image.jpg" alt="Description" /&gt;</code></pre>
+          <div class="example-notes">
+            <span class="tag-note">No closing tag required</span>
+            <span class="required-note"
+              >src and alt are required attributes</span
+            >
+          </div>
+        </div>
+        <div class="common-formats">
+          <h3>Common Image Formats</h3>
+          <div class="format-grid">
+            <div class="format">
+              <span class="format-name">.jpg</span>
+              <span class="format-desc">Photos</span>
+            </div>
+            <div class="format">
+              <span class="format-name">.png</span>
+              <span class="format-desc">Graphics</span>
+            </div>
+            <div class="format">
+              <span class="format-name">.webp</span>
+              <span class="format-desc">Optimized</span>
+            </div>
+            <div class="format">
+              <span class="format-name">.svg</span>
+              <span class="format-desc">Vectors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attributes-grid">
+        <div class="card">
+          <div class="card-icon">src</div>
+          <h2 class="card-title">Source Attribute</h2>
+          <div class="card-content">
+            <p>Directs to the image location.</p>
+            <div class="example-box">
+              <code>src="images/photo.jpg"</code>
+              <code>src="https://site.com/img.jpg"</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">alt</div>
+          <h2 class="card-title">Alt Attribute</h2>
+          <div class="card-content">
+            <p>Ensures accessibility, describing the image in text.</p>
+            <div class="example-box">
+              <code>alt="Red rose in bloom"</code>
+            </div>
+            <span class="best-practice"
+              >Best Practice: Be descriptive but concise</span
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">size</div>
+          <h2 class="card-title">Width & Height</h2>
+          <div class="card-content">
+            <p>Defines the image's dimensions.</p>
+            <div class="example-box">
+              <code>width="800" height="600"</code>
+              <code>width="100%" height="auto"</code>
+            </div>
+            <span class="best-practice"
+              >Prevents layout shift during loading</span
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">i</div>
+          <h2 class="card-title">Title & Loading</h2>
+          <div class="card-content">
+            <p>Additional attributes for enhanced functionality.</p>
+            <div class="attribute-list">
+              <div class="attribute-item">
+                <code>title="Hover text"</code>
+                <span>Shows tooltip on hover</span>
+              </div>
+              <div class="attribute-item">
+                <code>loading="lazy"</code>
+                <span>Enables lazy loading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card best-practices-card">
+        <div class="card-icon">★</div>
+        <h2 class="card-title">Best Practices</h2>
+        <div class="best-practices-grid">
+          <div class="practice-item">
+            <h4>Optimization</h4>
+            <p>Compress images and choose the right format</p>
+          </div>
+          <div class="practice-item">
+            <h4>Responsive</h4>
+            <p>Use srcset for responsive images</p>
+          </div>
+          <div class="practice-item">
+            <h4>Accessibility</h4>
+            <p>Always include meaningful alt text</p>
+          </div>
+          <div class="practice-item">
+            <h4>Performance</h4>
+            <p>Specify width/height to prevent layout shift</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="try-it-section">
+        <h3>Ready to Practice?</h3>
+        <button
+          class="try-it-out"
+          onclick='loadTryItOut("&lt;img src=\"https://placekitten.com/200/300\" alt=\"A cute kitten\" width=\"200\" height=\"300\" /&gt;", "", "")'
+        >
+          Try it out →
+        </button>
+      </div>
+    </footer>
+  </div>
+</section>

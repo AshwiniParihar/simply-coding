@@ -1,0 +1,152 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Review: Font Properties</h2>
+  <p class="section-text intro">
+    Font properties in CSS are used to control the appearance of text on a webpage. Here’s a quick review of the key font properties:
+  </p>
+
+  <!-- Step 1: font family -->
+  <section class="write-step">
+    <h4 class="subsection-title">1. font-family:</h4>
+    <p class="section-text">
+      Specifies the typeface for the text. It's used to define a prioritized list of font names. If the first font isn’t available, the browser will try the next one. It’s good practice to specify a fallback font.
+    </p>
+    <p>Example:</p>
+    <div class="demo">
+      <pre><code>
+        font-family: 'Arial', sans-serif;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: font size -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. font-size:</h4>
+    <p class="section-text">
+      Defines the size of the text. It can be specified in several units:
+    </p>
+    <section class="infographics" style="margin-bottom: 20px">
+    
+      <div class="infographic-section">
+     
+        <div class="infographic-attributes">
+          <div class="attribute">
+            <h5>px(Pixels)</h5>
+            <p>Fixed size.
+          </div>
+    
+          
+          <div class="attribute">
+            <h5>em</h5>
+            <p>
+              Relative to the font size of the parent element.
+            </p>
+          </div>
+    
+          <div class="attribute">
+            <h5>rem </h5>
+            <p>RRelative to the root element's font size</p>
+          </div>
+
+          <div class="attribute">
+            <h5>% </h5>
+            <p>Relative to the parent element’s font size</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Step 3: Width and Height Attributes -->
+  <section class="write-step">
+    <h4 class="subsection-title">3. font-weight</h4>
+    <p class="section-text">
+      Specifies the thickness or boldness of the text. It can be:
+    </p>
+    <ul>
+      <li>Normal (normal), bold (bold), or a numeric value (100 to 900).</li>
+    </ul>
+    <p>Example:</p>
+    <div class="demo">
+      <pre><code>
+        font-weight: bold;
+      </code></pre>
+    </div>
+  </section>
+  <section class="write-step">
+    <h4 class="subsection-title">4. font-style:</h4>
+    <p class="section-text">
+      Defines whether the text should be italicized or not.
+    </p>
+    <ul>
+      <li>Values: normal, italic, and oblique.</li>
+    </ul>
+    <p>Example:</p>
+    <div class="demo">
+      <pre><code>
+        font-style: italic;
+      </code></pre>
+    </div>
+  </section>
+  <section class="write-step">
+    <h4 class="subsection-title">text-align:</h4>
+    <p class="section-text">
+      Controls the horizontal alignment of text inside an element.
+    </p>
+    <ul>
+      <li>Values: left, right, center, and justify.</li>
+    </ul>
+    <p>Example:</p>
+    <div class="demo">
+      <pre><code>
+        text-align: center;
+      </code></pre>
+    </div>
+  </section>
+  <section class="write-step">
+    <h4 class="subsection-title">line-height: </h4>
+    <p class="section-text">
+      Sets the amount of space between lines of text, making text more readable.
+    </p>
+
+    <p>Example:</p>
+    <div class="demo">
+      <pre><code>
+        line-height: 1.5;
+      </code></pre>
+    </div>
+  </section>
+  <section class="write-step">
+    <h4 class="subsection-title">letter-spacing: </h4>
+    <p class="section-text">
+      Adjusts the spacing between characters (also called tracking). Increasing it spreads out characters; decreasing it brings them closer together.
+    </p>
+
+    <p>Example:</p>
+    <div class="demo">
+      <pre><code>
+        letter-spacing: 1px;
+      </code></pre>
+    </div>
+  </section>
+
+
+  <div class="alert alert-info mt-3">
+    <strong>Best Practices:</strong>
+    <ul>
+      <li>
+        Use rem and em for consistent, scalable designs.
+      </li>
+      <li>
+        Always include a fallback font in the font-family property to ensure that if the custom font fails, the text will still render properly.
+      </li>
+      <li>
+        Avoid using px for font size unless fixed size is necessary.
+      </li>
+      <li>
+        Combine different font properties for a balanced and accessible design.
+      </li>
+    </ul>
+  </div>
+  
+</section>

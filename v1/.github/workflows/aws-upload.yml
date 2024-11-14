@@ -1,0 +1,114 @@
+# name: Upload and Update Teaching Template Files to S3
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   upload-files:
+#     runs-on: ubuntu-latest
+#     name: Upload Teaching Files and Assets to S3 and Update JSON
+
+#     steps:
+#       # Step 1: Checkout the repository at the root level
+#       - name: Checkout Repository
+#         uses: actions/checkout@v3
+#         with:
+#           fetch-depth: 0
+
+#       # Step 2: Debugging - List root directory structure to verify files
+#       - name: List Root Directory Structure
+#         run: |
+#           echo "Listing root directory after checkout:"
+#           ls -R
+
+#       # Step 3: Setup Node.js environment
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "14"
+
+#       # Step 4: Install dependencies (if you have any scripts in package.json)
+#       - name: Install Dependencies
+#         run: npm install
+
+#       # Step 5: Configure AWS Credentials
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v1
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: us-west-2
+
+#       # Step 6: Sync and Upload lesson content to the correct S3 path (without --delete)
+#       - name: Upload HTML Lessons to S3
+#         run: |
+#           for dir in lessons/html/*; do
+#             if [ -d "$dir" ]; then
+#               aws s3 sync "$dir" s3://sc-course-materials/frontend-course/lessons/html/$(basename "$dir")/ --exclude "*.json" --acl public-read
+#             fi
+#           done
+
+#       - name: Upload CSS Lessons to S3
+#         run: |
+#           for dir in lessons/css/*; do
+#             if [ -d "$dir" ]; then
+#               aws s3 sync "$dir" s3://sc-course-materials/frontend-course/lessons/css/$(basename "$dir")/ --exclude "*.json" --acl public-read
+#             fi
+#           done
+
+#       - name: Upload JS Lessons to S3
+#         run: |
+#           for dir in lessons/js/*; do
+#             if [ -d "$dir" ]; then
+#               aws s3 sync "$dir" s3://sc-course-materials/frontend-course/lessons/js/$(basename "$dir")/ --exclude "*.json" --acl public-read
+#             fi
+#           done
+
+#       # Step 7: Sync and Upload assets to the correct S3 path (without --delete)
+#       - name: Upload HTML Assets to S3
+#         run: |
+#           aws s3 sync assets/html/ s3://sc-course-materials/frontend-course/assets/html/ --acl public-read
+
+#       - name: Upload CSS Assets to S3
+#         run: |
+#           aws s3 sync assets/css/ s3://sc-course-materials/frontend-course/assets/css/ --acl public-read
+
+#       - name: Upload JS Assets to S3
+#         run: |
+#           aws s3 sync assets/js/ s3://sc-course-materials/frontend-course/assets/js/ --acl public-read
+
+#       - name: Upload Website Assets to S3
+#         run: |
+#           aws s3 sync assets/website/ s3://sc-course-materials/frontend-course/assets/website/ --acl public-read
+
+#       # Step 8: Download existing `main-content.json` files from S3 to update paths
+#       - name: Download existing JSON files from S3
+#         run: |
+#           for file in $(aws s3 ls s3://sc-course-materials/frontend-course/lessons/ --recursive | grep 'main-content.json' | awk '{print $4}'); do
+#             local_path="${file#frontend-course/}"
+#             mkdir -p $(dirname $local_path)
+#             aws s3 cp s3://sc-course-materials/$file $local_path
+#           done
+
+#       # Step 9: Update each `main-content.json` file with new S3 URLs using a Node.js script
+#       - name: Update JSON file paths for each lesson and asset
+#         run: |
+#           node scripts/updateLessonJson.js
+
+#       # Step 10: Upload the updated `main-content.json` files back to S3 with corrected paths
+#       - name: Upload Updated JSON files to S3
+#         run: |
+#           for file in $(find lessons -name "main-content.json"); do
+#             relative_path=${file#lessons/}
+#             aws s3 cp $file s3://sc-course-materials/frontend-course/lessons/$relative_path --acl public-read
+#           done
+
+#       # Step 11: Commit updated JSON files back to GitHub if changes were made
+#       - name: Commit changes to GitHub
+#         run: |
+#           git config --global user.name "github-actions[bot]"
+#           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+#           git add lessons/**/*.json
+#           git diff --quiet && git diff --staged --quiet || (git commit -m "Updated JSON file paths with new S3 URLs" && git push)

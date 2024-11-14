@@ -1,0 +1,56 @@
+<section class="container my-4 p-3 border rounded">
+  <div class="d-flex align-items-center justify-content-start mb-3">
+    <!-- Title -->
+    <img
+      class="lesson-title-tag"
+      src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/registration.gif"
+      alt="Lesson Animation"
+    />
+    <h1 class="ms-3">Lesson 15: Input Tags</h1>
+  </div>
+
+  <!-- Lesson Content -->
+  <div>
+    <p class="mb-2">This lesson covers:</p>
+    <ol class="list-group list-group-numbered mb-3">
+      <li class="list-group-item">Introduction To Inputs</li>
+      <li class="list-group-item">Basic Input Structure</li>
+      <li class="list-group-item">Types of Input Tags</li>
+      <li class="list-group-item">Attributes for Input Tags</li>
+      <li class="list-group-item">Label Element</li>
+      <li class="list-group-item">Grouping Input Elements</li>
+      <li class="list-group-item">Basic Input Validation</li>
+    </ol>
+
+    <!-- Rendered Example -->
+    <div class="card p-3 mb-3">
+      <p class="mb-2">Here is an example of an input form:</p>
+      <form class="input-form-example">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <p class="text-muted mt-2">
+        <em>Complete the form and see how it validates your input!</em>
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,130 @@
+<section class="section-blue">
+  <h4>Advanced Lists in HTML</h4>
+
+  <!-- Introduction to Advanced Lists -->
+  <p>
+    Now that you've learned the basics of unordered, ordered, and description lists, 
+    let's explore some advanced topics that can make your lists more functional and visually appealing. 
+    This section covers attributes, nesting, styling, and accessibility to enhance your lists further.
+  </p>
+
+  <!-- Using HTML Attributes for Lists -->
+  <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-def" 
+      data-bs-title="Attributes like 'start', 'reversed', and 'type' change the way lists are displayed.">
+    1. Using HTML Attributes for Ordered Lists
+  </h5>
+  <p>
+    HTML attributes allow you to customize ordered lists in various ways, such as changing the starting point 
+    or reversing the order of list items.
+  </p>
+  <pre>
+&lt;ol <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+      data-bs-title="The 'start' attribute defines the initial numbering of the list. In this case, it starts from 3.">start="3"</span>&gt;
+    &lt;li&gt;Continue baking&lt;/li&gt;
+    &lt;li&gt;Let it cool&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+      data-bs-title="The 'type' attribute changes the numbering style. Here, it uses Roman numerals ('I').">type="I"</span>&gt;
+    &lt;li&gt;First Roman numeral item&lt;/li&gt;
+    &lt;li&gt;Second Roman numeral item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+      data-bs-title="The 'reversed' attribute reverses the order of the list.">reversed</span>&gt;
+    &lt;li&gt;Step 3&lt;/li&gt;
+    &lt;li&gt;Step 2&lt;/li&gt;
+    &lt;li&gt;Step 1&lt;/li&gt;
+&lt;/ol&gt;
+  </pre>
+
+  <!-- Styling Lists with CSS -->
+  <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-def" 
+      data-bs-title="CSS can enhance the appearance of lists, adding custom bullets or changing layout.">
+    2. Styling Lists with CSS
+  </h5>
+  <p>
+    CSS can be used to enhance the appearance of lists by changing bullet styles, adjusting spacing, 
+    and even adding custom icons as bullets.
+  </p>
+  <pre>
+&lt;style&gt;
+  ul.custom-list {
+      <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+            data-bs-title="The 'list-style-type' property changes the bullet style. Here, it sets the bullets to squares.">list-style-type: square;</span>
+  }
+  ul.icon-list li {
+      <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+            data-bs-title="The 'list-style' property replaces the bullet with a custom icon, like an image URL.">list-style: url('custom-icon.png');</span>
+  }
+&lt;/style&gt;
+
+&lt;ul class="custom-list"&gt;
+    &lt;li&gt;Styled with a square bullet&lt;/li&gt;
+    &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="icon-list"&gt;
+    &lt;li&gt;Styled with a custom icon&lt;/li&gt;
+    &lt;li&gt;Another icon item&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+
+  <!-- Semantic vs. Non-Semantic Lists -->
+  <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-def" 
+      data-bs-title="Semantic HTML helps browsers understand the context of your lists, improving SEO and accessibility.">
+    3. Semantic vs. Non-Semantic Lists
+  </h5>
+  <p>
+    Semantic HTML enhances the meaning of your lists, helping both search engines and assistive technologies 
+    understand the content more clearly. Use lists semantically to indicate structure, such as step-by-step instructions 
+    or hierarchical data.
+  </p>
+  <p>
+    <strong>Example:</strong> Use `<ol>` for ordered steps, `<ul>` for grouped items, 
+    and `<dl>` for defining terms and descriptions.
+  </p>
+
+  <!-- Accessibility Considerations for Lists -->
+  <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-def" 
+      data-bs-title="Accessible lists improve the experience for users with disabilities, making content easier to navigate.">
+    4. Accessibility Considerations for Lists
+  </h5>
+  <p>
+    Making lists accessible ensures that users with disabilities can navigate and understand your content. 
+    Use descriptive labels and maintain clear list structures.
+  </p>
+  <p>
+    <strong>Example:</strong> Use the <span data-bs-toggle="tooltip" data-bs-placement="top" 
+    data-bs-custom-class="tooltip-code" data-bs-title="The 'aria-label' attribute gives context to screen readers, improving accessibility.">`aria-label`</span> 
+    attribute to provide context for lists, such as:
+  </p>
+  <pre>
+&lt;ul <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+      data-bs-title="The 'aria-label' attribute improves screen reader context by describing the list.">aria-label="Ingredients for pancakes"</span>&gt;
+    &lt;li&gt;1 cup of flour&lt;/li&gt;
+    &lt;li&gt;1 tablespoon of sugar&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+
+  <!-- Debugging List Issues -->
+  <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-def" 
+      data-bs-title="Debugging common list issues, like broken nesting or missing tags, helps maintain clean code.">
+    5. Debugging List Issues
+  </h5>
+  <p>
+    Debugging lists involves checking for missing closing tags, ensuring correct nesting, 
+    and maintaining consistency in styling. Use browser developer tools to inspect and modify lists 
+    in real time to identify issues.
+  </p>
+
+  <!-- Advanced Lists Wrap-up -->
+  <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-def" 
+      data-bs-title="Understanding advanced list topics helps you build more robust, accessible, and styled lists.">
+    Summary of Advanced Lists
+  </h5>
+  <p>
+    Mastering advanced list topics allows you to create more structured, visually appealing, and accessible content. 
+    Remember to use the right attributes, maintain proper nesting, and incorporate CSS for enhanced styling.
+  </p>
+</section>

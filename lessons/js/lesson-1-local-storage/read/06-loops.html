@@ -1,0 +1,185 @@
+<!-- Section 1: html forms-->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <p></p>
+      <h2>HTML Form Input: Text Field</h2>
+      <p>
+        An <strong>HTML form input</strong> allows users to enter data. A
+        <strong>text field</strong> (<code>&lt;input type="text"&gt;</code>) is
+        used to collect single-line text input.
+      </p>
+
+      <h3>Example:</h3>
+      <pre>
+&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" placeholder="Enter your name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+  </pre
+      >
+
+      <h3>Key Attributes:</h3>
+      <ul>
+        <li>
+          <strong><code>id</code>/<code>name</code></strong
+          >: Identifies the input field.
+        </li>
+        <li>
+          <strong><code>placeholder</code></strong
+          >: Displays hint text.
+        </li>
+        <li>
+          <strong><code>value</code></strong
+          >: Sets a default input value.
+        </li>
+        <li>
+          <strong><code>maxlength</code>/<code>minlength</code></strong
+          >: Limits input length.
+        </li>
+        <li>
+          <strong><code>required</code></strong
+          >: Ensures input must be filled.
+        </li>
+      </ul>
+
+      <p>
+        When the user clicks on the text field, it gains
+        <strong>focus</strong> (indicated visually), enabling input.
+      </p>
+    </div>
+    <div class="trail-content">
+      <img
+        class="trailing-image"
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"
+        alt="HTML5 Logo"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Relationship between HTML, CSS, and JavaScript -->
+
+<!-- Section 3: The Role of HTML -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h2>Explanation of JavaScript Loops</h2>
+      <p>
+        JavaScript loops allow you to execute a block of code multiple times.
+        Below are four commonly used loops:
+      </p>
+
+      <h3>1. <code>for</code> Loop</h3>
+      <p>
+        The <code>for</code> loop runs a block of code a specific number of
+        times.
+      </p>
+      <pre><code>
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+// Output: 0 1 2 3 4
+  </code></pre>
+      <ul>
+        <li>
+          <strong>Use Case:</strong> When the number of iterations is known in
+          advance.
+        </li>
+        <li>
+          <strong>Syntax:</strong> It contains three parts: initialization,
+          condition, and increment.
+        </li>
+      </ul>
+
+      <h3>2. <code>forEach()</code> Loop</h3>
+      <p>
+        The <code>forEach()</code> loop runs a function on each element of an
+        array.
+      </p>
+      <pre><code>
+const fruits = ['apple', 'banana', 'cherry'];
+fruits.forEach(fruit => {
+  console.log(fruit);
+});
+// Output: apple banana cherry
+  </code></pre>
+      <ul>
+        <li>
+          <strong>Use Case:</strong> When you need to perform actions on each
+          array element.
+        </li>
+        <li>
+          <strong>Note:</strong> <code>forEach()</code> works only on arrays.
+        </li>
+      </ul>
+
+      <h3>3. <code>for...of</code> Loop</h3>
+      <p>
+        The <code>for...of</code> loop iterates over iterable objects like
+        arrays, strings, or sets.
+      </p>
+      <pre><code>
+const letters = 'ABC';
+for (const letter of letters) {
+  console.log(letter);
+}
+// Output: A B C
+  </code></pre>
+      <ul>
+        <li>
+          <strong>Use Case:</strong> When you want to iterate over the values of
+          an iterable object.
+        </li>
+        <li>
+          <strong>Note:</strong> It gives direct access to the elements, not
+          their indexes.
+        </li>
+      </ul>
+
+      <h3>4. <code>for...in</code> Loop</h3>
+      <p>
+        The <code>for...in</code> loop iterates over the keys (properties) of an
+        object.
+      </p>
+      <pre><code>
+const person = { name: 'Alice', age: 25 };
+for (const key in person) {
+  console.log(key + ': ' + person[key]);
+}
+// Output: name: Alice age: 25
+  </code></pre>
+      <ul>
+        <li>
+          <strong>Use Case:</strong> When you need to loop through an object's
+          properties.
+        </li>
+        <li>
+          <strong>Note:</strong> Avoid using <code>for...in</code> on arrays as
+          it loops through all enumerable properties, not just indexes.
+        </li>
+      </ul>
+
+      <h2>Summary:</h2>
+      <ul>
+        <li><code>for</code>: Use when you know how many times to loop.</li>
+        <li>
+          <code>forEach()</code>: Use for arrays to execute a function on each
+          element.
+        </li>
+        <li>
+          <code>for...of</code>: Use for iterating over values in iterable
+          objects.
+        </li>
+        <li>
+          <code>for...in</code>: Use for looping over properties in an object.
+        </li>
+      </ul>
+      <button class="next-btn">
+        Next Section
+        <span style="display: inline-block; transform: rotate(270deg)">▼</span>
+      </button>
+    </div>
+  </div>
+</section>

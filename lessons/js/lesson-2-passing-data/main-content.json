@@ -1,0 +1,88 @@
+{
+  "title": "Lesson 1: Local Storage",
+  "lessonID": "lessonJS001",
+  "videoUrl": "/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/00-overview.html"
+        },
+        {
+          "title": "Forms and Type Submit",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/01-form-type-submit.html"
+        },
+        {
+          "title": "Prevent Default",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/02-prevent-default.html"
+        },
+        {
+          "title": "Window Location",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/03-window-location.html"
+        },
+        {
+          "title": "Local Storage & URI",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/04-local-storage-uri.html"
+        },
+        {
+          "title": "Ticks vs Single Quotes",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/read/05-ticks-vs-quotes.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/write/00-section-overview.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-2-passing-data/create/00-section-overview.html"
+        }
+      ]
+    }
+  }
+}

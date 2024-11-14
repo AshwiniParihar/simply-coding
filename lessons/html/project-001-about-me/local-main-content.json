@@ -1,0 +1,115 @@
+{
+  "title": "Project: About Me",
+  "lessonID": "projectHTML001",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Project Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/lesson-overview.html"
+        },
+        {
+          "title": "1. What We Will Build",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/what-we-will-build.html"
+        }
+      ]
+    },
+    "Review": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Review",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/00-overview.html"
+        },
+        {
+          "title": "1. HTML Structure",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/01-review-html-structure.html"
+        },
+        {
+          "title": "2. Heading Tag",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/02-review-h-tags.html"
+        },
+        {
+          "title": "3. Paragaph Tag",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/03-review-p-tags.html"
+        },
+        {
+          "title": "4. Self Closing Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/04-review-self-closing-tags.html"
+        },
+        {
+          "title": "5. Word Processing Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/read/05-review-word-processing-tags.html"
+        }
+      ]
+    },
+    "Setup": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>About Me!</title>\n  </head>\n  <body>\n X\n  </body>\n</html>\n"
+      },
+
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/write/00-overview.html"
+        },
+        {
+          "title": "1. Add a Header",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/write/01-add-header.html"
+        },
+        {
+          "title": "2. Add a Paragraph",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/write/02-add-paragraph.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!-- Step 1. Begin with a HTML Skeleton-->\n<!-- Step 2. Add a Main Heading  -->\n<!-- Step 3. Add Content -->\n<!-- Step 4. Repeat -->"
+      },
+      "content": [
+        {
+          "title": "Objective",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/create/00-overview.html"
+        },
+        {
+          "title": "Begginer Path",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/create/01-begginer.html"
+        },
+        {
+          "title": "Advanced Path",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/create/02-advanced.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/project-1-about-me/create/03-solution.html"
+        }
+      ]
+    }
+  }
+}

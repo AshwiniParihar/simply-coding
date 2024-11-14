@@ -1,0 +1,62 @@
+<!-- Hints Tab in Create Section -->
+<section class="rendered-code">
+  <h3>HTML File</h3>
+  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;CSS Cascade Practice&lt;/title&gt;
+&lt;style&gt;
+        /* Internal Styles */
+        #box2 p {
+            color: green;
+        }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="box1"&gt;
+&lt;p style="color: red;"&gt;This is the first paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="box2"&gt;
+&lt;p&gt;This is the second paragraph.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</section>
+<p>External CSS</p>
+<pre><code>
+  /* External Styles */
+  .box1 {
+      background-color: lightblue;
+      width: 300px;
+      height: 100px;
+      margin: 20px;
+  }
+
+  #box2 {
+      background-color: lightgreen;
+      width: 300px;
+      height: 100px;
+      margin: 20px;
+  }
+</code></pre>
+
+
+  <!-- Explanation of Solutions -->
+  <section class="section-container solution-section">
+    <h2 class="section-title">Explanation of Solutions</h2>
+    <ul class="instruction-list">
+      <li>box1 will have a light blue background, and the paragraph inside will be red due to the inline CSS.</li>
+      <li>box2 will have a light green background, and the paragraph inside will be green due to internal CSS.</li>
+    </ul>
+  </section>
+  <!-- Call to Action -->
+  <div class="text-end mt-3">
+    <button class="btn btn-primary" onclick="loadNextChallenge()">
+      Next Challenge →
+    </button>
+  </div>
+</section>

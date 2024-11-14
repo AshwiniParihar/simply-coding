@@ -1,0 +1,83 @@
+/* Style headers */
+.markdown-body {
+  color: #333333; /*default text color*/
+  background-color: #ffffff;
+}
+
+.markdown-body img { /* override background color for images */
+  background-color: transparent;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  color: #333333; /* Customize header color */
+  font-family: "Roboto", sans-serif; /* Set a custom font */
+  margin-left: 16px;
+}
+
+/* Style paragraphs */
+.markdown-body p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Style blockquotes */
+.markdown-body blockquote {
+  color: #555;
+  border-left: 4px solid #ddd;
+  padding-left: 16px;
+  margin-left: 0;
+  font-style: italic;
+}
+
+/* Style lists */
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 20px;
+}
+
+.markdown-body li {
+  margin-bottom: 8px;
+}
+
+/* Style links */
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+/* Style inline code */
+.markdown-body code {
+  background-color: #7b2b9e;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+}
+
+/* Style code blocks */
+/*.markdown-body pre {
+  background-color: #131313;
+  color: #dcdcdc;
+  padding: 0px;
+  !*border-radius: 5px;*!
+  overflow-x: auto;
+}*/
+
+/* Style tables */
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}

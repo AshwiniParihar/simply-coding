@@ -1,0 +1,142 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Review: Setting Up a React App with CDNs and Components</h2>
+  <p class="section-text intro">
+    Let's review the steps to set up a basic React application using CDNs and organizing multiple components in separate files.
+  </p>
+
+  <!-- Step 1: HTML Structure -->
+  <section class="write-step">
+    <h4 class="subsection-title">1. HTML Structure</h4>
+    <p class="section-text">
+      In the <code>index.html</code> file, we include the necessary CDN links for React, ReactDOM, and Babel, and set up <code>&lt;script&gt;</code> tags to load each component and the main entry files.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;React App&lt;/title&gt;
+  &lt;script src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+  &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+  &lt;script src="https://unpkg.com/@babel/standalone@7/babel.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="root"&gt;&lt;/div&gt;
+  &lt;script type="text/babel" src="/components/FoodList.js" defer&gt;&lt;/script&gt;
+  &lt;script type="text/babel" src="/components/Essentials.js" defer&gt;&lt;/script&gt;
+  &lt;script type="text/babel" src="/components/Clothes.js" defer&gt;&lt;/script&gt;
+  &lt;script type="text/babel" src="App.js" defer&gt;&lt;/script&gt;
+  &lt;script type="text/babel" src="main.js" defer&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Main Rendering File (main.js) -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. Main Rendering File (main.js)</h4>
+    <p class="section-text">
+      In the <code>main.js</code> file, we render our main component <code>App</code> to the root element.
+    </p>
+    <div class="demo">
+      <pre><code>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(&lt;App /&gt;);
+      </code></pre>
+    </div>
+    <div class="tip-box">
+        <strong>Tip:</strong> Using this approach, our <code>main.js</code> file remains clean and focused on rendering the main component. Any additional logic or setup can be added to the <code>App</code> component.
+      </div>
+  </section>
+<!-- Step 3: Setting up the App.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">3. Setting up the App.js</h4>
+    <p class="section-text">
+      In the <code>app.js</code> file, we render any additional components or elements needed for our application.
+    </p>
+    <div class="demo">
+        <pre><code>
+          // App.js
+          function App() {
+            return (
+              &lt;div className="App"&gt;
+                  &lt;h1&gt;Shopping List&lt;/h1&gt;
+                  &lt;FoodList /&gt;
+                  &lt;Essentials /&gt;
+                  &lt;Clothes /&gt;
+              &lt;/div&gt;
+            );
+          }
+                </code></pre>
+      </div>
+    <div class="tip-box">
+        <strong>Tip:</strong> Using this approach, our <code>App.js</code> file's main purpose is to render our other components. This allows us to keep our code organized and maintainable.
+      </div>
+  </section>
+
+  <!-- Step 3: Creating Components -->
+  <section class="write-step">
+    <h4 class="subsection-title">3. Creating Components</h4>
+    <p class="section-text">
+      Each component is stored in its own file. For example, <code>FoodList</code>, <code>Essentials</code>, and <code>Clothes</code> each contain a specific list and are written in a modular way.
+    </p>
+
+    <!-- FoodList.js -->
+    <div class="demo">
+      <h5>Example: FoodList.js</h5>
+      <pre><code>
+function FoodList(){
+  return(
+    &lt;div&gt;
+      &lt;h2&gt;Food&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Flour&lt;/li&gt;
+        &lt;li&gt;Eggs&lt;/li&gt;
+        &lt;li&gt;Sugar&lt;/li&gt;
+        &lt;li&gt;Milk&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  )
+}
+      </code></pre>
+    </div>
+    <div class="tip-box">
+        <strong>Tip:</strong> Keep your component names short and descriptive. Also, your file names should match the component names.
+      </div>
+  </section>
+
+  <!-- Step 4: Complete Example Code -->
+  <section class="write-step">
+    <h4 class="subsection-title">4. Complete Example Code</h4>
+    <p class="section-text">
+      Here’s an example combining the CDN setup, the main rendering file, and component files:
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  ...
+  &lt;script src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+  &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+  &lt;script src="https://unpkg.com/@babel/standalone@7/babel.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="root"&gt;&lt;/div&gt;
+  &lt;script type="text/babel" src="/components/FoodList.js" defer&gt;&lt;/script&gt;
+  &lt;script type="text/babel" src="main.js" defer&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </div>
+    <div class="tip-box">
+      <strong>Tip:</strong> Using separate files helps to keep the code organized and manageable.
+    </div>
+  </section>
+  <div class="tip-box">
+    <strong>Final Tip:</strong> As your React projects grow, the benefits of React's component-based approach become increasingly clear. It helps keep your code organized, manageable, and easier to maintain.
+  </div>
+</section>

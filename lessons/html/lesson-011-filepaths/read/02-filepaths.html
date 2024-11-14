@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/markdown.css"
+    />
+
+    <link
+      href="/v2/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="/v2/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/v2/css/content-style.css" />
+    <link rel="stylesheet" href="/v2/css/code-editor.css" />
+    <link rel="stylesheet" href="/v2/css/code-editor-buttons.css" />
+    <link rel="stylesheet" href="/v2/css/sections.css" />
+    <link rel="stylesheet" href="/v2/css/icon-styles.css" />
+    <link rel="stylesheet" href="/v2/css/tabs.css" />
+    <link rel="stylesheet" href="/v2/css/stepper.css" />
+    <link rel="stylesheet" href="/v2/css/tool-tip.css" />
+    <link rel="stylesheet" href="/v2/css/code-color.css" />
+    <link rel="stylesheet" href="/v2/css/info-graphic.css" />
+    <link rel="stylesheet" href="/v2/css/github-dark-min.css" />
+  </head>
+  <body>
+    <!-- Image Tag Infographic Section -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+          rel="stylesheet"
+          href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/markdown.css"
+        />
+
+        <link
+          href="/v2/vendor/bootstrap/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous"
+        />
+        <link
+          href="/v2/vendor/bootstrap/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/v2/css/content-style.css" />
+        <link rel="stylesheet" href="/v2/css/code-editor.css" />
+        <link rel="stylesheet" href="/v2/css/code-editor-buttons.css" />
+        <link rel="stylesheet" href="/v2/css/sections.css" />
+        <link rel="stylesheet" href="/v2/css/icon-styles.css" />
+        <link rel="stylesheet" href="/v2/css/tabs.css" />
+        <link rel="stylesheet" href="/v2/css/stepper.css" />
+        <link rel="stylesheet" href="/v2/css/tool-tip.css" />
+        <link rel="stylesheet" href="/v2/css/code-color.css" />
+        <link rel="stylesheet" href="/v2/css/info-graphic.css" />
+        <link rel="stylesheet" href="/v2/css/github-dark-min.css" />
+      </head>
+      <body>
+        <!-- Image Tag Infographic Section -->
+        <!-- File Path Infographic Section -->
+        <!-- File Path Infographic Section -->
+        <section class="infographics" style="margin-bottom: 20px">
+          <!-- Section 1: What is a File Path? -->
+          <div class="infographic-section">
+            <h2>What is a File Path?</h2>
+            <p>
+              A file path is the address or location of a file within your
+              website’s directory structure. File paths allow you to link files
+              such as images, stylesheets, and scripts.
+            </p>
+            <p>
+              File paths in HTML tell the browser where to find files or
+              resources to display or run within a web page.
+            </p>
+          </div>
+
+          <!-- Section 2: Basic Structure of File Paths -->
+          <div class="infographic-section">
+            <h2>Basic Structure of File Paths</h2>
+            <pre>
+      <code>&lt;a href="folder/file.html"&gt;Link to File&lt;/a&gt;</code>
+    </pre>
+            <p>
+              File paths can be structured as either
+              <strong>relative</strong> or <strong>absolute</strong>, depending
+              on the location of the file relative to the page it is linked
+              from.
+            </p>
+          </div>
+
+          <!-- Section 3: Types of File Paths -->
+          <div class="infographic-section">
+            <h2>Types of File Paths</h2>
+            <div class="infographic-attributes">
+              <!-- Relative Path Card -->
+              <div class="attribute">
+                <h5>Relative Path</h5>
+                <p>
+                  Links to a file based on its location relative to the current
+                  page.
+                </p>
+                <div
+                  class="icon-circle"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRelativePath"
+                >
+                  ...
+                </div>
+              </div>
+
+              <!-- Absolute Path Card -->
+              <div class="attribute">
+                <h5>Absolute Path</h5>
+                <p>
+                  Links to a file using the full URL, which includes the domain.
+                </p>
+                <div
+                  class="icon-circle"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalAbsolutePath"
+                >
+                  ...
+                </div>
+              </div>
+
+              <!-- Parent Directory Path Card -->
+              <div class="attribute">
+                <h5>Parent Directory (../)</h5>
+                <p>
+                  Moves up one level in the directory structure, useful for
+                  accessing files in the parent folder.
+                </p>
+                <div
+                  class="icon-circle"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalParentDirectory"
+                >
+                  ...
+                </div>
+              </div>
+
+              <!-- Current Directory Path Card -->
+              <div class="attribute">
+                <h5>Current Directory (./)</h5>
+                <p>
+                  Refers to the current folder, often used when linking files
+                  within the same folder.
+                </p>
+                <div
+                  class="icon-circle"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCurrentDirectory"
+                >
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: File Path Scenarios -->
+          <div class="infographic-section">
+            <h2>File Path Scenarios</h2>
+            <p>Let's look at some scenarios to better understand file paths:</p>
+
+            <div class="row">
+              <!-- Same Folder Scenario -->
+              <div class="col-md-6">
+                <div class="card p-3 mb-3">
+                  <p class="mb-2">
+                    Starting from <code>index.html</code> in the same folder,
+                    link to an image file:
+                  </p>
+                  <div
+                    style="
+                      width: 300px;
+                      border: 1px solid #ddd;
+                      padding: 10px;
+                      background-color: #fff;
+                      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                      border-radius: 8px;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <span style="margin-right: 8px">📁</span
+                      ><strong>Project</strong>
+                    </div>
+                    <div style="margin-left: 20px">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📄</span>index.html
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">🖼️</span>image.jpg
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    <em>Relative File Path: image.jpg</em>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Subfolder Scenario -->
+              <div class="col-md-6">
+                <div class="card p-3 mb-3">
+                  <p class="mb-2">
+                    Starting from <code>index.html</code> in the main folder,
+                    link to an image in a subfolder:
+                  </p>
+                  <div
+                    style="
+                      width: 300px;
+                      border: 1px solid #ddd;
+                      padding: 10px;
+                      background-color: #fff;
+                      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                      border-radius: 8px;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <span style="margin-right: 8px">📁</span
+                      ><strong>Project</strong>
+                    </div>
+                    <div style="margin-left: 20px">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📄</span>index.html
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📁</span
+                        ><strong>images</strong>
+                      </div>
+                      <div style="margin-left: 20px">
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            padding: 5px 10px;
+                          "
+                        >
+                          <span style="margin-right: 8px">🖼️</span>logo.png
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    <em>Relative File Path: images/logo.png</em>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Parent Folder Scenario -->
+              <div class="col-md-6">
+                <div class="card p-3 mb-3">
+                  <p class="mb-2">
+                    Starting from <code>index.html</code> in a subfolder, link
+                    to a file in the parent folder:
+                  </p>
+                  <div
+                    style="
+                      width: 300px;
+                      border: 1px solid #ddd;
+                      padding: 10px;
+                      background-color: #fff;
+                      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                      border-radius: 8px;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <span style="margin-right: 8px">📁</span
+                      ><strong>Project</strong>
+                    </div>
+                    <div style="margin-left: 20px">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📄</span>logo.png
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📁</span
+                        ><strong>subfolder</strong>
+                      </div>
+                      <div style="margin-left: 20px">
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            padding: 5px 10px;
+                          "
+                        >
+                          <span style="margin-right: 8px">📄</span>index.html
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    <em>Relative File Path: ../logo.png</em>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Root Directory Scenario -->
+              <div class="col-md-6">
+                <div class="card p-3 mb-3">
+                  <p class="mb-2">
+                    Starting from <code>index.html</code> in the root, link to
+                    another file in the root directory:
+                  </p>
+                  <div
+                    style="
+                      width: 300px;
+                      border: 1px solid #ddd;
+                      padding: 10px;
+                      background-color: #fff;
+                      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                      border-radius: 8px;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <span style="margin-right: 8px">📁</span
+                      ><strong>Root</strong>
+                    </div>
+                    <div style="margin-left: 20px">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📄</span>style.css
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📄</span>index.html
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          padding: 5px 10px;
+                        "
+                      >
+                        <span style="margin-right: 8px">📄</span>logo.png
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-muted">
+                    <em>Relative File Path: /style.css</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Mistakes Section -->
+          <section class="infographics">
+            <div class="infographic-section">
+              <div class="alert alert-danger">
+                <strong>Common Mistakes</strong>
+                <ul>
+                  <li>
+                    Forgetting to use relative paths, which can cause broken
+                    links when moving files.
+                  </li>
+                  <li>
+                    Using absolute paths in local files, which can make files
+                    inaccessible if the website URL changes.
+                  </li>
+                  <li>
+                    Misusing <code>../</code> or <code>./</code> for parent and
+                    current directories, leading to incorrect paths.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Best Practices Section -->
+            <div class="infographic-section">
+              <div class="alert alert-success">
+                <strong>Best Practices</strong>
+                <ul>
+                  <li>
+                    Use relative paths for internal links to make files
+                    portable.
+                  </li>
+                  <li>
+                    Use descriptive folder names and maintain a logical
+                    structure for ease of navigation.
+                  </li>
+                  <li>
+                    Test paths after any file restructuring to ensure links are
+                    still valid.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Modals for Detailed Info -->
+          <!-- Relative Path Modal -->
+          <div
+            class="modal fade"
+            id="modalRelativePath"
+            tabindex="-1"
+            aria-labelledby="modalRelativePathLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalRelativePathLabel">
+                    Relative Path
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    A relative path is used to link files within the same
+                    directory structure. It's commonly used for local file
+                    references.
+                  </p>
+                  <strong>Example:</strong>
+                  <pre><code>&lt;a href="folder/page.html"&gt;Link to Page&lt;/a&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Absolute Path Modal -->
+          <div
+            class="modal fade"
+            id="modalAbsolutePath"
+            tabindex="-1"
+            aria-labelledby="modalAbsolutePathLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalAbsolutePathLabel">
+                    Absolute Path
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    An absolute path includes the full URL, starting from the
+                    root domain. It’s often used when linking to external sites.
+                  </p>
+                  <strong>Example:</strong>
+                  <pre><code>&lt;a href="https://www.example.com/page.html"&gt;Link to Page&lt;/a&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parent Directory Modal -->
+          <div
+            class="modal fade"
+            id="modalParentDirectory"
+            tabindex="-1"
+            aria-labelledby="modalParentDirectoryLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalParentDirectoryLabel">
+                    Parent Directory
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Using "../" in a path moves up one level in the directory
+                    structure, helping access files in parent folders.
+                  </p>
+                  <strong>Example:</strong>
+                  <pre><code>&lt;a href="../folder/page.html"&gt;Link to Page&lt;/a&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Current Directory Modal -->
+          <div
+            class="modal fade"
+            id="modalCurrentDirectory"
+            tabindex="-1"
+            aria-labelledby="modalCurrentDirectoryLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalCurrentDirectoryLabel">
+                    Current Directory
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Using "./" refers to the current directory. It’s useful for
+                    linking files within the same folder.
+                  </p>
+                  <strong>Example:</strong>
+                  <pre><code>&lt;a href="./page.html"&gt;Link to Page&lt;/a&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "title": "Introduction to HTML",
+  "lessonID": "lessonHTML001",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "read": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Welcome to SimplyCoding</title>\n</head>\n<body>\n    <h1>Hello, World!</h1>\n    <p>Welcome to your first HTML page created by Zach at SimplyCoding.</p>\n    <p>Visit our <a href=\"https://www.simplycoding.org\">homepage</a> for more tutorials.</p>\n</body>\n</html>\n",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/read/overview.html"
+        },
+        {
+          "title": "What is HTML? An Introduction",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/read/teaching.html"
+        },
+        {
+          "title": "Lesson Review - What Have I Learned?",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/read/explain.html"
+        },
+        {
+          "title": "Deeper Dive - More Examples",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/read/example1.md"
+        }
+      ]
+    },
+    "write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Welcome to SimplyCoding</title>\n</head>\n<body>\n    <h1>Hello, World!</h1>\n    <p>Welcome to your first HTML page created by Zach at SimplyCoding.</p>\n    <p>Visit our <a href=\"https://www.simplycoding.org\">homepage</a> for more tutorials.</p>\n</body>\n</html>\n"
+      },
+      "content": [
+        {
+          "title": "Create a Simple Html Page",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-1-intro/write/content4.md"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,90 @@
+<div class="infographic-section">
+  <h2>CSS Specificity</h2>
+  <p>
+    Specificity refers to how detailed a CSS selector is in targeting an element. More specific selectors take precedence over less specific ones. The order of specificity is:
+  </p>
+  <ul>
+    <li><strong>ID selectors</strong> (e.g., <code>#main-heading</code>) have the highest specificity.</li>
+    <li><strong>Class selectors</strong> (e.g., <code>.heading</code>) come next.</li>
+    <li><strong>Attribute selectors</strong> (e.g., <code>[type="text"]</code>) follow.</li>
+    <li><strong>Element selectors</strong> (e.g., <code>h1, p</code>) have the lowest specificity.</li>
+  </ul>
+  <pre><code>
+#main-heading {
+  color: green;
+}
+
+.heading {
+  color: blue;
+}
+
+h1 {
+  color: red;
+}
+  </code></pre>
+  <p>
+    In this example, the color will be green because the ID selector <code>#main-heading</code> is the most specific.
+  </p>
+</div>
+
+<!-- Section 5: Type of CSS -->
+<div class="infographic-section">
+  <h2>Type of CSS</h2>
+  <p>There are three types of CSS that can apply styles to an HTML document:</p>
+  <ul>
+    <li><strong>External Stylesheet:</strong> Linked to the HTML file through a <code>&lt;link&gt;</code> tag.</li>
+    <li><strong>Internal Stylesheet:</strong> Placed inside the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.</li>
+    <li><strong>Inline Style:</strong> Applied directly to an element using the <code>style</code> attribute.</li>
+  </ul>
+  <p>Inline styles override both external and internal styles.</p>
+</div>
+
+<!-- Section 6: CSS !important Keyword -->
+<div class="infographic-section">
+  <h2>CSS !important Keyword</h2>
+  <p>
+    The <code>!important</code> keyword is used to give a CSS rule higher priority. A rule with <code>!important</code> will override any other rule, regardless of position or specificity.
+  </p>
+  <pre><code>
+h1 {
+  color: red !important; /* This will override all other color rules for h1 */
+}
+
+h1 {
+  color: blue; /* This rule is ignored because the first rule has !important */
+}
+  </code></pre>
+</div>
+
+<!-- Section 7: Categories of Importance -->
+<div class="infographic-section">
+  <h2>Categories of Importance</h2>
+  <p>CSS rules can be categorized into four broad categories that affect the cascade:</p>
+  <ul>
+    <li><strong>Position:</strong> The location of the rule in the CSS file.</li>
+    <li><strong>Specificity:</strong> How specific the selector is.</li>
+    <li><strong>Type:</strong> The type of CSS rule (External, Internal, or Inline).</li>
+    <li><strong>Importance:</strong> The <code>!important</code> keyword.</li>
+  </ul>
+</div>
+
+<!-- Section 8: Position in CSS -->
+<div class="infographic-section">
+  <h2>Position in CSS</h2>
+  <p>
+    Rules that are placed later in the CSS file will override rules placed earlier, provided they have the same specificity. This means that a rule at the bottom of the CSS file can override a rule at the top, even if the rules target the same element.
+  </p>
+  <pre><code>
+/* First rule */
+h1 {
+  color: red;
+}
+
+/* Second rule */
+h1 {
+  color: blue; /* This rule will be applied because it comes last */
+}
+  </code></pre>
+</div>
+
+</section>

@@ -1,0 +1,136 @@
+   <!-- Creating Links for Multi-Page Websites Infographic Section -->
+    <section class="infographics" style="margin-bottom: 20px">
+      <!-- Section 1: Creating Links to Other Pages -->
+      <div class="infographic-section">
+        <h2>Creating Links to Other Pages</h2>
+        <p>
+          In web development, links allow users to navigate between different
+          pages of a website. You can link from one HTML file to another, like
+          <code>index.html</code> (home) to <code>about.html</code> or
+          <code>contact.html</code>, to build a multi-page site.
+        </p>
+      </div>
+
+      <!-- Section 2: Basic File Structure and Paths -->
+      <div class="infographic-section">
+        <h2>Basic File Structure and Paths</h2>
+        <pre>
+      <code>
+📂 my-website/
+├── 📄 index.html
+├── 📄 about.html
+└── 📄 contact.html
+      </code>
+    </pre>
+        <p>
+          In this structure, each HTML file represents a separate page. We use
+          relative paths (e.g., <code>about.html</code>) to link between them,
+          keeping all pages connected within the website’s root folder.
+        </p>
+        <div class="tip-box">
+          <strong>Pro Tip:</strong> Use descriptive names for your HTML files
+          (e.g., <code>about.html</code>) to keep your project organized.
+        </div>
+      </div>
+
+      <!-- Section 3: Linking to Pages Using Anchor Tags -->
+      <div class="infographic-section">
+        <h2>Linking to Pages Using Anchor Tags</h2>
+        <p>
+          Links are created using the <code>&lt;a&gt;</code> (anchor) tag. The
+          <code>href</code> attribute specifies the file path or URL. To link to
+          <code>about.html</code> from <code>index.html</code>, use a relative
+          path like <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code>.
+        </p>
+        <pre>
+      <code>
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+      </code>
+    </pre>
+      </div>
+
+      <!-- Section 4: Creating a Simple Navigation Bar -->
+      <div class="infographic-section">
+        <h2>Creating a Simple Navigation Bar</h2>
+        <p>
+          A basic navigation bar helps users move between the pages on your
+          website. You can create a simple nav bar using inline
+          <code>&lt;a&gt;</code> tags for each page link.
+        </p>
+        <p>
+          Here’s an example of a navigation bar with three links: Home, About,
+          and Contact. A title is also included for the website.
+        </p>
+        <pre>
+      <code>
+&lt;nav&gt;
+  &lt;span&gt;My Website&lt;/span&gt;
+  &lt;a href="index.html"&gt;Home&lt;/a&gt; |
+  &lt;a href="about.html"&gt;About&lt;/a&gt; |
+  &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+      </code>
+    </pre>
+        <p>What this looks like rendered:</p>
+        <nav class="border rounded p-1">
+          <span>My Website</span>
+          <a href="index.html">Home</a> | <a href="about.html">About</a> |
+          <a href="contact.html">Contact</a>
+        </nav>
+        <p>
+          This example uses the
+          <code
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="The &lt;nav&gt; tag is used to group navigation links in a section, providing structure for page navigation."
+            >&lt;nav&gt;</code
+          >
+          tag to group the navigation links, with each link separated by a
+          vertical bar <code>|</code> for clarity.
+        </p>
+      </div>
+
+      <!-- Try It Out Section -->
+      <div class="infographic-section">
+        <h2>Try It Out!</h2>
+        <div>
+          <p>
+            Click the
+            <button
+              class="try-it-out"
+              onclick="loadTryItOut('&lt;nav&gt;&lt;span&gt;My Website&lt;/span&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;|&lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;|&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/nav&gt;', '', '')"
+            >
+              Try it →
+            </button>
+            button to test out the code and expirment with it your self in the
+            code editor to the right!
+          </p>
+          <div class="text-end">
+            <button
+              class="btn try-it-out"
+              onclick="loadTryItOut('&lt;nav&gt;&lt;span&gt;My Website&lt;/span&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;|&lt;a href=&quot;about.html&quot;&gt;About&lt;/a&gt;|&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/nav&gt;', '', '')"
+            >
+              Try it →
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <!-- Best Practices Section -->
+        <div class="infographic-section">
+          <div class="alert alert-success">
+            <strong>Best Practices</strong>
+            <ul>
+              <li>Ensure all links are relative paths for internal pages.</li>
+              <li>
+                Keep your nav bar consistent on all pages for better navigation.
+              </li>
+              <li>
+                Double-check link functionality after making changes to file
+                paths.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>

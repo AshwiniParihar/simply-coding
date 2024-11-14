@@ -1,0 +1,445 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Catchy Section Title -->
+  <div class="infographic-section">
+    <h2>What is the &lt;input&gt; Tag?</h2>
+    <p>
+      The <code>&lt;input&gt;</code> tag is an essential part of HTML forms. It
+      allows users to provide data to a website, enabling features like user
+      login, search bars, and interactive forms. The
+      <code>&lt;input&gt;</code> tag is self-closing, meaning it does not need a
+      separate closing tag like <code>&lt;/input&gt;</code>.
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure of Input Tags -->
+  <div class="infographic-section">
+    <h2>Basic Structure of Input Tags</h2>
+    <pre>
+      <code>&lt;input type="text" placeholder="Enter your text here"&gt;</code>
+    </pre>
+    <p>
+      The <code>&lt;input&gt;</code> tag has several key attributes, including
+      <strong>type</strong> (which defines the kind of input, such as text,
+      email, or password) and <strong>placeholder</strong> (which displays
+      temporary text inside the field). Here’s a basic example of an input tag
+      used for text input.
+    </p>
+  </div>
+
+  <!-- Section 3: Common Input Types -->
+  <div class="infographic-section">
+    <h2>Common Types of Input Tags</h2>
+    <div class="infographic-cards-container">
+      <!-- Text Input Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty">
+            <!-- Placeholder for image or demo code -->
+            <!-- Use an image or replace with a <pre><code> block for demo code -->
+          </div>
+          <h5 class="info-card-title">Text</h5>
+          <p class="info-card-description">
+            Accepts a single line of plain text.
+          </p>
+        </div>
+        <!-- "More..." button that opens a modal -->
+        <button
+          class="info-card-action"
+          data-bs-toggle="modal"
+          data-bs-target="#modalText"
+        >
+          More...
+        </button>
+      </div>
+
+      <!-- Email Input Card -->
+      <!-- Email Input Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty">
+            <!-- Placeholder for image or demo code -->
+          </div>
+          <h5 class="info-card-title">Email</h5>
+          <p class="info-card-description">
+            Ensures the input is in a valid email format.
+          </p>
+        </div>
+        <button
+          class="info-card-action"
+          data-bs-toggle="modal"
+          data-bs-target="#modalEmail"
+        >
+          More...
+        </button>
+      </div>
+
+      <!-- Password Input Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty">
+            <!-- Placeholder for image or demo code -->
+          </div>
+          <h5 class="info-card-title">Password</h5>
+          <p class="info-card-description">
+            Masks the characters entered for security.
+          </p>
+        </div>
+        <button
+          class="info-card-action"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPassword"
+        >
+          More...
+        </button>
+      </div>
+
+      <!-- Number Input Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty">
+            <!-- Placeholder for image or demo code -->
+          </div>
+          <h5 class="info-card-title">Number</h5>
+          <p class="info-card-description">Accepts numerical values only.</p>
+        </div>
+        <button
+          class="info-card-action"
+          data-bs-toggle="modal"
+          data-bs-target="#modalNumber"
+        >
+          More...
+        </button>
+      </div>
+
+      <!-- Date Input Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty">
+            <!-- Placeholder for image or demo code -->
+          </div>
+          <h5 class="info-card-title">Date</h5>
+          <p class="info-card-description">
+            Opens a calendar selector for date input.
+          </p>
+        </div>
+        <button
+          class="info-card-action"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDate"
+        >
+          More...
+        </button>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Pro Tip:</strong> Choose the correct input type to improve
+      usability and accessibility. For example, using
+      <code>type="email"</code> provides a keyboard optimized for email entry on
+      mobile devices.
+    </div>
+  </div>
+
+  <!-- Section 4: Self-Closing Nature of Input Tags -->
+  <div class="infographic-section">
+    <h2>Self-Closing Nature of Input Tags</h2>
+    <p>
+      The <code>&lt;input&gt;</code> tag is a self-closing tag, meaning it does
+      not require an end tag like <code>&lt;/input&gt;</code>. This is because
+      it is an empty element with no content inside it, only attributes.
+    </p>
+    <p>
+      This structure keeps HTML code concise and is typical for elements that
+      don’t contain other HTML elements.
+    </p>
+  </div>
+
+  <!-- Section 5: Try It Out -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <div>
+      <pre>
+        <code>
+&lt;input type="text" placeholder="Enter your name"&gt;
+&lt;input type="email" placeholder="Enter your email"&gt;
+&lt;input type="number" min="0" max="100" placeholder="Age"&gt;
+        </code>
+      </pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut(&apos;&lt;input type="text" placeholder="Enter your name" /&gt;\n&lt;input type="email" placeholder="Enter your email" /&gt;\n&lt;input type="number" min="0" max="100" placeholder="Age" /&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Info Sections -->
+
+  <!-- Common Mistakes Section -->
+  <section class="infographics">
+    <div class="infographic-section">
+      <div class="alert alert-danger">
+        <strong>Common Mistakes</strong>
+        <ul>
+          <li>
+            Not using <code>type="password"</code> for sensitive information.
+          </li>
+          <li>
+            Leaving out the <code>placeholder</code> attribute, which helps
+            guide users on what to enter.
+          </li>
+          <li>
+            Using the wrong input type, such as <code>type="text"</code> for
+            email addresses.
+          </li>
+          <li>
+            Setting restrictive min and max values that may frustrate users.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Best Practices Section -->
+  </section>
+
+  <!-- Text Input Modal -->
+  <div
+    class="modal fade"
+    id="modalText"
+    tabindex="-1"
+    aria-labelledby="modalTextLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTextLabel">Text Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>text</code> input type is one of the most commonly used
+            fields, allowing users to enter single-line plain text.
+          </p>
+          <strong>Common Uses:</strong>
+          <ul>
+            <li>Names, titles, and basic identifiers.</li>
+            <li>Customizable fields for general text input.</li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" placeholder="Enter your name"&gt;</code></pre>
+          <strong>Notes:</strong>
+          <ul>
+            <li>
+              Works well with <code>maxlength</code> and
+              <code>pattern</code> attributes to restrict input format.
+            </li>
+            <li>
+              Consider using <code>autocomplete="off"</code> if you do not want
+              the browser to store and suggest previous entries.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email Input Modal -->
+  <div
+    class="modal fade"
+    id="modalEmail"
+    tabindex="-1"
+    aria-labelledby="modalEmailLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEmailLabel">Email Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>email</code> input type ensures that any entered text
+            follows the email format (e.g., user@example.com).
+          </p>
+          <strong>Common Uses:</strong>
+          <ul>
+            <li>
+              Email collection for accounts, subscriptions, and contact forms.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="email" placeholder="you@example.com"&gt;</code></pre>
+          <strong>Notes:</strong>
+          <ul>
+            <li>
+              Will trigger validation errors if the format is incorrect, even if
+              it is left blank (if <code>required</code>).
+            </li>
+            <li>
+              Many browsers show a specific email keyboard on mobile devices,
+              enhancing user experience.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Input Modal -->
+  <div
+    class="modal fade"
+    id="modalPassword"
+    tabindex="-1"
+    aria-labelledby="modalPasswordLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPasswordLabel">Password Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>password</code> input type masks characters, displaying
+            dots or asterisks to hide sensitive information.
+          </p>
+          <strong>Common Uses:</strong>
+          <ul>
+            <li>
+              Input fields for account passwords, PINs, or sensitive codes.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="password" placeholder="Enter your password"&gt;</code></pre>
+          <strong>Notes:</strong>
+          <ul>
+            <li>
+              Data entered in password fields is not stored in the browser's
+              autofill history by default, enhancing privacy.
+            </li>
+            <li>
+              Can be paired with <code>minlength</code> and
+              <code>maxlength</code> to set security standards for passwords.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Number Input Modal -->
+  <div
+    class="modal fade"
+    id="modalNumber"
+    tabindex="-1"
+    aria-labelledby="modalNumberLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberLabel">Number Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>number</code> input type is tailored for numerical input
+            and can be limited with min, max, and step attributes.
+          </p>
+          <strong>Common Uses:</strong>
+          <ul>
+            <li>Ages, quantities, prices, or other numeric data entries.</li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="number" min="0" max="100" placeholder="Enter your age"&gt;</code></pre>
+          <strong>Notes:</strong>
+          <ul>
+            <li>
+              Browsers may provide up and down arrows for incremental input
+              control, enhancing usability.
+            </li>
+            <li>
+              Pair with <code>step</code> to allow specific increments (e.g.,
+              step="5" for increments of 5).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Date Input Modal -->
+  <div
+    class="modal fade"
+    id="modalDate"
+    tabindex="-1"
+    aria-labelledby="modalDateLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDateLabel">Date Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>date</code> input type allows users to select a date from
+            a date picker, providing a calendar view for ease.
+          </p>
+          <strong>Common Uses:</strong>
+          <ul>
+            <li>Date of birth, booking dates, appointments, or deadlines.</li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="date"&gt;</code></pre>
+          <strong>Notes:</strong>
+          <ul>
+            <li>
+              The browser’s default calendar view is shown, ensuring format
+              consistency.
+            </li>
+            <li>
+              Use <code>min</code> and <code>max</code> to set date ranges,
+              preventing future/past dates as needed.
+            </li>
+            <li>
+              This input type provides a uniform experience across different
+              devices, especially on mobile.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

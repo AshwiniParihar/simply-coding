@@ -1,0 +1,128 @@
+{
+  "title": "Lesson 10: Image Elements",
+  "lessonID": "lessonHTML010",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/read/01-overview.html"
+        },
+        {
+          "title": "Element Selectors",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/read/02-element-selector.html"
+        },
+        {
+          "title": "Class Selectors",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/read/03-class-selector.html"
+        },
+        {
+          "title": "ID Selectors",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/read/04-id-selector.html"
+        },
+        {
+          "title": "Attribute Selector",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/read/05-attribute-selector.html"
+        },
+
+        {
+          "title": "Universal Selector",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/read/06-universal-selector.html"
+        }
+       
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/write/01-overview.html"
+        },
+        {
+          "title": "Step-by-Step",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/write/02-step-by-step.html"
+        },
+        {
+          "title": "Review",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/write/03-selector-review.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/create/01-overview.html"
+        },
+        {
+          "title": "Help",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/create/02-hints.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/create/03-solution.html"
+        }
+      ]
+    },
+    "Next Steps": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-003-css-selectors/next-steps/overview.html"
+        }
+       
+      ]
+    }
+  }
+}

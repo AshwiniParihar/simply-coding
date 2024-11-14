@@ -1,0 +1,49 @@
+{
+  "title": "Lesson Demo 1",
+  "lessonID": "lessonDemo001",
+  "videoUrl": "https://example.com/flexbox-intro.mp4",
+  "sections": {
+    "read": {
+      "starter-code": {
+        "html": "<div class='flex-container'>\n  <div class='flex-item'>Item 1</div>\n  <div class='flex-item'>Item 2</div>\n  <div class='flex-item'>Item 3</div>\n</div>",
+        "css": ".container { display: flex; }",
+        "js": "console.log('Learning Flexbox');"
+      },
+      "content": [
+        {
+          "title": "Introdusdfction to Flexbox",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/content2.md"
+        }
+      ]
+    },
+    "writer": {
+      "starter-code": {
+        "html": "<div class='container'>\n<div class='box'>Box 1</div>\n<div class='box'>Box 2</div>\n<div class='box'>Box 3</div>\n</div>",
+        "css": ".container { display: flex; justify-content: space-between; } .box { width: 100px; height: 100px; background-color: lightblue; }",
+        "js": "console.log('Flexbox Write Section');"
+      },
+      "content": [
+        {
+          "title": "Introduction to Flexbox",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-demo-1/write/content3.md"
+        }
+      ]
+    },
+    "create": {
+      "starter-code": {
+        "html": "<div class='flex-container'></div>",
+        "css": ".flex-container { display: flex; }",
+        "js": "console.log('Flexbox Create Section');"
+      },
+      "content": [
+        {
+          "title": "Introduction to Flexbox",
+          "fileType": "markdown",
+          "filePath": "./lessons/html/lesson-demo-1/create/content1.md"
+        }
+      ]
+    }
+  }
+}

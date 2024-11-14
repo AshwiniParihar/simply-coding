@@ -1,0 +1,107 @@
+<!-- Solution Section -->
+<section class="section-container solution-section">
+  <!-- Solution Title -->
+  <h2 class="section-title">Solution</h2>
+  <p class="section-text intro">
+    Well done! Here’s the complete solution for creating a webpage with a well-structured and clean CSS approach. Compare it with your code to see if there are any areas for improvement or adjustments.
+  </p>
+
+  <!-- Solution Explanation -->
+  <h3 class="subsection-title">Final Code</h3>
+  <p class="section-text">
+    The following code demonstrates a complete, styled webpage with a clean and separated CSS approach:
+  </p>
+
+  <!-- Solution Code Example -->
+   <p><strong>html file</strong></p>
+  <pre><code>
+  <section>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;My Simple Webpage&lt;/title&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 class="heading"&gt;My Simple Webpage&lt;/h1&gt;
+        &lt;p class="paragraph1"&gt;This is the first paragraph, styled using inline CSS.&lt;/p&gt;
+        &lt;p class="paragraph2"&gt;This is the second paragraph with a different font and size.&lt;/p&gt;
+        &lt;button class="button"&gt;Click Me&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+  </section>
+</code></pre>
+
+  <!-- Solution Code with Explanation -->
+  <h3 class="subsection-title">CSS Code Explanation</h3>
+  <ul class="instruction-list">
+    <li>
+      The <code>&lt;h1&gt;</code> tag is styled to be centered (text-align: center), bold (font-weight: bold), and teal (color: teal).
+    </li>
+    <li>
+      The first <code>&lt;p&gt;</code> tag uses the Arial font family, sets the font size to 16px, and applies the styling to make it distinct from the second paragraph.
+    </li>
+    <li>
+      The second <code>&lt;p&gt;</code> tag uses a different font family, Georgia, and a larger font size of 18px, providing variation in style from the first paragraph.
+    </li>
+    <li>
+      The <code>&lt;button&gt;</code> tag is styled with a background color of #3498db (blue), white text color, padding, no border, and a cursor pointer.<br>
+      It has a smooth transition effect (transition: background-color 0.3s) on hover, where the background color darkens to #2980b9.
+    </li>
+  </ul>
+
+  <!-- CSS Code Example -->
+  
+  <h3 class="subsection-title">Complete CSS Code</h3>
+  <p><strong>css file</strong></p>
+  <pre><code>
+    /* Style for heading */
+    .heading {
+        text-align: center;
+        font-weight: bold;
+        color: teal;
+    }
+    
+    /* Style for the first paragraph */
+    .paragraph1 {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+    }
+    
+    /* Style for the second paragraph */
+    .paragraph2 {
+        font-family: 'Georgia', serif;
+        font-size: 18px;
+    }
+    
+    /* Style for button */
+    .button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    /* Hover effect for button */
+    .button:hover {
+        background-color: #2980b9;
+    }
+    
+  </code></pre>
+
+  <p></p>
+
+  <!-- Call to Action -->
+  <div class="text-end mt-3">
+    <button class="btn btn-primary" onclick="loadNextChallenge()">
+      Next Challenge →
+    </button>
+  </div>
+
+
+</section>

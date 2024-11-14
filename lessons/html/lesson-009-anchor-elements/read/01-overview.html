@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lesson: Anchor Element</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to your global CSS -->
+  </head>
+  <body>
+    <!-- Overview Section -->
+    <section class="section-container">
+      <h3 class="section-title">Overview</h3>
+      <p class="section-text">
+        In this lesson, you will learn about the
+        <span
+          data-bs-toggle="tooltip"
+          data-bs-custom-class="tooltip-html"
+          data-bs-title="The anchor element (<a>) is used to create hyperlinks in HTML."
+          >anchor element</span
+        >
+        in HTML, focusing on attributes like <code>href</code>, and building
+        hyperlinks. By the end of this lesson, you will create a list of your
+        top five favorite websites with working links.
+      </p>
+      <div class="demo">
+        <pre>
+&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</pre
+        >
+      </div>
+    </section>
+
+    <!-- Read Section -->
+    <section class="section-container">
+      <h3 class="section-title">Read</h3>
+
+      <!-- Part 1: Introduction to Anchor Elements -->
+
+      <!-- Part 2: Anchor Attributes -->
+
+      <!-- Part 3: Global Attributes -->
+      <section>
+        <h4 class="subsection-title">
+          3. Global Attributes in Anchor Elements
+        </h4>
+        <p class="section-text">
+          In addition to specific attributes, anchor elements can have
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-custom-class="tooltip-html"
+            data-bs-title="Global attributes apply to all HTML elements, offering universal functionality."
+          >
+            global attributes
+          </span>
+          that are available to all HTML elements. These include:
+        </p>
+        <ul class="attribute-list">
+          <li>
+            <strong>id:</strong> Assigns a unique identifier to the element,
+            allowing for targeted CSS styling or JavaScript interaction.
+            <span
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="tooltip-html"
+              data-bs-title="The 'id' attribute uniquely identifies an element in the HTML document."
+            >
+              Example: <code>id="example-link"</code>
+            </span>
+          </li>
+          <li>
+            <strong>class:</strong> Assigns one or more classes to the element
+            for styling or JavaScript interaction.
+            <span
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="tooltip-html"
+              data-bs-title="The 'class' attribute can be used for styling and selecting elements."
+            >
+              Example: <code>class="link"</code>
+            </span>
+          </li>
+          <li>
+            <strong>draggable:</strong> Allows the element to be draggable.
+            <span
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="tooltip-html"
+              data-bs-title="The 'draggable' attribute, when set to 'true', makes the element draggable."
+            >
+              Example: <code>draggable="true"</code>
+            </span>
+          </li>
+          <li>
+            <strong>style:</strong> Adds inline CSS to the element.
+            <span
+              data-bs-toggle="tooltip"
+              data-bs-custom-class="tooltip-html"
+              data-bs-title="The 'style' attribute allows for inline CSS styling."
+            >
+              Example: <code>style="color: red;"</code>
+            </span>
+          </li>
+        </ul>
+        <div class="demo">
+          <pre>
+&lt;a href="https://www.example.com" id="example-link" class="link" draggable="true"&gt;Visit Example&lt;/a&gt;
+          </pre>
+        </div>
+        <p class="section-text">
+          The example demonstrates how global attributes like <code>id</code>,
+          <code>class</code>, and <code>draggable</code> can be used with anchor
+          elements.
+        </p>
+        <div class="text-end">
+          <button
+            class="btn btn-primary try-it-out"
+            onclick='loadTryItOut(&apos;&lt;a href="https://www.example.com" id="example-link" class="link" draggable="true"&gt;Visit Example&lt;/a&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+          >
+            Try it →
+          </button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

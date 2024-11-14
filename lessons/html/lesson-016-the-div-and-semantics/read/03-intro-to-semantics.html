@@ -1,0 +1,579 @@
+<section class="infographics">
+  <!-- Section 1: Introduction to Semantic Tags -->
+  <div class="infographic-section">
+    <h2>Understanding Semantic Tags in HTML</h2>
+    <p>
+      Semantic tags in HTML help give meaning to the structure of a webpage.
+      Unlike generic tags like <code>&lt;div&gt;</code> and
+      <code>&lt;span&gt;</code>, semantic tags describe their purpose and
+      improve accessibility and SEO. They make HTML code easier to read for both
+      developers and machines, like search engines.
+    </p>
+  </div>
+
+  <!-- Section 2: Common Semantic Tags -->
+  <div class="infographic-section">
+    <h2>Common Semantic Tags and Their Uses</h2>
+    <div class="infographic-cards-container">
+      <!-- Header Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;header&gt;</h5>
+          <p class="info-card-description">
+            Used for introductory content or navigational links.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalHeader"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;header&gt;&lt;h1&gt;My Website&lt;/h1&gt;&lt;/header&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;main&gt;</h5>
+          <p class="info-card-description">
+            Represents the primary content of the document.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMain"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;main&gt;&lt;p&gt;Main content goes here.&lt;/p&gt;&lt;/main&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;section&gt;</h5>
+          <p class="info-card-description">
+            Defines a thematic grouping of content, such as chapters, headers,
+            or any logical grouping.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalSection"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut(
+        `&lt;section&gt;
+          &lt;h2&gt;Our Services&lt;/h2&gt;
+          &lt;p&gt;We offer a range of services to cater to your needs.&lt;/p&gt;
+        &lt;/section&gt;
+        `,
+        '',
+        ''
+      )"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+      <!-- Article Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;article&gt;</h5>
+          <p class="info-card-description">
+            Defines a self-contained piece of content that could stand alone.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalArticle"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;p&gt;Article content...&lt;/p&gt;&lt;/article&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Aside Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;aside&gt;</h5>
+          <p class="info-card-description">
+            Holds content related to the main content, such as sidebars or ads.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAside"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;aside&gt;&lt;h3&gt;Related Links&lt;/h3&gt;&lt;p&gt;Content here.&lt;/p&gt;&lt;/aside&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+    <h4>Complete list of Semantic tags</h4>
+    <section style="display: flex">
+      <div>
+        <ul>
+          <li>&lt;article&gt;</li>
+          <li>&lt;aside&gt;</li>
+          <li>&lt;details&gt;</li>
+          <li>&lt;figcaption&gt;</li>
+          <li>&lt;figure&gt;</li>
+          <li>&lt;footer&gt;</li>
+          <li>&lt;header&gt;</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>&lt;main&gt;</li>
+          <li>&lt;mark&gt;</li>
+          <li>&lt;nav&gt;</li>
+          <li>&lt;section&gt;</li>
+          <li>&lt;summary&gt;</li>
+          <li>&lt;time&gt;</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Section 3: Accessibility and SEO Benefits -->
+  <div class="infographic-section">
+    <h2>Accessibility and SEO Benefits</h2>
+    <p>
+      Semantic HTML helps assistive technologies like screen readers understand
+      the structure of a webpage. It also improves search engine rankings by
+      clearly defining the content's purpose and organization.
+    </p>
+    <ul>
+      <li>Screen readers can navigate a webpage more efficiently.</li>
+      <li>Search engines can better understand and rank content.</li>
+      <li>Helps maintain consistent code readability for developers.</li>
+    </ul>
+  </div>
+
+  <!-- Section 4: Try It Out! -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <p>
+      Check out the code below and see how different Semantic Elements can be
+      used.
+    </p>
+    <div>
+      <pre>
+  <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome to My Blog&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+      &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+      &lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Main Article Title&lt;/h2&gt;
+      &lt;p&gt;This is the main content area for an article.&lt;/p&gt;
+    &lt;/article&gt;
+
+    &lt;aside&gt;
+      &lt;h3&gt;Related Links&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#related1&quot;&gt;Related Article 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#related2&quot;&gt;Related Article 2&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/aside&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Contact us at info@myblog.com&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </code>
+</pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut(
+      `&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome to My Blog&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;a href="#home"&gt;Home&lt;/a&gt;
+      &lt;a href="#about"&gt;About&lt;/a&gt;
+      &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Main Article Title&lt;/h2&gt;
+      &lt;p&gt;This is the main content area for an article.&lt;/p&gt;
+    &lt;/article&gt;
+
+    &lt;aside&gt;
+      &lt;h3&gt;Related Links&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#related1"&gt;Related Article 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#related2"&gt;Related Article 2&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/aside&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;Contact us at info@myblog.com&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;`,
+      &apos;&apos;,
+      &apos;&apos;
+    )'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+    <div class="alert alert-info mt-3">
+      <strong>Best Practices:</strong>
+      <ul>
+        <li>
+          Use semantic tags to improve accessibility, as screen readers and
+          other assistive technologies rely on them to navigate content.
+        </li>
+        <li>
+          Structure your HTML with semantic tags for better SEO; search engines
+          give preference to well-structured, meaningful content.
+        </li>
+        <li>
+          Avoid using multiple <code>&lt;header&gt;</code>,
+          <code>&lt;footer&gt;</code>, and <code>&lt;main&gt;</code> tags in a
+          single page unless they are clearly nested in distinct sections.
+        </li>
+        <li>
+          Regularly validate your HTML to ensure it adheres to W3C standards for
+          semantic tags.
+        </li>
+        <li>
+          Keep your code clean and readable by using semantic tags in place of
+          generic <code>&lt;div&gt;</code> tags whenever possible.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modals for Detailed Info -->
+  <!-- Header Modal -->
+  <!-- Header Modal -->
+  <div class="modal fade" id="modalHeader" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">&lt;header&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;header&gt;</code> element typically contains
+            introductory content or navigational links for the page. It often
+            includes a website title, logo, and primary navigation elements and
+            can be used within a document to define headers for sections.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;header&gt;
+  &lt;h1&gt;My Website&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt;
+    &lt;a href="#about"&gt;About&lt;/a&gt;
+    &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+        </code></pre>
+          <p>
+            <strong>Usage Tips:</strong>
+          </p>
+
+          <ul>
+            <li>
+              Place the <code>&lt;header&gt;</code> at the top of the page or at
+              the start of each section.
+            </li>
+            <li>
+              It can be used multiple times on a page for individual sections.
+            </li>
+            <li>
+              Avoid placing the <code>&lt;header&gt;</code> inside
+              <code>&lt;footer&gt;</code> elements.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Modal -->
+  <div class="modal fade" id="modalMain" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">&lt;main&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;main&gt;</code> element represents the main content of
+            the document, which is unique and central to the page. It excludes
+            header, footer, and sidebar content and is intended to improve
+            accessibility by identifying primary content.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Main Article Title&lt;/h2&gt;
+    &lt;p&gt;This is the main content area for an article.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+        </code></pre>
+          <p>
+            <strong>Usage Tips:</strong>
+          </p>
+
+          <ul>
+            <li>
+              Use only one <code>&lt;main&gt;</code> element per page for the
+              primary content.
+            </li>
+            <li>
+              Omit it from headers, footers, sidebars, and unrelated content.
+            </li>
+            <li>
+              The <code>&lt;main&gt;</code> tag improves navigation for screen
+              readers, focusing on essential content.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section Modal -->
+  <div class="modal fade" id="modalSection" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">&lt;section&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;section&gt;</code> element is used to define a
+            thematic grouping of content, which can include subsections of a
+            page, like a services area, product listings, or grouped content
+            within a webpage. It helps to semantically organize content in a way
+            that is meaningful to screen readers and SEO.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;section&gt;
+  &lt;h2&gt;Our Services&lt;/h2&gt;
+  &lt;p&gt;We offer a variety of services to meet your needs, including web design, development, and digital marketing.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Web Design&lt;/li&gt;
+    &lt;li&gt;Development&lt;/li&gt;
+    &lt;li&gt;Digital Marketing&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+        </code></pre>
+          <p>
+            <strong>Usage Tips:</strong>
+          </p>
+
+          <ul>
+            <li>
+              Use <code>&lt;section&gt;</code> to logically group related
+              content. It should be meaningful as a standalone section of the
+              document.
+            </li>
+            <li>
+              Each <code>&lt;section&gt;</code> typically includes a heading,
+              making it easy for users to navigate.
+            </li>
+            <li>
+              Avoid using <code>&lt;section&gt;</code> when other semantic tags
+              (like <code>&lt;article&gt;</code> or <code>&lt;aside&gt;</code>)
+              are more appropriate.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Article Modal -->
+  <div class="modal fade" id="modalArticle" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">&lt;article&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;article&gt;</code> element is a self-contained
+            composition that can be independently distributed or reused, such as
+            a blog post, news article, or product description.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;article&gt;
+  &lt;h2&gt;Introduction to HTML5&lt;/h2&gt;
+  &lt;p&gt;HTML5 introduces new semantic elements like &lt;article&gt;, &lt;section&gt;, and &lt;aside&gt;...&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Written by John Doe&lt;/p&gt;
+    &lt;p&gt;Published on January 1, 2023&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;
+        </code></pre>
+          <p>
+            <strong>Usage Tips:</strong>
+          </p>
+
+          <ul>
+            <li>
+              Use <code>&lt;article&gt;</code> for content that can stand alone,
+              such as individual blog entries or product listings.
+            </li>
+            <li>
+              Include an optional <code>&lt;footer&gt;</code> inside
+              <code>&lt;article&gt;</code> for bylines, publication dates, or
+              related information.
+            </li>
+            <li>
+              Avoid using <code>&lt;article&gt;</code> for non-self-contained
+              content.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aside Modal -->
+  <div class="modal fade" id="modalAside" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">&lt;aside&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;aside&gt;</code> element contains content indirectly
+            related to the main content. It is commonly used for sidebars, pull
+            quotes, or related links and helps in structuring content that
+            enhances the reader's experience.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;aside&gt;
+  &lt;h3&gt;Related Articles&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#article1"&gt;Understanding HTML Semantics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#article2"&gt;Benefits of Semantic HTML&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;
+        </code></pre>
+          <p>
+            <strong>Usage Tips:</strong>
+          </p>
+
+          <ul>
+            <li>
+              Place <code>&lt;aside&gt;</code> next to or within the main
+              content to add relevant supplementary information.
+            </li>
+            <li>
+              Use it for secondary information, like callouts, summaries, or
+              additional resources.
+            </li>
+            <li>
+              Keep <code>&lt;aside&gt;</code> concise and relevant to avoid
+              clutter.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,158 @@
+<section
+  style="
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  "
+>
+  <!-- Section Title -->
+  <h3 style="color: #4caf50; font-size: 22px">Part 4: Adjusting List Styles</h3>
+
+  <!-- Introduction -->
+  <p style="font-size: 18px; line-height: 1.5">
+    Lists in HTML are versatile, allowing customization to enhance visual appeal
+    and improve user experience. You can modify list appearance by changing
+    bullet styles in unordered lists or numbering styles in ordered lists.
+  </p>
+
+  <!-- Changing Bullet Styles for Unordered Lists -->
+  <h4 style="color: #333; font-size: 20px">
+    Changing Bullet Styles for Unordered Lists
+  </h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    By default, unordered lists display bullet points. You can modify these
+    bullet styles to circles, squares, or remove them entirely using the
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="The 'list-style-type' property changes the appearance of bullets in a list."
+    >
+      <code>list-style-type</code>
+    </span>
+    property applied through inline CSS.
+  </p>
+
+  <!-- Example Code: Unordered Lists -->
+  <pre
+    style="
+      background-color: #f1f8e9;
+      padding: 10px;
+      border: 1px solid #8bc34a;
+      border-radius: 5px;
+      overflow-x: auto;
+    "
+  >
+&lt;ul style="list-style-type: circle;"&gt;
+    &lt;li&gt;Circle Bullet&lt;/li&gt;
+    &lt;li&gt;Circle Bullet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul style="list-style-type: square;"&gt;
+    &lt;li&gt;Square Bullet&lt;/li&gt;
+    &lt;li&gt;Square Bullet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul style="list-style-type: none;"&gt;
+    &lt;li&gt;No Bullet&lt;/li&gt;
+    &lt;li&gt;No Bullet&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+
+  <!-- Rendered Unordered Lists -->
+  <ul style="list-style-type: circle">
+    <li>Circle Bullet</li>
+    <li>Circle Bullet</li>
+  </ul>
+
+  <ul style="list-style-type: square">
+    <li>Square Bullet</li>
+    <li>Square Bullet</li>
+  </ul>
+
+  <ul style="list-style-type: none">
+    <li>No Bullet</li>
+    <li>No Bullet</li>
+  </ul>
+
+  <!-- Adjusting Numbering for Ordered Lists -->
+  <h4 style="color: #333; font-size: 20px">
+    Adjusting Numbering for Ordered Lists
+  </h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    Ordered lists can be modified to use letters, Roman numerals, or custom
+    start numbers using the
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="The 'list-style-type' property changes the numbering format of ordered lists."
+    >
+      <code>list-style-type</code>
+    </span>
+    property.
+  </p>
+
+  <!-- Example Code: Ordered Lists -->
+  <pre
+    style="
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #4caf50;
+      border-radius: 5px;
+      overflow-x: auto;
+    "
+  >
+&lt;ol style="list-style-type: lower-alpha;"&gt;
+    &lt;li&gt;Step a&lt;/li&gt;
+    &lt;li&gt;Step b&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol style="list-style-type: upper-roman;"&gt;
+    &lt;li&gt;Step I&lt;/li&gt;
+    &lt;li&gt;Step II&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol start="3"&gt;
+    &lt;li&gt;Step 3&lt;/li&gt;
+    &lt;li&gt;Step 4&lt;/li&gt;
+&lt;/ol&gt;
+  </pre>
+
+  <!-- Rendered Ordered Lists -->
+  <ol style="list-style-type: lower-alpha">
+    <li>Step a</li>
+    <li>Step b</li>
+  </ol>
+
+  <ol style="list-style-type: upper-roman">
+    <li>Step I</li>
+    <li>Step II</li>
+  </ol>
+
+  <ol start="3">
+    <li>Step 3</li>
+    <li>Step 4</li>
+  </ol>
+
+  <!-- Try It Out Button -->
+  <div class="text-end">
+    <button
+      class="btn btn-primary try-it-out"
+      onclick='loadTryItOut(
+        "<ul style=\"list-style-type: circle;\">\n  <li>Circle Bullet</li>\n  <li>Circle Bullet</li>\n</ul>\n\n<ul style=\"list-style-type: square;\">\n  <li>Square Bullet</li>\n  <li>Square Bullet</li>\n</ul>\n\n<ul style=\"list-style-type: none;\">\n  <li>No Bullet</li>\n  <li>No Bullet</li>\n</ul>\n\n<ol style=\"list-style-type: lower-alpha;\">\n  <li>Step a</li>\n  <li>Step b</li>\n</ol>\n\n<ol style=\"list-style-type: upper-roman;\">\n  <li>Step I</li>\n  <li>Step II</li>\n</ol>\n\n<ol start=\"3\">\n  <li>Step 3</li>\n  <li>Step 4</li>\n</ol>",
+        "",
+        ""
+      )'
+    >
+      Try it→
+    </button>
+  </div>
+
+  <p style="font-size: 18px; line-height: 1.5">
+    Use the button above to try different list styles and see how they change
+    the display of bullet points or numbering. Adjust the code to explore
+    various styles and their effects.
+  </p>
+</section>

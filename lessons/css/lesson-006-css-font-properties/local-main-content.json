@@ -1,0 +1,127 @@
+{
+  "title": "Lesson 6:CSS font properties",
+  "lessonID": "lessoncss006",
+  "videoUrl": "",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/01-overview.html"
+        },
+        {
+          "title": "Font Family",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/02-font-family.html"
+        },
+        {
+          "title": "Font Size",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/03-font-size.html"
+        },
+        {
+          "title": "Font Style",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/04-font-style.html"
+        },
+
+        {
+          "title": "Font Weight",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/05-font-weight.html"
+        },
+        {
+          "title": "Text Transform",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/06-text-transform.html"
+        },
+        {
+          "title": "Line Height",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/07-line-height.html"
+        },
+        {
+          "title": "Letter Spacing",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/08-letter-spacing.html"
+        },
+        {
+          "title": "Text Align",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/read/09-text-align.html"
+        }
+
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/write/01-overview.html"
+        },
+        {
+          "title": "Step-by-Step",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/write/02-step-by-step.html"
+        },
+        {
+          "title": "Review",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/write/03-review-font-property.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/create/01-overview.html"
+        },
+        {
+          "title": "Help",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/create/02-hints.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-006-css-font-properties/create/03-solution.html"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,140 @@
+<section
+  style="
+    background-color: #f3e5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  "
+>
+  <!-- Section Title -->
+  <h3 style="color: #7b1fa2; font-size: 22px">Understanding Attributes in HTML</h3>
+
+  <!-- Introduction to Attributes -->
+  <p style="font-size: 18px; line-height: 1.5">
+    In HTML, attributes are used to provide additional information about elements. They modify the behavior, appearance, or functionality of elements and are always specified in the opening tag. Attributes consist of a name, an equal sign, and a value enclosed in quotation marks.
+  </p>
+
+  <!-- Explanation of Attribute Structure -->
+  <h4 style="color: #333; font-size: 20px">Structure of an Attribute</h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    An attribute is composed of the following parts:
+    <ul style="list-style-type: disc; margin-left: 20px;">
+      <li>
+        <strong>Name</strong>: The name of the attribute, which identifies what type of information it modifies.
+      </li>
+      <li>
+        <strong>Equal Sign (=)</strong>: Separates the attribute name from its value.
+      </li>
+      <li>
+        <strong>Value</strong>: The specific information or property being set for the attribute.
+      </li>
+    </ul>
+  </p>
+
+  <!-- Example of an HTML Tag with Multiple Attributes -->
+  <h4 style="color: #333; font-size: 20px">Example of Multiple Attributes</h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    The following example demonstrates how to use multiple attributes within a single HTML tag:
+  </p>
+  <pre
+    style="
+      background-color: #e1bee7;
+      padding: 10px;
+      border: 1px solid #9c27b0;
+      border-radius: 5px;
+      overflow-x: auto;
+    "
+  >
+&lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+          data-bs-title="The 'img' tag is used to embed images in HTML.">img</span>
+    <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+          data-bs-title="The 'src' attribute specifies the URL of the image to display.">src</span>=<span data-bs-toggle="tooltip" 
+          data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Enclose the URL in double quotes.">"</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="This is the value of the 'src' attribute, indicating the image source.">image.jpg</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Close the value with double quotes.">"</span>
+    <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+          data-bs-title="The 'alt' attribute provides alternative text for the image.">alt</span>=<span data-bs-toggle="tooltip" 
+          data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Enclose the text in double quotes.">"</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="This is the value of the 'alt' attribute, describing the image for accessibility.">Sample Image</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Close the value with double quotes.">"</span>
+    <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+          data-bs-title="The 'width' attribute sets the width of the image in pixels or percentage.">width</span>=<span data-bs-toggle="tooltip" 
+          data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Enclose the width value in double quotes.">"</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="This is the value of the 'width' attribute, setting the width to 200 pixels.">200</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Close the value with double quotes.">"</span>
+    <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" 
+          data-bs-title="The 'height' attribute sets the height of the image in pixels or percentage.">height</span>=<span data-bs-toggle="tooltip" 
+          data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Enclose the height value in double quotes.">"</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="This is the value of the 'height' attribute, setting the height to 150 pixels.">150</span><span 
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-code" data-bs-title="Close the value with double quotes.">"</span>
+&gt;
+  </pre>
+
+  <!-- Explanation of Multiple Attributes -->
+  <p style="font-size: 18px; line-height: 1.5">
+    In the example above, the <code>img</code> tag contains multiple attributes, each modifying a specific aspect of the image:
+    <ul style="list-style-type: disc; margin-left: 20px;">
+      <li><strong><code>src</code></strong>: Specifies the URL of the image to be displayed.</li>
+      <li><strong><code>alt</code></strong>: Provides alternative text for the image, improving accessibility.</li>
+      <li><strong><code>width</code></strong>: Sets the width of the image in pixels.</li>
+      <li><strong><code>height</code></strong>: Sets the height of the image in pixels.</li>
+    </ul>
+  </p>
+<div style="margin-top: 20px; padding: 10px; background-color: #f1f1f1; border-radius: 5px;">
+  <p style="font-size: 18px; line-height: 1.5; margin-bottom: 10px;">
+    Go ahead and try it out! Adjust the <strong>button's</strong> attributes, such as 
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-code"
+      data-bs-title="Example: type='button'. Sets the type of the button (e.g., 'button', 'submit')."
+    >type</span>, 
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-code"
+      data-bs-title="Example: onclick='alert(&quot;Hello!&quot;)'. Defines the JavaScript action when the button is clicked."
+    >onclick</span>, and 
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-code"
+      data-bs-title="Example: style='background-color: red;'. Sets the inline CSS styles of the button."
+    >style</span> to see the effects in the code editor.
+  </p>
+  <div class="text-end">
+    <button
+      class="btn btn-primary try-it-out"
+
+      onclick="loadTryItOut(
+        '&lt;button \n  type=&quot;button&quot; \n  onclick=&quot;alert(&#92;&#39;You clicked the button!&#92;&#39;)&quot; \n  style=&quot;background-color: purple; \n  color: white;&quot;&gt;\n  Click Me\n&lt;/button&gt;', 
+        '', 
+        ''
+      )"
+    >
+      Try it Out →
+    </button>
+  </div>
+</div>
+
+  <!-- Adding Multiple Attributes -->
+  <h4 style="color: #333; font-size: 20px">Adding Multiple Attributes</h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    You can add as many attributes as needed to an element, as long as they are separated by spaces. 
+    When using multiple attributes, remember:
+    <ul style="list-style-type: disc; margin-left: 20px;">
+      <li>Each attribute should have its own <strong>name</strong> and <strong>value</strong>.</li>
+      <li>Values should always be enclosed in double or single quotes.</li>
+      <li>Separate attributes with spaces within the same opening tag.</li>
+    </ul>
+  </p>
+
+
+</div>
+
+  <!-- Conclusion -->
+  <p style="font-size: 18px; line-height: 1.5">
+    Understanding attributes is essential for customizing elements and making them more dynamic and accessible. 
+    Whether you are styling a list or adding an image, attributes provide the flexibility needed to control how elements appear and behave on your web pages.
+  </p>
+</section>

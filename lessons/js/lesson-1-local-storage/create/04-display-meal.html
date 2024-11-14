@@ -1,0 +1,204 @@
+<section class="write-section">
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end banner image -->
+  <!-- Comment out sections you don't want -->
+  <!-- <img
+        class="leading-image"
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/js-1-localStorage-form.png"
+      /> -->
+  <img
+    src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/dropdowningredients.png"
+    alt="image of the web site"
+    width="45%"
+    style="float: right; margin: 5px"
+  />
+
+  <!-- end leading content -->
+  <h2>Display Ingredients</h2>
+  <p class="section-text intro">
+    Follow the steps to get your form working correctly to display the
+    ingredients from a selected meal!<br />
+    The image to the right shows what this section helps you create.<br />
+    Following the steps below!
+  </p>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: HTML...</h4>
+    <p class="section-text">
+      First, we need to add one JS attribute to the HTML...again!
+      <br />
+      Find your HTML select tag, it should have an id attribute, and add the
+      attribute 'onchange' set equal to a function name also pass in 'this' as
+      an arguement.<br />
+      Consider naming the function displayMeals.
+    </p>
+    <!-- <div class="demo">
+          <pre class="code-box">
+            &lt;img src="https://placekitten.com/200/300" /&gt;
+      </pre
+          >
+        </div> -->
+    <div class="tip-box">
+      <strong>Tip:</strong> You can name this function whatever you'd like.
+      We'll create this function soon, it's just good to be descriptive with the
+      names relating to the actions they perform.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: More HTML</h4>
+    <p class="section-text">
+      Somewhere below the drop down menu HTML code, add an 'ul' HTML tag with id
+      attribute set to some value.
+    </p>
+    <div class="tip-box">
+      <strong>Remember:</strong> You'll be adding li tags to the ul dynamically
+      using JavaScript.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: New Function</h4>
+    <p class="section-text">
+      Below the closing bracket of your function loadMeals(), create a new
+      function with the same name as the 'onchange' property value created
+      earlier.
+    </p>
+    <div class="demo">
+      <pre>
+        &lt;select id="dropdown" onchange="<strong class="highlight">displayMeal(this)</strong>">
+
+        --- deep down in the JavaScript ---
+
+        function <strong class="highlight">displayMeal(this)</strong>{
+
+        } 
+      </pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 4: Variable 1</h4>
+    <p class="section-text">
+      Between the brackets of your new function, create a variable set to your
+      drop down element.
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 5: Variable 2</h4>
+    <p class="section-text">
+      Below the drop down element variable, create another variable and set it
+      equal to the value of the drop down element.
+    </p>
+    <div class="demo">
+      <pre>
+        function displayMeal(this){
+          let <strong class="highlight">varName1</strong> = document.querySelector("#ID");
+          let varName2 = <strong class="highlight">varName1</strong>.value;
+        }</pre>
+    </div>
+    <div class="tip-box">
+      <strong>Hint:</strong> use the value property on the variable name that is
+      set to the drop down menu element.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 6: Variable 3 JSON Parse</h4>
+    <p class="section-text">
+      Below the variable set to the value, create another variable, named
+      ingredients, set to parse (retrieve) the JSON from the local storage and
+      use the value of the drop down selected.
+    </p>
+    <div class="demo">
+      <pre>
+        function displayMeal(this){
+          let varName1 = document.querySelector("#ID");
+          let <strong class="highlight2">varName2</strong> = varName1.value;
+
+          const varName3 = JSON.parse(localStorage.[[CommandToRetrieveData]](<strong class="highlight2">varName2</strong>));
+ 
+        }</pre>
+    </div>
+    <div class="tip-box">
+      <strong>Tip:</strong> this code that will be set equal to all the
+      ingredient of a select meal. Replace [[CommandToRetrieveData]] with the
+      actual code used with the local storage to retrieve data.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 7: Variable 4</h4>
+    <p class="section-text">
+      Below the variable using JSON.parse, create another variable to get the
+      'ul' HTML element.
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 8: Reset the Ingredient List</h4>
+    <p class="section-text">
+      Below the variable set to the ul element, use the innerHTML property with
+      the variable name set to the ul element and set it equal to an empty
+      string.
+    </p>
+    <div class="tip-box">
+      <strong>Tip:</strong> This will ensure that each meal selected will
+      display only it's ingredients and not add to a previous list.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 9: For Each</h4>
+    <p class="section-text">
+      Below the variable with innerHTML, using the variable set to the JSON
+      parse, create a forEach loop that iterates (i) over an anonymous function.
+    </p>
+    <div class="demo">
+      <pre>
+         const <strong class="highlight2">varName3</strong> = JSON.parse(localStorage.[[CommandToRetrieveData]](varName2));
+         --code for ul variables here--
+          
+        <strong class="highlight2">varName3</strong>.forEach((i) => {
+         
+        });
+      </pre>
+    </div>
+    <div class="tip-box">
+      <strong>Remember:</strong> the 'i' in the forEach represents each value as
+      the iterator or placeholder of the current element that will iterate
+      through the loop.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 10: Displaying the Ingredients</h4>
+    <p class="section-text">
+      Between the brackets of the for each loop:<br />
+      Create a variable that creates an li HTML element.<br />
+      Use the innerText property, on the variable creating li elements, and set
+      it equal to the forEach loop iterator.<br />
+      Use the appendChild method, on the variable set to your HTML ul element,
+      and pass in the variable used to create the li HTML elements.
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 11: Testing and Styling</h4>
+    <p class="section-text">
+      Select a meal from the drop down menu and see if the ingredients get
+      displayed!
+      <br />
+      Style your page!
+    </p>
+  </section>
+
+  <!-- Comment out sections you don't want -->
+  <!--<div class="lead-content"><img class="leading-image" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"></div>-->
+  <!-- end leading content -->
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end bottom banner -->
+</section>

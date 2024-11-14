@@ -1,0 +1,140 @@
+<!-- Advanced Anchor Elements Section -->
+<section class="section-container section-green" style="margin-bottom: 20px">
+  <h3 class="section-title">Advanced Anchor Elements</h3>
+  <p class="section-text">
+    While basic anchor elements are great for simple navigation, there are
+    advanced techniques that can make links more dynamic and user-friendly.
+    Let’s explore some of these advanced features:
+  </p>
+
+  <!-- 1. Opening Links in a New Tab -->
+  <section>
+    <h4 class="subsection-title">1. Opening Links in a New Tab</h4>
+    <p class="section-text">
+      To open a link in a new browser tab, use the
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'target' attribute specifies where the linked document will open. The '_blank' value opens it in a new tab or window."
+      >
+        <code>target</code>
+      </span>
+      attribute. Setting <code>target="_blank"</code> instructs the browser to
+      open the link in a new tab or window.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="https://www.simplycoding.org" target="_blank"&gt;Visit SimplyCoding in a New Tab&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;https://www.simplycoding.org&quot; target=&quot;_blank&quot;&gt;Visit SimplyCoding in a New Tab&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. Linking to Specific Sections of a Page -->
+  <section>
+    <h4 class="subsection-title">2. Linking to Specific Sections of a Page</h4>
+    <p class="section-text">
+      You can create internal links that navigate to specific sections within
+      the same page using the
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The '#' symbol is used to denote an ID in URLs for internal linking."
+      >
+        <code>#</code>
+      </span>
+      symbol, followed by the
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'id' attribute assigns a unique identifier to an HTML element, making it a target for internal links."
+      >
+        ID
+      </span>
+      of the target element.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;
+...
+&lt;h2 id="section2"&gt;Section 2&lt;/h2&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;#section2&quot;&gt;Go to Section 2&lt;/a&gt; &lt;h2 id=&quot;section2&quot;&gt;Section 2&lt;/h2&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 3. Adding Titles to Anchor Elements -->
+  <section>
+    <h4 class="subsection-title">3. Adding Titles to Anchor Elements</h4>
+    <p class="section-text">
+      The
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'title' attribute adds a tooltip, providing additional information about the link."
+      >
+        <code>title</code>
+      </span>
+      attribute provides extra information about the link. When users hover over
+      the link, the title text appears as a tooltip, offering more context.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="https://www.simplycoding.org" title="Visit SimplyCoding for coding lessons"&gt;Visit SimplyCoding&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;https://www.simplycoding.org&quot; title=&quot;Visit SimplyCoding for coding lessons&quot;&gt;Visit SimplyCoding&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. Making Links Downloadable -->
+  <section>
+    <h4 class="subsection-title">4. Making Links Downloadable</h4>
+    <p class="section-text">
+      The
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'download' attribute prompts the browser to download the linked file instead of opening it."
+      >
+        <code>download</code>
+      </span>
+      attribute can be used to make links downloadable. When a user clicks on
+      the link, the specified file will be downloaded instead of opened in the
+      browser.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="files/guide.pdf" download&gt;Download Guide&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;files/guide.pdf&quot; download&gt;Download Guide&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+</section>

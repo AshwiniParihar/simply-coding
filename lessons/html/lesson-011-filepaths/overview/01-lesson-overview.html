@@ -1,0 +1,187 @@
+  <body>
+   <!-- Overview Section -->
+<section class="container my-4 p-3 border rounded">
+  <!-- Title and Image Inline -->
+  <div class="d-flex align-items-center justify-content-start mb-3">
+    <!-- Title -->
+    <img class="lesson-title-tag" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/folder.gif" alt="Bouncing Folder Icons representing file structrures">
+    <h1 class="ms-3">Lesson 11: File Paths</h1>
+
+    <!-- Image -->
+  </div>
+
+  <!-- Lesson Content -->
+  <div>
+    <p class="mb-2">This lesson covers:</p>
+    <ol class="list-group list-group-numbered mb-3">
+      <li class="list-group-item">The Concept of File Paths</li>
+      <li class="list-group-item">Absolute File Paths</li>
+      <li class="list-group-item">
+      Relative File Paths
+      </li>
+        <li class="list-group-item">
+    Special Characters in File Paths
+      </li>
+         <li class="list-group-item">
+   Practical excersise using file paths and images!
+      </li>
+    </ol>
+
+    <!-- Rendered Example -->
+    <div class="card p-3 mb-3">
+      <p class="mb-2">After this lesson you will understand how to use assets in your project correctly with file paths from a structure like below:</p>
+  <div style="width: 300px; border: 1px solid #ddd; padding: 10px; background-color: #fff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+    
+    <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+      <span style="margin-right: 8px;">📁</span>
+      <strong>Development</strong>
+    </div>
+    
+    <div style="margin-left: 20px;">
+      
+      <!-- Assets Folder -->
+      <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+        <span style="margin-right: 8px;">📁</span>
+        <strong>assets</strong>
+      </div>
+      
+      <div style="margin-left: 20px;">
+        
+        <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+          <span style="margin-right: 8px;">🖼️</span>
+          logo.png
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+          <span style="margin-right: 8px;">🖼️</span>
+          background.png
+        </div>
+        
+      </div>
+      
+      <!-- HTML Folder -->
+      <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+        <span style="margin-right: 8px;">📁</span>
+        <strong>html</strong>
+      </div>
+      
+      <div style="margin-left: 20px;">
+        
+        <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+          <span style="margin-right: 8px;">📄</span>
+          index.html
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+          <span style="margin-right: 8px;">📄</span>
+          about.html
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 5px 10px; cursor: pointer;">
+          <span style="margin-right: 8px;">📄</span>
+          contact.html
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+
+      <p class="text-muted"><em>Relative File Path: development/assets/logo.png</em></p>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/highlight-min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/javascript.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/css.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/html.min.js"
+      defer
+    ></script>
+
+    <script src="/v2/vendor/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="/v2/vendor/bootstrap/popper.min.js"></script>
+    <script src="/v2/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/v2/vendor/ace/src-min-noconflict/ace.js"></script>
+    <script src="/v2/vendor/ace/src-min-noconflict/ext-language_tools.js"></script>
+    <script src="/v2/js/toggle-sections.js"></script>
+    <script src="/v2/js/load-lesson-data.js"></script>
+    <script src="/v2/js/atom.js"></script>
+    <script src="/v2/js/settings.js"></script>
+    <script src="/v2/js/progress-state.js"></script>
+
+    <script>
+      function applyHighlighting() {
+        document.querySelectorAll("pre code").forEach((block) => {
+          // Get the raw text content
+          let content = block.textContent;
+
+          // Try to detect if it's HTML by looking for common patterns
+          function looksLikeHTML(code) {
+            const htmlPatterns = [
+              /<\/?[a-z][\s\S]*>/i, // HTML tags
+              /<!DOCTYPE/i, // DOCTYPE declaration
+              /<!(--)?[^>]*>/, // HTML comments
+            ];
+            return htmlPatterns.some((pattern) => pattern.test(code));
+          }
+
+          // Determine language
+          let result;
+          if (looksLikeHTML(content)) {
+            // Force HTML highlighting if it looks like HTML
+            result = hljs.highlight(content, {
+              language: "html",
+              ignoreIllegals: true,
+            });
+          } else {
+            // Let highlight.js auto-detect the language
+            result = hljs.highlightAuto(content, [
+              "javascript",
+              "html",
+              "css",
+              "xml",
+              "json",
+              "python",
+              "java",
+              "cpp",
+              "csharp",
+            ]);
+          }
+
+          // Set the highlighted HTML
+          block.innerHTML = result.value;
+
+          // Add hljs class and detected language class
+          block.classList.add("hljs");
+          block.classList.add(`language-${result.language}`);
+
+          // Log the detected language (helpful for debugging)
+          console.log("Detected language:", result.language);
+        });
+      }
+
+      // Setup function to handle HTML entities
+      function setupCodeBlocks() {
+        document.querySelectorAll("pre code").forEach((block) => {
+          block.textContent = block.textContent
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, '"')
+            .replace(/&#039;/g, "'");
+        });
+      }
+      applyHighlighting();
+    </script>
+  </body>

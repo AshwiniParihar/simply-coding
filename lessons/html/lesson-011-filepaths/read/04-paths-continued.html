@@ -1,0 +1,387 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Basic File Path Scenarios -->
+
+  <div class="infographic-section">
+    <h2>Advanced File Path Scenarios</h2>
+    <p>
+      Let's explore more complex scenarios you'll encounter in real-world
+      projects:
+    </p>
+
+    <div class="row">
+      <!-- Multiple Level Navigation -->
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <p class="mb-2">
+            Multiple Level Navigation - from <code>post.html</code> to
+            <code>dark.css</code>:
+          </p>
+          <div
+            style="
+              width: 300px;
+              border: 1px solid #ddd;
+              padding: 10px;
+              background-color: #fff;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            "
+          >
+            <div style="display: flex; align-items: center; padding: 5px 10px">
+              <span style="margin-right: 8px">📁</span><strong>Project</strong>
+            </div>
+            <div style="margin-left: 20px">
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>css
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>themes
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">📄</span>dark.css
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>pages
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>blog
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">📄</span>post.html
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted"><em>Path: ../../css/themes/dark.css</em></p>
+          <div class="mt-2 alert alert-light">
+            <strong>Navigation breakdown:</strong> Go up two levels (../../) to
+            reach Project folder, then navigate down through css/themes to reach
+            dark.css
+          </div>
+        </div>
+      </div>
+
+      <!-- Sibling Folders Access -->
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <p class="mb-2">
+            Sibling Folders - from <code>catalog.html</code> to
+            <code>product-image.jpg</code>:
+          </p>
+          <div
+            style="
+              width: 300px;
+              border: 1px solid #ddd;
+              padding: 10px;
+              background-color: #fff;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            "
+          >
+            <div style="display: flex; align-items: center; padding: 5px 10px">
+              <span style="margin-right: 8px">📁</span><strong>Project</strong>
+            </div>
+            <div style="margin-left: 20px">
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>images
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>products
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">🖼️</span>product-image.jpg
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>pages
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>store
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">📄</span>catalog.html
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted">
+            <em>Path: ../../images/products/product-image.jpg</em>
+          </p>
+          <div class="mt-2 alert alert-light">
+            <strong>Strategy:</strong> Go up two levels to reach common parent,
+            then navigate down through the images/products folder structure
+          </div>
+        </div>
+      </div>
+
+      <!-- Mixed Resource Types -->
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <p class="mb-2">
+            Mixed Resource Types - from <code>shop.html</code> accessing
+            multiple resources:
+          </p>
+          <div
+            style="
+              width: 300px;
+              border: 1px solid #ddd;
+              padding: 10px;
+              background-color: #fff;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            "
+          >
+            <div style="display: flex; align-items: center; padding: 5px 10px">
+              <span style="margin-right: 8px">📁</span><strong>Project</strong>
+            </div>
+            <div style="margin-left: 20px">
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>assets
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>css
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">📄</span>style.css
+                  </div>
+                </div>
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>js
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">📄</span>shop.js
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>views
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📄</span>shop.html
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted"><em>Multiple paths from shop.html:</em></p>
+          <ul class="list-unstyled ms-3">
+            <li><code>../assets/css/style.css</code></li>
+            <li><code>../assets/js/shop.js</code></li>
+          </ul>
+          <div class="mt-2 alert alert-light">
+            <strong>Tip:</strong> Organize resources by type to maintain clean
+            project structure. Use consistent relative paths to access them.
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Content Paths -->
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <p class="mb-2">
+            Root Path Navigation - from <code>article.html</code> to shared
+            resources:
+          </p>
+          <div
+            style="
+              width: 300px;
+              border: 1px solid #ddd;
+              padding: 10px;
+              background-color: #fff;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              border-radius: 8px;
+            "
+          >
+            <div style="display: flex; align-items: center; padding: 5px 10px">
+              <span style="margin-right: 8px">📁</span
+              ><strong>Project (root)</strong>
+            </div>
+            <div style="margin-left: 20px">
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>shared
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📄</span>header.html
+                </div>
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📄</span>footer.html
+                </div>
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📄</span>nav.html
+                </div>
+              </div>
+              <div
+                style="display: flex; align-items: center; padding: 5px 10px"
+              >
+                <span style="margin-right: 8px">📁</span>blog
+              </div>
+              <div style="margin-left: 20px">
+                <div
+                  style="display: flex; align-items: center; padding: 5px 10px"
+                >
+                  <span style="margin-right: 8px">📁</span>2024
+                </div>
+                <div style="margin-left: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding: 5px 10px;
+                    "
+                  >
+                    <span style="margin-right: 8px">📄</span>article.html
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted"><em>Root-based paths from article.html:</em></p>
+          <ul class="list-unstyled ms-3">
+            <li><code>/shared/header.html</code></li>
+            <li><code>/shared/footer.html</code></li>
+            <li><code>/shared/nav.html</code></li>
+          </ul>
+          <div class="mt-2 alert alert-light">
+            <strong>Advantage:</strong> Using root paths (starting with /) makes
+            references consistent from anywhere in the project. No need to count
+            directory levels - just start from the root!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert mt-3 d-flex align-items-start">
+    <div class="flex-grow-1">
+      <!-- Path Type Explanations -->
+      <!-- Absolute Path Explanation -->
+      <div class="alert alert-info mt-3 d-flex align-items-start">
+        <div class="flex-grow-1">
+          <strong>Absolute Path:</strong>
+          An absolute path provides the full "address" of a file, such as
+          <code>C:/Users/YourName/Documents/file.html</code> on a local
+          computer. Absolute paths work only on the specific computer where the
+          file is stored.
+          <div class="mt-2">
+            <strong>When to use:</strong> For system-specific scripts or local
+            development environment configurations.
+          </div>
+        </div>
+        <img
+          src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/globe.gif"
+          alt="Globe representing absolute path"
+          class="ms-3"
+          style="width: 80px; height: auto"
+        />
+      </div>
+
+      <!-- Relative Path Explanation -->
+      <div class="alert alert-success mt-3 d-flex align-items-start">
+        <img
+          src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/city.gif"
+          alt="City representing relative path"
+          class="me-3"
+          style="width: 80px; height: auto"
+        />
+        <div class="flex-grow-1">
+          <strong>Relative Path:</strong>
+          A relative path gives only part of the "address" within the project,
+          like <code>images/logo.png</code>. It works as long as the project
+          structure is unchanged, ensuring portability across systems.
+          <div class="mt-2">
+            <strong>When to use:</strong> For most web development scenarios and
+            portable applications.
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced File Path Scenarios -->
+      <!-- Advanced File Path Scenarios -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,161 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Review: CSS (Cascading Style Sheet)</h2>
+  <p class="section-text intro">
+    Let's review what you’ve learned about the css
+    
+  </p>
+
+  <!-- Step 1: Purpose of the css -->
+  <section class="write-step"><b>Purpose of adding CSS</b></h4>
+    <p class="section-text">
+      CSS (Cascading Style Sheets) is used to style and layout web pages, separating content (HTML) from design. This helps enhance the appearance of web pages, making them more visually appealing and responsive.
+    </p>
+    <p>Example of CSS Usage</p>
+    <div class="demo">
+      <pre><code>
+        body {
+          background-color: #f0f0f0;
+          font-family: Arial, sans-serif;
+      }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Selectors and Properties -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. Selectors and Properties</h4>
+    <p class="section-text">
+      CSS uses <strong>selectors</strong> to target HTML elements and applies <strong>properties</strong> to define styles.
+    </p>
+    <ul>
+      <li><strong>Selectors:</strong>Define the element(s) to be styled (e.g., h1, .class, #id).</li>
+      <li><strong>Properties:</strong>Define the actual style to apply (e.g., color, margin).</li>
+    </ul>
+    <p>Example</p>
+    <div class="demo">
+      <pre><code>
+        h1 {
+          color: blue;
+          font-size: 24px;
+      }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 3: Common Styling Attributes -->
+  <section class="write-step">
+    <h4 class="subsection-title">3. Common Styling Attributes</h4>
+    <p class="section-text">
+      Here are some frequently used properties:
+    </p>
+    <ul>
+      <li><strong>color: </strong>Text color (color: red;).</li>
+      <li><strong>background-color: </strong>Background color (background-color: yellow;).</li>
+      <li><strong>margin/padding:</strong>Space outside/inside elements.</li>
+      <li><strong>border:</strong>Defines border style, width, and color.</li>
+    </ul>
+    <p>Example</p>
+    <div class="demo">
+      <pre><code>
+        button {
+          background-color: #3498db;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      
+      </code></pre>
+    </div>
+  </section>
+
+
+
+  <!-- Step 5: Common Mistakes -->
+  <section class="write-step">
+    <h4 class="subsection-title">5. Common Mistakes</h4>
+    <div class="alert alert-warning mt-3">
+      <strong>Common Mistakes:</strong>
+      <ul>
+        <li>
+          One of the most common mistakes developers make is forgetting to include the link to the external CSS file in the &lt;head&gt; section of the HTML document. Without this link, the CSS styles will not be applied to the page, resulting in an unstyled or poorly styled webpage.
+        </li>
+      </ul>
+        
+    </div>
+    <p>Suppose you have one css file with name style.css</p>
+    <div class="demo">
+      <pre><code>
+        h1 {
+          color: blue;
+          font-size: 24px;
+      }
+      
+      p {
+          font-family: Arial;
+          font-size: 16px;
+      }
+      
+      button {
+          background-color: red;
+          color: white;
+          padding: 10px;
+      }
+       </code></pre>
+    </div>
+ <p>This is html File</p>
+    <div class="demo">
+      <pre><code>
+        &lt;!DOCTYPE html&gt; 
+         &lt;html lang="en"&gt; 
+         &lt;head&gt; 
+         &lt;meta charset="UTF-8"&gt; 
+         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+         &lt;title&gt;My Webpage&lt;/title&gt; 
+         <pre>!-- Missing link to the external CSS file --</pre>
+         &lt;/head&gt; 
+         &lt;body&gt; 
+         &lt;h1&gt;Welcome to My Page&lt;/h1&gt; 
+         &lt;p&gt;This is a paragraph with external styling.&lt;/p&gt; 
+        &lt;button&gt;Click Me&lt;/button&gt; 
+        &lt;/body&gt; 
+        &lt;/html&gt;
+       </code></pre>
+    </div>
+
+    <p>Corrected Version with the CSS link</p>
+    <div class="demo">
+      <pre><code>
+        &lt;!DOCTYPE html&gt; 
+        &lt;html lang="en"&gt; 
+        &lt;head&gt; 
+        &lt;meta charset="UTF-8"&gt; 
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+        &lt;title&gt;My Webpage&lt;/title&gt; 
+        &lt;link rel="stylesheet" href="styles.css"&gt;<pre>!-- Correctly linked external CSS file --</pre>
+        &lt;/head&gt; 
+        &lt;body&gt; 
+        &lt;h1&gt;Welcome to My Page&lt;/h1&gt; 
+        &lt;p&gt;This is a paragraph with external styling.&lt;/p&gt; 
+        &lt;button&gt;Click Me&lt;/button&gt; 
+        &lt;/body&gt; 
+        &lt;/html&gt;
+      </code></pre>
+    </div>
+    <p><strong>Explanation</strong></p>
+    <ul>
+      <li>The &lt;link&gt; tag with rel="stylesheet" and href="styles.css" ensures that the external CSS file is linked to the HTML document.</li>
+      <li>Without this link, any styles defined in the external CSS will not be applied, leading to an unstyled webpage.</li>
+    </ul>
+  
+  </section>
+
+  <!-- Step 6: Example Code -->
+  <section class="write-step">
+    <div class="tip-box">
+      <strong>Final Tip:</strong> Tip: Always double-check that the file path specified in href matches the actual location of your CSS file relative to your HTML document.
+    </div>
+  </section>
+</section>

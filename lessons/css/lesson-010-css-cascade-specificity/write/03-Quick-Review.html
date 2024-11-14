@@ -1,0 +1,128 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Review: CSS Cascade, Specificity, and Inheritance</h2>
+  <p class="section-text intro">
+    Let's review what you've learned about CSS Cascade, Specificity, and Inheritance! These concepts are crucial for understanding how CSS rules are applied to elements in a web page, ensuring that styles are consistent and conflicts are resolved efficiently.
+  </p>
+
+  <!-- Step 1: CSS Cascade -->
+  <section class="write-step">
+    <h4 class="subsection-title">1. CSS Cascade</h4>
+    <p class="section-text">
+      The CSS cascade is the process by which the browser determines which CSS rule to apply when multiple rules target the same element. This process resolves conflicts based on three factors:
+    </p>
+    <ul>
+      <li><strong>Position:</strong> The later a rule appears in the CSS, the more likely it is to override earlier rules if they conflict.</li>
+      <li><strong>Specificity:</strong> More specific selectors (like IDs) take precedence over less specific ones (like element selectors).</li>
+      <li><strong>Importance:</strong> The <code>!important</code> rule overrides all other styles, regardless of position or specificity.</li>
+    </ul>
+    <div class="demo">
+      <pre><code>
+/* CSS Example: */
+.container {
+    width: 50%;
+    background-color: lightblue;
+}
+
+#main-container {
+    background-color: lightgreen;
+}
+
+p {
+    color: black;
+}
+
+p {
+    color: red !important; /* Will override the color black */
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Specificity -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. Specificity</h4>
+    <p class="section-text">
+      Specificity is a measure of how specific a CSS selector is. More specific selectors are prioritized over less specific ones. The order of specificity is as follows:
+    </p>
+    <ul>
+      <li><strong>ID Selectors:</strong> (e.g., <code>#main-heading</code>) have the highest specificity.</li>
+      <li><strong>Class Selectors, Attribute Selectors, and Pseudo-classes:</strong> (e.g., <code>.heading</code>, <code>[type="text"]</code>, <code>:hover</code>) have medium specificity.</li>
+      <li><strong>Element Selectors:</strong> (e.g., <code>h1</code>, <code>p</code>) have the lowest specificity.</li>
+    </ul>
+    <div class="demo">
+      <pre><code>
+/* Example: */
+#main-heading {
+    color: green;
+}
+
+.heading {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+/* The color will be green because #main-heading (ID selector) is the most specific */
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 3: Inheritance -->
+  <section class="write-step">
+    <h4 class="subsection-title">3. Inheritance</h4>
+    <p class="section-text">
+      Inheritance refers to the ability of some CSS properties to be passed down from parent elements to their child elements. Not all properties are inherited, but some, like <code>color</code>, <code>font-family</code>, and <code>line-height</code>, are typically inherited.
+    </p>
+    <div class="demo">
+      <pre><code>
+/* Example of Inheritance */
+div {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    /* The font-family will be inherited from the parent div */
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 4: !important Keyword -->
+  <section class="write-step">
+    <h4 class="subsection-title">4. CSS <code>!important</code> Keyword</h4>
+    <p class="section-text">
+      The <code>!important</code> keyword increases the priority of a CSS rule, ensuring it overrides all other conflicting rules, regardless of specificity or position.
+    </p>
+    <div class="demo">
+      <pre><code>
+/* Example: */
+p {
+    color: red !important;
+}
+
+p {
+    color: blue;
+}
+
+/* The color will be red because the first rule uses !important, overriding the second */
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 5: Conclusion -->
+  <section class="write-step">
+    <h4 class="subsection-title">5. Conclusion</h4>
+    <p class="section-text">
+      To summarize:
+    </p>
+    <ul>
+      <li>The CSS Cascade determines the application of styles based on rule order, specificity, and importance.</li>
+      <li>Specificity helps resolve conflicts by prioritizing more specific selectors (IDs > classes > elements).</li>
+      <li>Inheritance allows some properties to be passed from parent to child elements.</li>
+      <li>The <code>!important</code> keyword forces a rule to take precedence over all others, regardless of other factors.</li>
+    </ul>
+  </section>
+</section>

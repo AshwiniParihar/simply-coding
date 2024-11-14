@@ -1,0 +1,524 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section Title -->
+
+  <!-- Input Types Explained -->
+  <div class="infographic-cards-container">
+    <!-- Text Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Text</h5>
+        <p class="info-card-description">
+          Accepts a single line of plain text.
+        </p>
+        <input type="text" />
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalText02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; placeholder=&quot;Enter your name&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Password Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Password</h5>
+        <p class="info-card-description">Masks characters for secure input.</p>
+        <input type="password" placeholder="Enter your password" />
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPassword02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;password&quot; placeholder=&quot;Enter your password&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Email Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Email</h5>
+        <p class="info-card-description">
+          Validates email format automatically.
+        </p>
+        <input type="email" placeholder="Enter your email" />
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalEmail02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;email&quot; placeholder=&quot;Enter your email&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Number Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Number</h5>
+        <p class="info-card-description">Accepts only numerical values.</p>
+        <input type="number" min="0" max="100" placeholder="Enter a number" />
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalNumber02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick='loadTryItOut("&lt;input type="number" min="0" max="100" placeholder="Enter a number"&gt;", "", "")'
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Date Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Date</h5>
+        <p class="info-card-description">
+          Allows date selection via a calendar.
+        </p>
+        <input type="date" />
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDate02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;date&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Checkbox Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Checkbox</h5>
+        <p class="info-card-description">Allows selecting multiple options.</p>
+        <div><input type="checkbox" /> Option 1</div>
+        <div><input type="checkbox" /> Option 2</div>
+        <div><input type="checkbox" /> Option 3</div>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalCheckbox02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;checkbox&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Radio Button Input -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Radio Button</h5>
+        <p class="info-card-description">Selects one option from a group.</p>
+        <div><input type="radio" name="option" /> Option 1</div>
+        <div><input type="radio" name="option" /> Option 2</div>
+        <div><input type="radio" name="option" /> Option 3</div>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalRadio02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;radio&quot; name=&quot;option&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Submit</h5>
+        <p class="info-card-description">Submits form data to a server.</p>
+        <input type="submit" value="Submit" />
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalSubmit02"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for Each Input Type -->
+  <!-- Text Modal -->
+  <div
+    class="modal fade"
+    id="modalText02"
+    tabindex="-1"
+    aria-labelledby="modalTextLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTextLabel">Text Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The text input allows users to enter a single line of plain text,
+            such as names or general information.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" placeholder="Enter your name" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Modal -->
+  <div
+    class="modal fade"
+    id="modalPassword02"
+    tabindex="-1"
+    aria-labelledby="modalPasswordLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPasswordLabel">Password Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Password input masks characters to keep sensitive information secure
+            while typing.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="password" placeholder="Enter your password" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email Modal -->
+  <div
+    class="modal fade"
+    id="modalEmail02"
+    tabindex="-1"
+    aria-labelledby="modalEmailLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEmailLabel">Email Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Email input validates the entered text as a properly formatted email
+            address.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="email" placeholder="Enter your email" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Number Modal -->
+  <div
+    class="modal fade"
+    id="modalNumber02"
+    tabindex="-1"
+    aria-labelledby="modalNumberLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNumberLabel">Number Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The number input restricts the field to only accept numerical
+            values.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="number" min="0" max="100" placeholder="Enter a number" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Date Modal -->
+  <div
+    class="modal fade"
+    id="modalDate02"
+    tabindex="-1"
+    aria-labelledby="modalDateLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDateLabel">Date Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The date input allows users to select a date from a built-in
+            calendar.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="date" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkbox Modal -->
+  <div
+    class="modal fade"
+    id="modalCheckbox02"
+    tabindex="-1"
+    aria-labelledby="modalCheckboxLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCheckboxLabel">Checkbox Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;input type="checkbox"&gt;</code> element lets users
+            select one or multiple options from a list. Each checkbox operates
+            independently, meaning multiple checkboxes can be selected
+            simultaneously.
+          </p>
+          <ul>
+            <li>
+              <strong>Use Cases:</strong> Great for preferences, options where
+              multiple selections are allowed, or yes/no choices.
+            </li>
+            <li>
+              <strong>Grouping Options:</strong> Use the same
+              <code>name</code> attribute for related checkboxes to group them,
+              especially when submitting form data.
+            </li>
+            <li>
+              <strong>Labeling:</strong> Always label each checkbox for
+              accessibility. Use <code>&lt;label&gt;</code> to associate text
+              with the checkbox.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="checkbox" id="option1" name="options" value="Option 1"&gt;
+&lt;label for="option1"&gt;Option 1&lt;/label&gt;
+
+&lt;input type="checkbox" id="option2" name="options" value="Option 2"&gt;
+&lt;label for="option2"&gt;Option 2&lt;/label&gt;
+</code></pre>
+          <p>
+            In the example above, the checkboxes allow the selection of both
+            <strong>Option 1</strong> and <strong>Option 2</strong>.
+          </p>
+          <strong>Best Practice:</strong> Always group and label checkboxes
+          clearly to avoid confusion, especially in large forms.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Radio Button Modal -->
+  <div
+    class="modal fade"
+    id="modalRadio02"
+    tabindex="-1"
+    aria-labelledby="modalRadioLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRadioLabel">Radio Button Input</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;input type="radio"&gt;</code> element allows users to
+            select only one option from a predefined list. Radio buttons are
+            mutually exclusive within a group, meaning only one can be selected
+            at a time.
+          </p>
+          <ul>
+            <li>
+              <strong>Use Cases:</strong> Ideal for single-choice selections,
+              such as choosing a gender, payment method, or answer in a survey.
+            </li>
+            <li>
+              <strong>Grouping Options:</strong> To group radio buttons, give
+              them the same <code>name</code> attribute. Only one radio button
+              with the same name can be selected at a time.
+            </li>
+            <li>
+              <strong>Labeling:</strong> Use <code>&lt;label&gt;</code> tags to
+              clearly indicate each choice for accessibility.
+            </li>
+          </ul>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="radio" id="optionA" name="selection" value="A"&gt;
+&lt;label for="optionA"&gt;Option A&lt;/label&gt;
+
+&lt;input type="radio" id="optionB" name="selection" value="B"&gt;
+&lt;label for="optionB"&gt;Option B&lt;/label&gt;
+</code></pre>
+          <p>
+            In the example above, users can select either
+            <strong>Option A</strong> or <strong>Option B</strong>, but not
+            both, as they share the same <code>name</code> attribute.
+          </p>
+          <strong>Best Practice:</strong> Use descriptive labels and group
+          related radio buttons under a <code>&lt;fieldset&gt;</code> with a
+          <code>&lt;legend&gt;</code> to provide context for the selection.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Button Modal -->
+  <div
+    class="modal fade"
+    id="modalSubmit02"
+    tabindex="-1"
+    aria-labelledby="modalSubmitLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSubmitLabel">Submit Button</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The submit button submits the form data to the server for
+            processing.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="submit" value="Submit" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

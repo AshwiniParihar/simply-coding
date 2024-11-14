@@ -1,0 +1,176 @@
+<!-- Project Structure Theory Section -->
+<section class="infographics" style="margin-bottom: 20px">
+  <div class="infographic-section">
+    <h2>Project Structure Theory</h2>
+    <p>
+      Creating a consistent and logical file structure is essential in web
+      development. Well-organized projects are easier to navigate, maintain, and
+      scale, especially as they grow in complexity. By grouping similar files
+      together, you reduce the risk of confusion and make it simpler for others
+      (and yourself) to find and update specific files.
+    </p>
+  </div>
+
+  <!-- Why Structure Matters Card -->
+  <div class="infographic-section">
+    <h3>Why Structure Matters</h3>
+    <p>
+      Structuring your project is more than just organization – it's about
+      efficiency, collaboration, and scalability. With a clear structure,
+      developers can quickly locate files, and updates become straightforward.
+      When multiple people work on a project, a consistent structure reduces the
+      learning curve and avoids mistakes.
+    </p>
+    <ul>
+      <li><strong>Efficiency:</strong> Easily find files and make updates.</li>
+      <li>
+        <strong>Collaboration:</strong> Allows team members to understand and
+        follow the same file organization.
+      </li>
+      <li>
+        <strong>Scalability:</strong> A structured project can expand with more
+        features without becoming chaotic.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Project Structure Types in a Row -->
+  <div class="row">
+    <!-- Feature-Based Structure Card -->
+    <div class="col-lg-4 col-md-6 mb-4 border rounded">
+      <div class="infographic-section">
+        <h3>Feature-Based Structure</h3>
+        <p>
+          A feature-based structure groups files by features or components,
+          making it easy to isolate and manage each part of the project. This is
+          commonly used in complex projects with distinct parts.
+        </p>
+        <pre><code>
+📂 my-website/
+├── 📂 home/
+│   ├── 📄 index.html
+│   ├── 📄 home.css
+│   └── 📄 home.js
+├── 📂 about/
+│   ├── 📄 about.html
+│   ├── 📄 about.css
+│   └── 📄 about.js
+└── 📂 contact/
+    ├── 📄 contact.html
+    ├── 📄 contact.css
+    └── 📄 contact.js
+        </code></pre>
+        <p>
+          <strong>Benefits:</strong> Keeps each feature self-contained and easy
+          to locate.
+        </p>
+      </div>
+    </div>
+
+    <!-- File Type-Based Structure Card -->
+    <div class="col-lg-4 col-md-6 mb-4 border rounded">
+      <div class="infographic-section">
+        <h3>File Type-Based Structure</h3>
+        <p>
+          This structure organizes files by type, grouping HTML, CSS,
+          JavaScript, and other resources in separate folders. It's helpful in
+          smaller projects where files are limited in number.
+        </p>
+        <pre><code>
+📂 my-website/
+├── 📂 html/
+│   ├── 📄 index.html
+│   ├── 📄 about.html
+│   └── 📄 contact.html
+├── 📂 css/
+│   ├── 📄 style.css
+│   └── 📄 about.css
+├── 📂 js/
+│   ├── 📄 main.js
+│   └── 📄 about.js
+└── 📂 assets/
+    ├── 🖼️ logo.png
+    └── 🖼️ background.jpg
+        </code></pre>
+        <p>
+          <strong>Benefits:</strong> Separates different file types for a
+          cleaner, more focused structure.
+        </p>
+      </div>
+    </div>
+
+    <!-- MVC (Model-View-Controller) Structure Card -->
+    <div class="col-lg-4 col-md-12 mb-4 border rounded">
+      <div class="infographic-section">
+        <h3>MVC (Model-View-Controller) Structure</h3>
+        <p>
+          MVC is a widely-used structure in frameworks like React and Angular.
+          It separates the code into Models (data), Views (UI), and Controllers
+          (business logic). This structure is ideal for larger projects with
+          complex data flows.
+        </p>
+        <pre><code>
+📂 my-website/
+├── 📂 models/
+│   ├── 📄 userModel.js
+│   └── 📄 productModel.js
+├── 📂 views/
+│   ├── 📄 home.html
+│   ├── 📄 about.html
+│   └── 📄 contact.html
+└── 📂 controllers/
+    ├── 📄 homeController.js
+    └── 📄 productController.js
+        </code></pre>
+        <p>
+          <strong>Benefits:</strong> Separates concerns, making the project
+          easier to manage and scale.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Project Structures Section -->
+  <div class="infographic-section">
+    <h3>Other Common Project Structures</h3>
+    <p>
+      In addition to the structures discussed, you may come across other ways to
+      organize projects:
+    </p>
+    <ul>
+      <li>
+        <strong>Domain-Driven Structure:</strong> Organizes files based on the
+        domain or area of the application, making it easy to navigate large,
+        multi-functional applications.
+      </li>
+      <li>
+        <strong>Layered Structure:</strong> Separates code by layers, such as
+        presentation, business logic, and data access. This structure is
+        typically seen in back-end development.
+      </li>
+      <li>
+        <strong>Atomic Design Structure:</strong> Often used in design systems
+        and UI-heavy applications, this approach breaks UI components into
+        atoms, molecules, organisms, templates, and pages for reusable design.
+      </li>
+      <li>
+        <strong>Monorepo Structure:</strong> A single repository (monorepo)
+        holds multiple applications or services, which may use similar files,
+        packages, and code libraries.
+      </li>
+    </ul>
+    <p>
+      Different organizations and companies work with different structures, so
+      learning about them and being familiar is a good idea!
+    </p>
+  </div>
+
+  <!-- Pro Tip Section -->
+  <div class="tip-box">
+    <strong>Pro Tip:</strong> Choose a structure that suits your project needs.
+    In small projects, file type-based organization might work best, but for
+    larger projects, consider a more modular approach like feature-based or MVC.
+    In this course, we will stick to a file type-based structure, but feel free
+    to experiment and try new things out!
+  </div>
+</section>

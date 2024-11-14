@@ -1,0 +1,71 @@
+<section>
+  <h4 class="subsection-title">2. Understanding Anchor Attributes</h4>
+  <p class="section-text">
+    Anchor elements can have several attributes that modify their behavior. The
+    most common attributes include:
+  </p>
+  <ul class="attribute-list">
+    <li>
+      <strong>href:</strong> Specifies the URL the link points to.
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'href' attribute can link to external websites, internal pages, email addresses, or sections within the same page."
+      >
+        Example: <code>href="https://example.com"</code>
+      </span>
+    </li>
+    <li>
+      <strong>target:</strong> Determines where the linked document opens.
+      <ul>
+        <li><code>_blank</code>: Opens the link in a new tab or window.</li>
+        <li>
+          <code>_self</code>: Opens the link in the same tab (default behavior).
+        </li>
+        <li><code>_parent</code>: Opens the link in the parent frame.</li>
+        <li>
+          <code>_top</code>: Opens the link in the full body of the window.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>rel:</strong> Provides relationship hints for the link.
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'rel' attribute defines the relationship between the current document and the linked document, useful for SEO and security."
+      >
+        Example: <code>rel="noopener noreferrer"</code>
+      </span>
+    </li>
+    <li>
+      <strong>title:</strong> Adds a tooltip that appears when hovering over the
+      link.
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-custom-class="tooltip-html"
+        data-bs-title="The 'title' attribute can enhance accessibility by providing additional context to the link."
+      >
+        Example: <code>title="Visit Example"</code>
+      </span>
+    </li>
+  </ul>
+  <div class="demo">
+    <pre>
+&lt;a href="https://www.example.com" target="_blank" rel="noopener noreferrer" title="Visit Example"&gt;Visit Example&lt;/a&gt;
+          </pre
+    >
+  </div>
+  <p class="section-text">
+    This example uses multiple attributes to control link behavior and enhance
+    accessibility and security.
+  </p>
+  <div class="text-end">
+    <button
+      class="btn btn-primary try-it-out"
+      onclick='loadTryItOut(&apos;&lt;a href="https://www.example.com" target="_blank" rel="noopener noreferrer" title="Visit Example"&gt;Visit Example&lt;/a&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+    >
+      Try it →
+    </button>
+  </div>
+</section>

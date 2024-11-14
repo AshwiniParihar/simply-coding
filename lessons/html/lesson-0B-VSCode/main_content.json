@@ -1,0 +1,110 @@
+{
+  "title": "Code Editors",
+  "lessonID": "lessonHTML00B",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+     "html": "<html>\n  <body>\n    <!--Everything you see in this course is built in a \n    code editor using HTML, CSS and Javascript!\n    Run the code to see the image on the left built in code! -->\n    <div></div>\n  </body>\n</html>",
+  "css": "html, body {\n    height: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background: #b2b2bf;\n    margin: 0;\n    padding: 0;\n    font-family: Arial, sans-serif;\n}\n\np {\n    color: #333;\n    font-size: 16px;\n}\n\ndiv {\n    width: 360px;\n    height: 360px;\n    border-radius: 8px;\n    background-color: #4c4b58;\n    background-image: radial-gradient(circle at 13px 12px, #b2b2bf 10px, transparent 10px),\n    radial-gradient(circle at 44px 16px, #b2b2bf 10px, transparent 10px),\n    radial-gradient(circle at 77px 16px, #b2b2bf 10px, transparent 10px),\n    linear-gradient(#24252d, #24252d),\n    linear-gradient(#31313d, #31313d),\n    linear-gradient(to right, #ffcd2d 25%, #b7d64f 0, #b7d64f 50%, #27c1dc 0),\n    linear-gradient(to right,#b7d64f 0, #b7d64f 25%, #27c1dc 0),\n    linear-gradient(to right, #27c1dc, #27c1dc),\n    linear-gradient(to right, #f45f4b 25%, #8dca5b 0, #8dca5b 70%, #4688bc 0),\n    linear-gradient(to right,#66c065 25%, #606cb3 0);\n    background-size: 23px 23px, 23px 23px, 23px 23px, 100% 65px, 38px 100%, 200px 20px, 200px 20px, 253px 20px, 200px 20px, 200px 20px;\n    background-position: 13px 16px, 44px 16px, 77px 16px, top left, top left, 79px 110px, 132px 150px, 79px 190px, 79px 230px, 132px 270px;\n    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, no-repeat;\n    box-shadow: 20px 20px 0 0 #9c9cad;\n}\n"
+
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/00-section-overview.html"  },
+        {
+          "title": "1. What is a Code Editor?",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/01-what-is-a-code-editor.html"
+        },
+        {
+          "title": "2. Core Functions of a Code Editor",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/02-core-functions-of-a-code-editor.html"
+        },
+        {
+          "title": "3. Why Use a Code Editor",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/03-why-we-use-code-editors.html"
+       },
+        {
+          "title": "4. Common Code Editors",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/04-common-code-editors.html"
+        },
+        {
+          "title": "5. Visual Studio Code",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/read/05-vscode.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": ""
+ },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/00-section-overview.html"  
+        },
+
+      {
+          "title": "1. Open VS Code",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/01-open-vs-code.html"  
+        
+      },
+      {
+        "title": "2. Customize Your Theme",
+        "fileType": "html",
+        "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/02-customize-your-theme.html"  
+    },
+    {
+      "title": "3. Install Prettier",
+      "fileType": "html",
+      "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/03-install-prettier.html"  
+    
+  },
+  {
+    "title": "4. Open Your Developer Folder",
+    "fileType": "html",
+    "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/04-open-developer-file.html"  
+  
+},
+{
+  "title": "5. Create Your First HTML File",
+  "fileType": "html",
+  "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/05-first-html-file.html"  
+
+},
+{
+  "title": "6. Run Your File in the Browser",
+  "fileType": "html",
+  "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0B-VSCode/write/06-run-your-file.html"  
+
+}
+     
+      ]
+    }
+
+
+  }
+}

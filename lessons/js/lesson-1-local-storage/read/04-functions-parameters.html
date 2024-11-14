@@ -1,0 +1,85 @@
+<!-- Section: Basic HTML Document Structure -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h2>JavaScript Functions and Parameters Explained</h2>
+
+      <p>
+        A <strong>function</strong> in JavaScript is a block of code designed to
+        perform a specific task. Functions can accept <em>parameters</em>, which
+        are input values that customize how the function works.
+      </p>
+
+      <h3>Basic Syntax:</h3>
+      <pre><code>
+function functionName(parameter1, parameter2) {
+  // Code to execute
+  return parameter1 + parameter2;
+}
+  </code></pre>
+
+      <h3>Example with Parameters:</h3>
+
+      <p>Enter two numbers and click the button to see the result.</p>
+
+      <input type="number" id="num1" placeholder="Enter first number" />
+      <input type="number" id="num2" placeholder="Enter second number" />
+      <button id="calculateBtn">Calculate Sum</button>
+      <p id="result"></p>
+
+      <script>
+        // Function to add two numbers
+        function addNumbers(a, b) {
+          return a + b;
+        }
+
+        // Select elements
+        const calculateBtn = document.getElementById("calculateBtn");
+        const result = document.getElementById("result");
+
+        // Add event listener to the button
+        calculateBtn.addEventListener("click", () => {
+          // Get input values
+          const num1 = parseFloat(document.getElementById("num1").value);
+          const num2 = parseFloat(document.getElementById("num2").value);
+
+          // Call the function with parameters and display the result
+          if (!isNaN(num1) && !isNaN(num2)) {
+            result.textContent = "Sum: " + addNumbers(num1, num2);
+          } else {
+            result.textContent = "Please enter valid numbers.";
+          }
+        });
+      </script>
+
+      <h3>How Functions Work with Parameters:</h3>
+      <ul>
+        <li>
+          <strong>Parameters</strong>: Input variables defined in the function
+          declaration (e.g., <code>a</code> and <code>b</code>).
+        </li>
+        <li>
+          <strong>Arguments</strong>: Actual values passed to the function when
+          it's called (e.g., <code>num1</code> and <code>num2</code>).
+        </li>
+        <li>
+          The function <code>addNumbers</code> takes two numbers as parameters,
+          adds them, and returns the result.
+        </li>
+      </ul>
+
+      <h3>Benefits of Functions:</h3>
+      <ul>
+        <li>Reusability: Write the code once and reuse it multiple times.</li>
+        <li>
+          Modularity: Break down complex programs into smaller, manageable
+          pieces.
+        </li>
+        <li>
+          Parameters: Make functions flexible by passing different inputs each
+          time.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

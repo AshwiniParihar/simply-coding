@@ -1,0 +1,559 @@
+/* General Styling */
+body,
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #322f37;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.75em;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.alert-text {
+  padding: 4px;
+  margin: 0px;
+}
+
+/* Buttons */
+button,
+.toggle-btn,
+.next-btn,
+#editor-buttons-container > button,
+.preview-size-btn {
+  background-color: #2f46bc;
+  border: 1px solid #2645e8;
+  border-radius: 3px;
+  /*color: BLACKs;*/ /*??*/
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-btn {
+  float: right;
+}
+
+button:hover,
+button.active:hover {
+  background-color: #3b667a;
+  /*border: 1px solid #3B667A;*/
+}
+
+.toggle-btn:hover,
+.preview-size-btn:hover,
+.editor-size-btn:hover,
+.clear-console-btn:hover {
+  background-color: #2645e8;
+}
+
+button.active,
+.preview-size-btn.active {
+  background-color: #375765; /*logo blue*/
+  border: 1px solid #3b667a;
+  color: #ffffff;
+}
+
+#editor-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#editor-buttons-container > button {
+  background-color: #f2f3f2;
+  color: #f7934c;
+  font-weight: bold;
+}
+
+#editor-buttons-container > button:hover {
+  background-color: #5d625d;
+}
+
+/* Content Layout */
+.content-wrapper {
+  display: flex;
+  height: 80%;
+}
+.section-buttons {
+  margin: 0;
+  padding: 0px 20px;
+}
+
+.section-button {
+  padding: 10px 20px;
+  margin: 5px 5px 0 5px;
+  border: none;
+  background-color: #98e1fa;
+  cursor: pointer;
+  color: #1e1e1e;
+}
+
+.section-button.active {
+  background-color: #a9f4c8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #000000;
+}
+
+.section-button:hover {
+  background-color: #ddf8ff;
+  border: none;
+  color: #1e1e1e;
+}
+
+.section-button.active:hover {
+  background-color: #a9f4c8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #000000;
+  cursor: default;
+}
+
+.lesson-content,
+.code-editor {
+  flex: 1;
+  overflow-y: auto;
+  transition: flex 0.3s ease-in-out;
+  min-height: calc(100% - 100px);
+}
+
+/* Video Player */
+.video-player video {
+  width: 100%;
+  object-fit: cover;
+  /*padding: 12px 0px 12px 12px;*/
+}
+
+/* Lesson Content */
+.lesson-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Code Editor */
+.code-editor {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: max-width 0.5s ease, opacity 0.5s ease;
+}
+
+.code-editor.collapsed {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.editor-container,
+.preview-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Code Input */
+.code-input {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  border: none;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: monospace;
+  padding: 10px;
+  resize: none;
+  overflow-y: auto;
+  display: none;
+}
+
+.code-input.active {
+  display: block;
+}
+
+/* Editor Tabs */
+.editor-tabs {
+  display: flex;
+  background-color: #252526;
+}
+
+.editor-tab {
+  padding: 10px 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #2d2d2d;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+.editor-tab:hover {
+  background-color: #2645e8;
+}
+
+.editor-tab.active {
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #f7934c;
+  color: #d4d4d4;
+}
+
+.editor-tab.active:hover {
+  background-color: #1e1e1e;
+}
+
+/* Debug Console */
+.debug-console {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border: 1px solid #454545;
+  font-family: monospace;
+}
+
+.debug-console.collapsed {
+  height: 0;
+  overflow: hidden;
+}
+
+.debug-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.debug-content {
+  background-color: #1e1e1e;
+  color: #eee;
+  overflow-y: auto;
+}
+
+/* Footer
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+} */
+
+/* Utility Classes */
+.collapsed {
+  display: none;
+}
+
+/* Collapsible Sections */
+
+/* Section Titles */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section-title img.title-icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Code Block Styling */
+.code-block {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+.code-block code {
+  color: #c7254e;
+  background-color: transparent;
+}
+
+/* Fullscreen Editor */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+.editor-opt-btn {
+  background-color: #375765; /*logo blue*/
+  border: 1px solid #3b667a;
+  color: #ffffff;
+}
+.editor-opt-btn:hover {
+  background-color: #3b667a;
+  border: 1px solid #375765;
+}
+
+.fullscreen .editor-container {
+  flex: 1;
+}
+#preview {
+  width: 100%;
+  background-color: #ffffff;
+}
+.fullscreen #preview {
+  height: 50vh;
+}
+
+/* Shake Effect */
+.shake-effect {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10%,
+  90% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30%,
+  70% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40%,
+  60% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+}
+
+.warning {
+  animation: shake 0.5s;
+  background-color: red;
+  color: white;
+}
+
+/* Mobile Preview */
+.mobile-preview {
+  max-width: 375px;
+  margin: 0 auto;
+  border: 10px solid #333;
+  border-radius: 20px;
+}
+
+/* Editor with Line Numbers */
+.editor-with-lines {
+  display: flex;
+  background-color: #1e1e1e;
+  height: 100%;
+}
+
+.line-numbers {
+  width: 40px;
+  padding: 10px 5px;
+  text-align: right;
+  color: #888;
+  background-color: #2d2d2d;
+  user-select: none;
+  overflow: hidden;
+  font-size: 0.813rem; /*13 px*/
+}
+
+.editor-with-lines textarea {
+  height: 300px;
+}
+
+/* Notes Section */
+.notes-section {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.notes-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.notes-input {
+  width: 96%;
+  height: 500px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+/* Additional Code Styles */
+pre {
+  /*margin: 10px;
+  background-color: #2d2d2d;
+  color: #cccccc;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;*/
+  white-space: pre-wrap;
+  word-wrap: break-word !important;
+}
+
+@media screen and (max-width: 600px) {
+  .content-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leading-image,
+  .trailing-image {
+    width: 100%;
+  }
+}
+
+/* Collapsible Section Styles */
+.collapsible-section {
+  /*margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;*/
+  overflow: hidden; /* Ensure no overflow */
+  margin-bottom: 16px;
+}
+
+.collapsible-section:hover {
+  background-color: #ddf8ff;
+}
+
+.collapsible-content {
+  max-height: 0; /* Closed by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Smooth slide down/up effect */
+}
+
+.collapsible-section.active .collapsible-content {
+  max-height: 1000px; /* Enough height for content; it will adjust automatically */
+  padding: 16px;
+}
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0px;
+  border: 1px solid #cccccc;
+  /*border-radius: 5px;*/
+  padding: 8px 12px;
+}
+
+.toggle-arrow {
+  font-size: 18px; /* Adjust the size of the arrow */
+  color: #333; /* Set arrow color */
+  transition: transform 0.3s ease; /* Smooth arrow rotation */
+}
+
+.collapsible-header:hover .toggle-arrow {
+  color: #f7934c; /* Change arrow color on hover */
+}
+
+/* Tool Tip Stuff */
+/* Styling the words that have tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: #2d89ef;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Adding the bulging effect on hover */
+.tooltip:hover {
+  transform: scale(1.1);
+  color: #1e4d8b;
+}
+
+/* Tooltip text container */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the word */
+  left: 50%;
+  margin-left: -90px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Arrow at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

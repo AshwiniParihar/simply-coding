@@ -1,0 +1,121 @@
+{
+  "title": "Lesson 2: HTML Heading Elements",
+  "lessonID": "lessonHTML002",
+  "videoUrl": "/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/read/00-overview.html"
+        },
+        {
+          "title": "1. Introduction to HTML Heading Elements",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/read/01-importance-of-headings.html"
+        },
+        {
+          "title": "2. Understanding the Structure of a Heading Element",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/read/02-heading-structure.html"
+        },
+        {
+          "title": "3. The Role of Heading Elements",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/read/03-heading-roles.html"
+        },
+        {
+          "title": "4. Hierarchy of Heading Elements",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/read/04-hierarchy.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>SimplyCoding Headings</title>\n</head>\n<body>\n    <h1>H1</h1>\n    <h2>H2</h2>\n    <h3>H3</h3>\n    <h4>H4</h4>\n    <h5>H5</h5>\n   <h6>H6</h6>\n</body>\n</html>",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/write/00-overview.html"
+        },
+        {
+          "title": "1. Run the Existing Code",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/write/01-run-existing-code.html"
+        },
+        {
+          "title": "2. Modify the Code",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/write/02-instructions.html"
+        },
+        {
+          "title": "3. Sample Code",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/write/03-sample-code.html"
+        },
+        {
+          "title": "4. Code Explanation",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/write/04-code-explanation.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title></title>\n</head>\n<body>\n</body>\n</html>"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/create/00-overview.html"
+        },
+        {
+          "title": "1. Coding Challenge",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/create/01-coding-challenge-instructions.html"
+        },
+        {
+          "title": "2. Example Solution",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/create/02-example-solution.html"
+        },
+        {
+          "title": "3. Best Practices for Using Heading Elements",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/create/03-learning-best-practices.html"
+        },
+        {
+          "title": "4. Additional Resources and Conclusion",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-002-heading-elements/create/04-conclusion.html"
+        }
+      ]
+    }
+  }
+}

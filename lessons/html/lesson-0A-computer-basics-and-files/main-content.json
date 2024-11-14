@@ -1,0 +1,100 @@
+{
+  "title": "Computer Basics and File Navigation",
+  "lessonID": "lessonHTML001",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html":"", "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/00-overview.html"
+        },
+        {
+          "title": "1. Understanding File Systems and Navigation",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/01-learning.html"
+        },
+        {
+          "title": "2. File Explorer",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/02-file-explorer.html"
+        },
+        {
+          "title": "3. Folder Structure",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/03-folder-structure.html"
+        },
+        {
+          "title": "4. File Types",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/03-folder-structure.html"
+        },
+        {
+          "title": "5. Creating Files",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/03-folder-structure.html"
+        },
+        {
+          "title": "6. Moving Files",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/03-folder-structure.html"
+        },
+        {
+          "title": "7. Renaming Files",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/read/07-renaming-files.html"
+        }
+       
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html":""   },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath":"https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/write/00-overview.html"
+        },
+        {
+          "title": "1. Practice",
+          "fileType": "html",
+          "filePath":"https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/write/01-practice.html"
+        }
+       
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html":""  },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath":"https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/create/00-overview.html" },
+        {
+          "title": "1. Challenge: Managing Files Independently",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0A-computer-basics-and-files/create/00-overview.html" }
+     
+      ]
+    }
+  }
+}

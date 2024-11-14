@@ -1,0 +1,74 @@
+<!-- Hints Tab in Create Section -->
+<section class="rendered-code">
+  <h3>HTML File</h3>
+  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;CSS Selectors Exercise&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header id="main-header"&gt;Welcome to the CSS Selectors Exercise&lt;/header&gt;
+&lt;p&gt;This is a simple paragraph for testing CSS selectors.&lt;/p&gt;
+&lt;p class="important"&gt;This paragraph is important and should be styled differently.&lt;/p&gt;
+&lt;input type="text" placeholder="Enter your text here"&gt;
+&lt;button&gt;Submit&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+
+  <h3>CSS File</h3>
+  <pre><code>
+/* This file is intentionally left empty for students to add their CSS rules */
+
+/* TODO Instructions for the Exercise */
+/* 1. Targeting All Paragraphs (Element Selector) */
+p {
+color: red;
+}
+
+/* 2. Targeting Specific Class (Class Selector) */
+.important {
+font-size: 1.5rem;
+}
+
+/* 3. Targeting Unique ID (ID Selector) */
+#main-header {
+background-color: lightblue;
+}
+
+/* 4. Targeting Attribute Values (Attribute Selector) */
+input[type="text"] {
+padding: 10px;
+}
+
+/* 5. Using Universal Selector (Universal Selector) */
+* {
+text-align: center;
+}
+  </code></pre>
+</section>
+
+  <!-- Explanation of Solutions -->
+  <section class="section-container solution-section">
+    <h2 class="section-title">Explanation of Solutions</h2>
+    <ul class="instruction-list">
+      <li>Element Selector: The <code>p</code> selector changes the color of all paragraphs to red.</li>
+      <li>Class Selector: The <code>.important</code> selector increases the font size of elements with the <code>important</code> class to 1.5rem.</li>
+      <li>ID Selector: The <code>#main-header</code> selector changes the background color of the header to lightblue.</li>
+      <li>Attribute Selector: The <code>input[type="text"]</code> selector adds 10px padding to all input elements of type text.</li>
+      <li>Universal Selector: The <code>*</code> selector centers all elements on the page.</li>
+    </ul>
+  </section>
+
+  <!-- Call to Action -->
+  <div class="text-end mt-3">
+    <button class="btn btn-primary" onclick="loadNextChallenge()">
+      Next Challenge →
+    </button>
+  </div>
+</section>

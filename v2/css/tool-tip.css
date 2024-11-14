@@ -1,0 +1,104 @@
+/* Bulge effect only for definition tooltips */
+[data-bs-toggle="tooltip"][data-bs-custom-class="tooltip-def"] {
+  position: relative;
+  display: inline-block;
+  animation: textBulge 2.5s infinite ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+[data-bs-toggle="tooltip"][data-bs-custom-class="tooltip-code"] {
+  position: relative;
+  display: inline-block;
+  animation: textBulge 2.5s infinite ease-in-out;
+  cursor: pointer;
+  font-weight: 500;
+}
+/* Remove bulge effect for other tooltip classes */
+[data-bs-toggle="tooltip"][data-bs-custom-class="tooltip-tag"],
+[data-bs-toggle="tooltip"].tooltip-src,
+[data-bs-toggle="tooltip"].tooltip-alt {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@keyframes textBulge {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+}
+
+/* Basic Red Tooltip */
+.tooltip-red {
+  --bs-tooltip-bg: red;
+  --bs-tooltip-color: white;
+  --bs-tooltip-border-radius: 4px;
+  --bs-tooltip-padding-y: 0.5rem;
+  --bs-tooltip-padding-x: 0.75rem;
+}
+
+/* Dark Theme Tooltip */
+.tooltip-dark {
+  --bs-tooltip-bg: #333;
+  --bs-tooltip-color: #fff;
+  --bs-tooltip-border-radius: 6px;
+}
+
+/* Blue Rounded Tooltip */
+.tooltip-blue {
+  --bs-tooltip-bg: #007bff;
+  --bs-tooltip-color: #fff;
+  --bs-tooltip-border-radius: 12px;
+  --bs-tooltip-padding-y: 0.7rem;
+  --bs-tooltip-padding-x: 1rem;
+}
+
+/* Green Outline Tooltip */
+.tooltip-green-outline {
+  --bs-tooltip-bg: transparent;
+  --bs-tooltip-color: green;
+  --bs-tooltip-border: 1px solid green;
+  --bs-tooltip-border-radius: 5px;
+  --bs-tooltip-padding-y: 0.5rem;
+  --bs-tooltip-padding-x: 0.75rem;
+  --bs-tooltip-box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+/* HTML Element Tooltip */
+.tooltip-html {
+  --bs-tooltip-bg: #ffc107;
+  --bs-tooltip-color: black;
+  --bs-tooltip-border-radius: 5px;
+  --bs-tooltip-padding-y: 0.6rem;
+  --bs-tooltip-padding-x: 0.9rem;
+}
+
+/* Semantic HTML Tooltip */
+.tooltip-semantic {
+  --bs-tooltip-bg: #17a2b8;
+  --bs-tooltip-color: white;
+  --bs-tooltip-border-radius: 5px;
+}
+
+/* CSS Tooltip */
+.tooltip-css {
+  --bs-tooltip-bg: purple;
+  --bs-tooltip-color: white;
+  --bs-tooltip-border-radius: 5px;
+  --bs-tooltip-padding-y: 0.4rem;
+  --bs-tooltip-padding-x: 0.6rem;
+}
+
+/* Flexbox Tooltip */
+.tooltip-flexbox {
+  --bs-tooltip-bg: #f8f9fa;
+  --bs-tooltip-color: black;
+  --bs-tooltip-border: 1px solid #ccc;
+  --bs-tooltip-border-radius: 8px;
+  --bs-tooltip-padding-y: 0.8rem;
+  --bs-tooltip-padding-x: 1.2rem;
+}

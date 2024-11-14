@@ -1,0 +1,44 @@
+<!-- Section: Essential HTML Tags -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h1>Using preventDefault() in Form Submissions</h1>
+
+  <h2>Why Use preventDefault() in JavaScript for Forms?</h2>
+  <p>In JavaScript, the <code>preventDefault()</code> method is often used with form submissions to stop the form's default action of sending data directly to a server when the submit button is clicked. Instead, <code>preventDefault()</code> allows JavaScript to handle the form data, giving developers control over how and when data is submitted or processed.</p>
+
+  <h3>Example of preventDefault() in a Form</h3>
+  <p>In the form below, <code>preventDefault()</code> is used to prevent the browser from refreshing the page or redirecting when the form is submitted. This way, we can process and display form data on the page using JavaScript instead.</p>
+
+  <!-- Example Form -->
+  <form id="exampleForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>JavaScript Code</h3>
+  <p>The JavaScript below intercepts the form submission and prevents the page from refreshing. Instead, it logs the entered username to the console:</p>
+
+  <script>
+    document.getElementById('exampleForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Stops the form's default submit action
+      let username = document.getElementById('username').value;
+      console.log('Submitted Username:', username); // Log or handle the data as needed
+    });
+  </script>
+
+  <h3>Explanation of preventDefault()</h3>
+  <ul>
+    <li><strong>Default Form Behavior:</strong> When a form is submitted, the browser normally reloads the page or navigates to the URL specified in the <code>action</code> attribute.</li>
+    <li><strong>Using JavaScript Control:</strong> Calling <code>event.preventDefault()</code> stops this default behavior, allowing us to process the data in JavaScript without a page reload.</li>
+    <li><strong>Flexible Data Handling:</strong> With <code>preventDefault()</code>, we can validate the data, show error messages, or even send data to a server using an API, all without a page reload.</li>
+  </ul>
+
+  <!-- <h3>Further Reading</h3>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">MDN Documentation on preventDefault()</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank">MDN Forms Guide</a></li>
+  </ul> -->
+  </div>
+</section>

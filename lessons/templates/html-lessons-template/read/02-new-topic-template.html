@@ -1,0 +1,482 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Catchy Section Title Here, not just Lesson #: Title -->
+  <!-- Section 1: What is the <img> tag? -->
+  <!-- ! Each lesson step should not be more content that what a normal screen can contain at once, or with  only scrolling onces or twice  -->
+  <div class="infographic-section">
+    <h2>What is the &lt;img&gt; tag?</h2>
+    <!-- Brief explanation of the tags purpose -->
+    <p>
+      The <code>&lt;img&gt;</code> tag is used to embed images into an HTML
+      page. It is a self-closing tag, meaning it does not require a closing
+      <code>&lt;/img&gt;</code> tag.
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure -->
+  <div class="infographic-section">
+    <h2>Basic Structure</h2>
+    <pre>
+      <code>&lt;img src="path/to/image.jpg" alt="Description of the image" /&gt;</code>
+    </pre>
+    <p>
+      The <code>&lt;img&gt;</code> tag has two essential attributes:
+      <strong>src</strong> (source) and <strong>alt</strong> (alternative text
+      for accessibility).
+    </p>
+  </div>
+
+  <!-- Section 3: Attributes Explained -->
+  <div class="infographic-section">
+    <h2>Attributes Explained</h2>
+    <div class="infographic-cards-container">
+      <!-- src Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">src</h5>
+          <p class="info-card-description">The source URL of the image file.</p>
+          <input type="text" placeholder="Enter image URL" />
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalSrc"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;img src=&quot;https://example.com/image.jpg&quot; alt=&quot;Example image&quot;&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- alt Attribute Card -->
+      <!-- Header Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;header&gt;</h5>
+          <p class="info-card-description">
+            Used for introductory content or navigational links.
+          </p>
+          <input type="text" placeholder="Example: Site Title" />
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalHeader"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;header&gt;&lt;h1&gt;My Website&lt;/h1&gt;&lt;/header&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;main&gt;</h5>
+          <p class="info-card-description">
+            Represents the primary content of the document.
+          </p>
+          <input type="text" placeholder="Main content description" />
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMain"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;main&gt;&lt;p&gt;Main content goes here.&lt;/p&gt;&lt;/main&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Article Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;article&gt;</h5>
+          <p class="info-card-description">
+            Defines a self-contained piece of content that could stand alone.
+          </p>
+          <input type="text" placeholder="Article headline" />
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalArticle"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;p&gt;Article content...&lt;/p&gt;&lt;/article&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Aside Tag Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">&lt;aside&gt;</h5>
+          <p class="info-card-description">
+            Holds content related to the main content, such as sidebars or ads.
+          </p>
+          <input type="text" placeholder="Sidebar content" />
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAside"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;aside&gt;&lt;h3&gt;Related Links&lt;/h3&gt;&lt;p&gt;Content here.&lt;/p&gt;&lt;/aside&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Try It Out -->
+    <!-- This is used to show some demo code, the try it button below will move the code over into the editor and automatically run it -->
+    <div class="infographic-section">
+      <h2>Try It Out!</h2>
+      <div>
+        <pre>
+        <code>
+&lt;img src="https://placekitten.com/200/300" 
+     alt="A cute kitten sitting on a pillow" 
+     width="200" 
+     height="300" 
+/&gt;
+        </code>
+      </pre>
+        <div class="text-end">
+          <!-- the onclick is where we need to add the code to run, its a pain to work with, run it through ai for the easiest results,-->
+          <!-- Still figuring out a way to test this without putting it into the actual tempalte with the editor -->
+          <button
+            class="btn try-it-out"
+            onclick='loadTryItOut(&apos;&lt;img src="https://placekitten.com/200/300" alt="A cute kitten sitting on a pillow" width="200" height="300" /&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+          >
+            Try it →
+          </button>
+        </div>
+      </div>
+    </div>
+    <h1>Include any of the below as neccessary, dont over use these</h1>
+    <div class="tip-box">
+      <strong>Pro Tip:</strong> Always preview your page to ensure the image
+      displays as expected and includes all necessary attributes.
+    </div>
+    <!-- Common Mistakes Section -->
+    <section class="infographics">
+      <div class="infographic-section">
+        <div class="alert alert-danger">
+          <strong>Common Mistakes</strong>
+          <ul>
+            <li>
+              Forgetting to use the <code>alt</code> attribute, which is
+              essential for accessibility.
+            </li>
+            <li>
+              Using large, unoptimized images, which can slow down page loading.
+            </li>
+            <li>
+              Not specifying the image's dimensions (width and height), leading
+              to layout shifts.
+            </li>
+            <li>
+              Providing non-descriptive <code>alt</code> text, which does not
+              help screen readers.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Don't Do This Section -->
+      <div class="infographic-section">
+        <div class="alert alert-warning">
+          <strong>Don't Do This</strong>
+          <ul>
+            <li>
+              Don't skip the <code>alt</code> attribute. It's crucial for users
+              relying on screen readers.
+            </li>
+            <li>
+              Don't link to local images from your computer; ensure images are
+              hosted on a web-accessible server.
+            </li>
+            <li>
+              Don't hardcode image sizes for responsiveness. Use CSS or
+              responsive attributes.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Best Practices Section -->
+      <div class="infographic-section">
+        <div class="alert alert-success">
+          <strong>Best Practices</strong>
+          <ul>
+            <li>
+              Always include the <code>alt</code> attribute to improve
+              accessibility.
+            </li>
+            <li>
+              Optimize images to enhance web performance and loading times.
+            </li>
+            <li>
+              Test images across devices to ensure proper display and
+              responsiveness.
+            </li>
+            <li>Use descriptive filenames for image files to improve SEO.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Detailed Info -->
+    <!-- src Modal -->
+    <div
+      class="modal fade"
+      id="modalText02"
+      tabindex="-1"
+      aria-labelledby="modalTextLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTextLabel">Text Input</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The text input allows users to enter a single line of plain text,
+              such as names or general information.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;input type="text" placeholder="Enter your name" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password Modal -->
+    <div
+      class="modal fade"
+      id="modalPassword02"
+      tabindex="-1"
+      aria-labelledby="modalPasswordLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalPasswordLabel">Password Input</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Password input masks characters to keep sensitive information
+              secure while typing.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;input type="password" placeholder="Enter your password" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalSrc"
+      tabindex="-1"
+      aria-labelledby="modalSrcLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalSrcLabel">src Attribute</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>src</code> attribute specifies the image's file URL,
+              allowing the browser to fetch and display the image.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;img src="https://placekitten.com/200/300" alt="A small kitten" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- alt Modal -->
+    <div
+      class="modal fade"
+      id="modalAlt"
+      tabindex="-1"
+      aria-labelledby="modalAltLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAltLabel">alt Attribute</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>alt</code> attribute provides text for screen readers
+              and describes the image if it fails to load.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;img src="https://placekitten.com/200/300" alt="A small kitten sitting on a pillow" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- width Modal -->
+    <div
+      class="modal fade"
+      id="modalWidth"
+      tabindex="-1"
+      aria-labelledby="modalWidthLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalWidthLabel">width Attribute</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>width</code> attribute sets the image's width, either in
+              pixels or as a percentage of the parent element.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;img src="https://placekitten.com/200/300" alt="A small kitten" width="200" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- height Modal -->
+    <div
+      class="modal fade"
+      id="modalHeight"
+      tabindex="-1"
+      aria-labelledby="modalHeightLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalHeightLabel">height Attribute</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>height</code> attribute sets the image's height, either
+              in pixels or as a percentage of the parent element.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;img src="https://placekitten.com/200/300" alt="A small kitten" height="300" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- title Modal -->
+    <div
+      class="modal fade"
+      id="modalTitle"
+      tabindex="-1"
+      aria-labelledby="modalTitleLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleLabel">title Attribute</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>title</code> attribute provides additional information
+              about the image when hovered over, often as a tooltip.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;img src="https://placekitten.com/200/300" alt="A small kitten" title="Cute kitten sitting on a pillow" /&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

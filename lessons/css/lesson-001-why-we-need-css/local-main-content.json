@@ -1,0 +1,96 @@
+{
+  "title": "Lesson 10: Image Elements",
+  "lessonID": "lessonHTML010",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/read/01-overview.html"
+        },
+        {
+          "title": "How it works",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/read/02-how-it-works.html"
+        }
+       
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My Webpage</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/write/01-overview.html"
+        },
+        {
+          "title": "Step-by-Step",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/write/02-step-by-step.html"
+        },
+        {
+          "title": "Review",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/write/03-css-review.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My webpage</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/create/01-overview.html"
+        },
+        {
+          "title": "Help",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/create/02-hints.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/create/03-solution.html"
+        },
+        {
+          "title": "Homework",
+          "fileType": "html",
+          "filePath": "/lessons/css/lesson-001-why-we-need-css/create/04-homework.html"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+<!-- Section 1: html forms-->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h1>Using Backticks vs. Single Quotes in JavaScript</h1>
+
+      <p>
+        In JavaScript, backticks (<code>`</code>) are used to create template
+        literals, while single (<code>'</code>) and double quotes
+        (<code>"</code>) are used for regular strings. Template literals offer
+        additional features like string interpolation and multi-line support.
+        Here’s a comparison:
+      </p>
+
+      <h2>1. String Interpolation</h2>
+      <p>
+        With template literals, you can embed variables directly in the string
+        using <code>${'${variable}'}</code> syntax.
+      </p>
+
+      <h3>Example with Backticks (Template Literals)</h3>
+      <pre><code>const name = "Alice";
+console.log(`Hello, ${name}!`); // Output: Hello, Alice!</code></pre>
+
+      <h3>Example with Single Quotes (Without Template Literals)</h3>
+      <pre><code>const name = "Alice";
+console.log('Hello, ' + name + '!'); // Output: Hello, Alice!</code></pre>
+
+      <p>
+        As shown, backticks make it easier to read and write strings with
+        embedded variables, without the need for concatenation.
+      </p>
+
+      <h2>2. Multi-line Strings</h2>
+      <p>
+        Template literals also support multi-line strings, making them more
+        convenient than single quotes for long text.
+      </p>
+
+      <h3>Example with Backticks (Multi-line Support)</h3>
+      <pre><code>const message = `This is line 1
+This is line 2`;
+console.log(message);
+// Output:
+// This is line 1
+// This is line 2</code></pre>
+
+      <h3>Example with Single Quotes (Without Multi-line Support)</h3>
+      <pre><code>const message = 'This is line 1\n' +
+'This is line 2';
+console.log(message);
+// Output:
+// This is line 1
+// This is line 2</code></pre>
+
+      <p>
+        With single quotes, multi-line strings require <code>\n</code> for line
+        breaks and concatenation, making backticks preferable for readability.
+      </p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>
+          Backticks <code>`</code> (template literals) allow for string
+          interpolation and multi-line strings.
+        </li>
+        <li>
+          Single quotes <code>'</code> are useful for simple strings without
+          variable embedding or multi-line formatting.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

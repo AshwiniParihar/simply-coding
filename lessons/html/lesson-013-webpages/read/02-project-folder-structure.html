@@ -1,0 +1,314 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section 1: What is a Project Folder Structure? -->
+  <div class="infographic-section">
+    <h2>Project Folder Structure</h2>
+    <p>
+      Organizing your files correctly is essential for long-term success as a
+      developer. In this lesson, you'll learn the fundamentals of structuring a
+      web development project. Starting with a solid, organized structure not
+      only makes your code more manageable but also sets the foundation for
+      building a scalable and professional website.
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure -->
+  <div class="infographic-section">
+    <h2>Basic Structure</h2>
+    <pre><code>
+📂 my-website/ (Root Folder)
+├── 📄 index.html (Home Page)
+├── 📄 about.html (About Page)
+├── 📄 contact.html (Contact Page)
+├── 📂 css/
+│   └── 📄 style.css
+├── 📂 js/
+│   └── 📄 script.js
+└── 📂 assets/
+    └── 🖼️ logo.png
+    </code></pre>
+    <p>
+      This structure organizes your HTML files at the top level, with separate
+      folders for CSS, JavaScript, and assets, each serving its own purpose.
+    </p>
+  </div>
+
+  <!-- Section 3: Key Components Explained -->
+  <div class="infographic-section">
+    <h2>Key Components Explained</h2>
+    <div class="infographic-attributes">
+      <!-- index.html Attribute Card -->
+      <div class="attribute">
+        <h5>index.html</h5>
+        <p>The starting page, often the homepage of your website.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalIndex"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- Additional Pages Card -->
+      <div class="attribute">
+        <h5>Additional Pages</h5>
+        <p>
+          Additional HTML files like <code>about.html</code> and
+          <code>contact.html</code> for different sections of your website.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPages"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- CSS Folder Card -->
+      <div class="attribute">
+        <h5>css/ Folder</h5>
+        <p>
+          A folder containing all of your <code>css</code> files to organize all
+          of your styles used in your website.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalCSS"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- JavaScript Folder Card -->
+      <div class="attribute">
+        <h5>js/ Folder</h5>
+        <p>
+          A folder containing all of your <code>JavaScript</code> files to
+          organize all of your logic used in your website.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalJS"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- Assets Folder Card -->
+      <div class="attribute">
+        <h5>assets/ Folder</h5>
+        <p>
+          A folder containing asset files like <code>images</code> to organize
+          different media used in your site.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalAssets"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    <strong>Note: </strong>This is the very basic structure we use in Web
+    Development. Next we will go in-depth about some of the different ways we
+    can structure our code.
+  </p>
+
+  <!-- Common Mistakes Section -->
+  <section class="infographics">
+    <!-- Best Practices Section -->
+    <div class="infographic-section">
+      <div class="alert alert-success">
+        <strong>Best Practices</strong>
+        <ul>
+          <li>
+            Use clear, descriptive names for all files to make them easy to
+            identify.
+          </li>
+          <li>
+            Keep a consistent folder structure to make collaboration easier.
+          </li>
+          <li>
+            Organize CSS, images, and scripts in separate folders for better
+            structure.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for Detailed Info -->
+
+  <!-- index.html Modal -->
+  <div
+    class="modal fade"
+    id="modalIndex"
+    tabindex="-1"
+    aria-labelledby="modalIndexLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalIndexLabel">index.html</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The main entry page, usually serving as the homepage of your site.
+            You generally don't link to this page since you start here, but once
+            on another page its important to be able to return to the Home Page.
+          </p>
+          <strong>Example of how to link to this file:</strong>
+          <pre><code>&lt;a href="index.html"&gt;Home&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Pages Modal -->
+  <div
+    class="modal fade"
+    id="modalPages"
+    tabindex="-1"
+    aria-labelledby="modalPagesLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPagesLabel">Additional Pages</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            For any new page you have on your website you will have a new HTML
+            file for that page. Some common pages we will create are About
+            Me,<code> about.html</code> and Contact Us ,
+            <code>contact.html</code>.
+          </p>
+          <p>
+            These files will have seperate HTML code to set up their structure
+            for their unique content.
+          </p>
+          <strong>Example of how to link to this file:</strong>
+          <pre><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- css/ Folder Modal -->
+  <div
+    class="modal fade"
+    id="modalCSS"
+    tabindex="-1"
+    aria-labelledby="modalCSSLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCSSLabel">css/ Folder</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>css/</code> folder contains all the CSS files, which
+            define the styles used in your website. This structure keeps styling
+            separate from content, making your code more modular and
+            maintainable.
+          </p>
+          <strong>Example of how to link to this file:</strong>
+          <pre><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- js/ Folder Modal -->
+  <div
+    class="modal fade"
+    id="modalJS"
+    tabindex="-1"
+    aria-labelledby="modalJSLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalJSLabel">js/ Folder</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>js/</code> folder holds all JavaScript files, which are
+            used to add interactivity and logic to your website. This keeps
+            behavior separate from structure and style.
+          </p>
+          <strong>Example of how to link to this file:</strong>
+          <pre><code>&lt;script src="js/script.js"&gt;&lt;/script&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- assets/ Folder Modal -->
+  <div
+    class="modal fade"
+    id="modalAssets"
+    tabindex="-1"
+    aria-labelledby="modalAssetsLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAssetsLabel">assets/ Folder</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>assets/</code> folder contains images, icons, and other
+            media files. This keeps visual resources organized and separate from
+            your HTML, CSS, and JavaScript.
+          </p>
+          <strong>Example of how to link to this file:</strong>
+          <pre><code>&lt;img src="assets/logo.png" alt="Logo"&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,595 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Input Attributes Explained -->
+  <div class="infographic-cards-container">
+    <!-- Value Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Value</h5>
+        <p class="info-card-description">
+          Sets an initial value for the input field.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalValue"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; value=&quot;John&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Readonly Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Readonly</h5>
+        <p class="info-card-description">Makes the input field read-only.</p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalReadonly"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; value=&quot;John&quot; readonly&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Disabled Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Disabled</h5>
+        <p class="info-card-description">
+          Disables the input field, making it unclickable.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDisabled"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; value=&quot;John&quot; disabled&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Size Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Size</h5>
+        <p class="info-card-description">
+          Specifies the width of the input field in characters.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalSize"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; size=&quot;30&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Maxlength Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Maxlength</h5>
+        <p class="info-card-description">
+          Limits the number of characters allowed.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalMaxlength"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; maxlength=&quot;10&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Min and Max Attributes -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Min &amp; Max</h5>
+        <p class="info-card-description">
+          Specifies minimum and maximum values.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalMinMax"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;5&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Pattern Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Pattern</h5>
+        <p class="info-card-description">
+          Validates input against a regular expression.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPattern"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; pattern=&quot;[A-Za-z]{3}&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Placeholder Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Placeholder</h5>
+        <p class="info-card-description">Displays a hint in the input field.</p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPlaceholder"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; placeholder=&quot;Enter your name&quot;&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Required Attribute -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Required</h5>
+        <p class="info-card-description">
+          Requires the field to be filled before submitting.
+        </p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalRequired"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;text&quot; required&gt;', '', '')"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for Each Attribute -->
+  <!-- Placeholder Modal -->
+  <!-- Value Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalValue"
+    tabindex="-1"
+    aria-labelledby="modalValueLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalValueLabel">Value Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>value</code> attribute sets an initial or default value
+            for an input field. This value will appear in the input field when
+            the page loads or resets.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" value="John Doe"&gt;</code></pre>
+          <p>
+            This example displays <code>John Doe</code> as the default text in
+            the input field.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Readonly Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalReadonly"
+    tabindex="-1"
+    aria-labelledby="modalReadonlyLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalReadonlyLabel">
+            Readonly Attribute
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>readonly</code> attribute specifies that an input field is
+            read-only. Users can view or copy the content, but they cannot
+            modify it.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" value="John Doe" readonly&gt;</code></pre>
+          <p>This input displays <code>John Doe</code> as uneditable text.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disabled Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalDisabled"
+    tabindex="-1"
+    aria-labelledby="modalDisabledLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDisabledLabel">
+            Disabled Attribute
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>disabled</code> attribute disables the input field, making
+            it unclickable. The value of a disabled input is not submitted with
+            the form.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" value="John Doe" disabled&gt;</code></pre>
+          <p>
+            This example makes <code>John Doe</code> unclickable and uneditable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalSize"
+    tabindex="-1"
+    aria-labelledby="modalSizeLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSizeLabel">Size Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>size</code> attribute specifies the width of an input
+            field in characters. This attribute is typically used to adjust the
+            visible input width.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" size="30"&gt;</code></pre>
+          <p>
+            This sets the input field to display approximately 30 characters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Maxlength Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalMaxlength"
+    tabindex="-1"
+    aria-labelledby="modalMaxlengthLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMaxlengthLabel">
+            Maxlength Attribute
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>maxlength</code> attribute limits the number of characters
+            a user can enter in the input field.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" maxlength="10"&gt;</code></pre>
+          <p>
+            This restricts the user to a maximum of 10 characters in the field.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Min and Max Attributes Modal -->
+  <div
+    class="modal fade"
+    id="modalMinMax"
+    tabindex="-1"
+    aria-labelledby="modalMinMaxLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMinMaxLabel">
+            Min & Max Attributes
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>min</code> and <code>max</code> attributes define a range
+            of acceptable values for the input field.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="number" min="1" max="5"&gt;</code></pre>
+          <p>This restricts the input to values between 1 and 5.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pattern Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalPattern"
+    tabindex="-1"
+    aria-labelledby="modalPatternLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPatternLabel">Pattern Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>pattern</code> attribute specifies a regular expression
+            that an input field’s value must match for the form to be submitted.
+            This attribute is useful for validating specific input formats, such
+            as phone numbers, email addresses, or other patterns.
+          </p>
+          <p>
+            When using <code>pattern</code>, it’s recommended to include a
+            <code>title</code> attribute to provide users with guidance on the
+            required format, as browsers may not show an error message without
+            it.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" pattern="[A-Za-z]{3}" title="Enter a three-letter country code"&gt;</code></pre>
+          <p>
+            In this example, the pattern <code>[A-Za-z]{3}</code> requires the
+            user to enter exactly three alphabetical characters. If the input
+            does not meet this criteria, the form will not submit, and the
+            <code>title</code> text will appear as a hint.
+          </p>
+          <p>
+            <strong>Use Case:</strong> Validating country codes, postal codes,
+            or other specific text formats without JavaScript.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalPlaceholder"
+    tabindex="-1"
+    aria-labelledby="modalPlaceholderLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPlaceholderLabel">
+            Placeholder Attribute
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>placeholder</code> attribute provides a short hint that
+            describes the expected input in an input field. This hint is
+            displayed inside the input field as a faded or greyed-out text
+            before the user enters a value.
+          </p>
+          <p>
+            <strong>Best Practices:</strong> The placeholder should be brief and
+            should not be used as a substitute for labels. Use it to give users
+            an idea of the expected data format, like “name@example.com” for an
+            email input.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" placeholder="Enter your name"&gt;</code></pre>
+          <p>
+            Here, “Enter your name” will appear as faded text in the input
+            field. Once the user starts typing, the placeholder text disappears.
+          </p>
+          <p>
+            <strong>Use Case:</strong> Providing additional guidance within the
+            input field, especially for complex or less common data formats.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Required Attribute Modal -->
+  <div
+    class="modal fade"
+    id="modalRequired"
+    tabindex="-1"
+    aria-labelledby="modalRequiredLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRequiredLabel">
+            Required Attribute
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>required</code> attribute ensures that an input field is
+            not left blank when a form is submitted. This attribute is commonly
+            used in fields where critical information must be provided, such as
+            usernames, passwords, and contact information.
+          </p>
+          <p>
+            When a <code>required</code> input field is left empty, the browser
+            will prevent form submission and prompt the user to complete the
+            field, typically displaying a browser-specific error message.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" required&gt;</code></pre>
+          <p>
+            This input field must be filled out before the form can be
+            submitted.
+          </p>
+          <p>
+            <strong>Use Case:</strong> Ensuring critical fields, such as “Email”
+            or “Password,” are completed to avoid incomplete submissions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

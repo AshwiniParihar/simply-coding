@@ -1,0 +1,257 @@
+/* General Styles */
+
+section {
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Preformatted Code Box */
+pre {
+  background-color: #e8eaf6;
+  padding: 10px;
+  border: 1px solid #3f51b5;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Customize the tooltip's inner content */
+.code-container {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px dashed #ccc;
+}
+.code-block {
+  font-family: "Consolas", "Monaco", monospace;
+  color: #333;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+.line {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+}
+.indent-1 {
+  padding-left: 40px;
+}
+.indent-2 {
+  padding-left: 60px;
+}
+.indent-3 {
+  padding-left: 80px;
+}
+.indent-4 {
+  padding-left: 100px;
+}
+.try-it-out {
+  padding: 10px 15px;
+
+  color: #0d6efd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.try-it-out:hover {
+  background-color: #0b5ed7; /* Darker blue */
+  color: white;
+}
+.lesson-title-tag {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+/* write section css */
+/* Scoped Write Section Styles */
+.write-section {
+  padding: 20px;
+  background: #f1f1f1;
+
+  border-radius: 10px;
+}
+.write-section h2 {
+  color: #0056b3;
+}
+
+.write-section .section-title {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.write-section .write-step {
+  padding: 15px;
+  margin: 8px 0;
+  background: #fff9f9;
+  background-color: #fdfbfb;
+}
+
+.write-section .subsection-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.write-section .section-text {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  margin-left: 1em;
+}
+
+.write-section .code-box {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 10px;
+}
+
+.tip-box {
+  background: #d9edf7;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.write-section .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.write-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.write-section .highlight {
+  background-color: #efeb92;
+}
+
+.write-section .highlight2 {
+  background-color: #bcf4ee;
+}
+
+.write-section .highlight3 {
+  background-color: #e7c1f5;
+}
+
+.write-section .highlight4 {
+  background-color: #f5b7b7;
+}
+
+/* Scoped Styles for Create Section */
+.create-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.create-section .instruction-list {
+  margin-top: 10px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.create-section .rendered-code {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #fff;
+}
+
+.create-section .rendered-code header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.create-section .rendered-code main p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.create-section .rendered-code ol {
+  margin-left: 20px;
+  list-style-type: decimal;
+}
+
+.create-section .rendered-code ol li {
+  margin-bottom: 10px;
+}
+
+.create-section .rendered-code img {
+  display: block;
+  margin: 5px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-section .text-end button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+.demo-window {
+  width: 100%;
+  height: 700px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-window-titlebar {
+  background: linear-gradient(to bottom, #e8e8e8, #d8d8d8);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.demo-window-controls {
+  display: flex;
+  gap: 6px;
+  margin-right: 10px;
+}
+
+.demo-window-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.demo-window-button-close {
+  background: #ff5f56;
+}
+
+.demo-window-button-minimize {
+  background: #ffbd2e;
+}
+
+.demo-window-button-maximize {
+  background: #27c93f;
+}
+
+.demo-window-title {
+  color: #333;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.demo-window-content {
+  background: white;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,117 @@
+<section class="section-yellow">
+  <p>
+    In HTML, elements can be nested within each other, creating a hierarchy.
+    This hierarchy defines
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="A parent element contains one or more child elements."
+    >
+      <strong>parent</strong>
+    </span>
+    and
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="A child element is nested inside another element."
+    >
+      <strong>child</strong>
+    </span>
+    relationships:
+  </p>
+
+  <ul class="circle">
+    <li>
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        data-bs-custom-class="tooltip-def"
+        data-bs-title="A parent element contains one or more child elements, like &lt;div&gt; containing &lt;p&gt;."
+      >
+        <strong>Parent Element:</strong>
+      </span>
+      An HTML element that contains one or more child elements.
+    </li>
+    <li>
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        data-bs-custom-class="tooltip-def"
+        data-bs-title="A child element is nested inside another element, like &lt;p&gt; inside &lt;div&gt;."
+      >
+        <strong>Child Element:</strong>
+      </span>
+      An HTML element that is nested inside another element.
+    </li>
+  </ul>
+
+  <p>
+    Example: In the following code, the
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="The &lt;div&gt; element is used as a container for HTML elements."
+    >
+      <code>&lt;div&gt;</code>
+    </span>
+    element is the parent, while
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="The &lt;h1&gt; element represents a top-level heading."
+    >
+      <code>&lt;h1&gt;</code>
+    </span>
+    and
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="The &lt;p&gt; element represents a paragraph of text."
+    >
+      <code>&lt;p&gt;</code>
+    </span>
+    are its children:
+  </p>
+
+  <!-- Demo Code with Tooltips -->
+  <h4>Example of Nested Elements:</h4>
+  <pre>
+&lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="The &lt;div&gt; element is a container for other HTML elements.">div</span>&gt;
+    &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="The &lt;h1&gt; element represents a top-level heading.">h1</span>&gt;Welcome to My Website&lt;/<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Closing tag for the &lt;h1&gt; element.">h1</span>&gt;
+    &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="The &lt;p&gt; element represents a paragraph of text.">p</span>&gt;This is a paragraph inside the div.&lt;/<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Closing tag for the &lt;p&gt; element.">p</span>&gt;
+&lt;/<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Closing tag for the &lt;div&gt; element.">div</span>&gt;
+  </pre>
+
+  <!-- Rendered Code with Tooltips -->
+  <div style="border: 1px solid #ccc; padding: 10px; margin-top: 20px">
+    <div
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-tag"
+      data-bs-title="The <div> element is a container for other HTML elements."
+    >
+      <h1
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-custom-class="tooltip-tag"
+        data-bs-title="The <h1> element represents a top-level heading."
+      >
+        Welcome to My Website
+      </h1>
+      <br />
+      <p
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        data-bs-custom-class="tooltip-tag"
+        data-bs-title="The <p> element represents a paragraph of text."
+      >
+        This is a paragraph inside the div.
+      </p>
+    </div>
+  </div>
+</section>

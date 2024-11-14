@@ -1,0 +1,109 @@
+{
+  "title": "Lesson 5: Word Processing Tags",
+  "lessonID": "lessonHTML005",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/read/overview.html"
+        },
+        {
+          "title": "1. Introduction to Word Processing Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/read/learning01.html"
+        },
+        {
+          "title": "2. Common Word Processing Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/read/learning02.html"
+        },
+        {
+          "title": "3. Semantic Vs. Non-Semantic tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/read/learning03.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Word Processing Tags</title>\n</head>\n<body>\n    <div>\n        <p>This is a simple paragraph that we will use to demonstrate word processing tags.</p>\n    </div>\n</body>\n</html>\n"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/write/overview.html"
+        },
+        {
+          "title": "Step 1. Bold and Italics",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/write/write01.html"
+        },
+        {
+          "title": "Step 2. Semantic Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/write/write02.html"
+        },
+        {
+          "title": "Step 3. Underline and Strikethrough",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/write/step-3.html"
+        },
+        {
+          "title": "Step 4. Sub and Super Script",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/write/step-4.html"
+        },
+        {
+          "title": "Final Code",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/write/solution.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Word Processing Tags</title>\n</head>\n<body>\n    <h1>Can You Underline this Title?</h1>\n    <p>I want you  to emphasize the importance of learning HTML. Understanding how to use semantic tags can improve accessibility and make your content more meaningful.</p>\n    <p>Consider the following: Water is represented as H2O and squared numbers are represented as x2. If something is no longer relevant, you might see it struck through.</p>\n    <p>Remember to avoid using word processing tags purely for visual styling without considering their semantic meaning.</p>\n</body>\n</html>\n"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/create/overview.html"
+        },
+        {
+          "title": "1. Exercise: Applying Word Processing Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/create/create01.md"
+        },
+        {
+          "title": "2. Solution Walkthrough",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-5-word-processing-tags/create/create02.md"
+        }
+      ]
+    }
+  }
+}

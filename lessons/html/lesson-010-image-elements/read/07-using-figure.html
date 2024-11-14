@@ -1,0 +1,184 @@
+<!-- Figure Element Infographic Section -->
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section 1: What is the <figure> Tag? -->
+  <div class="infographic-section">
+    <h2>What is the &lt;figure&gt; Tag?</h2>
+    <p>
+      The <code>&lt;figure&gt;</code> tag is a semantic HTML element used to
+      group images, diagrams, or other media content with an optional caption.
+      It’s especially useful when you want to associate an image with
+      descriptive text, like in a gallery or article.
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure -->
+  <div class="infographic-section">
+    <h2>Basic Structure</h2>
+    <pre><code>&lt;figure&gt;
+  &lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/paris.jpg" alt="Eiffel Tower at sunset" width="300" height="200" /&gt;
+  &lt;figcaption&gt;Eiffel Tower at sunset in Paris&lt;/figcaption&gt;
+&lt;/figure&gt;
+    </code></pre>
+    <p>
+      The <code>&lt;figure&gt;</code> tag usually contains an
+      <code>&lt;img&gt;</code> tag and an optional
+      <code>&lt;figcaption&gt;</code> tag for captions.
+    </p>
+  </div>
+
+  <!-- Section 3: Attributes and Nesting -->
+  <div class="infographic-section">
+    <h2>Attributes and Nesting</h2>
+    <div class="infographic-attributes">
+      <!-- img Attribute Card -->
+      <div class="attribute">
+        <h5>&lt;img&gt; Tag</h5>
+        <p>
+          The <code>&lt;img&gt;</code> tag inside
+          <code>&lt;figure&gt;</code> should include <strong>src</strong> and
+          <strong>alt</strong> attributes. These define the image’s location and
+          alternative text.
+        </p>
+        <div
+          class="icon-circle"
+      
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- figcaption Attribute Card -->
+      <div class="attribute">
+        <h5>&lt;figcaption&gt; Tag</h5>
+        <p>
+          The <code>&lt;figcaption&gt;</code> tag, nested within
+          <code>&lt;figure&gt;</code>, provides a caption that describes or adds
+          context to the image. It’s optional but helps with accessibility and
+          user experience.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalFigcaption"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Try It Out -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <p>
+      Practice creating a <code>&lt;figure&gt;</code> element with an image and
+      a caption:
+    </p>
+    <div>
+      <pre><code>
+&lt;figure&gt;
+  &lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/paris.jpg" alt="Eiffel Tower at sunset" width="300" height="200" /&gt;
+  &lt;figcaption&gt;Eiffel Tower at sunset in Paris&lt;/figcaption&gt;
+&lt;/figure&gt;
+      </code></pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut(&apos;&lt;figure&gt;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/paris.jpg" alt="Eiffel Tower at sunset" width="300" height="200" /&gt;&lt;figcaption&gt;Eiffel Tower at sunset in Paris&lt;/figcaption&gt;&lt;/figure&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Common Mistakes Section -->
+  <div class="alert alert-warning mt-3">
+    <strong>Common Mistakes:</strong>
+    <ul>
+      <li>
+        Forgetting the <code>&lt;figcaption&gt;</code> tag, which helps users
+        understand the context of the image.
+      </li>
+      <li>
+        Misusing <code>&lt;figure&gt;</code> for purely decorative images; use
+        it only when a caption adds value.
+      </li>
+      <li>
+        Adding multiple <code>&lt;figcaption&gt;</code> tags in a single
+        <code>&lt;figure&gt;</code> element; each
+        <code>&lt;figure&gt;</code> should only have one
+        <code>&lt;figcaption&gt;</code>.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modals for Detailed Info -->
+  <!-- img Modal -->
+  <div
+    class="modal fade"
+    id="modalImg"
+    tabindex="-1"
+    aria-labelledby="modalImgLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalImgLabel">
+            &lt;img&gt; Tag in &lt;figure&gt;
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;img&gt;</code> tag should include both
+            <code>src</code> and <code>alt</code> attributes to specify the
+            image source and alternative text.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/paris.jpg" alt="Eiffel Tower at sunset" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- figcaption Modal -->
+  <div
+    class="modal fade"
+    id="modalFigcaption"
+    tabindex="-1"
+    aria-labelledby="modalFigcaptionLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFigcaptionLabel">
+            &lt;figcaption&gt; Tag
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;figcaption&gt;</code> tag provides a caption for the
+            <code>&lt;figure&gt;</code> content. It improves accessibility by
+            describing the media’s context or purpose.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;figcaption&gt;Eiffel Tower at sunset in Paris&lt;/figcaption&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

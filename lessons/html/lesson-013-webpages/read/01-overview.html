@@ -1,0 +1,116 @@
+<section class="container section-blue my-4 p-4 border rounded">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h2 class="mb-0">Welcome to Multi-Page Websites!</h2>
+    <img
+      class="lesson-title-tag"
+      src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/web-developer.gif"
+    />
+  </div>
+
+  <div>
+    <p class="lead">
+      A multi-page website consists of several HTML files linked together, each
+      serving different content or purposes (e.g., Home, About, Contact).
+      Organizing content across multiple pages improves user experience and
+      helps maintain a scalable website structure.
+    </p>
+
+    <div class="alert alert-info mb-3">
+      <strong>Did You Know?</strong> Multi-page websites allow you to break up
+      content into sections, helping visitors navigate easily. For example,
+      having dedicated pages like "About" and "Contact" makes your site more
+      user-friendly!
+    </div>
+
+    <p>
+      By distributing content across multiple pages, you can keep your website
+      well-organized, making it easier for users to navigate and find the
+      information they need.
+    </p>
+
+    <!-- Updated Example for Multi-Page Website with File Structure and Bootstrap Navbar -->
+    <div class="card p-3 my-3">
+      <h5 class="card-title">Example of a Multi-Page Website Structure:</h5>
+      <p>Imagine your website structure looks like this:</p>
+      <pre>
+          📂 my-website/
+          ├── 📄 index.html (Home Page)
+          ├── 📄 about.html (About Page)
+          ├── 📄 contact.html (Contact Page)
+          └── 📂 assets/
+              ├── 📂 css/
+              │   └── 📄 style.css
+              └── 📂 images/
+                  └── 🖼️ logo.png
+      </pre>
+      <p>
+        Here's an example of a Nav Bar that would be set up to help users
+        navigate between different pages on a website:
+      </p>
+
+      <!-- Bootstrap Navbar with Detailed Tooltips -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Website</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title='Navigate to the index.html file using <a href="index.html">'
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title='Navigate to the about.html file using <a href="about.html">'
+                >
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title='Navigate to the contact.html file using <a href="contact.html">'
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <p class="text-muted mt-2">
+        <em
+          >This example shows a Bootstrap-styled navigation bar with three
+          clickable links to navigate to different pages (files) in a
+          webpage.</em
+        >
+      </p>
+    </div>
+  </div>
+</section>

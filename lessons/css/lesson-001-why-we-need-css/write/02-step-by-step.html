@@ -1,0 +1,128 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Build Your First Project with CSS</h2>
+  <p class="section-text intro">
+    Now it's time to practice what you’ve learned! Follow the step-by-step
+    instructions to create an html structure with various tags, including
+    headings, paragraphs, buttons with their CSS styling.
+  </p>
+
+  <!-- Step 1: Add a Title -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Add a Title</h4>
+    <p class="section-text">
+      Go to line <code>10</code> in your code where you see <strong>X</strong>.
+      Replace <strong>X</strong> with an opening and closing
+      <code>&lt;h1&gt;</code> heading with the title "Welcome to My Page".
+      Within the h1 tag just put the styling for color and font-size.
+    </p>
+    <div class="demo">
+      <pre><code>
+  &lt;h1 style="color: blue; font-size: 24px;"&gt;Welcome to My Page&lt;/h1&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Add Text Under the Title -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Add Text Under the Title</h4>
+    <p class="section-text">
+      On line <code>12</code>, directly under the title, add a paragraph tag
+      <code>&lt;p &gt;</code> with the description: “This is a paragraph with inline styling.” and within a p tag apply css with font-size and font-family.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;p style="font-size: 16px; font-family: Arial;"&gt;This is a paragraph with inline styling.&lt;/p&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 3: Add button with text click me -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: Add a button with a text click me</h4>
+    <p class="section-text">
+      On line <code>13</code>, below the paragraph, add one button
+      <code>&lt;button&gt;</code> with the text "click me" and within the button tag put css styling with background-color,color,padding.
+    </p>
+    <div class="demo">
+      <pre><code>
+&lt;button style="background-color: red; color: white; padding: 10px;"&gt;click me&lt;/button&gt;
+      </code></pre>
+    </div>
+  </section>
+
+  
+    <div class="tip-box">
+      <strong>Final Check:</strong> Paste this code into your editor to see the
+      full itinerary displayed on the page.
+    </div>
+  </section>
+  <section class="write-step">
+    <h4 class="subsection-title">Problem with Inline CSS</h4>
+   
+    <ul>
+      <li>
+        <strong>Redundancy: </strong> Each element need its own style attrbute.If you wanted to change the font size for all the paragraphs,you would need to go each paragraph and update it manually.
+        
+      </li>
+      <li>
+        <strong>Inconsistency:</strong> If you forget to apply a style to some elements, the design becomes inconsistent.
+      </li>
+      <li>
+        <strong>Hard to maintain: </strong> If the website grows larger, managing styles directly in HTML becomes complicated and inefficient.
+      </li>
+    </ul>
+    <p>To avoid these issues, we move the styling to a separate CSS file. This makes the HTML file much cleaner and easier to maintain. </p>
+    <p><strong>html file</strong></p>
+    <div class="demo">
+      <pre><code>
+        &lt;!DOCTYPE html&gt; 
+        &lt;html lang="en"&gt; 
+        &lt;head&gt; 
+            &lt;meta charset="UTF-8"&gt; 
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+            &lt;title&gt;My Webpage&lt;/title&gt; 
+            &lt;link rel="stylesheet" href="style.css"&gt; 
+        &lt;/head&gt; 
+        &lt;body&gt; 
+            &lt;h1&gt;Welcome to My Page&lt;/h1&gt; 
+            &lt;p&gt;This is a paragraph with external styling.&lt;/p&gt; 
+            &lt;button&gt;Click Me&lt;/button&gt; 
+        &lt;/body&gt; 
+        &lt;/html&gt;
+        
+      </code></pre>
+    </div>
+    <p><strong>css file(style.css)</strong></p>
+    <div class="demo">
+      <pre><code>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+        
+        p {
+            font-family: Arial;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+        
+        
+      </code></pre>
+    </div>
+    <ul>
+      <li>
+        Point out that the HTML file now contains only the structure (content), while the CSS file contains the presentation (styling). 
+      </li>
+      <li>
+        Emphasize how much easier it is to change the look of the webpage now. For example, to change the color of all the buttons, you only need to edit the button rule in the CSS file, instead of every button in the HTML. 
+      </li>
+    </ul>
+    
+  </section>
+</section>

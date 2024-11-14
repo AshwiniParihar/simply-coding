@@ -1,0 +1,161 @@
+<section
+  style="
+    background-color: #bdb997;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  "
+>
+  <h3 style="color: #94860b; font-size: 22px">
+    Part 5: Embedding Lists Within Lists (Nesting)
+  </h3>
+  <p style="font-size: 18px; line-height: 1.5">
+    You can create nested lists by placing one list inside another list item.
+    This is useful for creating subcategories within a list.
+  </p>
+
+  <h4 style="color: #333; font-size: 20px">Example: Nested Unordered Lists</h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    Here’s how you can create a nested list within an unordered list:
+  </p>
+  <pre
+    style="
+      background-color: #fff9c4;
+      padding: 10px;
+      border: 1px solid #fbc02d;
+      border-radius: 5px;
+      overflow-x: auto;
+    "
+  >
+&lt;ul&gt;
+    &lt;li&gt;Fruits
+        &lt;ul&gt;
+            &lt;li&gt;Apples&lt;/li&gt;
+            &lt;li&gt;Bananas&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Vegetables
+        &lt;ul&gt;
+            &lt;li&gt;Carrots&lt;/li&gt;
+            &lt;li&gt;Peas&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+    </pre
+  >
+  <ul>
+    <li>
+      Fruits
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+      </ul>
+    </li>
+    <li>
+      Vegetables
+      <ul>
+        <li>Carrots</li>
+        <li>Peas</li>
+      </ul>
+    </li>
+  </ul>
+  <p style="font-size: 18px; line-height: 1.5">
+    This example shows a list of categories with nested items beneath each
+    category.
+  </p>
+
+  <h4 style="color: #333; font-size: 20px">Example: Nested Ordered Lists</h4>
+  <p style="font-size: 18px; line-height: 1.5">
+    You can also create nested ordered lists, useful for outlining substeps
+    within a main step:
+  </p>
+  <pre
+    style="
+      background-color: #fff9c4;
+      padding: 10px;
+      border: 1px solid #fbc02d;
+      border-radius: 5px;
+      overflow-x: auto;
+    "
+  >
+&lt;ol&gt;
+    &lt;li&gt;Prepare Ingredients
+        &lt;ol&gt;
+            &lt;li&gt;Measure flour&lt;/li&gt;
+            &lt;li&gt;Crack eggs&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Mix Ingredients
+        &lt;ol&gt;
+            &lt;li&gt;Combine dry ingredients&lt;/li&gt;
+            &lt;li&gt;Add wet ingredients&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+    </pre
+  >
+  <ol>
+    <li>
+      Prepare Ingredients
+      <ol>
+        <li>Measure flour</li>
+        <li>Crack eggs</li>
+      </ol>
+    </li>
+    <li>
+      Mix Ingredients
+      <ol>
+        <li>Combine dry ingredients</li>
+        <li>Add wet ingredients</li>
+      </ol>
+    </li>
+  </ol>
+  <p style="font-size: 18px; line-height: 1.5">
+    In this case, the main list contains steps for a recipe, while the nested
+    lists contain substeps.
+  </p>
+</section>
+<section
+  style="
+    background-color: #fce4ec;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  "
+>
+  <h3 style="color: #e91e63; font-size: 22px">
+    Part 6: Using CSS to Style Nested Lists
+  </h3>
+  <p style="font-size: 18px; line-height: 1.5">
+    You can further enhance the appearance of nested lists using CSS. For
+    example, you can add padding, margins, or different list styles for nested
+    lists.
+  </p>
+  <pre
+    style="
+      background-color: #fce4ec;
+      padding: 10px;
+      border: 1px solid #e91e63;
+      border-radius: 5px;
+      overflow-x: auto;
+    "
+  >
+/* Style for the main list */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Style for the nested list */
+ul ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+    </pre
+  >
+  <p style="font-size: 18px; line-height: 1.5">
+    This CSS example changes the bullet style of the main list to squares and
+    the nested list to circles, creating a clear visual distinction.
+  </p>
+</section>

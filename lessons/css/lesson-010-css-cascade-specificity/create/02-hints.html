@@ -1,0 +1,73 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>HTML Structure and CSS for Box Elements</h2>
+  <p class="section-text intro">
+    Let's review how to style `div` elements using internal and external CSS. Below, we cover the structure and styling applied to two `div` elements: one with a class and the other with an ID.
+  </p>
+
+  <!-- Step 1: HTML Structure -->
+  <section class="write-step">
+    <h4 class="subsection-title">1. HTML Structure of Box Elements</h4>
+    <p class="section-text">
+      In the following structure, we have two `div` elements, each containing a paragraph (`&lt;p&gt;`) with specific styles:
+    </p>
+    <ul>
+      <li><strong>&lt;div class="box1"&gt;</strong>: A `div` element with the class `box1`, which contains a paragraph (`&lt;p&gt;`) styled with inline CSS. The paragraph inside `box1` has its text color set to red (<code>color: red;</code>).</li>
+      <li><strong>&lt;div id="box2"&gt;</strong>: A `div` element with the `id` of `box2`, which contains another paragraph (`&lt;p&gt;`). The paragraph inside `box2` is not styled inline but is targeted by internal CSS to have green text color (<code>color: green;</code>).</li>
+    </ul>
+  </section>
+
+  <!-- Step 2: CSS (Internal & External) -->
+  <section class="write-step infographic-section">
+    <div class="alert alert-info">
+      <strong>Internal & External CSS for Box Elements</strong>
+      <ul>
+        <li><strong>Internal CSS for <code>#box2 p</code>:</strong> The `p` tag inside the `div` with <code>id="box2"</code> is styled with a green text color (<code>color: green;</code>).</li>
+        <li><strong>External CSS for <code>.box1</code> and <code>#box2</code>:</strong> The <code>.box1</code> class applies a lightblue background color, width of 300px, height of 100px, and a margin of 20px. The <code>#box2</code> ID applies a lightgreen background color, width of 300px, height of 100px, and a margin of 20px.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Step 3: Dos of Using CSS Selectors -->
+  <section class="write-step infographic-section">
+    <div class="alert alert-info">
+      <strong>Do This</strong>
+      <ul>
+        <li>Use class selectors for reusable styles across multiple elements.</li>
+        <li>Apply ID selectors only for unique elements to prevent overriding issues.</li>
+        <li>Leverage pseudo-classes to enhance user interactions (e.g., <code>:hover</code> for buttons).</li>
+        <li>Use attribute selectors for form inputs or specific attributes when needed.</li>
+        <li>Combine selectors to reduce redundancy (e.g., <code>h1, h2, h3</code>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Step 4: Don'ts of Using CSS Selectors -->
+  <section class="write-step infographic-section">
+    <div class="alert alert-warning">
+      <strong>Don't Do This</strong>
+      <ul>
+        <li>Don't overuse ID selectors, as they can create high specificity issues.</li>
+        <li>Don't rely on overly specific selectors (e.g., <code>div > p > span</code>), making them hard to maintain.</li>
+        <li>Don't neglect adding <code>:focus</code> or other pseudo-classes for accessibility.</li>
+        <li>Don't apply global styles using the universal selector <code>*</code> unless necessary; it can impact performance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Step 5: Best Practices for CSS Selectors -->
+  <section class="write-step">
+    <h4 class="subsection-title">2. Best Practices</h4>
+    <p class="section-text">
+      Follow these best practices when using CSS selectors:
+    </p>
+    <ul>
+      <li>Keep selectors simple and readable for better maintainability.</li>
+      <li>Use naming conventions like BEM (Block Element Modifier) to maintain consistent structure.</li>
+      <li>Write DRY (Don't Repeat Yourself) code by grouping similar selectors.</li>
+      <li>Utilize pseudo-elements for specific text and styling requirements (e.g., <code>::before</code>, <code>::after</code>).</li>
+      <li>Ensure responsive design by using media queries and avoiding hard-coded sizes.</li>
+    </ul>
+  </section>
+</section>
+

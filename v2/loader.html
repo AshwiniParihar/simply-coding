@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson Loader</title>
+  </head>
+  <body>
+    <script>
+      // URL of your lesson template HTML file hosted on AWS
+      const templateUrl =
+        "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/Main+Core+Template+Files/index.html";
+
+      // Get the lesson JSON URL from the query parameter
+
+      const lessonJsonUrl =
+        "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/main-content.json";
+      // Redirect to the template with the lesson JSON URL as a parameter
+      window.location.href = `${templateUrl}?lesson=${encodeURIComponent(
+        lessonJsonUrl
+      )}`;
+      fetch(lessonJsonUrl)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              `Network response was not ok: ${response.statusText}`
+            );
+          }
+          return response.json(); // Parse JSON data
+        })
+        .then((data) => {
+          // Display the JSON content in a readable format
+          jsonContentDiv.textContent = JSON.stringify(data, null, 4);
+        })
+        .catch((error) => {
+          // Display error if the fetch fails
+          jsonContentDiv.textContent = `Failed to load JSON content: ${error.message}`;
+          console.error("Fetch error:", error);
+        });
+    </script>
+  </body>
+</html>

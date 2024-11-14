@@ -1,0 +1,102 @@
+{
+  "title": "Web Development Foundations",
+  "lessonID": "lessonHTML001",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": ""
+      },
+      "content": [
+        {
+          "title": "Welcome!",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/read/overview.md"
+        },
+        {
+          "title": "From The Instructors",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/read/from_the_instructors.md"
+        },
+        {
+          "title": "Why Coding?",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/read/why_coding.md"
+        }
+      ]
+    },
+    "Course Info": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Course Outline",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/write/course_outline.md"
+        },
+        {
+          "title": "Course Delivery",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/write/course_delivery.md"
+        },
+        {
+          "title": "Course Tools",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/write/course_tools.md"
+        },
+        {
+          "title": "Course Expectations",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/write/course_expectations.html"
+        }
+      ]
+    },
+    "Simply Coding": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Random Color Generator</title>\n    </head>\n<body>\n    <div class=\"container\">\n        <h1>Welcome [Student Name]</h1>\n <h2>Random Color Generator</h2>\n        <button id=\"color-btn\">Change Color</button>\n        <p id=\"color-code\">Click the button to change the background color!</p>\n    </div>\n    <script src=\"script.js\"></script>\n</body>\n</html>",
+
+        "css": "body {\n    font-family: Arial, sans-serif;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    margin: 0;\n    background-color: #f4f4f4;\n}\n\n.container {\n    text-align: center;\n}\n\nh1 {\n    color: #333;\n}\n\nbutton {\n    padding: 10px 20px;\n    background-color: #007bff;\n    color: white;\n    border: none;\n    cursor: pointer;\n    font-size: 16px;\n    border-radius: 5px;\n}\n\nbutton:hover {\n    background-color: #0056b3;\n}\n\n#color-code {\n    margin-top: 20px;\n    font-size: 18px;\n    color: #555;\n}",
+
+        "js": "// Function to generate a random color\nfunction getRandomColor() {\n    const letters = '0123456789ABCDEF';\n    let color = '#';\n    for (let i = 0; i < 6; i++) {\n        color += letters[Math.floor(Math.random() * 16)];\n    }\n    return color;\n}\n\n// Select the button and paragraph elements\nconst colorBtn = document.getElementById('color-btn');\nconst colorCode = document.getElementById('color-code');\n\n// Event listener to change background color on button click\ncolorBtn.addEventListener('click', function() {\n    const newColor = getRandomColor();\n    document.body.style.backgroundColor = newColor;\n    colorCode.textContent = `Background Color: ${newColor}`;\n});"
+      },
+      "content": [
+        {
+          "title": "Lesson Structure",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/create/lesson_structure.html"
+        },
+        {
+          "title": "Project Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/create/project_overview.html"
+        },
+        {
+          "title": "Example Project",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/create/example_project.html"
+        },
+        {
+          "title": "Built-In Code Editor",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/create/additional_info.html"
+        }
+      ]
+    },
+
+    "Guide To Success": {
+      "starter-code": {
+        "html": ""
+      },
+      "content": [
+        {
+          "title": "Learning To Code Guide",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-0-class-introduction/create/learning_to_code_guide.html"
+        }
+      ]
+    }
+  }
+}

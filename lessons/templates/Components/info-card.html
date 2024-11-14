@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/markdown.css"
+    />
+
+    <link
+      href="/v2/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="/v2/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/v2/css/content-style.css" />
+    <link rel="stylesheet" href="/v2/css/code-editor.css" />
+    <link rel="stylesheet" href="/v2/css/code-editor-buttons.css" />
+    <link rel="stylesheet" href="/v2/css/sections.css" />
+    <link rel="stylesheet" href="/v2/css/icon-styles.css" />
+    <link rel="stylesheet" href="/v2/css/tabs.css" />
+    <link rel="stylesheet" href="/v2/css/stepper.css" />
+    <link rel="stylesheet" href="/v2/css/tool-tip.css" />
+    <link rel="stylesheet" href="/v2/css/code-color.css" />
+    <link rel="stylesheet" href="/v2/css/info-graphic.css" />
+    <link rel="stylesheet" href="/v2/css/github-dark-min.css" />
+  </head>
+  <body style="margin: 40px">
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image">
+          <!-- Placeholder for image or demo code -->
+          <!-- Use an image or replace with a <pre><code> block for demo code -->
+          <pre><code>&lt;input type="text"
+placeholder="Enter text"&gt;</code></pre>
+          <!-- <img
+            src="../../../assets/animations/web-developer.gif"
+            alt="Card Image"
+          /> -->
+        </div>
+        <h5 class="info-card-title">Heading</h5>
+        <p class="info-card-description">
+          This is a short description about the card.
+        </p>
+      </div>
+      <!-- "More..." button that opens a modal -->
+      <button
+        class="info-card-action"
+        data-bs-toggle="modal"
+        data-bs-target="#infoModal"
+      >
+        More...
+      </button>
+    </div>
+    <br />
+    <p>Example with an image</p>
+    <div class="info-card">
+      <div class="info-card-image">
+        <img src="../../../assets/animations/folder.gif" alt="Example Image" />
+      </div>
+      <div class="info-card-content">
+        <h5 class="info-card-title">Image Title</h5>
+        <p class="info-card-description">This is a description of the image.</p>
+        <button
+          class="info-card-action"
+          data-bs-toggle="modal"
+          data-bs-target="#modalExample"
+        >
+          More...
+        </button>
+      </div>
+    </div>
+    <p>Example with an no code or image</p>
+    <!-- Note the info-card-image also has an empty class to colapse the blank space where content would be, this only works if it is not inline with other cards with images or code  -->
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty">
+          <!-- Placeholder for image or demo code -->
+          <!-- Use an image or replace with a <pre><code> block for demo code -->
+        </div>
+        <h5 class="info-card-title">Heading</h5>
+        <p class="info-card-description">
+          This is a short description about the card.
+        </p>
+      </div>
+      <!-- "More..." button that opens a modal -->
+      <button
+        class="info-card-action"
+        data-bs-toggle="modal"
+        data-bs-target="#infoModal"
+      >
+        More...
+      </button>
+    </div>
+    <p>Example with two buttons</p>
+    <div class="info-card">
+      <div class="info-card-content">
+        <div class="info-card-image empty"></div>
+        <h5 class="info-card-title">Radio Button</h5>
+        <p class="info-card-description">Selects one option from a group.</p>
+      </div>
+      <div class="d-flex gap-2 mt-2 ms-auto">
+        <button
+          class="info-btn btn d-flex align-items-center justify-content-center"
+          data-bs-toggle="modal"
+          data-bs-target="#modalRadio"
+          style="width: 40px; height: 40px; border-radius: 50%"
+        >
+          ...
+        </button>
+        <button
+          class="info-btn btn d-flex align-items-center justify-content-center"
+          onclick="loadTryItOut('&lt;input type=&quot;radio&quot; name=&quot;option&quot;&gt;', '', '')"
+          style="width: 40px; height: 40px; border-radius: 50%"
+        >
+          &lt;/&gt;
+        </button>
+      </div>
+    </div>
+    <!-- Modal structure -->
+    <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      aria-labelledby="infoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Card Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Detailed content about the card goes here -->
+            <p>This is a more detailed description about the card.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Do not adjust the script below -->
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/highlight-min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/javascript.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/css.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/html.min.js"
+      defer
+    ></script>
+
+    <script src="/v2/vendor/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="/v2/vendor/bootstrap/popper.min.js"></script>
+    <script src="/v2/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/v2/vendor/ace/src-min-noconflict/ace.js"></script>
+    <script src="/v2/vendor/ace/src-min-noconflict/ext-language_tools.js"></script>
+    <script src="/v2/js/toggle-sections.js"></script>
+    <script src="/v2/js/load-lesson-data.js"></script>
+    <script src="/v2/js/atom.js"></script>
+    <script src="/v2/js/settings.js"></script>
+    <script src="/v2/js/progress-state.js"></script>
+
+    <script>
+      function applyHighlighting() {
+        document.querySelectorAll("pre code").forEach((block) => {
+          // Get the raw text content
+          let content = block.textContent;
+
+          // Try to detect if it's HTML by looking for common patterns
+          function looksLikeHTML(code) {
+            const htmlPatterns = [
+              /<\/?[a-z][\s\S]*>/i, // HTML tags
+              /<!DOCTYPE/i, // DOCTYPE declaration
+              /<!(--)?[^>]*>/, // HTML comments
+            ];
+            return htmlPatterns.some((pattern) => pattern.test(code));
+          }
+
+          // Determine language
+          let result;
+          if (looksLikeHTML(content)) {
+            // Force HTML highlighting if it looks like HTML
+            result = hljs.highlight(content, {
+              language: "html",
+              ignoreIllegals: true,
+            });
+          } else {
+            // Let highlight.js auto-detect the language
+            result = hljs.highlightAuto(content, [
+              "javascript",
+              "html",
+              "css",
+              "xml",
+              "json",
+              "python",
+              "java",
+              "cpp",
+              "csharp",
+            ]);
+          }
+
+          // Set the highlighted HTML
+          block.innerHTML = result.value;
+
+          // Add hljs class and detected language class
+          block.classList.add("hljs");
+          block.classList.add(`language-${result.language}`);
+
+          // Log the detected language (helpful for debugging)
+          console.log("Detected language:", result.language);
+        });
+      }
+
+      // Setup function to handle HTML entities
+      function setupCodeBlocks() {
+        document.querySelectorAll("pre code").forEach((block) => {
+          block.textContent = block.textContent
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, '"')
+            .replace(/&#039;/g, "'");
+        });
+      }
+      applyHighlighting();
+    </script>
+  </body>
+</html>

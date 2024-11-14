@@ -1,0 +1,308 @@
+<!-- Image Tag Infographic Section -->
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section 1: What is the <img> tag? -->
+  <div class="infographic-section">
+    <h2>What is the &lt;img&gt; tag?</h2>
+    <p>
+      The <code>&lt;img&gt;</code> tag is used to embed images into an HTML
+      page. It is a self-closing tag, meaning it does not require a closing
+      <code>&lt;/img&gt;</code> tag.
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure -->
+  <div class="infographic-section">
+    <h2>Basic Structure</h2>
+    <pre>
+      <code>&lt;img src="path/to/image.jpg" alt="Description of the image" /&gt;</code>
+    </pre>
+    <p>
+      The <code>&lt;img&gt;</code> tag has two essential attributes:
+      <strong>src</strong> (source) and <strong>alt</strong> (alternative text
+      for accessibility).
+    </p>
+  </div>
+
+  <!-- Section 3: Attributes Explained -->
+  <div class="infographic-section">
+    <h2>Attributes Explained</h2>
+    <div class="infographic-attributes">
+      <!-- src Attribute Card -->
+      <div class="attribute">
+        <h5>src</h5>
+        <p>The source URL of the image file.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalSrc"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- alt Attribute Card -->
+      <div class="attribute">
+        <h5>alt</h5>
+        <p>
+          Provides alternative text to describe the image if it cannot be
+          displayed.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalAlt"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- width Attribute Card -->
+      <div class="attribute">
+        <h5>width</h5>
+        <p>Specifies the width of the image in pixels.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalWidth"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- height Attribute Card -->
+      <div class="attribute">
+        <h5>height</h5>
+        <p>Specifies the height of the image in pixels.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalHeight"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- title Attribute Card -->
+      <div class="attribute">
+        <h5>title</h5>
+        <p>Displays additional information when hovering over the image.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalTitle"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Try It Out -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <div>
+      <pre>
+        <code>
+&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+     alt="A cute kitten sitting on a pillow" 
+     width="200" 
+     height="300" 
+/&gt;
+        </code>
+      </pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut(&apos;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="A cute kitten sitting on a pillow" width="200" height="300" /&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Common Mistakes Section -->
+  <div class="alert alert-warning mt-3">
+    <strong>Common Mistakes:</strong>
+    <ul>
+      <li>
+        Forgetting to use the <code>alt</code> attribute, which is essential for
+        accessibility.
+      </li>
+      <li>
+        Using images without ensuring they are optimized for web use, leading to
+        slow loading times.
+      </li>
+      <li>
+        Not using descriptive <code>alt</code> text, which can affect user
+        experience for those relying on screen readers.
+      </li>
+      <li>
+        Neglecting to set the dimensions (width and height) for images, which
+        can lead to layout shifts during page loading.
+      </li>
+      <li>
+        Confusing relative paths with absolute paths. Relative paths link to
+        files based on their location within the project directory, while
+        absolute paths link to the full URL, which can break if the file
+        location changes.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modals for Detailed Info -->
+  <!-- src Modal -->
+  <div
+    class="modal fade"
+    id="modalSrc"
+    tabindex="-1"
+    aria-labelledby="modalSrcLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSrcLabel">src Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>src</code> attribute specifies the image's file URL,
+            allowing the browser to fetch and display the image.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="A small kitten" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- alt Modal -->
+  <div
+    class="modal fade"
+    id="modalAlt"
+    tabindex="-1"
+    aria-labelledby="modalAltLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAltLabel">alt Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>alt</code> attribute provides text for screen readers and
+            describes the image if it fails to load.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="A small kitten sitting on a pillow" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- width Modal -->
+  <div
+    class="modal fade"
+    id="modalWidth"
+    tabindex="-1"
+    aria-labelledby="modalWidthLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalWidthLabel">width Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>width</code> attribute sets the image's width, either in
+            pixels or as a percentage of the parent element.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="A small kitten" width="200" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- height Modal -->
+  <div
+    class="modal fade"
+    id="modalHeight"
+    tabindex="-1"
+    aria-labelledby="modalHeightLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHeightLabel">height Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>height</code> attribute sets the image's height, either in
+            pixels or as a percentage of the parent element.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="A small kitten" height="300" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- title Modal -->
+  <div
+    class="modal fade"
+    id="modalTitle"
+    tabindex="-1"
+    aria-labelledby="modalTitleLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleLabel">title Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>title</code> attribute provides additional information
+            about the image when hovered over, often as a tooltip.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="A small kitten" title="Cute kitten sitting on a pillow" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

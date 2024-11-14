@@ -1,0 +1,214 @@
+<section class="write-section">
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end banner image -->
+
+  <!-- Comment out sections you don't want -->
+  <!-- <div class="lead-content">
+      <img
+        class="leading-image"
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/js-1-localStorage-form.png"
+      />
+    </div> -->
+
+  <!-- end leading content -->
+  <!-- image to the right of the content -->
+  <img
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/saveVerification.png"
+        alt="Example of the web site"
+        width="50%"
+        style="float: right; margin: 5px"
+      />
+  <h2>Submitting your Form</h2>
+  <p class="section-text intro">
+     Follow the steps to get your form working correctly to save the data in
+      the local Storage!<br/>
+    The images to the right shows what this section helps you create.<br />
+    Following the steps below!
+  </p>
+  <!-- Step 1: JS Setup -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: A Place for JS</h4>
+    <p class="section-text">
+      Above the CLOSING body tag, create opening and closing script
+          tags.
+    </p>
+    <!-- <div class="demo">
+          <pre>
+            &lt;img src="https://placekitten.com/200/300" /&gt;
+          </pre>
+        </div> -->
+    <div class="tip-box">
+      <strong>Note:</strong> The script tags could also go between the head tags, often you'll see them in the body section to improve the page load time and allow the user to see the page first.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Event Listener</h4>
+    <p class="section-text">
+      Between the script tags, use the id from your HTML button and add an event listener method to call a function.<br/>
+      Consider naming the new function 'saveMeal' or something descriptive.
+    </p>
+     <div class="tip-box">
+      <strong>Protip:</strong> the addEventListener allows for multiple events on a single element (mouseover, click, etc) whereas the onclick attribute only allows for a single event.
+    </div>
+  </section>
+
+   <section class="write-step">
+    <h4 class="subsection-title">Step 3: Create your Function</h4>
+    <p class="section-text">
+      Below your event listener, create the function to be called when your button is clicked.
+    </p>
+    <div class="demo">
+      <pre>
+        document.querySelector("#ID").addEventListener('click', <strong class="highlight">saveMeal</strong>);
+
+        function <strong class="highlight">saveMeal()</strong>{
+
+        }</pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 5: Function TEST</h4>
+    <p class="section-text">
+      Between the brackets of your new function, create an alert with a simple message, like 'I'm Working!'<br/>
+      Save your code, load it in the browser, click on your button and see if the alert appears!<br/>
+      If the alert shows up, your function is linked correctly to your button. Remove your alert code and move to the next step.
+    </p>
+    <div class="tip-box">
+      <strong>Remember:</strong> These simple tests along the way limit the amount of bugs to fix later!
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 6: First Variable</h4>
+    <p class="section-text">
+      Between the brackets of your function, create a variable targeting your text input HTML. <br/>
+      Also, store it's value and remove all white space using trim().
+    </p>
+    <div class="demo">
+      <pre>
+        function saveMeal(){
+          let varName = document.querySelector("#ID").value.trim();
+        }</pre>
+    </div>
+    <div class="tip-box">
+      <strong>Note:</strong> You can add multiple JavaScript command attributes to an element!
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 7: Second Variable</h4>
+    <p class="section-text">
+      Below your first variable, create a second variable targeting your textarea HTML. <br/>
+      Also, store it's value, remove white space using trim(), and use split passing in the
+            comma delimmeter.
+    </p>
+    <div class="tip-box">
+      <strong>Remember:</strong> In JavaScript, the split() method is used to split a string into an array of substrings based on a specified separator! Like how you asked the user to comma separate their ingredients.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 8: If Statement</h4>
+    <p class="section-text">
+      Below the variables, create an if else statement with condition that makes sure the user filled out each text box. 
+    </p>
+    <div class="tip-box">
+      <strong>Hint:</strong> varName1 != '' && varName2 != '' - How is this code interpreted by JavaScript?
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 9: Storage</h4>
+    <p class="section-text">
+      Between the brackets of the if statement, add the localStorage command with the attribute that SAVES DATA. 
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 10: Passing Key and Data</h4>
+    <p class="section-text">
+      Between the perenthsis of the localStorage setItem method, pass a KEY (which needs to be the value of the first text box entered) and pass the ingredients data.<br/>
+      Pass the ingredients data through JSON.stringify and add the JavaScript map command to trim each item from that string. 
+    </p>
+    <div class="demo">
+      <pre>
+        function saveMeal(){
+          let <strong class="highlight">varName</strong> = document.querySelector("#ID").value.trim();
+          let <strong class="highlight">varName2</strong> = document.querySelector("#ID").value.trim().split(',');
+
+          if(condition is here){
+            localStorage.setItem(<strong class="highlight">varName</strong>, JSON.stringify(<strong class="highlight">varName2</strong>.map((item) => item.trim())));
+          }
+        }</pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 11: Clear the Form</h4>
+    <p class="section-text">
+      Below the localStorage command, clear all text from the input box and textarea section by setting their values to an empty string. <br/>
+      You'll need to add two lines of code, one for each text box set to an empty string.
+    </p>
+    <div class="demo">
+      <pre>
+        document.querySelector("#ID).value = '';</pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 12: Testing localStorage: TWO OPTIONS</h4>
+    <p class="section-text">
+      Option #1 - console<br/>
+      Open the console and type in: localStorage then press enter, what do you see?<br/>
+      <br/>
+      Option #2 - alert
+        <br/>
+          Below the variables clearing the form data, create a variable named savedData that retrieves the local storage
+          data with it's key.
+    </br>
+        Use an alert passing in the key and the variable savedData.
+        
+    </p>
+    <div class="demo">
+      <pre>
+
+        localStorage.setItem(<strong class="highlight">key</strong>, JSON.stringify(varName2.map((item) => item.trim())));
+        
+        --other code here--
+      
+        let <strong class="highlight">savedData</strong> = localStorage.getItem(<strong class="highlight">key</strong>);
+        alert("Meal Title: " + <strong class="highlight">key</strong> + " with ingredients " + <strong class="highlight">savedData</strong>);
+      </pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 13: Else Statement</h4>
+    <p class="section-text">
+      Between the brackets of the else statment, create an alert telling the user to fill our your form!
+    </p>
+    <div class="demo">
+      <pre>
+        if(condition is here) {
+          code written in previous steps
+        } else {
+         <strong>alert('....');</strong> 
+        }</pre>
+    </div>
+  </section>
+     
+      
+      
+      <p>When everything is working move on to the next section!</p>
+  
+    <!-- Comment out sections you don't want -->
+    <!--<div class="lead-content"><img class="leading-image" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"></div>-->
+    <!-- end leading content -->
+
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end bottom banner -->
+</section>

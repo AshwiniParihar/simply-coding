@@ -1,0 +1,89 @@
+<!-- Font Size Infographic Section -->
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section: What is font-size? -->
+  <div class="infographic-section">
+    <h2>Font-size</h2>
+    <p>
+      The `font-size` property defines the size of the text. It can be specified using different units such as `px`, `em`, `rem`, and `pt`. Each unit has its own use case and effect on responsiveness.
+    </p>
+    <p>
+      <strong>Units for Font Size:</strong><br>
+      <ul>
+        <li><strong>Pixels (px):</strong> Fixed size that does not scale when the browser is resized. Best used for elements that don’t need to adjust based on screen size.</li>
+        <li><strong>Points (pt):</strong> Commonly used in print but less so for web design.</li>
+        <li><strong>Ems (em):</strong> Relative to the font size of the parent element. If a parent element has a font size of 16px, 1em equals 16px.</li>
+        <li><strong>Rems (rem):</strong> Relative to the font size of the root element (`<html>`). More consistent for maintaining responsive designs.</li>
+      </ul>
+    </p>
+    <div class="infographic-section">
+      <div class="alert alert-success">
+        <strong>Best Practices</strong>
+        <ul>
+          <li>
+            Use `rem` for consistent, responsive designs.
+          </li>
+          <li>Specify fallback fonts in `font-family` to ensure a smooth user experience.</li>
+          <li>
+            Use Google Fonts for custom font styling.
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <p>Example:</p>
+    <pre>
+      <code>
+    &lt;h2&gt;Understanding `font-size`&lt;/h2&gt;
+    &lt;p style="font-size: 16px;"&gt;
+    This text is set to 16px.
+    &lt;/p&gt;
+    &lt;p style="font-size: 1em;"&gt;
+    This text is set to 1em (relative to its parent).
+    &lt;/p&gt;
+    &lt;p style="font-size: 1.5rem;"&gt;
+    This text is set to 1.5rem (relative to the root element).
+    &lt;/p&gt;
+    &lt;p style="font-size: 12pt;"&gt;
+    This text is set to 12pt (commonly used in print).
+    &lt;/p&gt;
+      </code>
+    </pre>
+
+    <p>
+      <strong>OUTPUT:</strong><br>
+      <section class="container section-blue my-4 p-4 border rounded">
+        <h2>Understanding `font-size`</h2>
+        <p style="font-size: 16px;">
+          This text is set to 16px.
+        </p>
+        <p style="font-size: 1em;">
+          This text is set to 1em (relative to its parent).
+        </p>
+        <p style="font-size: 1.5rem;">
+          This text is set to 1.5rem (relative to the root element).
+        </p>
+        <p style="font-size: 12pt;">
+          This text is set to 12pt (commonly used in print).
+        </p>
+      </section>
+    </p>
+
+    <div class="infographic-section">
+      <div class="alert alert-warning">
+        <strong>Do's and Don'ts: </strong>
+        <ul>
+          <li>
+            Do use rem and em for responsive designs.
+          </li>
+          <li>
+            Don't rely solely on px as it limits scalability.
+          </li>
+          <li>
+            Do specify a fallback font to ensure readability when custom fonts fail to load.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

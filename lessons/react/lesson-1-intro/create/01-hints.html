@@ -1,0 +1,65 @@
+<!-- Hints Tab in Create Section -->
+<section class="create-section hints-tab">
+    <!-- Introduction -->
+    <p class="section-text intro">
+        If you are struggling, hover over different parts of the rendered code below
+        for useful hints!
+    </p>
+
+
+    <section class="rendered-code">
+        <header style="border-bottom: solid black 1px;" 
+            data-bs-toggle="tooltip" 
+            data-bs-custom-class="tooltip-html"
+            data-bs-title="Hint: This should be your Header component, use inline styling for the time being to get the bottom border. Example: &lt;header style=&#123;&#123; borderBottom: '1px solid black' &#125;&#125;&gt;"
+        >
+            <h1>Shopping List</h1>
+        </header>
+        <main>
+            <div    
+                data-bs-toggle="tooltip" 
+                data-bs-custom-class="tooltip-html"
+                data-bs-title="Hint: This should be your SavedRecipes component. Don't forget your script tag."
+            >
+                <h2>Saved Recipes</h2>
+                <div>
+                    <p>Alfredo</p>
+                    <p>Pizza</p>
+                    <p>Tacos</p>
+                </div>
+            </div>
+            <div
+                data-bs-toggle="tooltip" 
+                data-bs-custom-class="tooltip-html"
+                data-bs-title="Hint: This should be your SelectedRecipes component. Remember that each component needs a single parent element."
+            >
+                <h2>Selected Recipes</h2>
+                <ul>
+                    <li>Recipe 1</li>
+                    <li>Recipe 2</li>
+                    <li>Recipe 3</li>
+                </ul>
+            </div>
+            <div
+                data-bs-toggle="tooltip" 
+                data-bs-custom-class="tooltip-html"
+                data-bs-title="Hint: This should be your RecipeForm component. Make sure you render each component in the App.js file."
+            >
+                <h2>Add a Recipe</h2>
+                <form>
+                    <label>
+                        Name:
+                        <input type="text" name="name" />
+                    </label>
+                    <label>
+                        Ingredients:
+                        <select>
+                            <option>Choose Ingredient</option>
+                        </select>
+                    </label>
+                    <button>Add Recipe</button>
+                </form>
+            </div>
+        </main>
+    </section>
+</section>

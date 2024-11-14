@@ -1,0 +1,257 @@
+<section class="write-section">
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end banner image -->
+  <!-- Comment out sections you don't want -->
+  <!-- <img
+        class="leading-image"
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/js-1-localStorage-form.png"
+      /> -->
+
+  <img
+    src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/dropdownmenuitems.png"
+    alt="Example of the web site two"
+    width="300px"
+    style="float: right; margin: 5px"
+  />
+  <img
+    src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/js/lesson-1-local-storage/dropdownmenu.png"
+    alt="Example of the web site"
+    width="300px"
+    style="float: right; margin: 5px"
+  />
+
+  <!-- end leading content -->
+  <h2>Retrieving Data</h2>
+  <p class="section-text intro">
+    Follow the steps to get your form working correctly to retreive the data
+    from the local Storage and place it in the drop down menu!<br />
+    The images to the right shows what this section helps you create.<br />
+    Following the steps below!
+  </p>
+  <!-- Step 1: HTML Drop Down Menu -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: HTML Heading</h4>
+    <p class="section-text">
+      First, we need to add some more HTML. In your HTML, create a heading tag
+      with text asking the user which meal they'd like to select.
+    </p>
+    <!-- <div class="demo">
+          <pre>
+            &lt;img src="https://placekitten.com/200/300" /&gt;
+          </pre
+          >
+        </div> -->
+    <!-- <div class="tip-box">
+      <strong>Note:</strong> The script tags could also go between the head
+      tags, often you'll see them in the body section to improve the page load
+      time and allow the user to see the page first.
+    </div> -->
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Drop Down Menu</h4>
+    <p class="section-text">
+      Below your HTML heading tag, add an HTML drop down menu with a single
+      option as: Select a Meal.<br />
+      Add an id attribute to the select tag set to a value of your choosing.
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: New Function</h4>
+    <p class="section-text">
+      In your JavaScript below the closing bracket of your function saveMeal (or
+      whatever you named it), create a new function named something like
+      loadMeals.
+    </p>
+    <div class="demo">
+      <pre>
+      function saveMeal(){
+        code in the function
+      }
+      
+      <b>function loadMeal(){
+      
+      }</b></pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 4: Call Your Function</h4>
+    <p class="section-text">
+      Inside the if statement - below the alert code displaying the local
+      storage, call your new function.
+    </p>
+    <div class="demo">
+      <pre>
+      function saveMeal(){
+        
+        if(condition) {
+          -- code --
+          <strong class="highlight">loadMeal();</strong>
+        } else {
+          -- code --
+        }
+      }
+      
+      <b>function <strong class="highlight">loadMeal()</strong>{
+      
+      }</b></pre>
+    </div>
+    <div class="tip-box">
+      <strong>Protip:</strong> We want to call our new function before the close
+      of the if section so that we make sure the data gets into the local
+      storage before we run this new function. We don't want it to run until we
+      know everything worked correctly!
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 5: Drop Down Variable</h4>
+    <p class="section-text">
+      Between the brackets of your new function, create a variable set to your
+      drop down element.
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 6: Drop Down Variable</h4>
+    <p class="section-text">
+      Using the variable name created above, add the innerHTML property to your
+      variable and set it equal to "&lt;option>Select a Meal&lt;/option>"
+    </p>
+    <div class="tip-box">
+      <strong>Note:</strong> The drop down will be populated with form
+      submissions using the localStorage, so in order to always have the 'Select
+      a Meal' text it's best to just hard code it in there.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 7: For Loop</h4>
+    <p class="section-text">
+      Below the innerHTML variable property code, create a for loop that loops
+      through every item in the local storage.
+    </p>
+    <div class="tip-box">
+      <strong>Remember:</strong> The length property will let us know how many
+      times to loop through the local storage so we get all entries.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 8: Local Storage Key</h4>
+    <p class="section-text">
+      Between the brackets of the for loop, create a variable equal to the local
+      storage key function that looks at each index position.
+    </p>
+    <div class="demo">
+      <pre>
+      function loadMeals(){
+        variable code
+        varName.innerHTML = ....
+
+        for(let i = 0; i < localStorage.length; i++){
+          <b>const varName = localStorage.key(i);</b>
+        }
+      }
+      </pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 9: Retrieve the Data</h4>
+    <p class="section-text">
+      Below the localStorage.key method code, retrieve the data using
+      JSON.parse. Pass to it localStorage with its command to get data out and
+      pass to that the variable name storing the local storage key name.
+    </p>
+    <div class="demo">
+      <pre>
+      function loadMeals(){
+        for(let i = 0; i < localStorage.length; i++){
+          const <strong class="highlight2">varName</strong> = localStorage.key(i);
+          JSON.parse(localStorage.[[CommandToRetrieveData]](<strong class="highlight2">varName</strong>));
+        }
+      }
+    </pre>
+    </div>
+    <div class="tip-box">
+      <strong>Protip:</strong> You'll often see code instructions that need to
+      be replaced within double square brackets...[[code]] just like above.
+      Replace [[CommandToRetrieveData]] with the actual code used with the local
+      storage to retrieve data.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 10: Create Element</h4>
+    <p class="section-text">
+      Below the JSON.parse code, add a variable set to create an HTML option
+      element.
+    </p>
+    <div class="tip-box">
+      <strong>Note:</strong> this code is inside the for loop so it will create
+      an option tag for each item in the local storage.
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 11: Option Value and Variables</h4>
+    <p class="section-text">
+      Below the create element variable, use the create element variable name
+      and add the 'value' property set to the localStorage key variable name.<br />
+      Also, use the create element variable name and add the 'innerText'
+      property set to the localStorage key variable name.<br />
+      Also, use the drop down element variable name and add the appendChild
+      property set to the localStorage key variable name.
+    </p>
+    <div class="demo">
+      <pre>
+        const <strong class="highlight">varName1</strong> = document.getElementById("dropdown");
+        <strong class="highlight">varName1</strong>.innerHTML code.....
+        
+        for(let i = 0; i < localStorage.length; i++){
+          const <strong class="highlight2">varName2</strong> = localStorage.key(i);
+          JSON.parse(...code here...);
+
+          const <strong class="highlight3">varName3</strong> = document.createElement("option");
+          <strong class="highlight3">varName3</strong>.value = <strong class="highlight2">varName2</strong>;
+          <strong class="highlight3">varName3</strong>.innerText = <strong class="highlight2">varName2</strong>;
+          <strong class="highlight">varName1</strong>.appendChild(<strong class="highlight3">varName3</strong>);
+        }
+      </pre>
+    </div>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 12: TESTING</h4>
+    <p class="section-text">
+      Test it out! Save and refresh your page, fill out the form and see if it
+      shows up in the drop down menu!
+    </p>
+  </section>
+
+  <section class="write-step">
+    <h4 class="subsection-title">Step 13: Load the Drop Down</h4>
+    <p class="section-text">
+      Above the closing &lt;/script> tag call the loadMeals() function!
+    </p>
+    <div class="tip-box">
+      <strong>Protip:</strong> when a visitor comes to your site for their first
+      visit you to make sure that the drop down menu has everything from the
+      local storage in there. By calling the loadMeals function outside of any
+      other function event this will allow the loadMeals code to run when the
+      page loads.
+    </div>
+  </section>
+
+  <p>When you have completed these tasks move on to the next section!</p>
+  <!-- Comment out sections you don't want -->
+  <!--<div class="lead-content"><img class="leading-image" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"></div>-->
+  <!-- end leading content -->
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end bottom banner -->
+</section>

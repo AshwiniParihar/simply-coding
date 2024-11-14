@@ -1,0 +1,122 @@
+{
+  "title": "Lesson 7: List Elements",
+  "lessonID": "lessonHTML007",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/overview/lesson-overview.html"
+        },
+        {
+          "title": "A Quick Example",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/overview/01-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/overview.html"
+        },
+        {
+          "title": "Why Lists Matter",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/01-why-lists-matter.html"
+        },
+
+        {
+          "title": "Understanding Unordered Lists",
+          "fileType": "html",
+
+          "filePath": "/lessons/html/lesson-007-lists copy/read/02-unordered-list.html"
+        },
+        {
+          "title": "Understanding Ordered Lists",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/03-ordered-list.html"
+        },
+        {
+          "title": "Attributes",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/04-5-attributes.html"
+        },
+        {
+          "title": "Adjusting List Styles",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/04-list-styles.html"
+        },
+
+        {
+          "title": "Embedded Lists",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/05-embeded-list.html"
+        },
+        {
+          "title": "Description Lists",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/read/06-description-list.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Word Processing Tags</title>\n</head>\n<body>\n    <div>\n        <p>This is a simple paragraph that we will use to demonstrate word processing tags.</p>\n    </div>\n</body>\n</html>\n"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/write/overview.html"
+        },
+        {
+          "title": "Step-By-Step",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/write/01-step.html"
+        },
+        {
+          "title": "Advanced Lists in HTML",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/write/000-advanced-lists.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": ""
+      },
+      "content": [
+        {
+          "title": "Create This!",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/create/pizza-recipe.html"
+        },
+        {
+          "title": "Hints",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/create/hints.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-007-lists copy/create/solution.html"
+        }
+      ]
+    }
+  }
+}

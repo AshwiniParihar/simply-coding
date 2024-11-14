@@ -1,0 +1,67 @@
+<section class="container section-blue my-4 p-4 border rounded">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <!-- Title here should be "Welcome to 'Lesson Title'" -->
+    <h2 class="mb-0">Welcome to Lesson Title!</h2>
+    <!-- !ensure any img or other filepath is uploaded into aws and then the aws url is used-->
+    <!-- animated image should be relevant to topic/ use assets/animatedicons or flaticon.com for animated images, Zach has an account if there is a specific icon you need from the site-->
+    <!-- any styling needs to be done with the lesson-title-tag class, that way if we want to adjust the styling it applys site wide -->
+    <img
+      class="lesson-title-tag"
+      src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/folder.gif"
+      alt=""
+    />
+  </div>
+
+  <div>
+    <!-- quick synopisis and catchy paragraph of what we will be learning -->
+    <!-- The tone should be directed at the reader -->
+
+    <p class="lead">
+      Welcome to the world of images in HTML! In this lesson, you'll learn how
+      to enhance your webpages by adding images using the
+      <code>&lt;img&gt;</code> element. Images make websites more engaging,
+      informative, and visually appealing.
+    </p>
+    <!-- * Did You Know? Not required, but use this for a quick "this is an important topic and here is why" but keep it short -->
+
+    <div class="alert alert-info mb-3">
+      <strong>Did You Know?</strong> Images can be used to communicate complex
+      ideas quickly and add visual context, improving user experience.
+    </div>
+    <!-- Other intro paragraphs, keep them short and around 2 paragraphs max, this is just the intro -->
+    <p>
+      Images are a crucial part of creating visually compelling websites. They
+      convey information, evoke emotions, and provide context. A well-placed
+      image can break up text, making content more digestible and attractive.
+    </p>
+
+    <p>
+      In HTML, images are added using the <code>&lt;img&gt;</code> element,
+      which embeds an image into the page. This element is self-closing, meaning
+      it doesn’t require a separate closing tag.
+    </p>
+    <!-- Add a catchy visual example of the topic preferably different from the overview image or example -->
+    <div class="card p-3 my-3">
+      <h5 class="card-title">Example of Adding an Image in HTML:</h5>
+      <div class="d-flex align-items-center">
+        <img
+          src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"
+          alt="HTML5 Logo"
+          class="img-fluid rounded me-3"
+          style="width: 150px; transition: transform 0.2s"
+          onmouseover="this.style.transform='scale(1.1)';"
+          onmouseout="this.style.transform='scale(1)';"
+        />
+        <div>
+          <p class="mb-2">
+            This is an example of an image element using the
+            <code>&lt;img&gt;</code> tag.
+          </p>
+          <p class="text-muted">
+            <em>Hover over the image to see the effect!</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

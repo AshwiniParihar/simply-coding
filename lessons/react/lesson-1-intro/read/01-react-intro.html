@@ -1,0 +1,97 @@
+<section class="container section-blue my-4 p-4 border rounded">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <!-- Title here should be "Welcome to 'Lesson Title'" -->
+      <h2 class="mb-0">Welcome to React!</h2>
+      <!-- !ensure any img or other filepath is uploaded into aws and then the aws url is used-->
+      <!-- animated image should be relevant to topic/ use assets/animatedicons or flaticon.com for animated images, Zach has an account if there is a specific icon you need from the site-->
+      <!-- any styling needs to be done with the lesson-title-tag class, that way if we want to adjust the styling it applys site wide -->
+      <img
+        class="lesson-title-tag"
+        src="https://www.svgrepo.com/show/374032/reactjs.svg"
+        alt=""
+      />
+    </div>
+  
+    <div>
+      <!-- quick synopisis and catchy paragraph of what we will be learning -->
+      <!-- The tone should be directed at the reader -->
+  
+      <p class="lead">
+        <strong>So what is React?</strong> React is a JavaScript library for building user interfaces. 
+        It allows developers to break down complex interfaces into smaller, reusable components, making code easier to manage, debug, and scale as projects grow. 
+        React is designed to help build dynamic, interactive interfaces where the user can interact directly with various elements, making it ideal for applications that need to respond to user actions smoothly.
+      </p>
+      <!-- * Did You Know? Not required, but use this for a quick "this is an important topic and here is why" but keep it short -->
+  
+      <div class="alert alert-info mb-3">
+        <p>
+            <strong>Did You Know?</strong> React is one of the most popular JavaScript libraries for building user interfaces because it helps create fast, responsive apps and is backed by a large developer community. 
+            Originally developed by Facebook, React has become a go-to tool for both small projects and large-scale applications.
+        </p>
+      </div>
+      <!-- Other intro paragraphs, keep them short and around 2 paragraphs max, this is just the intro -->
+      <p>
+        When you build with vanilla HTML and JavaScript, you’re often writing code that directly instructs the browser on how things should happen, which can involve a lot of steps. 
+        For example, if you want to create a new element with some text, you might start by creating the element (document.createElement('div')), then set its text with textContent, 
+        add a class to it, and finally append it to the page—all as separate steps. This approach gives you control, but as your project grows, managing each detail can get overwhelming. 
+        With React, you can create the same element in a single line by defining it as a component and letting React handle the specifics. Instead of managing each change manually, 
+        you tell React what the result should look like, and it efficiently updates only what’s needed. This makes React especially useful for building larger, 
+        interactive applications while keeping your code more organized and manageable. 
+      </p>
+      <div class="alert alert-info mb-3">
+        <p>
+            Below is a quick example of the two approaches. Notice how you get to create your HTML in the function body, and React will take care of the rest.
+            Don't worry if you don't understand the code yet. You'll learn about each of these concepts in more detail later in this lesson.
+        </p>
+      </div>
+  
+      <p>
+        React provides a powerful set of built-in tools that make it easy to create interactive applications, including built-in functions called <code>hooks</code> for managing state and effects, 
+        a component-based structure for organizing your code, and JSX, which allows you to write HTML-like syntax in your JavaScript. It also uses a virtual DOM to optimize updates for better performance. 
+        In the next lesson, we’ll explore JSX and the virtual DOM, while we’ll finish this lesson set by covering the fundamentals of components.
+      </p>
+      <!-- Add a catchy visual example of the topic preferably different from the overview image or example -->
+      <div class="card p-3 my-3">
+        <h5 class="card-title">Adding Elements: JavaScript vs React</h5>
+        <div class="d-flex align-items-center">
+            <pre><code>
+                // Step 1: Create a new element
+                const newDiv = document.createElement('div');
+                
+                // Step 2: Set its text content
+                newDiv.textContent = 'Hello, Future Web Developer!';
+                
+                // Step 3: Add a class to the element
+                newDiv.className = 'welcome-message';
+                
+                // Step 4: Append the element to the body
+                document.body.appendChild(newDiv);
+                
+                // Create another paragraph to illustrate the HTML structure
+                const paragraph = document.createElement('p');
+                paragraph.textContent = 'You are about to create your first web page! Let's start by learning the basics of HTML.';
+                document.body.appendChild(paragraph);
+            </code></pre>
+            <p class="text-muted">
+              <em>Adding a <code>Div</code> with a <code>p tag</code> in JavaScript</em>
+            </p>
+          </div>
+        <div class="d-flex align-items-center">
+            <pre><code>
+                function App() {
+                    return (
+                        &lt;div className="welcome-message"&gt;
+                            Hello, Future Web Developer!
+                            &lt;p&gt;You are about to create your first web page! Let's start by learning the basics of HTML.&lt;/p&gt;
+                        &lt;/div&gt;
+                    )
+                }
+            </code></pre>
+            <p class="text-muted">
+                <em>Adding a <code>Div</code> with a <code>p tag</code> with React.</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,104 @@
+{
+  "title": "Lesson 9: Anchor Elements",
+  "lessonID": "lessonHTML009",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/read/01-overview.html"
+        },
+        {
+          "title": "Intro To Attributes",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/read/02-intro-to-attributes.html"
+        },
+
+        {
+          "title": "Understanding Anchor Elements",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/read/03-understanind-anchor-elements.html"
+        },
+        {
+          "title": "Global Attributes",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/read/04-global-attributes.html"
+        },
+        {
+          "title": "Advanced Anchor Elements",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/read/05-advanced-anchor-element.html"
+        },
+        {
+          "title": "Advanced Atttributes",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/read/06-advanced-attributes.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Anchor Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/write/01-overview.html"
+        },
+        {
+          "title": "Step-by-Step Instructions",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/write/02-step-by-step.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Anchor Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Create This!",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/create/01-create-this.html"
+        },
+        {
+          "title": "Hints",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/create/02-hints.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-9-anchor-elements/create/03-solution.html"
+        }
+      ]
+    }
+  }
+}

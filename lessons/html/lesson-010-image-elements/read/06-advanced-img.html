@@ -1,0 +1,131 @@
+<!-- Advanced Image Elements Infographic -->
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section 1: Dimensions -->
+  <div class="infographic-section">
+    <h2>Dimensions: <code>width</code> & <code>height</code></h2>
+    <p>
+      Setting image dimensions helps prevent layout shifts and can improve
+      perceived performance.
+    </p>
+    <pre>
+      <code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+      alt="Description" width="100" height="150" /&gt;</code>
+    </pre>
+    <div class="example-box">
+      <img
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png"
+        alt="Retro tape"
+        width="100"
+        height="150"
+      />
+    </div>
+    <button
+      class="btn try-it-out"
+      onclick='loadTryItOut(&apos;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="Retro tape" width="100" height="150" /&gt;&apos;)'
+    >
+      Try it →
+    </button>
+  </div>
+
+  <!-- Section 2: Lazy Loading -->
+  <div class="infographic-section">
+    <h2>Lazy Loading</h2>
+    <p>
+      Use the <code>loading="lazy"</code> attribute for images that are not
+      immediately visible.
+    </p>
+    <pre>
+      <code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+      alt="Description" loading="lazy" /&gt;</code>
+    </pre>
+    <p><strong>Best Practice:</strong> Enhances initial page load speed.</p>
+    <button
+      class="btn try-it-out"
+      onclick='loadTryItOut(&apos;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="Retro tape with lazy loading" loading="lazy" /&gt;&apos;)'
+    >
+      Try it →
+    </button>
+  </div>
+
+  <!-- Section 3: Responsive Images -->
+  <div class="infographic-section">
+    <h2>Responsive Images</h2>
+    <p>
+      <code>srcset</code> and <code>sizes</code> attributes allow for responsive
+      images that scale with the device.
+    </p>
+    <pre>
+      <code>&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+      srcset="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png 1x, https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png 2x" 
+      sizes="(max-width: 600px) 100vw, 200px" alt="Description" /&gt;</code>
+    </pre>
+    <p>
+      <strong>Best Practice:</strong> Browser selects appropriate image for the
+      viewport.
+    </p>
+    <button
+      class="btn try-it-out"
+      onclick='loadTryItOut(&apos;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" srcset="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png 1x, https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png 2x" sizes="(max-width: 600px) 100vw, 200px" alt="Responsive retro tape" /&gt;&apos;)'
+    >
+      Try it →
+    </button>
+  </div>
+
+  <!-- Section 4: Picture Element -->
+  <div class="infographic-section">
+    <h2>The <code>&lt;picture&gt;</code> Element</h2>
+    <p>
+      Use the <code>&lt;picture&gt;</code> element to provide different sources
+      based on screen size or features.
+    </p>
+    <pre>
+      <code>
+&lt;picture&gt;
+  &lt;source srcset="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" media="(min-width: 800px)" /&gt;
+  &lt;source srcset="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" media="(max-width: 799px)" /&gt;
+  &lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+  alt="Description" /&gt;
+&lt;/picture&gt;
+      </code>
+    </pre>
+    <p>
+      <strong>Best Practice:</strong> Provides fallback support and art
+      direction.
+    </p>
+    <button
+      class="btn try-it-out"
+      onclick='loadTryItOut(&apos;&lt;picture&gt;&lt;source srcset="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" media="(min-width: 800px)" /&gt;&lt;source srcset="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" media="(max-width: 799px)" /&gt;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" alt="Responsive retro tape" /&gt;&lt;/picture&gt;&apos;)'
+    >
+      Try it →
+    </button>
+  </div>
+
+  <!-- Section 5: Image Maps -->
+  <div class="infographic-section">
+    <h2>Image Maps</h2>
+    <p>
+      Create interactive areas within an image using <code>usemap</code> and
+      <code>&lt;map&gt;</code> elements.
+    </p>
+    <pre>
+      <code>
+&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" 
+usemap="#retromap" alt="Description" /&gt;
+&lt;map name="retromap"&gt; 
+  &lt;area shape="rect" coords="34,44,270,350" alt="Top section" href="#" /&gt; 
+  &lt;area shape="circle" coords="150,200,75" alt="Center section" href="#" /&gt;
+&lt;/map&gt;
+      </code>
+    </pre>
+    <p>
+      <strong>Best Practice:</strong> Ideal for creating clickable regions in
+      images.
+    </p>
+    <button
+      class="btn try-it-out"
+      onclick='loadTryItOut(&apos;&lt;img src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/retrotape.png" usemap="#retromap" alt="Interactive retro tape" /&gt;&lt;map name="retromap"&gt;&lt;area shape="rect" coords="34,44,270,350" alt="Top section" href="#" /&gt;&lt;area shape="circle" coords="150,200,75" alt="Center section" href="#" /&gt;&lt;/map&gt;&apos;)'
+    >
+      Try it →
+    </button>
+  </div>
+</section>

@@ -1,0 +1,314 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <div class="infographic-section">
+    <h2>Solution</h2>
+    <!-- Brief explanation of the tags purpose -->
+    <p>
+      Well done! Here’s the complete solution for creating the initital layout of our recipe app.
+      Click on the boxes below to see each file's solution.
+      Compare it with your code to see if there are any areas for improvement or adjustments.
+    </p>
+  </div>
+
+  <!-- Section 3: Attributes Explained -->
+  <div class="infographic-section">
+    <h2>Component Rules</h2>
+    <div class="infographic-attributes">
+      <!-- src Attribute Card -->
+      <div class="attribute">
+        <h5>index.html</h5>
+        <p>Click to see index.html solution</p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalSrc">
+          ...
+        </div>
+      </div>
+
+      <!-- alt Attribute Card -->
+      <div class="attribute">
+        <h5>main.js</h5>
+        <p>
+          Click to see main.js solution
+        </p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalAlt">
+          ...
+        </div>
+      </div>
+
+      <!-- width Attribute Card -->
+      <div class="attribute">
+        <h5>App.js</h5>
+        <p>
+          Click to see App.js solution
+        </p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalWidth">
+          ...
+        </div>
+      </div>
+
+      <!-- height Attribute Card -->
+      <div class="attribute">
+        <h5>Header.js</h5>
+        <p>
+          Click to see Header.js solution
+        </p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalHeight">
+          ...
+        </div>
+      </div>
+
+
+      <div class="attribute">
+        <h5>SelectedRecipes.js</h5>
+        <p>Click to see SelectedRecipes.js solution</p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalSelectedRecipes">...</div>
+      </div>
+
+      <div class="attribute">
+        <h5>RecipeForm.js</h5>
+        <p>Click to see RecipeForm.js solution</p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalRecipeForm">...</div>
+      </div>
+
+      <div class="attribute">
+        <h5>SavedRecipes.js</h5>
+        <p>Click to see SavedRecipes.js solution</p>
+        <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalSavedRecipes">...</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h3 class="subsection-title">Code Explanation</h3>
+  <ul class="instruction-list">
+    <li>
+      The <code>index.html</code> file is the entry point of the application. 
+      It contains our root div where our React app will be rendered and the script tag that loads the React library.
+    </li>
+    <li>
+      The <code>main.js</code> file is the entry point for our React code. 
+      It's only job is to render our <code>App.js</code> component into the root div in the <code>index.html</code> file.
+    </li>
+    <li>
+      The <code>App.js</code> file is the main component of our application. It is used to organize and structure our application's UI.
+    </li>
+    <li>
+      Inside of each Component:
+      <ul>
+        <li>
+          We create a function that returns JSX code. The JSX code allows us to mix HTML and JavaScript.
+        </li>
+        <li>
+          We are able to call our components inside of other components. We can do so by <code>&lt;[Component-Name] /&gt;</code>
+        </li>
+        <li>
+          Each component has its script tag loaded in the html file before our <code>main.js</code> file so that it has access to the component's logic.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- Call to Action -->
+  <!-- <div class="text-end mt-3">
+    <button class="btn btn-primary" onclick="loadNextChallenge()">
+      Next Challenge →
+    </button>
+  </div> -->
+
+
+  <!-- Modals for Detailed Info -->
+  <!-- src Modal -->
+  <div class="modal fade" id="modalSrc" tabindex="-1" aria-labelledby="modalSrcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSrcLabel">index.html</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;React App&lt;/title&gt;
+      &lt;script src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/@babel/standalone@7/babel.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;div id="root"&gt;&lt;/div&gt;
+      &lt;script type="text/babel" src="/components/SelectedRecipes.js" defer&gt;&lt;/script&gt;
+      &lt;script type="text/babel" src="/components/SavedRecipes.js" defer&gt;&lt;/script&gt;
+      &lt;script type="text/babel" src="/components/RecipeForm.js" defer&gt;&lt;/script&gt;
+      &lt;script type="text/babel" src="/components/Header.js" defer&gt;&lt;/script&gt;
+      &lt;script type="text/babel" src="App.js" defer&gt;&lt;/script&gt;
+      &lt;script type="text/babel" src="main.js" defer&gt;&lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+          </code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- alt Modal -->
+  <div class="modal fade" id="modalAlt" tabindex="-1" aria-labelledby="modalAltLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAltLabel">main.js</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(&lt;App /&gt;);
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- width Modal -->
+  <div class="modal fade" id="modalWidth" tabindex="-1" aria-labelledby="modalWidthLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalWidthLabel">App.js</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+  function App() &#123;
+    return (
+      &lt;div className="App"&gt;
+        &lt;Header /&gt;
+        &lt;SavedRecipes /&gt;
+        &lt;SelectedRecipes /&gt;
+        &lt;RecipeForm /&gt;
+      &lt;/div&gt;
+    );
+  &#125;
+    </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- height Modal -->
+  <div class="modal fade" id="modalHeight" tabindex="-1" aria-labelledby="modalHeightLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHeightLabel">File Structure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+  function Header() &#123;
+      return (
+          &lt;header style=&#123;&#123; borderBottom: '1px solid black' &#125;&#125;&gt;
+              &lt;h1&gt;Shopping List&lt;/h1&gt;
+          &lt;/header&gt;
+      );
+  &#125;
+    </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalRecipeForm" tabindex="-1" aria-labelledby="modalRecipeFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRecipeFormLabel">RecipeForm.js Structure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+  function RecipeForm() &#123;
+      return (
+          &lt;div&gt;
+              &lt;h2&gt;Add a Recipe&lt;/h2&gt;
+              &lt;form&gt;
+                  &lt;label&gt;
+                      Name:
+                      &lt;input type="text" name="name" /&gt;
+                  &lt;/label&gt;
+                  &lt;label&gt;
+                      Ingredients:
+                      &lt;select&gt;
+                          &lt;option&gt;Choose Ingredient&lt;/option&gt;
+                      &lt;/select&gt;
+                  &lt;/label&gt;
+                  &lt;button&gt;Add Recipe&lt;/button&gt;
+              &lt;/form&gt;
+          &lt;/div&gt;
+      );
+  &#125;
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalSavedRecipes" tabindex="-1" aria-labelledby="modalSavedRecipesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSavedRecipesLabel">SavedRecipes.js Structure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+  function SavedRecipes() &#123;
+      return (
+          &lt;div&gt;
+              &lt;h2&gt;Saved Recipes&lt;/h2&gt;
+              &lt;div&gt;
+                  &lt;p&gt;Alfredo&lt;/p&gt;
+                  &lt;p&gt;Pizza&lt;/p&gt;
+                  &lt;p&gt;Tacos&lt;/p&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      );
+  &#125;
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSelectedRecipes" tabindex="-1" aria-labelledby="modalSelectedRecipesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSelectedRecipesLabel">SelectedRecipes.js Structure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <pre><code>
+  function SelectedRecipes() &#123;
+      return (
+          &lt;div&gt;
+              &lt;h2&gt;Selected Recipes&lt;/h2&gt;
+              &lt;ul&gt;
+                  &lt;li&gt;Recipe 1&lt;/li&gt;
+                  &lt;li&gt;Recipe 2&lt;/li&gt;
+                  &lt;li&gt;Recipe 3&lt;/li&gt;
+              &lt;/ul&gt;
+          &lt;/div&gt;
+      );
+  &#125;
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,100 @@
+<section class="write-section">
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end banner image -->
+  <div class="main-wrapper">
+    <!-- Comment out sections you don't want -->
+    <!--<div class="lead-content"><img class="leading-image" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"></div>-->
+    <!-- end leading content -->
+    <div class="content-lesson">
+      <header>
+        <div class="try-it-section">
+          <h5>
+            Click on the button 'Starter Code', then click on the <span style="color:blue">JavaScript TAB</span>, then follow the instructions below.
+          </h5>
+          <button
+            class="try-it-out"
+            onclick='loadTryItOut("","","function saveColors() {\n  \n  localStorage.setItem(&#39myColors&#39, W)&#59\n  console.log(&#39Colors saved to localStorage: &#39 + JSON.X(localStorage.getItem(&#39Y&#39)))&#59\n}\n\nfunction displayColors() {\n\n\n\n}\n\nsaveColors()&#59\ndisplayColors()&#59\n")'
+          >
+            Starter Code →
+          </button> <img src="https://simplycodingcourses.com:/files/images/webDevelopmentFoundations/js/jsTab.png" width="175px" alt="js tab" style="border:2px solid black"/>
+        </div>
+      </header>
+      <section class="write-step">
+        <h4 class="subsection-title">Step 1: Local Storage</h4>
+        <p class="section-text">
+        Make sure you have clicked on the JavaScript tab!
+          <ol>
+            <li>On line 2, Between the brackets of the saveColors function, create an array of color names.</li>
+            <li>On line 3, replace the 'W' with the correct code using the JSON stringify command and passing in the name of your array.</li>
+            <li>On line 4, replace the 'X' with the correct JSON command that reverses the stringify & replace the 'Y' with the key name to view it's value in the console.</li>
+            <li>Click the Run button - Then scroll down to the console and see if your colors appear pulled from the local storage!</li>
+            <li>Create the function called by the button.</li><br/>
+            <p style="color:blue; text-align: center;">In the next steps, be sure to add the code between the brackets of the displayColors function.</p>
+            <li>Between the brackets of the displayColors function, add a variable set equal to the JSON parse command getting the data from the localStorage by passing the key value.</li>
+            <ul><li>This will look very similar to the JSON code from line 4, except it will be in a variable.</li></ul>
+            <li>Below the previous variable, create a for loop to loop through each item in the local storage.</li>
+            <li>Between the brackets of the for loop use console log to display each item in the array numbered in sequencial order.</li>  
+            <li>Run the code and try to match it to the visual below!</li>
+          </ol>
+        </p>
+      </section>
+      <section class="write-step">
+        <h4 class="subsection-title">Step 2: Visual</h4>
+        <p class="section-text">
+          This section shows you what the output of your code should look like:
+        </p>
+        <img
+          src="https://simplycodingcourses.com:/files/images/webDevelopmentFoundations/js/localStorage1.png"
+          width="60%"
+        />
+        
+      </section>
+
+
+      <h2>New Task: Steps 3 & 4</h2>
+      <h5>
+            Click on the button 'Starter Code', then click on the <span style="color:blue">JavaScript TAB</span>, then follow the instructions below.
+          </h5>
+          <button
+            class="try-it-out"
+            onclick='loadTryItOut("","","let group1 = [&#39Dan&#39, &#39Dave&#39, &#39Derek&#39]&#59\nlet group2 = [&#39Diane&#39, &#39Destiny&#39, &#39Darla&#39]&#59\n\n\n\nconsole.log(&#39Length before removal:&#39 + Y);\n\n\n\nconsole.log(&#39Length after removal:&#39 + Z);\n\n\n")'
+          >
+            Starter Code →
+          </button>
+     <img src="https://simplycodingcourses.com:/files/images/webDevelopmentFoundations/js/jsTab.png" width="175px" alt="js tab" style="border:2px solid black"/>
+      <section class="write-step">
+        <h4 class="subsection-title">Step 3: Local Storage Remove</h4>
+        <p class="section-text">
+          Make sure you have clicked on the JavaScript tab!
+          <ol>
+            <li>On line 4, add the localStorage with correct attribute that saves group 1 using key 'group1'.</li>
+            <li>On line 5, add the localStorage with correct attribute that saves group 2 using key 'group2'.</li>
+            <li>On line 6, replace the 'Y' with the code to get the length of the local storage.</li>  
+            <li>On line 8, remove the 'group2' key from the local storage.</li>
+            <li>On line 10, replace the 'Z' with the code to get the length of the local storage.</li> 
+            <li>Run the code and notice that the local storage will drop by 1 because you removed one key.</li>
+          </ol>
+        </p>
+      </section>
+      <section class="write-step">
+        <h4 class="subsection-title">Step 4: Visual</h4>
+        <p class="section-text">
+          This section shows you what the output of your code should look like:<br/>
+          Yours may be a little different if you have more local storage items.  The important part is you see if reduced by 1!
+        </p>
+        <img
+          src="https://simplycodingcourses.com:/files/images/webDevelopmentFoundations/js/localStorage2.png"
+          width="60%"
+        />
+        
+      </section>
+    </div>
+    <!-- Comment out sections you don't want -->
+    <!--<div class="trail-content"><img class="leading-image" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"></div>-->
+    <!-- end leading content -->
+  </div>
+  <!-- Comment out sections you don't want -->
+  <!--<div class="banner-image"><img class="banner-img" src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/banner-html5.png"></div>-->
+  <!-- end bottom banner -->
+</section>

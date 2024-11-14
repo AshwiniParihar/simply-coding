@@ -1,0 +1,101 @@
+{
+    "title": "Lesson #1: Intro to React",
+    "lessonID": "lessonReact01#",
+    "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+    "sections": {
+      "Overview": {
+        "starter-code": {
+          "html": "",
+          "css": "",
+          "js": ""
+        },
+        "content": [
+          {
+            "title": "Lesson Overview",
+            "fileType": "html",
+            "filePath": "/lessons/react/lesson-1-intro/overview/01-overview.html"
+          }
+        ]
+      },
+      "Read": {
+        "starter-code": {
+          "html": "",
+          "css": "",
+          "js": ""
+        },
+        "content": [
+          {
+            "title": "Section Overview",
+            "fileType": "html",
+            "filePath": "/lessons/react/lesson-1-intro/read/01-react-intro.html"
+          },
+          {
+            "title": "JSX and the Virtual DOM",
+            "fileType": "html",
+            "filePath": "/lessons/react/lesson-1-intro/read/02-jsx.html"
+          },
+          {
+            "title": "Setting up a React Project",
+            "fileType": "html",
+            "filePath": "/lessons/react/lesson-1-intro/read/03-react-setup.html"
+          },
+          {
+            "title": "React Components",
+            "fileType": "html",
+            "filePath": "/lessons/react/lesson-1-intro/read/04-components.html"
+          }
+        ]
+      },
+      "Write": {
+        "starter-code": {
+          "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+  
+          "css": "",
+          "js": ""
+        },
+        "content": [
+          {
+            "title": "Section Overview",
+            "fileType": "html",
+            "filePath": "/lessons/html/lesson-10-image-elements/write/01-overview.html"
+          },
+          {
+            "title": "Step-by-Step",
+            "fileType": "html",
+            "filePath": "/lessons/html/lesson-10-image-elements/write/02-step-by-step.html"
+          },
+          {
+            "title": "Review",
+            "fileType": "html",
+            "filePath": "/lessons/html/lesson-10-image-elements/write/03-img-review.html"
+          }
+        ]
+      },
+      "Create": {
+        "starter-code": {
+          "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+  
+          "css": "",
+          "js": ""
+        },
+        "content": [
+          {
+            "title": "Section Overview",
+            "fileType": "html",
+            "filePath": "/lessons/html/lesson-10-image-elements/create/01-overview.html"
+          },
+          {
+            "title": "Help",
+            "fileType": "html",
+            "filePath": "/lessons/html/lesson-10-image-elements/create/02-hints.html"
+          },
+          {
+            "title": "Solution",
+            "fileType": "html",
+            "filePath": "/lessons/html/lesson-10-image-elements/create/03-solution.html"
+          }
+        ]
+      }
+    }
+  }
+  

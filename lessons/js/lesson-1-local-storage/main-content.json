@@ -1,0 +1,148 @@
+{
+  "title": "Lesson 1: Local Storage",
+  "lessonID": "lessonJS001",
+  "videoUrl": "/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/00-overview.html"
+        },
+        {
+          "title": "HTML Forms",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/01-html-forms.html"
+        },
+        {
+          "title": "Event Listeners",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/02-calling-functions.html"
+        },
+        {
+          "title": "Query Selector & getElementBy...",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/03-targeting-tags.html"
+        },
+        {
+          "title": "Functions with parameters",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/04-functions-parameters.html"
+        },
+        {
+          "title": "JS Built in Commands",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/05-js-commands.html"
+        },
+        {
+          "title": "Loops",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/06-loops.html"
+        },
+        {
+          "title": "localStorage",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/read/07-local-storage.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/00-section-overview.html"
+        },
+        {
+          "title": "HTML Forms",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/01-html-forms.html"
+        },
+        {
+          "title": "Calling Functions",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/02-calling-functions.html"
+        },
+        {
+          "title": "Targeting HTML Elements",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/03-query-getElementBy.html"
+        },
+        {
+          "title": "JavaScript Commands",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/04-javascript-commands.html"
+        },
+        {
+          "title": "JavaScript Loops",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/05-javascript-loops.html"
+        },
+        {
+          "title": "JavaScript Local Storage",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/write/06-javascript-local-storage.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/create/00-section-overview.html"
+        },
+        {
+          "title": "Web Page",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/create/01-web-page.html"
+        },
+        {
+          "title": "Form Submit",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/create/02-form-submit.html"
+        },
+        {
+          "title": "Load Local Storage",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/create/03-load-local-storage.html"
+        },
+        {
+          "title": "Display Meal Ingredients",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/js/lesson-1-local-storage/create/04-display-meal.html"
+        }
+      ]
+    }
+  }
+}

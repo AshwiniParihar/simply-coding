@@ -1,0 +1,141 @@
+.main-wrapper{
+    display: flex;
+    height: 100%;
+}
+
+.center-div{
+    text-align: center;
+}
+
+.caption-black{
+    font-size: 12px;
+    color: #000000;
+}
+
+/* Images */
+.leading-image,
+.trailing-image,
+.between-section-image,
+.banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.lead-content, .trail-content{
+    display: flex;
+    max-width: 25%;
+}
+.lead-content{
+    padding: 12px 0px 12px 8px;
+}
+.trail-content{
+    padding: 12px 8px 12px 0px;
+}
+
+.content-lesson {
+    margin: 8px;
+    padding: 12px;
+    /*background-color: #1e1e1e;*/ /*match editor color*/
+    background-color: #f1f1f1;
+    color: #333333 !important;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.content-lesson h1, .content-lesson h2, .content-lesson h3, .content-lesson h4, .content-lesson h5, .content-lesson h6{
+    color: #333333 !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.content-lesson-sub {
+    margin: 8px;
+    padding: 12px;
+    /*background-color: #1e1e1e;*/ /*match editor color*/
+    background-color: #f1f1f1;
+    color: #333333 !important;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+section {
+    padding: 1px;
+    /*border-radius: 8px;*/
+    margin-bottom: 8px;
+}
+
+/* Overview */
+.overview-yellow {
+    background-color: #ffb900;
+}
+
+/* Code Example */
+.example-red {
+    background-color: #e74c3c;
+}
+
+/* Explanation */
+.explain-green {
+    background-color: #27ae60;
+}
+
+/* Information */
+.info-blue {
+    background-color: #1572b6;
+}
+
+/* Misc */
+.p16 {
+    padding: 16px;
+}
+
+.p12 {
+    padding: 12px;
+}
+
+.tag-highlight{ /* alternate tag highlighting within html*/
+    display: inline-block !important;
+    border-radius: 3px !important;
+    background-color: #7b2b9e !important;
+    padding: 2px 4px !important;
+    vertical-align: bottom !important;
+    margin-bottom: 0px !important;
+    font-size: .85rem !important;
+    font-weight: 700;
+}
+
+.content-lesson pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 8px 0px;
+}
+
+/* Weird stuff for giggles */
+.styled-heading {
+    font-family: "Arial", sans-serif;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px #ff8a00,
+        0 0 20px #ff8a00;
+    }
+    to {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 15px #e52e71,
+        0 0 30px #e52e71;
+    }
+}

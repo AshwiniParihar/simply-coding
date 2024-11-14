@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Coding Lesson</title>
+    <!-- *TODO: Add local imports to AWS -->
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/github-markdown.css"
+    />
+    <!-- Highlight.js CSS for code highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/github-dark-min.css"
+    />
+
+    <!-- Highlight.js JavaScript library -->
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/highlight-min.js"></script>
+
+    <!-- Highlight.js auto-detection for code blocks -->
+    <script>
+      hljs.highlightAll();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/lesson-template.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/styles.css"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/markdown.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/lesson-template.css"
+    />
+  </head>
+  <body spellcheck="false">
+    <div class="navbar">
+      <img
+        class="logo"
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/simply-coding-logo.png"
+      />
+      <h1 id="lesson-title">Loading Lesson...</h1>
+      <div>
+        <p class="alert-text" id="window-alert">&VeryThinSpace;</p>
+        <!-- <button
+          class="toggle-btn"
+          id="toggle-video"
+          onclick="toggleColumn('video')"
+        >
+          Show Video
+        </button> -->
+        <button
+          class="toggle-btn active"
+          id="toggle-lesson"
+          onclick="toggleColumn('lesson')"
+        >
+          Hide Lesson
+        </button>
+        <button
+          class="toggle-btn active"
+          id="toggle-editor"
+          onclick="toggleColumn('editor')"
+        >
+          Hide Editor
+        </button>
+      </div>
+    </div>
+
+    <!-- Section Toggle Buttons -->
+    <div id="section-buttons" class="section-buttons"></div>
+
+    <div class="content-wrapper">
+      <!-- <div class="video-player collapsed" id="video-player">
+        <video id="lesson-video" controls>
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="notes-section">
+          <h3>Notes</h3>
+          <textarea
+            id="notes-input"
+            class="notes-input"
+            placeholder="Write your notes here..."
+          ></textarea>
+        </div>
+      </div> -->
+
+      <!-- Lesson content will be dynamically inserted here -->
+      <div class="lesson-content" id="lesson-content">
+        <div id="sections-container"></div>
+        <!-- JavaScript will add sections here -->
+      </div>
+
+      <div class="code-editor" id="code-editor">
+        <div class="editor-tabs">
+          <button class="editor-tab active" onclick="switchTab('html')">
+            HTML
+          </button>
+          <button class="editor-tab" onclick="switchTab('css')">CSS</button>
+          <button class="editor-tab" onclick="switchTab('js')">
+            JavaScript
+          </button>
+        </div>
+
+        <div class="editor-container">
+          <div class="editor-controls">
+            <button class="editor-opt-btn" onclick="runCode()">Run Code</button>
+
+            <!-- 
+            currently disabled
+            <button
+              class="editor-opt-btn"
+              id="saveButton"
+              class="save-button"
+              onclick="saveCurrentSection()"
+            >
+              Save Code -->
+            <!-- </button> -->
+            <button
+              class="editor-opt-btn"
+              id="resetButton"
+              onclick="resetCodeWithConfirmation()"
+            >
+              Reset Code
+            </button>
+            <button class="editor-opt-btn" id="copyButton" onclick="copyCode()">
+              Copy HTML
+            </button>
+
+            <!-- <button class="editor-opt-btn" onclick="openFullScreen()">
+              Run Code In New Screen
+            </button> -->
+
+            <button class="editor-size-btn active" data-size="1x">1x</button>
+            <button class="editor-size-btn" data-size="2x">2x</button>
+            <button class="editor-size-btn" data-size="3x">3x</button>
+          </div>
+          <div class="editor">
+            <div class="editor-with-lines">
+              <div class="line-numbers" id="line-numbers-html"></div>
+              <textarea
+                id="html-input"
+                class="code-input"
+                placeholder="Write your HTML here..."
+                oninput="updateLineNumbers('html')"
+              ></textarea>
+            </div>
+            <div class="editor-with-lines" style="">
+              <div class="line-numbers" id="line-numbers-css"></div>
+              <textarea
+                id="css-input"
+                class="code-input"
+                placeholder="Write your CSS here..."
+                oninput="updateLineNumbers('css')"
+              ></textarea>
+            </div>
+            <div class="editor-with-lines" style="">
+              <div class="line-numbers" id="line-numbers-js"></div>
+              <textarea
+                id="js-input"
+                class="code-input"
+                placeholder="Write your JavaScript here..."
+                oninput="updateLineNumbers('js')"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-container">
+          <div class="preview-controls">
+            <button class="preview-size-btn active" data-size="1x">1x</button>
+            <button class="preview-size-btn" data-size="2x">2x</button>
+            <button class="preview-size-btn" data-size="full">Full</button>
+            <button class="preview-size-btn" data-size="mobile">Mobile</button>
+          </div>
+          <iframe id="preview"></iframe>
+        </div>
+        <div class="debug-container">
+          <div class="debug-header" onclick="toggleDebugConsole()">
+            <span>Debug Console</span>
+            <span id="debug-toggle">▼</span>
+          </div>
+
+          <div class="debug-console" id="debug-console">
+            <div class="debug-content" id="debug-content"></div>
+          </div>
+
+          <span
+            ><button class="clear-console-btn" onclick="clearDebugConsole();">
+              Clear Console
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/marked-min.js"></script>
+
+    <script
+      defer
+      src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/loadLesson.js"
+    ></script>
+
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/toggleColumn.js"></script>
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/editorFunction.js"></script>
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/debugConsole.js"></script>
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/nextSection.js"></script>
+
+    <!-- Uncomment below for local access to js  -->
+    <!-- <script defer src="js/loadLesson.js"></script>
+
+    <script src="js/toggleColumn.js"></script>
+    <script src="js/editorFunction.js"></script>
+    <script src="js/debugConsole.js"></script>
+    <script src="js/nextSection.js"></script> -->
+
+    <script>
+      // Get the lesson JSON URL from the query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      // const lessonJsonUrl = urlParams.get("lesson");
+      const lessonJsonUrl =
+        "/lessons/js/lesson-1-local-storage/local-main-content.json";
+
+      // Load the lesson data
+      window.addEventListener("load", () => {
+        if (lessonJsonUrl) {
+          loadLessonData(lessonJsonUrl);
+        } else {
+          console.error("No lesson URL provided");
+        }
+      });
+    </script>
+  </body>
+</html>

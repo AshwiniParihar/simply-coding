@@ -1,0 +1,215 @@
+<section class="section-container section-yellow" style="margin-bottom: 20px">
+  <h3 class="section-title">Advanced HTML Attributes</h3>
+  <p class="section-text">
+    HTML attributes aren't limited to basic functionality—they can enable more
+    advanced interactions, improve accessibility, and create dynamic behaviors.
+    Here are some of the most common and useful advanced attributes:
+  </p>
+
+  <!-- 1. The 'target' Attribute -->
+  <section>
+    <h4 class="subsection-title">1. The <code>target</code> Attribute</h4>
+    <p class="section-text">
+      The <code>target</code> attribute is used with anchor elements
+      (<code>&lt;a&gt;</code>) to specify where to open the linked document. The
+      most common value is <code>_blank</code>, which opens the link in a new
+      tab or window.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="https://www.simplycoding.org" target="_blank"&gt;Visit SimplyCoding in a New Tab&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;https://www.simplycoding.org&quot; target=&quot;_blank&quot;&gt;Visit SimplyCoding in a New Tab&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. The 'title' Attribute -->
+  <section>
+    <h4 class="subsection-title">2. The <code>title</code> Attribute</h4>
+    <p class="section-text">
+      The <code>title</code> attribute adds a tooltip that appears when the user
+      hovers over the element. It's useful for providing additional information
+      about the link.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="https://www.simplycoding.org" title="Explore SimplyCoding Courses"&gt;Visit SimplyCoding&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;https://www.simplycoding.org&quot; title=&quot;Explore SimplyCoding Courses&quot;&gt;Visit SimplyCoding&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 3. The 'download' Attribute -->
+  <section>
+    <h4 class="subsection-title">3. The <code>download</code> Attribute</h4>
+    <p class="section-text">
+      The <code>download</code> attribute specifies that the target will be
+      downloaded when the user clicks the link. It's often used for downloadable
+      files like PDFs, images, or documents.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="files/guide.pdf" download&gt;Download Guide&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;files/guide.pdf&quot; download&gt;Download Guide&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. The 'rel' Attribute -->
+  <section>
+    <h4 class="subsection-title">4. The <code>rel</code> Attribute</h4>
+    <p class="section-text">
+      The <code>rel</code> attribute defines the relationship between the
+      current document and the linked document. It’s commonly used with
+      <code>noopener</code> and <code>noreferrer</code> for security when using
+      <code>target="_blank"</code>.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;a href="https://www.simplycoding.org" target="_blank" rel="noopener noreferrer"&gt;Secure Link to SimplyCoding&lt;/a&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;a href=&quot;https://www.simplycoding.org&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Secure Link to SimplyCoding&lt;/a&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 5. The 'data-*' Attributes -->
+  <section>
+    <h4 class="subsection-title">5. The <code>data-*</code> Attributes</h4>
+    <p class="section-text">
+      The <code>data-*</code> attributes are custom attributes that allow you to
+      store additional information on HTML elements, useful for dynamic
+      JavaScript interactions.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;button data-product-id="123"&gt;Add to Cart&lt;/button&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;button data-product-id=&quot;123&quot;&gt;Add to Cart&lt;/button&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 6. The 'aria-*' Attributes -->
+  <section>
+    <h4 class="subsection-title">6. The <code>aria-*</code> Attributes</h4>
+    <p class="section-text">
+      The <code>aria-*</code> attributes are part of the WAI-ARIA specification,
+      used to enhance accessibility by providing assistive technologies with
+      additional context about how elements should be interacted with.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;button aria-label="Close"&gt;X&lt;/button&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;button aria-label=&quot;Close&quot;&gt;X&lt;/button&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 7. The 'alt' Attribute -->
+  <section>
+    <h4 class="subsection-title">7. The <code>alt</code> Attribute</h4>
+    <p class="section-text">
+      Used with the <code>&lt;img&gt;</code> element, the
+      <code>alt</code> attribute provides alternative text for images, improving
+      accessibility and helping search engines understand the image content.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;img src="logo.png" alt="SimplyCoding Logo"&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;img src=&quot;logo.png&quot; alt=&quot;SimplyCoding Logo&quot;&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 8. The 'placeholder' Attribute -->
+  <section>
+    <h4 class="subsection-title">8. The <code>placeholder</code> Attribute</h4>
+    <p class="section-text">
+      The <code>placeholder</code> attribute is used in input fields to provide
+      a hint or example of the expected input.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;input type="text" placeholder="Enter your name"&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;input type=&quot;text&quot; placeholder=&quot;Enter your name&quot;&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+
+  <!-- 9. The 'required' Attribute -->
+  <section>
+    <h4 class="subsection-title">9. The <code>required</code> Attribute</h4>
+    <p class="section-text">
+      The <code>required</code> attribute is used in form input fields to
+      indicate that the field must be filled before submitting the form.
+    </p>
+    <div class="demo">
+      <pre>
+&lt;input type="email" required&gt;
+      </pre>
+    </div>
+    <div class="text-end">
+      <button
+        class="btn btn-primary try-it-out"
+        onclick="loadTryItOut('&lt;input type=&quot;email&quot; required&gt;', '', '')"
+      >
+        Try it →
+      </button>
+    </div>
+  </section>
+</section>

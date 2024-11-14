@@ -1,0 +1,187 @@
+<section class="write-section">
+  <!-- Section Title -->
+  <h2>Build this with Your Own </h2>
+  <p class="section-text intro">
+    We'll walk through each selector with a detailed example. Below is the HTML file content along with an explanation of how the CSS selectors are used:
+  </p>
+
+  <!-- Step 1: html code -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Wrtie HTML code</h4>
+    <p class="section-text">
+      Go to line <code>10</code> in your code where you see <strong>X</strong>.
+      Replace <strong>X</strong> with this html code.
+
+    </p>
+    <div class="demo">
+      <pre><code>
+        
+            &lt;h1 id="main-title"&gt;Welcome to My Webpage&lt;/h1&gt;
+            &lt;p&gt;This is a normal paragraph that will be styled with the element selector.&lt;/p&gt;
+            &lt;p class="important"&gt;This is an important paragraph that uses the class selector.&lt;/p&gt;
+            &lt;p&gt;This is another paragraph to demonstrate the element selector.&lt;/p&gt;
+        
+            &lt;input type="text" placeholder="Type something here..."&gt;
+            &lt;input type="password" placeholder="Password field"&gt;
+        
+            &lt;div class="important"&gt;This div also uses the important class and will have bold text.&lt;/div&gt;
+        
+        
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Step 2: Add  element Selectors -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Add Element selectors</h4>
+    <p class="section-text">
+      On the code editor open css file and add p as a selector with property color and value as blue.
+    </p>
+    <div class="demo">
+      <pre><code>
+        p { color: blue; }
+      </code></pre>
+    </div>
+  </section>
+  <p class="section-text">
+   <strong>Effect: </strong>All paragraph texts on the page will be displayed in blue.
+  </p>
+
+  <!-- Step 3: Add class selector -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: Add Class Selector.</h4>
+    <p class="section-text">
+     Now next add .important as a class selector and give the property font-weight with bold.
+    </p>
+    <div class="demo">
+      <pre><code>
+        .important { 
+          font-weight: bold; 
+        }
+      </code></pre>
+    </div>
+  </section>
+  <p class="section-text">
+    <strong>Effect: </strong>Elements with this class will have bold text. 
+   </p>
+
+  <!-- Step 4: Add ID selector -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 4: Add ID Selector</h4>
+    <p class="section-text">
+      targets the element with the id="main-title" and increases its font size to 36px.
+    </p>
+    <div class="demo">
+      <pre><code>
+        #main-title { 
+          font-size: 36px; 
+        }
+      </code></pre>
+    </div>
+  </section>
+  <p class="section-text">
+    <strong>Effect: </strong>Only the element with the specific ID will be affected, making it stand out with a larger font.
+   </p>
+
+  <!-- Step 5: Add Attribute Selector -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 5: Add Attribute Selector</h4>
+    <p class="section-text">
+      targets all &lt;input&gt; elements that have type="text" and applies a 2px black border around them.
+    </p>
+    <div class="demo">
+      <pre><code>
+        input[type="text"] { 
+          border: 2px solid black;
+         }
+      </code></pre>
+    </div>
+  </section>
+  <p class="section-text">
+    <strong>Effect: </strong>Text input fields will be distinguished by their border.
+   </p>
+
+  <!-- Step 6: Add Universal Selector -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 6: Add Universal CSS</h4>
+    <p class="section-text">
+      applies to all elements on the page, making their content center-aligned.
+    </p>
+    <div class="demo">
+      <pre><code>
+        * { text-align: center; }
+     </code></pre>
+    </div>
+  </section>
+  <p class="section-text">
+    <strong>Effect: </strong>Every element on the page, including headings, paragraphs, inputs, etc., will have center-aligned text.
+   </p>
+
+  <!-- Step 7: Full Code -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 7: Full Code</h4>
+    <p class="section-text">Your full code should look like this:</p>
+    <p>HTML File:</p>
+    <div class="demo">
+      <pre><code>
+
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Practice CSS Selectors&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1 id="main-title"&gt;Welcome to My Webpage&lt;/h1&gt;
+            &lt;p&gt;This is a normal paragraph that will be styled with the element selector.&lt;/p&gt;
+            &lt;p class="important"&gt;This is an important paragraph that uses the class selector.&lt;/p&gt;
+            &lt;p&gt;This is another paragraph to demonstrate the element selector.&lt;/p&gt;
+        
+            &lt;input type="text" placeholder="Type something here..."&gt;
+            &lt;input type="password" placeholder="Password field"&gt;
+        
+            &lt;div class="important"&gt;This div also uses the important class and will have bold text.&lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        
+
+      </code></pre>
+    </div>
+    <p>CSS File:</p>
+    <div class="demo">
+      <pre><code>
+        /* 1. Element Selector: Changes the color of all &lt;p&gt; elements to blue */
+          p {
+              color: blue;
+          }
+          
+          /* 2. Class Selector: Makes text bold for elements with the class 'important' */
+          .important {
+              font-weight: bold;
+          }
+          
+          /* 3. ID Selector: Increases the font size for the element with ID 'main-title' */
+          #main-title {
+              font-size: 36px;
+          }
+          
+          /* 4. Attribute Selector: Adds a border around &lt;input&gt; elements with type="text" */
+          input[type="text"] {
+              border: 2px solid black;
+          }
+          
+          /* 5. Universal Selector: Center-aligns all elements */
+          * {
+              text-align: center;
+          }
+          
+      </code></pre>
+    <div class="tip-box">
+      <strong>Final Check:</strong> Paste this code into your editor to see the
+      full output displayed on the page.
+    </div>
+  </section>
+</section>

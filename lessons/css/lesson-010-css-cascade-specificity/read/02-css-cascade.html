@@ -1,0 +1,92 @@
+<section class="infographics" style="margin-bottom: 20px">
+
+  <!-- Section 1: What is CSS Cascade -->
+  <div class="infographic-section">
+    <h2>What is CSS Cascade</h2>
+    <p>
+      The CSS cascade is the mechanism by which the browser decides which CSS rules apply when more than one rule targets the same element. It helps resolve conflicts and ensures that styles are applied correctly.
+    </p>
+  </div>
+
+  <!-- Section 2: Importance of the Cascade in Resolving Conflicting CSS Rules -->
+  <div class="infographic-section">
+    <h2>Importance of the Cascade in Resolving Conflicting CSS Rules</h2>
+    <p>
+      When multiple CSS rules apply to the same element, the browser needs a way to determine which one to use. This is where the cascade comes in. The browser checks the rules in order and applies them based on a hierarchy of importance.
+    </p>
+  </div>
+
+  <!-- Section 3: Hierarchy of CSS Rules -->
+  <div class="infographic-section">
+    <h2>Hierarchy of CSS Rules</h2>
+    <p>The order of importance in CSS is determined by three factors:</p>
+    <ul>
+      <li><strong>Position:</strong> The position of the rule within the CSS file.</li>
+      <li><strong>Specificity:</strong> The specificity of the CSS selector.</li>
+      <li><strong>Importance:</strong> The use of the <code>!important</code> keyword.</li>
+    </ul>
+  </div>
+
+  <!-- Section 4: Determining the Order of Importance for Conflicting Rules -->
+  <div class="infographic-section">
+    <h2>Determining the Order of Importance for Conflicting Rules</h2>
+    <ul>
+      <li><strong>Position:</strong> The later a rule appears in the stylesheet, the more it overrides earlier rules if they conflict.</li>
+      <li><strong>Specificity:</strong> The more specific a selector is, the more weight it carries.</li>
+      <li><strong>Importance:</strong> The <code>!important</code> keyword can override all other styles, making it the highest priority.</li>
+    </ul>
+  </div>
+
+  <!-- Section 5: Example of Applying Multiple Styles to the Same Element -->
+  <div class="infographic-section">
+    <h2>Example of Applying Multiple Styles to the Same Element</h2>
+    <pre><code>
+h1 {
+    color: red;
+}
+
+.heading {
+    color: blue;
+}
+
+#main-heading {
+    color: green;
+}
+    </code></pre>
+    <p>
+      The color of an <code>&lt;h1&gt;</code> will be determined by the most specific rule. If an element has the <code>heading</code> class, it will be blue, but if it has the <code>#main-heading</code> ID, it will be green.
+    </p>
+  </div>
+
+  <!-- Section 6: Categories of Importance -->
+  <div class="infographic-section">
+    <h2>Categories of Importance</h2>
+    <p>CSS rules can be categorized into four broad categories that affect the cascade:</p>
+    <ul>
+      <li><strong>Position:</strong> The location of the rule in the CSS file.</li>
+      <li><strong>Specificity:</strong> How specific the selector is.</li>
+      <li><strong>Type:</strong> The type of CSS rule (External, Internal, or Inline).</li>
+      <li><strong>Importance:</strong> The <code>!important</code> keyword.</li>
+    </ul>
+  </div>
+
+  <!-- Section 7: Position in CSS -->
+  <div class="infographic-section">
+    <h2>Position in CSS</h2>
+    <p>
+      Rules that are placed later in the CSS file will override rules placed earlier, provided they have the same specificity. This means that a rule at the bottom of the CSS file can override a rule at the top, even if the rules target the same element.
+    </p>
+    <pre><code>
+/* First rule */
+h1 {
+    color: red;
+}
+
+/* Second rule */
+h1 {
+    color: blue; /* This rule will be applied because it comes last */
+}
+    </code></pre>
+  </div>
+
+</section>

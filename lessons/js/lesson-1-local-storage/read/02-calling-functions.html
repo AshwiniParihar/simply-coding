@@ -1,0 +1,141 @@
+<!-- Section: Essential HTML Tags -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+      <h2 style="text-align: center">
+        JavaScript <code>addEventListener()</code> Explained
+      </h2>
+      <p>
+        <strong><code>addEventListener()</code></strong> is used to attach an
+        event handler to an element, making it respond to user interactions such
+        as clicks, key presses, or mouse movements.
+      </p>
+
+      <h3>Syntax:</h3>
+      <pre><code>
+element.addEventListener('event', handlerFunction);
+  </code></pre>
+
+      <h3>Example:</h3>
+      <p>
+        Click the button below to see <code>addEventListener</code> in action.
+      </p>
+
+      <button id="myButton">Click Me!</button>
+      <p id="message"></p>
+
+      <script>
+        // Select elements
+        const button = document.getElementById("myButton");
+        const message = document.getElementById("message");
+
+        // Add an event listener to the button
+        button.addEventListener("click", () => {
+          message.textContent = "Button was clicked!";
+        });
+      </script>
+
+      <h3>How it Works:</h3>
+      <ul>
+        <li>
+          <strong>Select the element:</strong> Use
+          <code>getElementById</code> to get the button element.
+        </li>
+        <li>
+          <strong>Add an event listener:</strong> Attach a
+          <code>'click'</code> event to the button.
+        </li>
+        <li>
+          <strong>Define a handler:</strong> When the button is clicked, the
+          function updates the paragraph text.
+        </li>
+      </ul>
+
+      <h3>Other Event Examples:</h3>
+      <ul>
+        <li>
+          <code>'mouseover'</code>: Triggered when the mouse hovers over an
+          element.
+        </li>
+        <li>
+          <code>'keydown'</code>: Triggered when a key is pressed on the
+          keyboard.
+        </li>
+        <li><code>'submit'</code>: Triggered when a form is submitted.</li>
+      </ul>
+    </div>
+    <!-- end content lesson div -->
+    <h3 style="text-align: center">Onclick Attribute</h3>
+    <h4>Using the <code>onclick</code> Attribute with an HTML Button</h4>
+
+    <p>
+      The <code>onclick</code> attribute in HTML is used to execute JavaScript
+      code when a button (or other element) is clicked. This is a common way to
+      make buttons interactive without requiring an external JavaScript file.
+    </p>
+
+    <h3>Example</h3>
+    <pre><code>
+    <button onclick="go()">Click Me</button>
+    <script>
+      function go(){
+        alert("Thank you!")
+      }
+    </script>
+ </code> </pre>
+
+    <p>In this example:</p>
+    <ul>
+      <li>
+        The <code>onclick</code> attribute value is set to call a function
+        <code>go()</code>.
+      </li>
+      <li>
+        When the button is clicked, the <code>go()</code> function runs, showing
+        a pop-up message that says "Thank you!"
+      </li>
+    </ul>
+
+    <h3>Key Points</h3>
+    <ul>
+      <li>
+        <strong>Inline JavaScript</strong>: JavaScript code can be directly
+        included within the <code>onclick</code> attribute.
+      </li>
+      <li>
+        <strong>Function Calls</strong>: You can also call external JavaScript
+        functions (e.g., <code>onclick="myFunction()"</code>).
+      </li>
+      <li>
+        <strong>Multiple Statements</strong>: Use semicolons to separate
+        multiple statements (e.g.,
+        <code>onclick="doSomething(); doSomethingElse();"</code>).
+      </li>
+    </ul>
+    <h2 style="text-align: center">Differences?!</h2>
+    <p><strong>onclick attribute:</strong> Using <code>onclick</code> directly in an HTML element (e.g., <code>&lt;button onclick="myFunction()"&gt;</code>) is a quick way to add a single, inline JavaScript function to run when the element is clicked. However, only one function can be assigned per element, and it mixes JavaScript with HTML.</p>
+  
+  <p><strong>addEventListener:</strong> Using <code>addEventListener('click', myFunction)</code> in JavaScript allows adding multiple functions to respond to a click event on the same element. It keeps JavaScript and HTML separate, enhancing code readability and flexibility.</p>
+  
+  <h3>Example:</h3>
+  <pre><code>
+    &lt;!-- Using onclick attribute --&gt;
+    &lt;button onclick="myFunction()"&gt;Click Me&lt;/button&gt;
+
+    &lt;!-- Using addEventListener in JavaScript --&gt;
+    &lt;button id="myButton"&gt;Click Me&lt;/button&gt;
+    &lt;script&gt;
+      document.getElementById("myButton").addEventListener("click", myFunction);
+    &lt;/script&gt;
+
+    <!-- Calling Multiple Functions from a single button ! -->
+    &lt;script&gt;
+      const button = document.getElementById("myButton");
+      button.addEventListener("click", functionOne);
+      button.addEventListener("click", functionTwo);
+    &lt;/script&gt;
+    </code>
+  </pre>
+</body>
+  </div>
+</section>

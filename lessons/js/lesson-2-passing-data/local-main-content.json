@@ -1,0 +1,138 @@
+{
+  "title": "Lesson 1: Local Storage",
+  "lessonID": "lessonJS001",
+  "videoUrl": "/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/00-overview.html"
+        },
+        {
+          "title": "Forms and Type Submit",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/01-form-type-submit.html"
+        },
+        {
+          "title": "Prevent Default",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/02-prevent-default.html"
+        },
+        {
+          "title": "Window Location",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/03-window-location.html"
+        },
+        {
+          "title": "Local Storage & URI",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/04-local-storage-uri.html"
+        },
+        {
+          "title": "Ticks vs Single Quotes",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/read/05-ticks-vs-quotes.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/00-section-overview.html"
+        },
+        {
+          "title": "HTML Forms",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/01-html-forms.html"
+        },
+        {
+          "title": "Calling Functions",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/02-calling-functions.html"
+        },
+        {
+          "title": "Targeting HTML Elements",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/03-query-getElementBy.html"
+        },
+        {
+          "title": "JavaScript Commands",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/04-javascript-commands.html"
+        },
+        {
+          "title": "JavaScript Loops",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/05-javascript-loops.html"
+        },
+        {
+          "title": "Local Storage",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/write/06-javascript-local-storage.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/create/00-section-overview.html"
+        },
+        {
+          "title": "Main Site Edits",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/create/01-current-page-setup.html"
+        },
+        {
+          "title": "Form Submit",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/create/02-form-submit.html"
+        },
+        {
+          "title": "Load Local Storage",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/create/03-load-local-storage.html"
+        },
+        {
+          "title": "Display Meal Ingredients",
+          "fileType": "html",
+          "filePath": "/lessons/js/lesson-2-passing-data/create/04-display-meal.html"
+        }
+      ]
+    }
+  }
+}

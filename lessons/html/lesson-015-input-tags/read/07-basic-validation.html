@@ -1,0 +1,385 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Main Title Section -->
+  <div class="infographic-section">
+    <h2>Validation of Input Fields</h2>
+    <p>
+      HTML provides built-in validation attributes that help ensure input fields
+      meet specific requirements before form submission. Common attributes
+      include <code>required</code>, <code>pattern</code>, <code>min</code>, and
+      <code>max</code>.
+    </p>
+  </div>
+
+  <!-- Form Structure Section -->
+  <div class="infographic-section">
+    <h2>Basic Validation Example</h2>
+    <pre>
+      <code>&lt;form action="submit.html" method="post"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;User Information&lt;/legend&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" required /&gt;
+    &lt;label for="age"&gt;Age:&lt;/label&gt;
+    &lt;input type="number" id="age" min="18" max="100" required /&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" pattern=".+@.+\.com" required /&gt;
+  &lt;/fieldset&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+      </code>
+    </pre>
+    <div class="m-4 border rounded p-1">
+      <form action="submit.html" method="post" style="max-width: 300px">
+        <fieldset>
+          <legend
+            data-bs-toggle="tooltip"
+            title="Provides a title for the grouped input fields"
+          >
+            User Information
+          </legend>
+
+          <div class="mb-3">
+            <label for="name" data-bs-toggle="tooltip" title="Name is required"
+              >Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label
+              for="age"
+              data-bs-toggle="tooltip"
+              title="Age between 18 and 100"
+              >Age:</label
+            >
+            <input
+              type="number"
+              id="age"
+              class="form-control"
+              min="18"
+              max="100"
+              required
+              placeholder="Enter your age"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label
+              for="email"
+              data-bs-toggle="tooltip"
+              title="Email must end in .com"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              pattern=".+@.+\.com"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+        </fieldset>
+
+        <button
+          type="submit"
+          class="btn btn-primary mt-3"
+          data-bs-toggle="tooltip"
+          title="Click to submit the form"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <p>
+      This form uses various validation attributes. The
+      <code>required</code> attribute ensures the fields cannot be empty. The
+      <code>min</code> and <code>max</code> attributes specify a range for
+      numerical input, and the <code>pattern</code> attribute defines a regular
+      expression to match email addresses ending in ".com".
+    </p>
+  </div>
+
+  <!-- Attributes Explained Section -->
+  <div class="infographic-section">
+    <h2>Validation Attributes Explained</h2>
+    <div class="infographic-cards-container">
+      <!-- required Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">required</h5>
+          <p class="info-card-description">
+            Ensures the input field is not left empty.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalRequired2"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;input type=&quot;text&quot; required&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- pattern Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">pattern</h5>
+          <p class="info-card-description">
+            Defines a regex pattern that the input must match.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalPattern2"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;input type=&quot;text&quot; pattern=&quot;[A-Za-z]+&quot;&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- min Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">min</h5>
+          <p class="info-card-description">
+            Sets the minimum value for numerical input fields.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMin2"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;input type=&quot;number&quot; min=&quot;1&quot;&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- max Attribute Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">max</h5>
+          <p class="info-card-description">
+            Sets the maximum value for numerical input fields.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMax2"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;input type=&quot;number&quot; max=&quot;10&quot;&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- What is Regex Section -->
+  <div class="infographic-section">
+    <div class="alert alert-warning">
+      <strong>What is Regex?</strong>
+      <ul>
+        <li>
+          <strong>Pattern Matching:</strong> Regex, short for "Regular
+          Expressions," is used to define patterns in text, allowing you to
+          search, match, or manipulate specific character sequences.
+        </li>
+        <li>
+          <strong>Flexible Searches:</strong> With regex, you can search for
+          exact words, specific formats (like email addresses), or more complex
+          patterns, such as all words starting with "a."
+        </li>
+        <li>
+          <strong>Validation:</strong> Regex is commonly used to validate input,
+          such as checking if a phone number, email, or zip code is correctly
+          formatted.
+        </li>
+        <li>
+          <strong>Text Replacement:</strong> Regex can be used to find and
+          replace specific patterns in text, making it useful for reformatting
+          or correcting strings.
+        </li>
+        <li>
+          <strong>Common Syntax:</strong> Key symbols include <code>.</code> for
+          any character, <code>*</code> for zero or more repetitions,
+          <code>^</code> for start of a line, and <code>$</code> for end of a
+          line.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Detailed Modals for Each Attribute -->
+  <!-- Required Modal -->
+  <div
+    class="modal fade"
+    id="modalRequired2"
+    tabindex="-1"
+    aria-labelledby="modalRequired2Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRequired2Label">
+            required Attribute
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>required</code> attribute ensures the input field must be
+            filled before submitting the form. It's suitable for fields like
+            name, email, or phone number that need user input.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" required&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pattern Modal -->
+  <div
+    class="modal fade"
+    id="modalPattern2"
+    tabindex="-1"
+    aria-labelledby="modalPattern2Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPattern2Label">pattern Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>pattern</code> attribute uses a regular expression to
+            define a required format for the input. It’s often applied to fields
+            like email, phone numbers, or custom formats.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="email" pattern=".+@.+\.com"&gt;</code></pre>
+          <p>This example accepts any email ending in ".com".</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Min Modal -->
+  <div
+    class="modal fade"
+    id="modalMin2"
+    tabindex="-1"
+    aria-labelledby="modalMin2Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMin2Label">min Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>min</code> attribute sets a minimum acceptable value for
+            numeric input. Useful for fields like age or quantity to limit entry
+            to values above a specified threshold.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="number" min="18"&gt;</code></pre>
+          <p>This example ensures the age entered is at least 18.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Max Modal -->
+  <div
+    class="modal fade"
+    id="modalMax2"
+    tabindex="-1"
+    aria-labelledby="modalMax2Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMax2Label">max Attribute</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>max</code> attribute sets a maximum allowable value for
+            numeric input. It’s useful for restricting fields like age,
+            quantity, or other numerical values.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="number" max="100"&gt;</code></pre>
+          <p>This example restricts age input to a maximum of 100.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

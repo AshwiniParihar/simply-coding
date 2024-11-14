@@ -1,0 +1,317 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section 1: Understanding the Structure of HTML Files -->
+  <div class="infographic-section">
+    <h2>Understanding the Structure of HTML Files</h2>
+    <p>
+      Just like a letter with a greeting, body, and closing, an HTML file has
+      core elements that provide structure and meaning. These elements include
+      the <code>&lt;!DOCTYPE&gt;</code> declaration,
+      <code>&lt;html&gt;</code> as the root, <code>&lt;head&gt;</code> for
+      metadata, and <code>&lt;body&gt;</code> for the visible content on the
+      page.
+    </p>
+  </div>
+
+  <!-- Section 2: HTML Boilerplate Basics -->
+  <div class="infographic-section">
+    <h2>HTML Boilerplate Basics</h2>
+    <pre>
+      <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+    <p>
+      This basic structure, or “boilerplate,” serves as a starting point for
+      every HTML file, ensuring compatibility and readability. It includes
+      essential tags and metadata to make sure the page renders correctly across
+      different browsers and devices.
+    </p>
+    <!-- Pro Tip Section -->
+    <div class="tip-box">
+      <strong>Pro Tip:</strong> Use a consistent boilerplate in each HTML file
+      to ensure compatibility and maintain structure across your project.
+      Including essential tags like <code>&lt;!DOCTYPE&gt;</code>,
+      <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
+      <code>&lt;body&gt;</code> helps avoid common rendering issues.
+    </div>
+  </div>
+
+  <!-- Section 3: Key Components Explained -->
+  <div class="infographic-section">
+    <h2>Key Components Explained</h2>
+    <div class="infographic-attributes">
+      <!-- Doctype Card -->
+      <div class="attribute">
+        <h5>Doctype Declaration</h5>
+        <p>
+          The <code>&lt;!DOCTYPE html&gt;</code> declaration tells the browser
+          that this document uses HTML5. This helps the browser display content
+          correctly by following the latest HTML standard.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDoctype"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- HTML Element Card -->
+      <div class="attribute">
+        <h5>HTML Element</h5>
+        <p>
+          The <code>&lt;html&gt;</code> element is the root element of the HTML
+          document, wrapping everything inside. It includes a
+          <code>lang</code> attribute that sets the language for accessibility.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalHtml"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- Head Element Card -->
+      <div class="attribute">
+        <h5>Head Element</h5>
+        <p>
+          The <code>&lt;head&gt;</code> element contains metadata and resources
+          that don't appear directly on the page, like the character set, title,
+          and links to stylesheets.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalHead"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- Body Element Card -->
+      <div class="attribute">
+        <h5>Body Element</h5>
+        <p>
+          The <code>&lt;body&gt;</code> element contains all visible content,
+          like text, images, and links. This is what users see on the web page.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalBody"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Common Mistakes Section -->
+  <section class="infographics">
+    <div class="infographic-section">
+      <div class="alert alert-danger">
+        <strong>Common Mistakes</strong>
+        <ul>
+          <li>
+            Forgetting to include <code>&lt;!DOCTYPE html&gt;</code>, which can
+            cause display errors in some browsers.
+          </li>
+          <li>
+            Missing the <code>&lt;meta charset="UTF-8"&gt;</code> tag,
+            potentially leading to character encoding issues.
+          </li>
+          <li>
+            Placing content outside the <code>&lt;body&gt;</code> tag, which can
+            disrupt layout and structure.
+          </li>
+          <li>
+            Using the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, or
+            <code>&lt;body&gt;</code> tags more than once. Each file should only
+            use each of these tags a single time.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modals for Detailed Info -->
+    <!-- Doctype Modal -->
+    <div
+      class="modal fade"
+      id="modalDoctype"
+      tabindex="-1"
+      aria-labelledby="modalDoctypeLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDoctypeLabel">
+              Doctype Declaration
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>&lt;!DOCTYPE&gt;</code> declaration informs the browser
+              that the document is written in HTML5.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalHtml"
+      tabindex="-1"
+      aria-labelledby="modalHtmlLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalHtmlLabel">HTML Element</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>&lt;html&gt;</code> element is the root element of an
+              HTML document. It contains all other elements and tells the
+              browser to interpret the document as HTML.
+            </p>
+            <p>
+              This tag often includes a <code>lang</code> attribute to specify
+              the primary language of the page, which helps with accessibility
+              and SEO.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;html lang="en"&gt; ... &lt;/html&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Head Element Modal -->
+    <div
+      class="modal fade"
+      id="modalHead"
+      tabindex="-1"
+      aria-labelledby="modalHeadLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalHeadLabel">Head Element</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>&lt;head&gt;</code> element contains metadata and links
+              that are used by the browser but are not directly displayed on the
+              page. Common tags within the <code>&lt;head&gt;</code> section
+              include:
+            </p>
+            <ul>
+              <li>
+                <code>&lt;title&gt;</code> - Sets the page title displayed on
+                the browser tab.
+              </li>
+              <li>
+                <code>&lt;meta&gt;</code> - Defines metadata like character set
+                and viewport settings.
+              </li>
+              <li>
+                <code>&lt;link&gt;</code> - Links to external resources like CSS
+                files.
+              </li>
+              <li>
+                <code>&lt;style&gt;</code> - Allows internal CSS styles for the
+                page.
+              </li>
+            </ul>
+            <strong>Example:</strong>
+            <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+        </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body Element Modal -->
+    <div
+      class="modal fade"
+      id="modalBody"
+      tabindex="-1"
+      aria-labelledby="modalBodyLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalBodyLabel">Body Element</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              The <code>&lt;body&gt;</code> element contains all the visible
+              content on a web page, such as text, images, videos, links, and
+              forms. This is where the main content of the HTML document is
+              placed.
+            </p>
+            <p>
+              Any content within the <code>&lt;body&gt;</code> element is
+              displayed in the browser window, making it essential for
+              structuring the page's layout and user interface.
+            </p>
+            <strong>Example:</strong>
+            <pre><code>&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;Welcome to my web page.&lt;/p&gt;
+&lt;/body&gt;
+        </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Additional Modals for each element (HTML, Head, Body) can follow a similar structure -->
+  </section>
+</section>

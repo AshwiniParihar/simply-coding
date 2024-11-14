@@ -1,0 +1,250 @@
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Catchy Section Title -->
+  <div class="infographic-section">
+    <h2>The Purpose of the &lt;div&gt; Tag</h2>
+    <p>
+      The <code>&lt;div&gt;</code> tag in HTML is a versatile container element
+      used to group and organize content. It allows developers to divide
+      sections of their web page, making it easier to apply styles and control
+      layout.
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure -->
+  <div class="infographic-section">
+    <h2>Basic Structure of the &lt;div&gt; Tag</h2>
+    <pre>
+      <code>&lt;div&gt;Content here&lt;/div&gt;</code>
+    </pre>
+    <p>
+      The <code>&lt;div&gt;</code> tag is a block-level element, meaning it
+      occupies the full width available and starts on a new line. It’s primarily
+      used for grouping elements to apply shared styles or layout properties.
+    </p>
+  </div>
+
+  <!-- Section 3: Common Uses of the <div> Tag -->
+  <div class="infographic-section">
+    <h2>Common Uses of the &lt;div&gt; Tag</h2>
+    <div class="infographic-cards-container">
+      <!-- Layout Grouping Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">Layout Grouping</h5>
+          <p class="info-card-description">
+            Used to group related elements into sections, such as headers,
+            footers, and content blocks.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalLayoutGrouping"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;div class=&quot;header&quot;&gt;...&lt;/div&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Styling Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">Applying Styles</h5>
+          <p class="info-card-description">
+            Divs can have styles applied to them to control color, size, and
+            layout properties.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalStyling"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;div style=&quot;background-color: lightblue;&quot;&gt;Styled div&lt;/div&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- JavaScript Interaction Card -->
+      <div class="info-card">
+        <div class="info-card-content">
+          <div class="info-card-image empty"></div>
+          <h5 class="info-card-title">JavaScript Interaction</h5>
+          <p class="info-card-description">
+            Divs are often used to target areas for JavaScript to dynamically
+            update content.
+          </p>
+        </div>
+        <div class="d-flex gap-2 mt-2 ms-auto">
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal"
+            data-bs-target="#modalJavaScriptInteraction"
+          >
+            ...
+          </button>
+          <button
+            class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+            onclick="loadTryItOut('&lt;div id=&quot;content&quot;&gt;&lt;/div&gt;&lt;script&gt;document.getElementById(&quot;content&quot;).innerHTML = &quot;Updated by JS&quot;;&lt;/script&gt;', '', '')"
+          >
+            &lt;/&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Try It Out with Robust Webpage Structure -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <p>
+      Here is an example of how the <code>div</code> tag helps seperate
+      different parts of your code and web page.
+    </p>
+    <div>
+      <pre>
+      <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Sample Webpage&lt;/title&gt;
+    &lt;style&gt;
+      /* Basic styles for the div layout */
+      .header, .footer { background-color: #333; color: #fff; padding: 15px; text-align: center; }
+      .navbar { background-color: #444; color: #fff; padding: 10px; display: flex; justify-content: space-around; }
+      .container { display: flex; }
+      .sidebar { background-color: #f4f4f4; padding: 15px; width: 25%; }
+      .main-content { background-color: #e2e2e2; padding: 15px; width: 75%; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;div class="header"&gt;
+      &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;div class="navbar"&gt;
+      &lt;a href="#home"&gt;Home&lt;/a&gt;
+      &lt;a href="#about"&gt;About&lt;/a&gt;
+      &lt;a href="#services"&gt;Services&lt;/a&gt;
+      &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="container"&gt;
+      &lt;div class="sidebar"&gt;
+        &lt;h3&gt;Sidebar&lt;/h3&gt;
+        &lt;p&gt;This is the sidebar where you can place additional links or information.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class="main-content"&gt;
+        &lt;h2&gt;Main Content Area&lt;/h2&gt;
+        &lt;p&gt;This is the main area where your primary content will be displayed.&lt;/p&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Nested Content&lt;/h3&gt;
+          &lt;p&gt;Divs can also be nested to create sub-sections within the main content.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="footer"&gt;
+      &lt;p&gt;Footer Information: Contact us at info@example.com&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut(
+    `&lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Sample Webpage&lt;/title&gt;
+      &lt;/head&gt;
+
+      &lt;body&gt;
+        &lt;div class="header"&gt;
+          &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class="navbar"&gt;
+          &lt;a href="home.html"&gt;Home&lt;/a&gt;
+          &lt;a href="about.html"&gt;About&lt;/a&gt;
+          &lt;a href="services.html"&gt;Services&lt;/a&gt;
+          &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;div class="container"&gt;
+          &lt;div class="sidebar"&gt;
+            &lt;h3&gt;Sidebar&lt;/h3&gt;
+            &lt;p&gt;This is the sidebar where you can place additional links or information.&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div class="main-content"&gt;
+            &lt;h2&gt;Main Content Area&lt;/h2&gt;
+            &lt;p&gt;This is the main area where your primary content will be displayed.&lt;/p&gt;
+            &lt;div&gt;
+              &lt;h3&gt;Nested Content&lt;/h3&gt;
+              &lt;p&gt;Divs can also be nested to create sub-sections within the main content.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="footer"&gt;
+          &lt;p&gt;Footer Information: Contact us at info@example.com&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;`,
+    `/* Basic styles for the div layout */
+    .header, .footer { background-color: #333; color: #fff; padding: 15px; text-align: center; }
+    .navbar { background-color: #444; color: #fff; padding: 10px; display: flex; justify-content: space-around; }
+    .container { display: flex; }
+    .sidebar { background-color: #f4f4f4; padding: 15px; width: 25%; }
+    .main-content { background-color: #e2e2e2; padding: 15px; width: 75%; }`,
+    &apos;&apos;
+  )'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Best Practices Section -->
+  <div class="infographic-section">
+    <div class="alert alert-success">
+      <strong>Best Practices</strong>
+      <ul>
+        <li>
+          Use <code>&lt;div&gt;</code> for grouping content logically,
+          especially when there’s no semantic tag that fits.
+        </li>
+        <li>
+          Assign classes or IDs to divs to style or manipulate them with
+          JavaScript.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

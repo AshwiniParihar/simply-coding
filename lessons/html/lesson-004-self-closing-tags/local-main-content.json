@@ -1,0 +1,104 @@
+{
+  "title": "Lesson 4: Self Closing Tags",
+  "lessonID": "lessonHTML004",
+  "videoUrl": "/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/read/lesson-overview.md"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/read/overview.md"
+        },
+        {
+          "title": "1. Introduction to HTML Void Elements",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/read/learning01.md"
+        },
+        {
+          "title": "2. Structure of Void Elements",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/read/learning02.md"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/write/overview.md"
+        },
+        {
+          "title": "1. Practical Example: Horizontal Rule between Paragraphs",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/write/write01.md"
+        },
+        {
+          "title": "2. Practical Example: Formatting Poetry with Break Elements",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/write/write02.md"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Contact Information</title>\n</head>\n<body>\n    <h1>Contact Information for YOUR NAME</h1>\n    <p>\n     Your Name\n    Street Address\n    City, State Zip\n    </p>\n\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan pretium ipsum, vel bibendum eros cursus vitae. Mauris quis massa tempor nisl pulvinar tincidunt eu sit amet lacus.\n    </p>\n</body>\n</html>"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/create/overview.md"
+        },
+        {
+          "title": "1. Exercise: Using Void Elements",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/create/create01.md"
+        },
+        {
+          "title": "2. Example of a Formatted Document",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/create/create02.md"
+        },
+        {
+          "title": "3. Solution Walkthrough",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/create/create03.md"
+        },
+        {
+          "title": "4. Best Practices for Void Elements",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/create/create04.md"
+        },
+        {
+          "title": "5. Conclusion",
+          "fileType": "markdown",
+          "filePath": "/lessons/html/lesson-004-self-closing-tags/create/learning-conclusion.md"
+        }
+      ]
+    }
+  }
+}

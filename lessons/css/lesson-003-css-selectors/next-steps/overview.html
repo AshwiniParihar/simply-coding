@@ -1,0 +1,251 @@
+<!-- brif overview about specificity -->
+<section class="container section-blue my-4 p-4 border rounded">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h2 class="mb-0"> Introduction to CSS Specificity </h2>
+      <div
+        style="width: 170px; height: 170px; transition: transform 0.3s"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';"
+      >
+      <img src="/assets/animations/globe.gif" height="150px" alt="Funny animation">
+      </div>
+    </div>
+  
+    <div>
+      <p class="lead">Now that you’ve learned how to apply basic CSS selectors, it’s time to look ahead and understand how these rules are prioritized. 
+      </p>
+      <p class="lead">
+        <strong>What is Specificity? </strong><br>
+        Specificity determines which CSS styles are applied when multiple selectors target the same element.  
+     </p>
+     <p class="lead">
+      <strong>How Specificity Works</strong><br>
+      Each type of selector has its own "weight" or specificity score, which contributes to the overall specificity of a rule. The browser uses this score to determine which style should be applied. Specificity is calculated based on a four-part value represented as (a, b, c, d), where:
+   </p>
+
+   
+<section class="infographics" style="margin-bottom: 20px">
+    
+    <div class="infographic-section">
+   
+      <div class="infographic-attributes">
+        <!-- Inline styles specificity -->
+        <div class="attribute">
+          <h5>a(inline styles)</h5>
+          <p>Inline styles directly written within the HTML element using the style attribute have the highest specificity.</p>
+          <div
+            class="icon-circle"
+            data-bs-toggle="modal"
+            data-bs-target="#modalSrc"
+          >
+            ...
+          </div>
+        </div>
+  
+        
+        <div class="attribute">
+            <!-- id selector -->
+          <h5>b(ID selectors)</h5>
+          <p>
+            Selectors using IDs are more specific than class selectors or element selectors.
+          </p>
+          <div
+            class="icon-circle"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAlt"
+          >
+            ...
+          </div>
+        </div>
+  
+        <!-- Class selectors, attribute selectors,and pseudo selectors -->
+        <div class="attribute">
+          <h5>c(Class selectors, attribute selectors, and pseudo-classes)</h5>
+          <p>These have a lower specificity than ID selectors but higher than element selectors.</p>
+          <div
+            class="icon-circle"
+            data-bs-toggle="modal"
+            data-bs-target="#modalWidth"
+          >
+            ...
+          </div>
+        </div>
+  
+        <!-- Element selectors and pseudo-elements -->
+        <div class="attribute">
+          <h5>d(Element selectors and pseudo-elements)</h5>
+          <p>These have the lowest specificity.</p>
+          <div
+            class="icon-circle"
+            data-bs-toggle="modal"
+            data-bs-target="#modalHeight"
+          >
+            ...
+          </div>
+        </div>
+  
+       
+  
+    <!-- Modals for Detailed Info -->
+    
+    <div
+      class="modal fade"
+      id="modalSrc"
+      tabindex="-1"
+      aria-labelledby="modalSrcLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalSrcLabel">a(inline styles)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            
+            <strong>Example:</strong>
+            <pre><code>&lt;div style="color: red;"/&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div
+      class="modal fade"
+      id="modalAlt"
+      tabindex="-1"
+      aria-labelledby="modalAltLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAltLabel">b(ID selectors)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <strong>Example:</strong>
+            <pre><code>#myId {color: red;}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div
+      class="modal fade"
+      id="modalWidth"
+      tabindex="-1"
+      aria-labelledby="modalWidthLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalWidthLabel">c(Class selectors, attribute selectors, and pseudo-classes)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            
+            <strong>Example:</strong>
+            <pre><code>.myClass, [type="text"], :hover</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div
+      class="modal fade"
+      id="modalHeight"
+      tabindex="-1"
+      aria-labelledby="modalHeightLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalHeightLabel">d(Element selectors and pseudo-elements)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            
+            <strong>Example:</strong>
+            <pre><code>div, p, ::before.</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- title Modal -->
+    
+      </div>
+    </div>
+  </section>
+  
+  
+    <h1>Specificity Calculation Example</h1>
+    <p>Consider the following CSS rules:</p>
+
+    <pre><code>
+        /* Example 1 */
+        div {
+          color: blue;
+        }
+        
+        /* Example 2 */
+        .myClass {
+          color: green;
+        }
+        
+        /* Example 3 */
+        #myId {
+          color: red;
+        }
+      </code></pre>
+      <br>
+      <p>If an HTML element is targeted by all three rules, the browser will prioritize based on specificity:</p>
+      <p><strong>Html File:</strong></p>
+      <pre><code>
+        &lt;div id="myId" class="myClass"&gt;Hello, world!&lt;/div&gt;
+      </code></pre>
+  
+      <p>Explanation:</p>
+      In this example: 
+      <ul>
+        <li><strong>Example 1 </strong>(div) has a specificity of (0, 0, 0, 1). </li>
+         <li><strong>Example 2</strong>(.myClass) has a specificity of (0, 0, 1, 0). </li> 
+         <li><strong>Example 3</strong>(#myId) has a specificity of (0, 1, 0, 0) </li> 
+      </ul>
+
+      <p>
+        <strong>Result:</strong>The browser applies the rule from Example 3 (#myId) because it has the highest specificity (0, 1, 0, 0).
+      </p>
+  
+  
+    </div>
+    <div class="card-content">
+      <p style="font-size:x-large; font-weight: bold;">
+        More on Specificity: 
+      </p>
+      <p>We’ll dive deeper into how specificity works and practice writing CSS with various selectors, ensuring you can always achieve the style you want.  explain it more deeply with example</p>
+    </div>
+  </section>

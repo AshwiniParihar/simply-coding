@@ -1,0 +1,56 @@
+{
+  "title": "Lesson 8: Nesting and Indentation",
+  "lessonID": "lessonHTML008",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-8-nesting-and-indentation/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-8-nesting-and-indentation/read/01-overview.html"
+        },
+        {
+          "title": "Parent and Child Relations",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-8-nesting-and-indentation/read/02-parent-and-child.html"
+        },
+
+        {
+          "title": "Nesting Elements",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-8-nesting-and-indentation/read/03-nesting-elements.html"
+        },
+        {
+          "title": "Nesting Examples",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-8-nesting-and-indentation/read/04-nesting-examples.html"
+        },
+        {
+          "title": "Nesting Structure",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-8-nesting-and-indentation/read/05-nesting-structure.html"
+        }
+      ]
+    }
+  }
+}

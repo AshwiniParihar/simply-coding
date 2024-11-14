@@ -1,0 +1,111 @@
+{
+  "title": "Lesson 3: HTML Paragraph Elements",
+  "lessonID": "lessonHTML003",
+  "videoUrl": "/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/read/lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/read/00-overview.html"
+        },
+        {
+          "title": "1. Introduction to the Paragraph Element",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/read/01-structure-of-paragraph.html"
+        },
+        {
+          "title": "2. Importance of the Paragraph Tag",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/read/02-importance-of-p.html"
+        },
+        {
+          "title": "3. Placeholder Text: Lorem Ipsum",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/read/03-lorem-ipsum.html"
+        },
+        {
+          "title": "4. Generating and Using Novelty Placeholder Text\n",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/read/04-lorem-ipsum-options.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Introduction to Paragraphs</title>\n</head>\n<body>\n    <h1>Welcome to SimplyCoding</h1>\n    This is the first paragraph. It introduces the content and provides context for the reader.\n    This is the second paragraph. It continues the discussion and adds more information.\n    This is the third paragraph. It concludes the topic and wraps up the discussion.\n</body>\n</html>",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/write/overview.md"
+        },
+        {
+          "title": "1. Practical Exercise",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/write/01-practical-exercise.html"
+        },
+        {
+          "title": "2. Live Coding Example:",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/write/02-code-example.html"
+        },
+        {
+          "title": "3. Exercise Solution Walkthrough",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/write/03-solution-walkthrough.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Fun with Placeholder Text</title>\n</head>\n<body>\n    <h1>**Replace Me**</h1>\n</body>\n</html>"
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/create/00-overview.html"
+        },
+        {
+          "title": "1. Coding Challenge",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/create/01-coding-challenge.html"
+        },
+        {
+          "title": "2. Example Solution",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/create/02-example-solution.html"
+        },
+        {
+          "title": "3. Conclusion",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-003-paragraph-element/create/03-conclusion.html"
+        }
+      ]
+    }
+  }
+}

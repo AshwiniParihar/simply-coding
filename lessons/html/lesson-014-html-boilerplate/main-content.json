@@ -1,0 +1,51 @@
+{
+  "title": "Lesson 14: Boilerplate",
+  "lessonID": "lessonHTML014",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-14-html-boilerplate/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-14-html-boilerplate/read/01-overview.html"
+        },
+        {
+          "title": "HTML Boilerplate",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-14-html-boilerplate/read/02-html-boilerplate.html"
+        },
+
+        {
+          "title": "VS Code Shortcuts",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-14-html-boilerplate/read/03-vscode-shortcuts.html"
+        },
+        {
+          "title": "Meta Tags",
+          "fileType": "html",
+          "filePath": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/lessons/html/lesson-14-html-boilerplate/read/04-meta-tags.html"
+        }
+      ]
+    }
+  }
+}

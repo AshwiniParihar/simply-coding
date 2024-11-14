@@ -1,0 +1,107 @@
+<!-- If you need more text content here are a few examples you can use -->
+<section class="write-section">
+  <!-- Title and paragraph -->
+  <h2>Setting up a React App</h2>
+  <p class="section-text intro">
+    There are several ways to set up a React app, but for our purposes, 
+    we will use Content Delivery Networks (CDNs) to import React and ReactDOM. We will also use Babel via a CDN.
+    Babel is a JavaScript compiler that transforms JSX into standard JavaScript, making it understandable by the browser. 
+    While popular tools like Vite and Next.js are commonly used to create React applications, 
+    using CDNs allows us to get started quickly and easily without needing to install additional software or use the terminal.
+  </p>
+
+  <!-- Step 1: Creating the HTML File -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 1: Creating the HTML File</h4>
+    <p class="section-text">
+      First, create your HTML file (e.g., <code>index.html</code>) with the following basic structure:
+    </p>
+    <div class="demo">
+      <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;title>Your React App&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div id="root"&gt;&lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </code></pre>
+    </div>
+    <p class="section-text">
+      In this structure:
+    </p>
+    <ul class="section-text">
+      <li>
+        The <code>&lt;head&gt;</code> section includes a link to your CSS file and a title for your app.
+      </li>
+      <li>
+        The <code>&lt;body&gt;</code> contains a <code>&lt;div&gt;</code> with an ID of <code>root</code>, which will serve as the container for your React application.
+      </li>
+    </ul>
+    <p class="section-text">
+      Additionally, create a CSS file (e.g., <code>index.css</code>) to style your app. You can add your styles there to enhance the appearance of your application.
+    </p>
+  </section>
+
+  <!-- Step 2: Adding CDNs and Script for index.js -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 2: Adding CDNs and Script for index.js</h4>
+    <p class="section-text">
+      Next, we will add the CDNs for React, ReactDOM, and Babel, along with the script for <code>index.js</code>. Update the <code>&lt;head&gt;</code> section of your HTML file to include the following lines:
+    </p>
+    <div class="demo">
+      <pre><code>
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;link rel="stylesheet" href="index.css"&gt;
+            &lt;script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
+            &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt;
+            &lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;
+            &lt;script type="text/babel" src="index.js"&gt;&lt;/script&gt;
+            &lt;title>Your React App&lt;/title&gt;
+        &lt;/head&gt;
+      </code></pre>
+    </div>
+    <p class="section-text">
+      This setup imports React, ReactDOM, and Babel, allowing you to use JSX in your application. 
+      The line <code>&lt;script type="text/babel" src="index.js"&gt;&lt;/script&gt;</code> will link to your main JavaScript file where your React code will be defined.
+    </p>
+  </section>
+
+  <!-- Step 3: Understanding the index.js File -->
+  <section class="write-step">
+    <h4 class="subsection-title">Step 3: Understanding the index.js File</h4>
+    <p class="section-text">
+      Now, create your <code>index.js</code> file. This will be the main entry point for your React application. 
+      Add the following code to your <code>index.js</code> file:
+    </p>
+    <div class="demo">
+      <pre><code>
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(&lt;h1&gt;Hello World&lt;/h1&gt;);
+      </code></pre>
+    </div>
+    <p class="section-text">
+      Here’s what’s happening in this code:
+    </p>
+    <ul class="section-text">
+      <li>
+        <strong>Creating the root element:</strong> 
+        <code>ReactDOM.createRoot(document.getElementById("root"))</code> selects the <code>&lt;div&gt;</code> with the ID of <code>root</code> in your HTML. This is where your React app will be rendered.
+      </li>
+      <li>
+        <strong>Rendering the heading:</strong> 
+        <code>root.render(&lt;h1&gt;Hello World&lt;/h1&gt;)</code> tells React to render the <code>&lt;h1&gt;</code> element inside the root element. This serves as a simple output for your React application.
+      </li>
+    </ul>
+    <div class="tip-box">
+      <strong>Tip:</strong> You can replace the content inside the <code>&lt;h1&gt;</code> tags with any message you like to see it change in your application.
+    </div>
+  </section>
+</section>

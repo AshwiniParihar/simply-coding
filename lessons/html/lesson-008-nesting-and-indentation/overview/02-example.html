@@ -1,0 +1,113 @@
+<!-- Main Container -->
+<div
+  style="
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+  "
+>
+  <!-- Header Section -->
+  <header style="margin-bottom: 20px">
+    <h1 style="margin: 0">Welcome to the Nesting and Indentation Lesson</h1>
+    <p>
+      This lesson covers parent-child relationships, proper nesting, and
+      indentation in HTML.
+    </p>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav style="margin-bottom: 20px">
+    <ul style="list-style: none; padding: 0; margin: 0">
+      <li style="display: inline; margin-right: 15px">
+        <a href="#home">Home</a>
+      </li>
+      <li style="display: inline; margin-right: 15px">
+        <a href="#about">About</a>
+      </li>
+      <li style="display: inline; margin-right: 15px">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Content Section -->
+  <section style="margin-bottom: 20px">
+    <h2 style="margin-top: 0">Understanding Parent and Child Elements</h2>
+    <p>
+      HTML elements can be nested within each other, creating parent and child
+      relationships.
+    </p>
+
+    <!-- Example of Parent and Child Tags -->
+    <div style="border: 1px solid #aaa; padding: 10px; margin-bottom: 10px">
+      <h3 style="margin: 0">Parent and Child Example</h3>
+      <p style="margin: 0">
+        This is a paragraph inside a parent <code>&lt;div&gt;</code>.
+      </p>
+    </div>
+
+    <!-- Nested List Example -->
+    <h3 style="margin-top: 20px">Nested List Example</h3>
+    <ul style="padding-left: 20px; margin-top: 0">
+      <li>
+        Main Category 1
+        <ul style="padding-left: 20px; margin-top: 5px">
+          <li>Subcategory 1.1</li>
+          <li>Subcategory 1.2</li>
+        </ul>
+      </li>
+      <li>
+        Main Category 2
+        <ol style="padding-left: 20px; margin-top: 5px">
+          <li>Ordered Subcategory 2.1</li>
+          <li>Ordered Subcategory 2.2</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Form Example -->
+  <section style="margin-bottom: 20px">
+    <h2 style="margin-top: 0">Form Example</h2>
+    <form style="border: 1px solid #aaa; padding: 10px">
+      <label for="name" style="display: block; margin-bottom: 5px">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        style="width: 100%; padding: 5px; margin-bottom: 10px"
+      />
+
+      <label for="email" style="display: block; margin-bottom: 5px"
+        >Email:</label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        style="width: 100%; padding: 5px; margin-bottom: 10px"
+      />
+
+      <input
+        type="submit"
+        value="Submit"
+        style="
+          padding: 5px 10px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        "
+      />
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="margin-top: 20px; text-align: center">
+    <p style="margin: 0">
+      &copy; 2024 - Nesting and Indentation Lesson. All rights reserved.
+    </p>
+  </footer>
+</div>

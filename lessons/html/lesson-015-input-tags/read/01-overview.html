@@ -1,0 +1,217 @@
+<section class="container my-4 p-4 border rounded">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h2 class="mb-0">Input Fields</h2>
+    <img
+      class="lesson-title-tag"
+      src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/animations/registration.gif"
+      alt="Lesson Animation"
+    />
+  </div>
+
+  <div>
+    <p class="lead">
+      Welcome to the essential world of input fields! In this lesson, you’ll
+      learn how to use
+      <code>&lt;input&gt;</code> tags to create interactive forms for your
+      users. Input fields are crucial in web design as they allow users to
+      interact with websites, providing information, feedback, and more.
+    </p>
+
+    <div class="alert alert-info mb-3">
+      <strong>Did You Know?</strong> Input fields are at the core of web
+      interactivity, powering everything from simple login forms to complex
+      e-commerce checkout processes.
+    </div>
+
+    <p>
+      Input tags play a vital role in creating forms on web pages. They gather
+      information from users, which can be used for processing orders,
+      collecting feedback, or managing data. Without input fields, websites
+      would lack the dynamic, interactive experiences that users expect.
+    </p>
+
+    <p>
+      The <code>&lt;input&gt;</code> tag is incredibly versatile, offering many
+      types and attributes to customize user interactions. From text boxes to
+      checkboxes, the input tag adapts to different needs, making it essential
+      for web developers.
+    </p>
+
+    <h5>Common Uses for Input Tags:</h5>
+    <ul>
+      <li>
+        <strong>Text and Password Fields:</strong> Collect basic information,
+        such as names, emails, and passwords.
+      </li>
+      <li>
+        <strong>Radio Buttons and Checkboxes:</strong> Allow users to select
+        options or agree to terms.
+      </li>
+      <li>
+        <strong>Number and Range Sliders:</strong> Gather specific numeric
+        values or a range within a given interval.
+      </li>
+      <li>
+        <strong>Date Pickers and Time Fields:</strong> Enable users to input
+        dates and times in a standardized format.
+      </li>
+      <li>
+        <strong>File Uploads:</strong> Allow users to upload files directly to
+        your website.
+      </li>
+    </ul>
+
+    <div class="card p-4 my-4 shadow-sm">
+      <h5 class="card-title">Advanced Input Form Example:</h5>
+      <div class="d-flex flex-column">
+        <form class="example-form">
+          <!-- Username Field -->
+          <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input
+              type="text"
+              id="username"
+              class="form-control"
+              placeholder="Choose a unique username"
+              required
+              minlength="5"
+              maxlength="15"
+              style="border: 1px solid #ced4da; padding: 0.5rem"
+            />
+            <small style="color: #6c757d; font-size: 0.85rem"
+              >Must be 5-15 characters long.</small
+            >
+          </div>
+
+          <!-- Email Field -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+              style="border: 1px solid #ced4da; padding: 0.5rem"
+            />
+            <small style="color: #6c757d; font-size: 0.85rem"
+              >We’ll never share your email.</small
+            >
+          </div>
+
+          <!-- Password Field -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Create a password"
+              required
+              minlength="8"
+              style="border: 1px solid #ced4da; padding: 0.5rem"
+            />
+            <small style="color: #6c757d; font-size: 0.85rem"
+              >At least 8 characters required.</small
+            >
+          </div>
+
+          <!-- Age Field -->
+          <div class="mb-3">
+            <label for="age" class="form-label">Age:</label>
+            <input
+              type="number"
+              id="age"
+              class="form-control"
+              min="18"
+              max="100"
+              placeholder="Enter your age"
+              required
+              style="border: 1px solid #ced4da; padding: 0.5rem"
+            />
+            <small style="color: #6c757d; font-size: 0.85rem"
+              >Must be 18+ to register.</small
+            >
+          </div>
+
+          <!-- Gender Selection Field -->
+          <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="genderMale"
+                value="male"
+                required
+                style="margin-right: 0.5rem"
+              />
+              <label class="form-check-label" for="genderMale">Male</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="genderFemale"
+                value="female"
+                required
+                style="margin-right: 0.5rem"
+              />
+              <label class="form-check-label" for="genderFemale">Female</label>
+            </div>
+          </div>
+
+          <!-- Country Dropdown -->
+          <div class="mb-3">
+            <label for="country" class="form-label">Country:</label>
+            <select
+              id="country"
+              class="form-select"
+              required
+              style="border: 1px solid #ced4da; padding: 0.5rem"
+            >
+              <option value="" selected>Select your country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="au">Australia</option>
+            </select>
+          </div>
+
+          <!-- Terms & Conditions Checkbox -->
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="terms"
+              required
+              style="margin-right: 0.5rem"
+            />
+            <label class="form-check-label" for="terms">
+              I agree to the <a href="#">Terms and Conditions</a>
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="btn btn-success w-100"
+            style="padding: 0.5rem; font-size: 1rem; font-weight: bold"
+          >
+            Register
+          </button>
+        </form>
+
+        <p class="text-muted mt-3" style="font-size: 0.85rem">
+          <em>
+            This example demonstrates a form with multiple input types,
+            including text, email, password, number, radio buttons, dropdown,
+            and checkbox fields.
+          </em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

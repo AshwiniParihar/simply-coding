@@ -1,0 +1,207 @@
+    <section class="infographics" style="margin-bottom: 20px">
+      <!-- Main Title Section -->
+      <div class="infographic-section">
+        <h2>What is the &lt;label&gt; Element?</h2>
+        <p>
+          The <code>&lt;label&gt;</code> element in HTML is used to associate
+          text with an input field. This is particularly important for
+          accessibility, as it allows screen readers to identify the purpose of
+          each input field for users who rely on assistive technology.
+        </p>
+      </div>
+
+      <!-- Basic Structure of Label -->
+      <div class="infographic-section">
+        <h2>Basic Structure</h2>
+        <pre>
+      <code>&lt;label for="name"&gt;Name:&lt;/label&gt; &lt;input type="text" id="name" /&gt;</code>
+    </pre>
+        <ul type="none">
+          <li>
+            <li>Rendered Example</li>
+            <label for="name">Name:</label> <input type="text" id="name" />
+          </li>
+        </ul>
+
+        <p>
+          The <code>&lt;label&gt;</code> element uses the
+          <code>for</code> attribute, which should match the <code>id</code> of
+          the associated input. This creates a connection between the label and
+          the input, making it clear what data should be entered.
+        </p>
+          <div class="tip-box">
+        <strong>Pro Tip:</strong> Always use labels for form fields to improve
+        accessibility, even if they are visually hidden.
+      </div>
+      </div>
+
+      <!-- Attributes Explained -->
+      <div class="infographic-section">
+        <h2>Attributes Explained</h2>
+        <div class="infographic-cards-container">
+          <!-- for Attribute Card -->
+          <div class="info-card">
+            <div class="info-card-content">
+              <div class="info-card-image empty"></div>
+              <h5 class="info-card-title">for</h5>
+              <p class="info-card-description">
+                The <code>for</code> attribute in the
+                <code>&lt;label&gt;</code> tag should match the
+                <code>id</code> of the associated input field, linking the two.
+              </p>
+      
+            </div>
+            <div class="d-flex gap-2 mt-2 ms-auto">
+              <button
+                class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#modalFor"
+              >
+                ...
+              </button>
+              <button
+                class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+                onclick="loadTryItOut('&lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt; &lt;input type=&quot;text&quot; id=&quot;username&quot;&gt;', '', '')"
+              >
+                &lt;/&gt;
+              </button>
+            </div>
+          </div>
+
+          <!-- Importance of Accessibility Card -->
+          <div class="info-card">
+            <div class="info-card-content">
+              <div class="info-card-image empty"></div>
+              <h5 class="info-card-title">Accessibility</h5>
+              <p class="info-card-description">
+                Labels make forms accessible to screen readers, allowing
+                visually impaired users to understand form fields' purposes.
+              </p>
+           
+            </div>
+            <div class="d-flex gap-2 mt-2 ms-auto">
+              <button
+                class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#modalAccessibility"
+              >
+                ...
+              </button>
+              <button
+                class="info-btn circle-btn btn d-flex align-items-center justify-content-center"
+                onclick="loadTryItOut('&lt;label for=&quot;email&quot;&gt;Email Address:&lt;/label&gt; &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;', '', '')"
+              >
+                &lt;/&gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Try It Out Section -->
+      <div class="infographic-section">
+        <h2>Try It Out!</h2>
+        <div>
+          <pre>
+        <code>
+&lt;label for="userEmail"&gt;Email:&lt;/label&gt; 
+&lt;input type="email" id="userEmail" placeholder="Enter your email" /&gt;
+        </code>
+      </pre>
+          <div class="text-end">
+            <button
+              class="btn try-it-out"
+              onclick='loadTryItOut(&apos;&lt;label for="userEmail"&gt;Email:&lt;/label&gt; &lt;input type="email" id="userEmail" placeholder="Enter your email" /&gt;&apos;, &apos;&apos;, &apos;&apos;)'
+            >
+              Try it →
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+
+      <!-- Don't Do This Section -->
+      <div class="infographic-section">
+        <div class="alert alert-warning">
+          <strong>Don't Do This</strong>
+          <ul>
+            <li>
+              Don’t skip the <code>&lt;label&gt;</code> element for inputs, even
+              if using placeholders.
+            </li>
+            <li>Don’t use non-descriptive labels, like “Input” or “Text.”</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Modals for Detailed Info -->
+      <div
+        class="modal fade"
+        id="modalFor"
+        tabindex="-1"
+        aria-labelledby="modalForLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalForLabel">for Attribute</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                The <code>for</code> attribute on a
+                <code>&lt;label&gt;</code> element associates it with an input
+                by matching the <code>id</code> of the input. This helps screen
+                readers connect the label to the input field.
+              </p>
+              <strong>Example:</strong>
+              <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt; &lt;input type="text" id="name" /&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modalAccessibility"
+        tabindex="-1"
+        aria-labelledby="modalAccessibilityLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAccessibilityLabel">
+                Accessibility Importance
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Associating labels with inputs improves accessibility for
+                visually impaired users, as it allows screen readers to announce
+                what the input is for.
+              </p>
+              <strong>Example:</strong>
+              <pre><code>&lt;label for="email"&gt;Email Address:&lt;/label&gt; &lt;input type="email" id="email" /&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

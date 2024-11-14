@@ -1,0 +1,354 @@
+<section class="infographics" style="margin-bottom: 20px">
+    <!-- Catchy Section Title Here, not just Lesson #: Title -->
+    <!-- Section 1: What is the <img> tag? -->
+    <!-- ! Each lesson step should not be more content that what a normal screen can contain at once, or with  only scrolling onces or twice  -->
+    <div class="infographic-section">
+        <h2>Components in React</h2>
+        <!-- Brief explanation of the tags purpose -->
+        <p>
+            Components are the building blocks of React applications. Components allow you to break your project
+            into smaller sections. Each section can manage its own functionality and appearance.
+            They are also reusable, which means you can use the same component in multiple places in your
+            application. This makes your code more organized and easier to maintain.
+        </p>
+    </div>
+
+    <!-- Section 2: Basic Structure -->
+    <div class="infographic-section">
+        <h2>Basic Structure</h2>
+        <pre><code>
+    function &lt;ComponentName&gt;() {
+    
+        const headerText = "Component Name";
+    
+        // Above the return statement is for JavaScript logic
+    
+        return (
+            // Everything below the return statement is JSX
+            &lt;element&gt;
+                &lt;p&gt;&#123;headerText&#125;&lt;/p&gt;
+                &lt;button&gt;Home&lt;/button&gt;
+                &lt;button&gt;About&lt;/button&gt;
+            &lt;/element&gt;
+        );
+    }
+        </code></pre>
+            <p>When put into action, it looks like this</p>
+        <pre><code>
+    function Navbar(){
+
+        const headerText = "Navbar";
+
+        // Above the return statement is for JavaScript
+
+        return (
+            // Everything below the return statement is JSX
+            &lt;nav&gt;
+                &lt;p&gt;{headerText}&lt;/p&gt;
+                &lt;button&gt;Home&lt;/button&gt;
+                &lt;button&gt;About&lt;/button&gt;
+            &lt;/nav&gt;
+        )
+    }
+        </code></pre>
+        <p>
+            Components are built as functions. Otherwise known as functional components. But instead of returning
+            JavaScript code they return our JSX which gets rendered to the DOM. We can do any JavaScript logic we
+            need above the return statement.
+            We can even use the values of those variables in our JSX using curly braces.
+        </p>
+    </div>
+    <div class="infographic-section">
+        <h2>CDN Setup for Components</h2>
+        <p>
+            When using React components with a CDN, it's crucial to include a script tag for each component you create.
+            This ensures that the component is properly imported and available for use in your application.
+        </p>
+        <pre><code>
+        &lt;script src="https://cdn.example.com/MyComponent.js"&gt;&lt;/script&gt;
+        </code></pre>
+        <p>
+            Be sure to replace <code>https://cdn.example.com/MyComponent.js</code> with the actual URL where your
+            component is hosted. Additionally, it's important to load the script tags in the correct order: your main
+            <code>index.js</code> script should be the last script included. This way, it has access to all your other
+            components and files,
+            allowing your application to function correctly.
+        </p>
+        <p>
+            You can place each script tag in the <code>&lt;head&gt;</code> section or at the end of the
+            <code>&lt;body&gt;</code> section of your HTML file, depending on your setup.
+        </p>
+    </div>
+
+    <div class="infographic-section">
+        <h2>Common Structure: App.js and index.js</h2>
+        <p>
+            In a typical React application, you'll find an <code>App.js</code> file that acts as the root component. 
+            This component is where you can render other components and manage the overall structure of your application.
+        </p>
+        <pre><code>
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import './index.css'; // Import your CSS file
+    import App from './App'; // Import your main App component
+    
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+        </code></pre>
+        <p>
+            In the <code>index.js</code> file, we use <code>ReactDOM.createRoot</code> to create a root for our React application 
+            and then call <code>root.render(<App />)</code> to render our <code>App</code> component into the DOM. 
+            This structure allows you to maintain a clean separation of components and helps with scalability as your application grows.
+        </p>
+    </div>
+
+    <!-- Section 3: Attributes Explained -->
+    <div class="infographic-section">
+        <h2>Component Rules</h2>
+        <div class="infographic-attributes">
+            <!-- src Attribute Card -->
+            <div class="attribute">
+                <h5>Pascal Casing</h5>
+                <p>The first letter of each word should be upper-case when naming your components and files in
+                    React. (PascalCase)</p>
+                <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalSrc">
+                    ...
+                </div>
+            </div>
+
+            <!-- alt Attribute Card -->
+            <div class="attribute">
+                <h5>Using JavaScript values in our component</h5>
+                <p>
+                    To use JavaScript values in our component, we can use curly braces around the JavaScript code.
+                </p>
+                <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalAlt">
+                    ...
+                </div>
+            </div>
+
+            <!-- width Attribute Card -->
+            <div class="attribute">
+                <h5>Singe Parent Element</h5>
+                <p>Components can only return a single element.</p>
+                <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalWidth">
+                    ...
+                </div>
+            </div>
+
+            <!-- height Attribute Card -->
+            <div class="attribute">
+                <h5>A file for each component</h5>
+                <p>Each React component should have its own file.</p>
+                <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalHeight">
+                    ...
+                </div>
+            </div>
+
+            <!-- title Attribute Card -->
+            <!-- <div class="attribute">
+                <h5>title</h5>
+                <p>Displays additional information when hovering over the image.</p>
+                <div class="icon-circle" data-bs-toggle="modal" data-bs-target="#modalTitle">
+                    ...
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- Section 4: Try It Out -->
+    <!-- This is used to show some demo code, the try it button below will move the code over into the editor and automatically run it -->
+    <!-- <div class="infographic-section">
+        <h2>Try It Out!</h2>
+        <div>
+            <pre>
+      <code>
+&lt;img src="https://placekitten.com/200/300" 
+   alt="A cute kitten sitting on a pillow" 
+   width="200" 
+   height="300" 
+/&gt;
+      </code>
+    </pre>
+            <div class="text-end">
+                 the onclick is where we need to add the code to run, its a pain to work with, run it through ai for the easiest results,-->
+    <!-- Still figuring out a way to test this without putting it into the actual tempalte with the editor -->
+    <!-- <button class="btn try-it-out"
+                    onclick='loadTryItOut(&apos;&lt;img src="https://placekitten.com/200/300" alt="A cute kitten sitting on a pillow" width="200" height="300" /&gt;&apos;, &apos;&apos;, &apos;&apos;)'>
+                    Try it →
+                </button>
+            </div>
+        </div>
+    </div> -->
+    <!-- <h1>Include any of the below as neccessary, dont over use these</h1> -->
+    <div class="tip-box">
+        <strong>Pro Tip:</strong> Keep components simple and focused. Each component should ideally serve one purpose,
+        making it easy to understand and reuse.
+    </div>
+
+    <!-- Common Mistakes Section -->
+    <section class="infographics">
+        <!-- Best Practices Section -->
+        <div class="infographic-section">
+            <div class="alert alert-success">
+                <strong>Best Practices</strong>
+                <ul>
+                    <li>
+                        Name components using PascalCase, like <code>MyComponent</code>, for consistency.
+                    </li>
+                    <li>
+                        Break down complex interfaces into smaller, reusable components to make your code more
+                        manageable.
+                    </li>
+                    <li>
+                        Test each component as you build it to ensure it renders correctly before adding more
+                        complexity.
+                    </li>
+                    <li>
+                        Give components meaningful names that reflect their purpose, making it easier to understand and
+                        maintain. Header, Footer, Navigation, etc.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modals for Detailed Info -->
+    <!-- src Modal -->
+    <div class="modal fade" id="modalSrc" tabindex="-1" aria-labelledby="modalSrcLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSrcLabel">PascalCase</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Not only is the best practice to use pascal casing for your React components and file names,
+                        but certain React enviroments require it,
+                        and will throw an error or warning if you don't.
+                    </p>
+                    <strong>Example:</strong>
+                    <pre><code>function MyComponent(){}</code></pre>
+                    <p><strong>File Name: </strong><code>MyComponent.js</code></p>
+                    <p><em>PascalCase is when you capatalize the first letter of each word.</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- alt Modal -->
+    <div class="modal fade" id="modalAlt" tabindex="-1" aria-labelledby="modalAltLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAltLabel">Using {} in our component.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Using our curly braces <code>{}</code> in our JSX allows us to use JavaScript expressions. Which
+                        means we
+                        can use variables, functions, and more!
+                        This gives us the power to use dynamic content in our JSX.
+                    </p>
+                    <strong>Example:</strong>
+                    <pre><code>
+function MyComponent() {
+    const name = "John Doe";
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Hello, {name}!&lt;/h1&gt;  
+        &lt;/div&gt;
+    )
+}
+</code></pre>
+                    <p><strong>Reminder:</strong> Any JavaScript used after the return statement should be to render to
+                        the UI, not for building functions or logic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- width Modal -->
+    <div class="modal fade" id="modalWidth" tabindex="-1" aria-labelledby="modalWidthLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWidthLabel">Single Element</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        React Components can only have a single root element. This means that you can only have one
+                        top-level element. But that element can contain as many children as needed.
+                    </p>
+                    <strong>Example:</strong>
+                    <pre><code>
+function Navbar(){
+
+    const headerText = "Navbar";
+
+    return (
+        &lt;nav&gt;
+            &lt;p&gt;{headerText}&lt;/p&gt;
+            &lt;button&gt;Home&lt;/button&gt;
+            &lt;button&gt;About&lt;/button&gt;
+        &lt;/nav&gt;
+    )
+}
+</code></pre>
+                    <p>Our Navbar component above is rendering a single <code>nav</code> element, but the
+                        <code>nav</code> element can contain as many children elements as we need.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- height Modal -->
+    <div class="modal fade" id="modalHeight" tabindex="-1" aria-labelledby="modalHeightLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHeightLabel">File Structure</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        One of the benefits of React is that it is modular, allowing us to break our code up into
+                        smaller sections easily. If we put all of our components into a single file we are missing out
+                        on one of the key benefits of React.
+                        Each component should be in its own file, and the file name should match the name of the
+                        component. It is a common practice to have a <code>components</code> folder in our project and
+                        put all of our components in there.
+                    </p>
+                    <strong>Example:</strong>
+                    <img src="/assets/react/file-structure.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- title Modal -->
+    <!-- <div class="modal fade" id="modalTitle" tabindex="-1" aria-labelledby="modalTitleLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleLabel">title Attribute</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        The <code>title</code> attribute provides additional information
+                        about the image when hovered over, often as a tooltip.
+                    </p>
+                    <strong>Example:</strong>
+                    <pre><code>&lt;img src="https://placekitten.com/200/300" alt="A small kitten" title="Cute kitten sitting on a pillow" /&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</section>

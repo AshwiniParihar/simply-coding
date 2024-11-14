@@ -1,0 +1,219 @@
+/* Scoped Infographics Styles */
+.infographics {
+  margin-top: 8px;
+}
+
+.infographics .infographic {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border: 2px solid #dee2e6; /* Light border */
+  border-radius: 8px;
+}
+
+.infographics .infographic-section {
+  margin-bottom: 20px;
+}
+
+.infographics .infographic-section h4,
+.infographics .infographic-section h2,
+.infographics h1 {
+  margin-bottom: 8px;
+  color: #0e5db8;
+}
+
+.infographics .infographic-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+.infographics .attribute {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background-color: #e9ecef; /* Light gray */
+  padding: 15px;
+  border: 1px solid #adb5bd; /* Medium gray border */
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.infographics .attribute h5 {
+  color: #343a40; /* Muted black */
+}
+
+.infographics .attribute p {
+  color: #495057; /* Muted dark gray */
+}
+
+.infographics .icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: #f5f6f7; /* Bootstrap blue */
+  color: gray;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  font-weight: 900;
+}
+
+.infographics .icon-circle:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.infographics .try-it-out {
+  margin-top: 20px;
+}
+
+/* Consistent Styling for Demo Code */
+.infographics pre,
+.modal pre {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 15px;
+  border: 1px solid #d1d1d1; /* Light border */
+  border-radius: 4px;
+  color: #000; /* Black text */
+  white-space: pre-wrap; /* Allow wrapping */
+  word-break: break-all; /* Break long words if necessary */
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.infographics pre code,
+.modal pre code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+.infographics .try-it-out button {
+  padding: 10px 15px;
+
+  color: #0d6efd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.infographics .try-it-out button:hover {
+  background-color: #0b5ed7; /* Darker blue */
+  color: white;
+}
+.infographics .infographic-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+/* General styling for the card container */
+/* Info card container styling */
+.info-card {
+  width: 15rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 8px;
+  transition: box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+/* Hover effect for a modern touch */
+.info-card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Fixed image height */
+.info-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.info-card-image.empty {
+  display: none;
+  height: 0 !important;
+}
+
+/* Image styling */
+.info-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Content styling */
+.info-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  width: 100%;
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+/* Title styling */
+.info-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+  text-align: start;
+}
+
+/* Description styling */
+.info-card-description {
+  font-size: 14px;
+  color: #666666;
+  margin: 8px 0 20px;
+  text-align: start;
+}
+
+/* More button styling */
+.info-card-action {
+  background-color: transparent;
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.info-card-action:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.info-btn {
+  font-weight: bold;
+  color: grey;
+}
+.info-btn:hover {
+  font-weight: bolder;
+  color: black;
+  font-size: large;
+}

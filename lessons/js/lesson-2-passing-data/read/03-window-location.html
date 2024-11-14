@@ -1,0 +1,63 @@
+<!-- Section 1: Introduction to HTML -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="lead-content">
+      <h1>Understanding <code>window.location</code> in JavaScript</h1>
+
+  <h2>What is <code>window.location</code>?</h2>
+  <p>The <code>window.location</code> property in JavaScript allows us to access and manipulate the URL of the current page. We can use it to navigate to a new page, reload the page, or get information about the current URL.</p>
+
+  <h3>Common Properties of <code>window.location</code></h3>
+  <ul>
+    <li><code>window.location.href</code>: Gets or sets the URL of the current page. Setting it to a new URL redirects the browser to that page.</li>
+    <li><code>window.location.pathname</code>: Returns the path of the current URL (e.g., "/page.html").</li>
+    <li><code>window.location.hostname</code>: Returns the domain name of the web host (e.g., "example.com").</li>
+    <li><code>window.location.protocol</code>: Returns the protocol of the URL (e.g., "http:" or "https:").</li>
+    <li><code>window.location.reload()</code>: Reloads the current page.</li>
+  </ul>
+
+  <h3>Example: Redirecting After Form Submission</h3>
+  <p>Below is a form that, upon submission, uses <code>window.location.href</code> to redirect the user to a new page. The <code>preventDefault()</code> method is used to stop the form's default behavior so we can add the custom redirect logic.</p>
+  <p>You'll notice URI in this example, you can review that in detail in the next section!</p>
+<pre>
+  
+  <!-- Form Example -->
+  &lt;form id="redirectForm">
+    &lt;label for="name">Enter your name:&lt;/label>
+    &lt;input type="text" id="name" name="name" placeholder="Your Name">
+    &lt;button type="submit">Submit&lt;/button>
+  &lt;/form>
+
+  &lt;script>
+    document.getElementById('redirectForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Stop the default form submission
+
+      // Capture the input
+      let userName = document.getElementById('name').value;
+
+      // Redirect to another page, including the user's name in the URL query string
+      window.location.href = 'thankyou.html?name=' + encodeURIComponent(userName);
+    });
+  &lt;/script>
+  
+</pre>
+  <h3>Explanation of the Code</h3>
+  <p>
+    In the example above:
+    <ul>
+      <li>We listen for the form's <code>submit</code> event and use <code>preventDefault()</code> to stop the default submission behavior.</li>
+      <li>The user's name is captured from the input field and stored in <code>userName</code>.</li>
+      <li><code>window.location.href</code> is then set to a new URL (in this case, "thankyou.html") with the user's name added as a query parameter.</li>
+      <li>The <code>encodeURIComponent()</code> function is used to ensure any special characters in the user input are safely added to the URL.</li>
+      <li>The URI will be reviewed in the next section.</li>
+    </ul>
+  </p>
+
+  <!-- <h3>Further Reading</h3>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/location" target="_blank">MDN Documentation on <code>window.location</code></a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent" target="_blank">MDN Documentation on <code>encodeURIComponent()</code></a></li>
+  </ul> -->
+  </div>
+  </div>
+</section>

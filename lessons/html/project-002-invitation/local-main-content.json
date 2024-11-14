@@ -1,0 +1,59 @@
+{
+  "title": "Proejct 2: Invitation",
+  "lessonID": "projectHTML002",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Project Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/project-002-invitation/overview/01-project-overview.html"
+        }
+      ]
+    },
+    "Review": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/project-002-invitation/review/01-overview.html"
+        }
+      ]
+    },
+    "Setup": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/project-002-invitation/setup/01-overview.html"
+        },
+        {
+          "title": "Inital Steps",
+          "fileType": "html",
+          "filePath": "/lessons/html/project-002-invitation/setup/02-initial-steps.html"
+        },
+        {
+          "title": "Emoji Guide",
+          "fileType": "html",
+          "filePath": "/lessons/html/project-002-invitation/setup/03-icons.html"
+        }
+      ]
+    }
+  }
+}

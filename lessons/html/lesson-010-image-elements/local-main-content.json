@@ -1,0 +1,116 @@
+{
+  "title": "Lesson 10: Image Elements",
+  "lessonID": "lessonHTML010",
+  "videoUrl": "https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/images-global/test-video.mp4",
+  "sections": {
+    "Overview": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Lesson Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/overview/01-lesson-overview.html"
+        }
+      ]
+    },
+    "Read": {
+      "starter-code": {
+        "html": "",
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/01-overview.html"
+        },
+        {
+          "title": "Image Tags",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/02-img-tags.html"
+        },
+        {
+          "title": "Void Element Review",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/03-void-elements.html"
+        },
+        {
+          "title": "Alt Attributes and Accessibility",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/04-alt-attributes-access.html"
+        },
+
+        {
+          "title": "Advanced Image Tag",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/06-advanced-img.html"
+        },
+        {
+          "title": "Using Figure",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/07-using-figure.html"
+        },
+        {
+          "title": "Finding and Using Pictures",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/read/08-using-your-own-pictures.html"
+        }
+      ]
+    },
+    "Write": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/write/01-overview.html"
+        },
+        {
+          "title": "Step-by-Step",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/write/02-step-by-step.html"
+        },
+        {
+          "title": "Review",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/write/03-img-review.html"
+        }
+      ]
+    },
+    "Create": {
+      "starter-code": {
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Img Element Lesson</title>\n</head>\n<body>\n    <!-- Main Content Start -->\n    X\n    <!-- Main Content End -->\n</body>\n</html>\n",
+
+        "css": "",
+        "js": ""
+      },
+      "content": [
+        {
+          "title": "Section Overview",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/create/01-overview.html"
+        },
+        {
+          "title": "Help",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/create/02-hints.html"
+        },
+        {
+          "title": "Solution",
+          "fileType": "html",
+          "filePath": "/lessons/html/lesson-010-image-elements/create/03-solution.html"
+        }
+      ]
+    }
+  }
+}

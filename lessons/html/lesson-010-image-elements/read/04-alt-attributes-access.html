@@ -1,0 +1,645 @@
+<section class="infographics">
+  <!-- Section 1: Introduction -->
+  <div class="infographic-section">
+    <h2>Image Accessibility and WCAG Standards</h2>
+    <p>
+      Web accessibility ensures digital content is usable by everyone, including
+      people with visual, auditory, motor, or cognitive disabilities. The
+      <code>alt</code> attribute is a crucial component of WCAG Success
+      Criterion 1.1.1: Non-text Content.
+    </p>
+  </div>
+
+  <!-- Section 2: How Accessibility Tools Use Alt Text -->
+  <div class="infographic-section">
+    <h2>How Accessibility Tools Use Alt Text</h2>
+    <div class="infographic-attributes">
+      <div class="attribute">
+        <h5>Screen Readers</h5>
+        <p>Announces image descriptions to visually impaired users</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalScreenReader"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Braille Displays</h5>
+        <p>Converts alt text to tactile output for blind users</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalBraille"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Voice Assistants</h5>
+        <p>Reads image descriptions for hands-free navigation</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalVoice"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Text Browsers</h5>
+        <p>Shows alt text when images are disabled or fail to load</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalText"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Accessibility in Different Contexts -->
+  <div class="infographic-section">
+    <h2>Accessibility in Different Contexts</h2>
+    <div class="infographic-attributes">
+      <div class="attribute">
+        <h5>Data Visualization</h5>
+        <p>Making charts and graphs accessible to all users</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDataViz"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Interactive Elements</h5>
+        <p>Accessible buttons and clickable images</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalInteractive"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Complex Diagrams</h5>
+        <p>Detailed descriptions for technical images</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDiagram"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Decorative Images</h5>
+        <p>Handling non-informative visual elements</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalDecorative"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Beyond Alt Text -->
+  <div class="infographic-section">
+    <h2>Beyond Alt Text: Complete Image Accessibility</h2>
+    <div class="infographic-attributes">
+      <div class="attribute">
+        <h5>ARIA Labels</h5>
+        <p>Enhanced descriptions using ARIA attributes</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalAria"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Figure Elements</h5>
+        <p>Semantic grouping of images and captions</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalFigure"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Long Descriptions</h5>
+        <p>Detailed explanations for complex images</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalLongDesc"
+        >
+          ...
+        </div>
+      </div>
+
+      <div class="attribute">
+        <h5>Color Contrast</h5>
+        <p>Ensuring visibility for all users</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalContrast"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals Section -->
+  <!-- Screen Reader Modal -->
+  <div class="modal fade" id="modalScreenReader" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Screen Readers and Alt Text</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Screen readers convert alt text to audio for visually impaired
+            users, narrating the purpose or content of an image.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="chart.png" alt="Bar graph showing quarterly sales from Q1 to Q4 with a steady increase"&gt;</code></pre>
+          <strong>Best Practices:</strong>
+          <ul>
+            <li>Be concise and clear, focusing on key details.</li>
+            <li>Include any relevant data points or trends.</li>
+            <li>Use punctuation for natural pauses in the narration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Braille Display Modal -->
+  <div class="modal fade" id="modalBraille" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Braille Display Integration</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>Braille displays convert alt text into tactile braille output.</p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="logo.png" 
+  alt="Company logo - text reads: AccessTech Solutions"&gt;</code></pre>
+          <strong>Considerations:</strong>
+          <ul>
+            <li>Keep descriptions concise for efficient reading</li>
+            <li>Use proper spelling and grammar</li>
+            <li>Avoid abbreviations unless commonly used</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Voice Assistants Modal -->
+  <div class="modal fade" id="modalVoice" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Voice Assistants and Alt Text</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Voice assistants use alt text to provide audio descriptions of
+            images during hands-free navigation.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="menu-icon.png" 
+  alt="Navigation menu: tap to open site sections"
+  role="button"
+  aria-label="Open navigation menu"&gt;</code></pre>
+          <strong>Best Practices:</strong>
+          <ul>
+            <li>Use natural, conversational language</li>
+            <li>Include interaction hints when relevant</li>
+            <li>Combine with ARIA roles for interactive elements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text Browsers Modal -->
+  <div class="modal fade" id="modalText" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Text Browsers and Failed Images</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Text browsers and slow connections rely on alt text to convey image
+            content when images can't be displayed.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="product-photo.jpg" 
+  alt="Red leather laptop sleeve with magnetic closure"
+  onerror="this.style.border='1px solid #ccc'"&gt;</code></pre>
+          <strong>Considerations:</strong>
+          <ul>
+            <li>Ensure alt text provides complete context</li>
+            <li>Include critical information from the image</li>
+            <li>Consider fallback styling for failed images</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualization Modal -->
+  <div class="modal fade" id="modalDataViz" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Accessible Data Visualization</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Charts and graphs require comprehensive alt text to convey data and
+            trends.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="sales-chart.png" 
+  alt="Line graph showing sales growth: Jan: $10k, Feb: $15k, Mar: $25k. Trend shows steady increase"
+  aria-describedby="chart-details"&gt;
+&lt;div id="chart-details" class="sr-only"&gt;
+  Detailed analysis shows strongest growth in March, 
+  indicating successful Q1 marketing campaign
+&lt;/div&gt;</code></pre>
+          <strong>Key Points:</strong>
+          <ul>
+            <li>Include key data points and trends</li>
+            <li>Describe patterns and conclusions</li>
+            <li>Use aria-describedby for detailed explanations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Elements Modal -->
+  <div class="modal fade" id="modalInteractive" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Interactive Image Elements</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Interactive images need alt text that explains both their appearance
+            and function.
+          </p>
+          <strong>Examples:</strong>
+          <pre><code><!-- Button Example -->
+&lt;button&gt;
+  &lt;img src="send-icon.png" 
+    alt="Send message"
+    role="img"
+    aria-label="Send message to support"&gt;
+&lt;/button&gt;
+
+<!-- Interactive Link Example -->
+&lt;a href="download.pdf"&gt;
+  &lt;img src="pdf-icon.png" 
+    alt="Download annual report (PDF, 2.5MB)"
+    role="link"&gt;
+&lt;/a&gt;</code></pre>
+          <strong>Guidelines:</strong>
+          <ul>
+            <li>Describe the action that will occur</li>
+            <li>Include file types and sizes for downloads</li>
+            <li>Use appropriate ARIA roles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Complex Diagrams Modal -->
+  <div class="modal fade" id="modalDiagram" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Complex Diagram Accessibility</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Complex diagrams require structured descriptions and may need
+            multiple accessibility features.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;figure&gt;
+  &lt;img src="workflow-diagram.png" 
+    alt="Product development workflow"
+    aria-describedby="workflow-desc"&gt;
+  &lt;figcaption&gt;Product Development Lifecycle&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;div id="workflow-desc" class="sr-only"&gt;
+  Six-stage circular workflow:
+  1. Research → 2. Design → 3. Develop
+  4. Test → 5. Deploy → 6. Maintain
+  Each stage connects to adjacent stages with
+  feedback loops between testing and development.
+&lt;/div&gt;</code></pre>
+          <strong>Best Practices:</strong>
+          <ul>
+            <li>Use structured, hierarchical descriptions</li>
+            <li>Break down complex relationships</li>
+            <li>Combine alt text with detailed descriptions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Images Modal -->
+  <div class="modal fade" id="modalDecorative" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Decorative Images</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Decorative images should be marked as such to avoid cluttering the
+            accessibility tree.
+          </p>
+          <strong>Examples:</strong>
+          <pre><code><!-- Empty alt for decorative image -->
+&lt;img src="border-design.png" 
+  alt=""
+  role="presentation"&gt;
+
+<!-- CSS background for purely decorative image -->
+&lt;div class="decorative-background"
+  role="presentation"
+  aria-hidden="true"&gt;&lt;/div&gt;</code></pre>
+          <strong>When to Use:</strong>
+          <ul>
+            <li>Divider lines and borders</li>
+            <li>Background patterns</li>
+            <li>Decorative icons with no meaning</li>
+            <li>Aesthetic photographs that don't convey content</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARIA Labels Modal -->
+  <div class="modal fade" id="modalAria" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ARIA Labels and Descriptions</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            ARIA attributes provide additional context and enhance image
+            accessibility.
+          </p>
+          <strong>Examples:</strong>
+          <pre><code><!-- Basic ARIA label -->
+&lt;img src="icon.png" 
+  alt="Settings"
+  aria-label="Open application settings"&gt;
+
+<!-- Complex description -->
+&lt;img src="data-chart.png" 
+  alt="Revenue chart"
+  aria-labelledby="chart-title"
+  aria-describedby="chart-desc"&gt;
+&lt;h3 id="chart-title"&gt;2024 Revenue Analysis&lt;/h3&gt;
+&lt;div id="chart-desc"&gt;Chart shows steady growth...&lt;/div&gt;</code></pre>
+          <strong>ARIA Attributes:</strong>
+          <ul>
+            <li>aria-label: Direct label for the element</li>
+            <li>aria-labelledby: References another element as the label</li>
+            <li>aria-describedby: Links to detailed descriptions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Figure Elements Modal -->
+  <div class="modal fade" id="modalFigure" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Figure and Figcaption Elements</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Figure elements provide semantic grouping for images and their
+            captions.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;figure&gt;
+  &lt;img src="product.jpg" 
+    alt="Model XYZ-100 Smart Watch"&gt;
+  &lt;figcaption&gt;
+    Our latest smartwatch features heart rate 
+    monitoring and sleep tracking
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+<!-- Multiple images in a figure -->
+&lt;figure&gt;
+  &lt;img src="front.jpg" alt="Product front view"&gt;
+  &lt;img src="side.jpg" alt="Product side view"&gt;
+  &lt;figcaption&gt;Product views showing slim design&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+          <strong>Benefits:</strong>
+          <ul>
+            <li>Semantic HTML improves accessibility</li>
+            <li>Associates images with their captions</li>
+            <li>Supports multiple images in one figure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Long Descriptions Modal -->
+  <div class="modal fade" id="modalLongDesc" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Long Descriptions</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Complex images may require longer descriptions for full
+            understanding.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;figure&gt;
+  &lt;img src="technical-diagram.png" 
+    alt="System architecture diagram"
+    aria-describedby="full-desc"&gt;
+  &lt;figcaption&gt;System Architecture Overview&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;div id="full-desc" class="sr-only"&gt;
+  The system architecture consists of three main layers:
+  1. User Interface Layer:
+     - Web interface
+     - Mobile app
+     - API endpoints
+  2. Business Logic Layer:
+     - Authentication
+     - Data processing
+     - Business rules
+  3. Data Layer:
+     - Primary database
+     - Cache system
+     - File storage
+&lt;/div&gt;</code></pre>
+          <strong>Implementation Methods:</strong>
+          <ul>
+            <li>Use aria-describedby for in-page descriptions</li>
+            <li>Consider expandable/collapsible descriptions</li>
+            <li>Structure complex information hierarchically</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Color Contrast Modal -->
+  <div class="modal fade" id="modalContrast" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Color Contrast in Images</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Ensure text in images and image overlays meet WCAG contrast
+            requirements.
+          </p>
+          <strong>Example:</strong>
+          <pre><code><!-- Image with overlay text -->
+&lt;div class="image-container"&gt;
+  &lt;img src="hero.jpg" 
+    alt="Office environment"
+    aria-hidden="true"&gt;
+  &lt;div class="overlay" 
+    style="background: rgba(0,0,0,0.7);"&gt;
+    &lt;h1 style="color: #ffffff;"&gt;
+      Welcome to Our Company
+    &lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<!-- CSS -->
+.image-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  /* Ensures 4.5:1 contrast ratio */
+}</code></pre>
+          <strong>WCAG Requirements:</strong>
+          <ul>
+            <li>Normal text: 4.5:1 contrast ratio</li>
+            <li>Large text: 3:1 contrast ratio</li>
+            <li>Consider color blindness and low vision</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Additional modals would follow the same pattern for each card -->
+</section>

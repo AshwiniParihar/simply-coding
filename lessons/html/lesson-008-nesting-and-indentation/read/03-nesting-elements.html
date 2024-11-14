@@ -1,0 +1,160 @@
+<section class="section-yellow" style="margin-bottom: 20px">
+  <p>
+    In HTML, elements can be nested within each other, creating a hierarchy.
+    This hierarchy defines
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="Semantic HTML uses meaningful tags to describe the content's purpose."
+    >
+      <strong>semantic HTML</strong>
+    </span>
+    and improves
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="Accessibility ensures that all users, including those with disabilities, can access content."
+    >
+      <strong>accessibility</strong>
+    </span>
+    and
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="SEO (Search Engine Optimization) improves website visibility in search engines."
+    >
+      <strong>SEO</strong> </span
+    >.
+  </p>
+
+  <p>
+    Proper nesting ensures clear, organized, and functional HTML, making it
+    easier to understand and maintain. HTML elements can be nested to any depth,
+    allowing for complex structures like forms, navigation bars, or multi-level
+    lists.
+  </p>
+
+  <!-- Explanation of Nesting -->
+  <p>
+    For example, a
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="A parent element contains one or more child elements."
+    >
+      <strong>parent element</strong>
+    </span>
+    may contain several
+    <span
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-def"
+      data-bs-title="A child element is nested inside a parent element."
+    >
+      <strong>child elements</strong> </span
+    >, each of which can have their own child elements.
+  </p>
+
+  <!-- Advanced Nesting Explanation -->
+  <h4>Advanced Nesting and Best Practices</h4>
+  <ul class="circle">
+    <li>
+      Ensure each opening tag has a corresponding closing tag to prevent nesting
+      errors.
+    </li>
+    <li>
+      Avoid excessively deep nesting as it can make the HTML harder to read and
+      maintain.
+    </li>
+    <li>
+      Use semantic HTML elements to improve the readability and accessibility of
+      nested content.
+    </li>
+  </ul>
+
+  <!-- Example of Nested Elements with Tooltips -->
+  <h4>Example of Nested Elements:</h4>
+  <pre>
+&lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Defines a section in a document.">section</span>&gt;
+    &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Defines introductory content or a set of navigational links.">header</span>&gt;
+        &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Represents the main heading of the page.">h1</span>&gt;Page Title&lt;/<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Closing tag for the h1 element.">h1</span>&gt;
+    &lt;/header&gt;
+    &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Specifies the main content of the document.">main</span>&gt;
+        &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Represents a standalone section of content, such as an article.">article</span>&gt;
+            &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Represents a secondary heading within an article.">h2</span>&gt;Article Heading&lt;/<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Closing tag for the h2 element.">h2</span>&gt;
+            &lt;<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Defines a paragraph of text.">p</span>&gt;Article content goes here.&lt;/<span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-tag" data-bs-title="Closing tag for the p element.">p</span>&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+&lt;/section>&gt;
+  </pre>
+
+  <!-- Rendered Example of Nested Elements -->
+  <div style="border: 1px solid #ccc; padding: 15px; margin-top: 20px">
+    <section
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="tooltip-tag"
+      data-bs-title="<section>: Defines a section in a document."
+    >
+      <header
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        data-bs-custom-class="tooltip-tag"
+        data-bs-title="<header>: Defines introductory content or a set of navigational links."
+      >
+        <h1
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-custom-class="tooltip-tag"
+          data-bs-title="<h1>: Represents the main heading of the page."
+        >
+          Page Title
+        </h1>
+      </header>
+      <main>
+        <article
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-custom-class="tooltip-tag"
+          data-bs-title="<article>: Represents a standalone section of content, such as an article."
+        >
+          <h2
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-custom-class="tooltip-tag"
+            data-bs-title="<h2>: Represents a secondary heading within an article."
+          >
+            Article Heading
+          </h2>
+          <br />
+          <p
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-custom-class="tooltip-tag"
+            data-bs-title="<p>: Defines a paragraph of text."
+          >
+            Article content goes here.
+          </p>
+        </article>
+      </main>
+    </section>
+  </div>
+
+  <!-- Additional Tips for Effective Nesting -->
+  <h4>Tips for Effective Nesting:</h4>
+  <ul class="square">
+    <li>
+      Use indentation to visually represent the hierarchy of nested elements for
+      clear structure.
+    </li>
+    <li>Avoid unnecessary nesting to keep the code simple and maintainable.</li>
+    <li>
+      Use semantic tags to provide context to nested elements, improving
+      accessibility and SEO.
+    </li>
+  </ul>
+</section>

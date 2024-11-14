@@ -1,0 +1,69 @@
+<!-- Section 1: Introduction to HTML -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="lead-content">
+      <img
+        class="leading-image"
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html-css-js.png"
+        alt="HTML, CSS, and JavaScript"
+      />
+    </div>
+    <div class="content-lesson">
+  <h2>JavaScript <code>querySelector</code> vs <code>getElementBy...</code> Methods</h2>
+
+  <section>
+    <h3>1. <code>querySelector</code></h3>
+    <p><strong>Usage</strong>: Selects the <em>first matching element</em> based on a CSS selector.</p>
+    <pre><code>const element = document.querySelector('selector');</code></pre>
+
+    <p><strong>Example:</strong></p>
+    <pre><code>
+const heading = document.querySelector('h1');
+const button = document.querySelector('#submit-btn');
+const item = document.querySelector('.list-item');
+    </code></pre>
+
+    <p><strong>Flexibility</strong>: Works with CSS selectors, so you can target elements by type, ID, class, attributes, and more.</p>
+  </section>
+
+  <section>
+    <h3>2. <code>getElementBy...</code> Methods</h3>
+    <p>These methods target elements <em>specifically by their type</em>:</p>
+
+    <ul>
+      <li><code>getElementById()</code>: Selects <strong>one element</strong> by ID.</li>
+      <pre><code>const button = document.getElementById('submit-btn');</code></pre>
+
+      <li><code>getElementsByClassName()</code>: Selects <strong>all elements</strong> with a given class, returns a <em>live HTMLCollection</em>.</li>
+      <pre><code>const items = document.getElementsByClassName('list-item');</code></pre>
+
+      <li><code>getElementsByTagName()</code>: Selects <strong>all elements</strong> with a specific tag, like <code>&lt;div&gt;</code>.</li>
+      <pre><code>const divs = document.getElementsByTagName('div');</code></pre>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Key Differences</h3>
+    <ul>
+      <li><strong><code>querySelector</code></strong>:
+        <ul>
+          <li>Uses CSS-like selectors.</li>
+          <li>Returns only the <strong>first match</strong> unless using querySelectorAll().</li>
+          <li>Can select complex nested elements, e.g., <code>.container > ul > li</code>.</li>
+        </ul>
+      </li>
+      <li><strong><code>getElementBy...</code></strong>:
+        <ul>
+          <li>More <em>specific methods</em> (ID, class, tag).</li>
+          <li>Often returns <em>collections</em> (except <code>getElementById</code>).</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Conclusion</h3>
+    <p>Use <code>querySelector</code> when you need more flexibility with CSS selectors. Use <code>getElementById</code> for quick, direct access to a unique element by ID, and <code>getElementsBy...</code> when working with multiple elements of the same type.</p>
+  </section>
+  </div>
+</section>

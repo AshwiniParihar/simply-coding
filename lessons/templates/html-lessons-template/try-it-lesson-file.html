@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ! The CSS and JS are here so you can test your work without having to run the entire lesson template 
+         ! If you need to use additional CSS or JS that isnt built out yet, ensure it works with the entire tempalte first 
+         ! Adding Internal CSS will work for a file, but internal JS inside of <script> tags will not without some magic  
+         ! No Code between the head should be adjusted, or any of the script tags or JS should be removed -->
+
+    <!-- * Instructions to test a file 
+        * 1. Navigate to a prebuilt lesson in this same folder, there are templates in the read, write, create and overview 
+        * 2. Whichever type of template you are using it should be contained within <section> tags, copy everything from the open to closing tags
+        * 3. Delete any code in this file between the body tags. 
+        * 4 Paste your own code inbetween the body tags. 
+        * 5. You can now run a preview quickly to see your content you are building without running it in the lesson template it self.
+        * 6. Add this file to your .gitignore so when you push changes it doesnt affect anyone elses try-it-lesson-file.html
+        * 7. Once satisified with the code, copy out everything in the section tag and put it in your lesson file. The same CSS and JS will be applied to it through the lesson template.
+     -->
+
+    <link
+      rel="stylesheet"
+      href="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/css/markdown.css"
+    />
+
+    <link
+      href="/v2/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="/v2/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/v2/css/content-style.css" />
+    <link rel="stylesheet" href="/v2/css/code-editor.css" />
+    <link rel="stylesheet" href="/v2/css/code-editor-buttons.css" />
+    <link rel="stylesheet" href="/v2/css/sections.css" />
+    <link rel="stylesheet" href="/v2/css/icon-styles.css" />
+    <link rel="stylesheet" href="/v2/css/tabs.css" />
+    <link rel="stylesheet" href="/v2/css/stepper.css" />
+    <link rel="stylesheet" href="/v2/css/tool-tip.css" />
+    <link rel="stylesheet" href="/v2/css/code-color.css" />
+    <link rel="stylesheet" href="/v2/css/info-graphic.css" />
+    <link rel="stylesheet" href="/v2/css/github-dark-min.css" />
+  </head>
+  <body>
+   <!-- Overview Section -->
+<!-- Overview Section -->
+<section class="container my-4 p-3 border rounded">
+  <!-- Title and Image Inline -->
+  <div class="d-flex align-items-center justify-content-start mb-3">
+    <!-- Title -->
+    
+    <h1 class="ms-3">Lesson 1:CSS (Cascading Style Sheets) Tutorial </h1>
+
+    <!-- Image -->
+  </div>
+
+  <!-- Lesson Content -->
+  <div>
+    <p class="mb-2">This lesson covers:</p>
+    <ol class="list-group list-group-numbered mb-3">
+      <li class="list-group-item">why CSS is important in web development.</li>
+      <li class="list-group-item">how CSS makes HTML cleaner and easier to maintain.</li>
+      <li class="list-group-item">
+        concepts of modularity and reusability in styling.
+      </li>
+    </ol>
+
+    <!-- Rendered Example -->
+    <div class="card p-3 mb-3">
+      <p class="mb-2">Here is an example of an image element:</p>
+      <img
+        src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/assets/html/html5-logo-trans.png"
+        alt="HTML5 Logo"
+        class="img-fluid rounded mb-2"
+        style="width: 150px; transition: transform 0.2s"
+        onmouseover="this.style.transform='scale(1.1)';"
+        onmouseout="this.style.transform='scale(1)';"
+      />
+      <p class="text-muted"><em>Hover over the image to see the effect!</em></p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- * End of lesson code -->
+    <!-- ! Do not adjust the script below -->
+    <script src="https://sc-course-materials.s3.us-west-2.amazonaws.com/frontend-course/js/highlight-min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/javascript.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/css.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/languages/html.min.js"
+      defer
+    ></script>
+
+    <script src="/v2/vendor/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="/v2/vendor/bootstrap/popper.min.js"></script>
+    <script src="/v2/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/v2/vendor/ace/src-min-noconflict/ace.js"></script>
+    <script src="/v2/vendor/ace/src-min-noconflict/ext-language_tools.js"></script>
+    <script src="/v2/js/toggle-sections.js"></script>
+    <script src="/v2/js/load-lesson-data.js"></script>
+    <script src="/v2/js/atom.js"></script>
+    <script src="/v2/js/settings.js"></script>
+    <script src="/v2/js/progress-state.js"></script>
+
+    <script>
+      function applyHighlighting() {
+        document.querySelectorAll("pre code").forEach((block) => {
+          // Get the raw text content
+          let content = block.textContent;
+
+          // Try to detect if it's HTML by looking for common patterns
+          function looksLikeHTML(code) {
+            const htmlPatterns = [
+              /<\/?[a-z][\s\S]*>/i, // HTML tags
+              /<!DOCTYPE/i, // DOCTYPE declaration
+              /<!(--)?[^>]*>/, // HTML comments
+            ];
+            return htmlPatterns.some((pattern) => pattern.test(code));
+          }
+
+          // Determine language
+          let result;
+          if (looksLikeHTML(content)) {
+            // Force HTML highlighting if it looks like HTML
+            result = hljs.highlight(content, {
+              language: "html",
+              ignoreIllegals: true,
+            });
+          } else {
+            // Let highlight.js auto-detect the language
+            result = hljs.highlightAuto(content, [
+              "javascript",
+              "html",
+              "css",
+              "xml",
+              "json",
+              "python",
+              "java",
+              "cpp",
+              "csharp",
+            ]);
+          }
+
+          // Set the highlighted HTML
+          block.innerHTML = result.value;
+
+          // Add hljs class and detected language class
+          block.classList.add("hljs");
+          block.classList.add(`language-${result.language}`);
+
+          // Log the detected language (helpful for debugging)
+          console.log("Detected language:", result.language);
+        });
+      }
+
+      // Setup function to handle HTML entities
+      function setupCodeBlocks() {
+        document.querySelectorAll("pre code").forEach((block) => {
+          block.textContent = block.textContent
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, '"')
+            .replace(/&#039;/g, "'");
+        });
+      }
+      applyHighlighting();
+    </script>
+  </body>
+</html>

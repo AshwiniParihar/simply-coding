@@ -1,0 +1,304 @@
+<!-- Image Tag Infographic Section -->
+<section class="infographics" style="margin-bottom: 20px">
+  <!-- Section 1: What are Void Elements? -->
+  <div class="infographic-section">
+    <h2>What are Void Elements?</h2>
+    <p>
+      Void elements in HTML are elements that do not have closing tags or
+      content inside them. They are self-closing, meaning they don't need a
+      seperate closing tag.'
+    </p>
+  </div>
+
+  <!-- Section 2: Basic Structure -->
+  <div class="infographic-section">
+    <h2>Basic Structure</h2>
+    <pre>
+      <code><br/>
+<img src="path/to/img.png" alt="Describe your image here"/></code>
+    </pre>
+    <p>
+      Examples include <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, and
+      <code>&lt;img&gt;</code>. They do not wrap content but are complete by
+      themselves.
+    </p>
+  </div>
+
+  <!-- Section 3: Common Void Elements -->
+  <div class="infographic-section">
+    <h2>Common Void Elements</h2>
+    <div class="infographic-attributes">
+      <!-- br Element Card -->
+      <div class="attribute">
+        <h5>&lt;br&gt;</h5>
+        <p>A line break.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalBr"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- hr Element Card -->
+      <div class="attribute">
+        <h5>&lt;hr&gt;</h5>
+        <p>A thematic break or horizontal rule.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalHr"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- img Element Card -->
+      <div class="attribute">
+        <h5>&lt;img&gt;</h5>
+        <p>Embeds an image in the document.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalImg"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- input Element Card -->
+      <div class="attribute">
+        <h5>&lt;input&gt;</h5>
+        <p>Creates form controls for user input.</p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalInput"
+        >
+          ...
+        </div>
+      </div>
+
+      <!-- link Element Card -->
+      <div class="attribute">
+        <h5>&lt;link&gt;</h5>
+        <p>
+          Specifies relationships between the current document and external
+          resources.
+        </p>
+        <div
+          class="icon-circle"
+          data-bs-toggle="modal"
+          data-bs-target="#modalLink"
+        >
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Try It Out -->
+  <div class="infographic-section">
+    <h2>Try It Out!</h2>
+    <div>
+      <pre>
+        <code>
+&lt;img src="example.jpg" alt="Example Image" /&gt;
+&lt;br /&gt;
+&lt;hr /&gt;
+&lt;input type="text" name="user" placeholder="Enter your name" /&gt;
+        </code>
+      </pre>
+      <div class="text-end">
+        <button
+          class="btn try-it-out"
+          onclick='loadTryItOut("&lt;img src=\"example.jpg\" alt=\"Example Image\" /&gt;\n&lt;br /&gt;\n&lt;hr /&gt;\n&lt;input type=\"text\" name=\"user\" placeholder=\"Enter your name\" /&gt;", "", "")'
+        >
+          Try it →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Common Mistakes Section -->
+  <div class="alert alert-warning mt-3">
+    <strong>Common Mistakes:</strong>
+    <ul>
+      <li>
+        Adding closing tags to void elements, which is not necessary and can
+        cause validation errors.
+      </li>
+      <li>
+        Forgetting the self-closing slash in XHTML documents, although optional
+        in HTML5.
+      </li>
+      <li>
+        Neglecting to use the <code>alt</code> attribute for
+        <code>&lt;img&gt;</code> elements, which is critical for accessibility.
+      </li>
+      <li>
+        Using void elements where content is expected, leading to incorrect
+        structuring of content.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modals for Detailed Info -->
+  <!-- br Modal -->
+  <div
+    class="modal fade"
+    id="modalBr"
+    tabindex="-1"
+    aria-labelledby="modalBrLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBrLabel">&lt;br&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;br&gt;</code> element produces a single line break in
+            text (carriage-return).
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;p&gt;This is line one.&lt;br /&gt;This is line two.&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- hr Modal -->
+  <div
+    class="modal fade"
+    id="modalHr"
+    tabindex="-1"
+    aria-labelledby="modalHrLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHrLabel">&lt;hr&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;hr&gt;</code> element represents a thematic break
+            between paragraph-level elements.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;hr /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- img Modal -->
+  <div
+    class="modal fade"
+    id="modalImg"
+    tabindex="-1"
+    aria-labelledby="modalImgLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalImgLabel">&lt;img&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;img&gt;</code> element embeds an image with attributes
+            like src and alt.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;img src="path/to/image.jpg" alt="A description of image" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- input Modal -->
+  <div
+    class="modal fade"
+    id="modalInput"
+    tabindex="-1"
+    aria-labelledby="modalInputLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalInputLabel">
+            &lt;input&gt; Element
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;input&gt;</code> element is used to create controls
+            for form input.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;input type="text" name="username" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- link Modal -->
+  <div
+    class="modal fade"
+    id="modalLink"
+    tabindex="-1"
+    aria-labelledby="modalLinkLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLinkLabel">&lt;link&gt; Element</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            The <code>&lt;link&gt;</code> element specifies relationships
+            between the current document and resources.
+          </p>
+          <strong>Example:</strong>
+          <pre><code>&lt;link rel="stylesheet" href="styles.css" /&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

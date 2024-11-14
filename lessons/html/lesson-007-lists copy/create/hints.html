@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe: Homemade Pizza</title>
+  </head>
+  <body>
+    <p>
+      Need a hint? Hover over each green section title to see what code you
+      should use.
+    </p>
+    <!-- Recipe Title -->
+    <h1
+      style="font-size: 28px; color: #4caf50; margin-bottom: 10px; cursor: help"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="tooltip-html"
+      data-bs-title="Title: &lt;h1&gt;Homemade Pizza Recipe&lt;/h1&gt; - This is the main heading of the page, providing the recipe title."
+    >
+      Homemade Pizza Recipe
+    </h1>
+
+    <!-- Navigation (Inline List) -->
+    <ul
+      style="list-style: none; padding: 0; cursor: help"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="tooltip-html"
+      data-bs-title="Navigation List: &lt;ul&gt; with inline &lt;li&gt; elements styled for navigation. Example: &lt;ul&gt;&lt;li&gt;Ingredients&lt;/li&gt;&lt;/ul&gt;"
+    >
+      <li style="display: inline; margin-right: 15px">
+        <a href="#ingredients">Ingredients</a>
+      </li>
+      <li style="display: inline; margin-right: 15px">
+        <a href="#instructions">Instructions</a>
+      </li>
+      <li style="display: inline; margin-right: 15px">
+        <a href="#notes">Notes</a>
+      </li>
+    </ul>
+
+    <!-- Description List -->
+    <h2
+      style="font-size: 24px; color: #4caf50; margin-top: 20px; cursor: help"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="tooltip-html"
+      data-bs-title="Description List: &lt;dl&gt; defines a list of terms and descriptions. Example: &lt;dl&gt;&lt;dt&gt;Pizza Dough&lt;/dt&gt;&lt;dd&gt;A basic dough...&lt;/dd&gt;&lt;/dl&gt;"
+    >
+      Description
+    </h2>
+    <dl style="margin: 0; padding: 10px">
+      <dt style="font-weight: bold; margin-top: 10px">Pizza Dough</dt>
+      <dd style="margin-left: 20px; color: #00796b">
+        A basic dough made from flour, yeast, water, and oil.
+      </dd>
+      <dt style="font-weight: bold; margin-top: 10px">Toppings</dt>
+      <dd style="margin-left: 20px; color: #00796b">
+        A variety of toppings, including cheese, tomato sauce, and vegetables.
+      </dd>
+    </dl>
+
+    <!-- Unordered Lists -->
+    <h2
+      id="ingredients"
+      style="font-size: 24px; color: #4caf50; margin-top: 20px; cursor: help"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="tooltip-html"
+      data-bs-title="Unordered List: &lt;ul&gt; with &lt;li&gt; elements, styled using 'list-style-type'. Example: &lt;ul style='list-style-type: square;'&gt;&lt;li&gt;2 cups of flour&lt;/li&gt;&lt;/ul&gt;"
+    >
+      Ingredients
+    </h2>
+    <ul style="list-style-type: square; padding-left: 20px; color: red">
+      <li>2 cups of flour</li>
+      <li>1 cup of warm water</li>
+      <li>
+        1 packet of yeast
+        <ul style="list-style-type: circle; margin-left: 20px">
+          <li>Instant yeast</li>
+          <li>Dry active yeast</li>
+        </ul>
+      </li>
+      <li>1 tablespoon of olive oil</li>
+      <li>1 teaspoon of salt</li>
+      <li>Cheese and toppings of your choice</li>
+    </ul>
+
+    <!-- Ordered Lists -->
+    <h2
+      id="instructions"
+      style="font-size: 24px; color: #4caf50; margin-top: 20px; cursor: help"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="tooltip-html"
+      data-bs-title="Ordered List: &lt;ol&gt; with &lt;li&gt; elements, styled using 'list-style-type' and 'start' attributes. Example: &lt;ol style='list-style-type: upper-roman;'&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;"
+    >
+      Instructions
+    </h2>
+    <ol style="list-style-type: upper-roman; padding-left: 20px">
+      <li>
+        Prepare the Dough
+        <ol style="list-style-type: lower-alpha; margin-left: 20px">
+          <li>Combine flour, yeast, and salt in a bowl.</li>
+          <li>Add warm water and olive oil.</li>
+          <li>Mix until a dough forms.</li>
+          <li>Knead the dough for 5-7 minutes.</li>
+        </ol>
+      </li>
+      <li>
+        Let the Dough Rise
+        <ol style="list-style-type: lower-alpha; margin-left: 20px">
+          <li>Cover the dough with a damp cloth.</li>
+          <li>Let it rise for 1 hour, or until doubled in size.</li>
+        </ol>
+      </li>
+      <li>
+        Assemble the Pizza
+        <ol
+          style="
+            list-style-type: decimal;
+            counter-reset: step-counter 2;
+            margin-left: 20px;
+          "
+        >
+          <li style="counter-increment: step-counter">
+            Preheat the oven to 475°F (245°C).
+          </li>
+          <li style="counter-increment: step-counter">
+            Spread the dough onto a pizza pan.
+          </li>
+          <li style="counter-increment: step-counter">
+            Add tomato sauce, cheese, and your favorite toppings.
+          </li>
+          <li style="counter-increment: step-counter">
+            Bake for 10-12 minutes or until golden brown.
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- No-bullet list for notes -->
+    <h2
+      id="notes"
+      style="font-size: 24px; color: #4caf50; margin-top: 20px; cursor: help"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="tooltip-html"
+      data-bs-title="No-bullet List: &lt;ul&gt; with 'list-style-type: none;' to remove bullets. Example: &lt;ul style='list-style-type: none;'&gt;&lt;li&gt;This recipe makes one medium-sized pizza.&lt;/li&gt;&lt;/ul&gt;"
+    >
+      Notes
+    </h2>
+    <ul style="list-style-type: none; padding-left: 20px">
+      <li>This recipe makes one medium-sized pizza.</li>
+      <li>Adjust the toppings and cheese to your taste.</li>
+      <li>Try different sauces, like pesto or barbecue, for variety.</li>
+    </ul>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipe: Homemade Pizza</title>
+      </head>
+      <body>
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Recipe: Homemade Pizza</title>
+          </head>
+          <body></body>
+        </html>
+      </body>
+    </html>
+  </body>
+</html>

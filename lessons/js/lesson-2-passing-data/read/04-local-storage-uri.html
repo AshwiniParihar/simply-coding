@@ -1,0 +1,122 @@
+<!-- Section: Basic HTML Document Structure -->
+<section class="explain-green">
+  <div class="main-wrapper">
+    <div class="content-lesson">
+       <h1>Passing Data Between Pages: Local Storage vs URI</h1>
+
+  <h2>1. Passing Data Using Local Storage</h2>
+  <p>
+    <strong>Local Storage</strong> allows data to be stored in a user's browser with a key-value format and persists even after the browser is closed (unless manually cleared).
+  </p>
+
+  <h3>How to Use Local Storage for Passing Form Data</h3>
+  <ul>
+    <li>Store data on the first page by setting a unique key in <code>localStorage</code>.</li>
+    <li>On the next page, retrieve the data using the same key.</li>
+  </ul>
+
+  <h3>Example of Setting and Retrieving Data Using Local Storage</h3>
+  <p>Example HTML for the <em>first page</em>:</p>
+  <pre>
+    <code>
+      &lt;!-- Form that saves data to local storage on submit --&gt;
+      &lt;form id="saveForm"&gt;
+        &lt;input type="text" id="mealTitle" placeholder="Meal Title"&gt;
+        &lt;input type="text" id="mealIngredients" placeholder="Ingredients"&gt;
+        &lt;button type="submit"&gt;Save Meal&lt;/button&gt;
+      &lt;/form&gt;
+
+      &lt;script&gt;
+        document.getElementById('saveForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          localStorage.setItem('mealTitle', document.getElementById('mealTitle').value);
+          localStorage.setItem('mealIngredients', document.getElementById('mealIngredients').value);
+          window.location.href = 'nextpage.html';
+        });
+      &lt;/script&gt;
+    </code>
+  </pre>
+
+  <p>Example HTML for the <em>next page</em>:</p>
+  <pre>
+    <code>
+      &lt;script&gt;
+        const mealTitle = localStorage.getItem('mealTitle');
+        const mealIngredients = localStorage.getItem('mealIngredients');
+        console.log('Meal Title:', mealTitle);
+        console.log('Ingredients:', mealIngredients);
+      &lt;/script&gt;
+    </code>
+  </pre>
+
+  <h3>Pros and Cons of Local Storage</h3>
+  <ul>
+    <li><strong>Pros:</strong> More secure than URLs, can store more data, persists until manually cleared.</li>
+    <li><strong>Cons:</strong> Data is stored in the browser, so it can be cleared by the user or expire under certain conditions.</li>
+  </ul>
+
+  <hr>
+
+  <h2>2. Passing Data Using URI (URL Encoding)</h2>
+  <p>
+    <strong>URI Encoding</strong> sends data in the URL by appending it as a query string. This is a temporary method of passing data from one page to another.
+  </p>
+
+  <h3>How to Use URI for Passing Form Data</h3>
+  <ul>
+    <li>On form submission, add form data to the URL query string.</li>
+    <li>On the next page, parse the URL to retrieve the data.</li>
+  </ul>
+
+  <h3>Example of Setting and Retrieving Data Using URI</h3>
+  <p>Example HTML for the <em>first page</em>:</p>
+  <pre>
+    <code>
+      &lt;!-- Form that saves data to URI on submit --&gt;
+      &lt;form id="saveForm"&gt;
+        &lt;input type="text" id="mealTitle" placeholder="Meal Title"&gt;
+        &lt;input type="text" id="mealIngredients" placeholder="Ingredients"&gt;
+        &lt;button type="submit"&gt;Save Meal&lt;/button&gt;
+      &lt;/form&gt;
+
+      &lt;script&gt;
+        document.getElementById('saveForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const title = encodeURIComponent(document.getElementById('mealTitle').value);
+          const ingredients = encodeURIComponent(document.getElementById('mealIngredients').value);
+          window.location.href = 'nextpage.html?title=' + title + '&ingredients=' + ingredients;
+        });
+      &lt;/script&gt;
+    </code>
+  </pre>
+
+  <p>Example HTML for the <em>next page</em>:</p>
+  <pre>
+    <code>
+      &lt;script&gt;
+        const params = new URLSearchParams(window.location.search);
+        const mealTitle = params.get('title');
+        const mealIngredients = params.get('ingredients');
+        console.log('Meal Title:', mealTitle);
+        console.log('Ingredients:', mealIngredients);
+      &lt;/script&gt;
+    </code>
+  </pre>
+
+  <h3>Pros and Cons of URI</h3>
+  <ul>
+    <li><strong>Pros:</strong> No browser storage required, easily shareable or bookmarked with data intact.</li>
+    <li><strong>Cons:</strong> Limited by URL length, can expose sensitive information if not handled securely.</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>
+    Choosing between Local Storage and URI encoding depends on the data needs:
+    <ul>
+      <li>Use <strong>Local Storage</strong> for larger, more persistent data that doesn’t need to be visible in the URL.</li>
+      <li>Use <strong>URI Encoding</strong> for small, non-sensitive data that benefits from being directly accessible via the URL.</li>
+    </ul>
+  </p>
+    </div>
+  </div>
+</section>
